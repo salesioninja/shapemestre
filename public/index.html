@@ -266,10 +266,14 @@
                 <button onclick="setMuscleGroup('cardio')" class="group-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-group="cardio">🏃 Cardio (11)</button>
             </div>
 
-            <!-- Campo de Busca -->
+            <!-- Campo de Busca Aprimorada -->
             <div class="mb-6 relative max-w-md mx-auto">
                 <i data-lucide="search" class="w-4 h-4 absolute left-3 top-3.5 text-gray-400"></i>
-                <input type="text" id="search-exercises" placeholder="Buscar exercício (ex: Supino, Puxada, Agachamento)..." oninput="filterExercises()" class="w-full pl-9 pr-4 py-2.5 bg-gray-900 border border-gray-800 rounded-xl text-sm text-white focus:outline-none focus:border-neoncyan transition">
+                <input type="text" id="search-exercises" placeholder="Buscar exercício (ex: Tríceps, Supino, Puxada)..." oninput="filterExercises()" class="w-full pl-9 pr-10 py-2.5 bg-gray-900 border border-gray-800 rounded-xl text-sm text-white placeholder-gray-500 focus:outline-none focus:border-neoncyan transition">
+                <button id="clear-search-exercises" onclick="clearExerciseSearch()" class="hidden absolute right-3 top-2.5 text-gray-400 hover:text-white p-1 rounded-lg transition" title="Limpar busca">
+                    <i data-lucide="x" class="w-4 h-4"></i>
+                </button>
+                <div id="search-feedback" class="hidden text-xs text-center text-gray-400 mt-2 font-medium"></div>
             </div>
 
             <!-- Grid de Exercícios -->

@@ -47,13 +47,20 @@ function filterTrainings() {
 
 function renderTrainingsList() {
     const grid = document.getElementById('trainings-grid');
-    const searchVal = (document.getElementById('search-trainings')?.value || '').toLowerCase();
+    const rawSearch = (document.getElementById('search-trainings')?.value || '').toLowerCase();
+    const searchVal = rawSearch.normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
 
     const filtered = allTrainings.filter(t => {
         const matchGender = currentGenderFilter === 'Todos' || t.gender === currentGenderFilter;
-        const matchSearch = t.name.toLowerCase().includes(searchVal) || 
-                            t.description.toLowerCase().includes(searchVal) ||
-                            (t.category && t.category.toLowerCase().includes(searchVal));
+        if (!searchVal) return matchGender;
+
+        const tName = (t.name || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        const tDesc = (t.description || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        const tCat = (t.category || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+        const matchSearch = tName.includes(searchVal) || 
+                            tDesc.includes(searchVal) ||
+                            tCat.includes(searchVal);
         return matchGender && matchSearch;
     });
 
