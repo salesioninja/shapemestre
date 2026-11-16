@@ -2,8 +2,10 @@
   {
     "id": 1,
     "title": "Panqueca Proteica de Aveia e Banana",
+    "type": "Café da Manhã",
     "category": "Café da Manhã",
     "prepTime": "10 min",
+    "difficulty": "Iniciante",
     "calories": 320,
     "protein": 26,
     "carbs": 38,
@@ -26,8 +28,10 @@
   {
     "id": 2,
     "title": "Frango Grelhado Crocante com Purê de Batata Doce",
+    "type": "Prato Principal",
     "category": "Almoço / Jantar",
     "prepTime": "25 min",
+    "difficulty": "Iniciante",
     "calories": 450,
     "protein": 48,
     "carbs": 42,
@@ -50,8 +54,10 @@
   {
     "id": 3,
     "title": "Omelete Turbo Anabólico com Queijo Branco e Espinafre",
+    "type": "Café da Manhã",
     "category": "Café da Manhã / Jantar",
     "prepTime": "12 min",
+    "difficulty": "Iniciante",
     "calories": 310,
     "protein": 32,
     "carbs": 4,
@@ -74,8 +80,10 @@
   {
     "id": 4,
     "title": "Bowl Pré-Treino de Açaí Zero com Whey e Morangos",
+    "type": "Lanche",
     "category": "Pré-Treino",
     "prepTime": "5 min",
+    "difficulty": "Iniciante",
     "calories": 340,
     "protein": 28,
     "carbs": 45,
@@ -97,8 +105,10 @@
   {
     "id": 5,
     "title": "Mousse de Chocolate Fit 2 Ingredientes",
+    "type": "Lanche",
     "category": "Sobremesa Fit",
     "prepTime": "5 min (+ 1h geladeira)",
+    "difficulty": "Iniciante",
     "calories": 190,
     "protein": 22,
     "carbs": 9,
@@ -120,8 +130,10 @@
   {
     "id": 6,
     "title": "Salmão Grelhado com Arroz Integral e Aspargos",
+    "type": "Prato Principal",
     "category": "Almoço / Jantar",
     "prepTime": "20 min",
+    "difficulty": "Iniciante",
     "calories": 480,
     "protein": 40,
     "carbs": 35,
@@ -140,6 +152,3035 @@
       "Vire e grelhe por mais 3 minutos até ficar suculento por dentro.",
       "Na mesma frigideira, salteie os aspargos por 3 minutos com sal e pimenta.",
       "Sirva com o arroz integral quente."
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Smoothie Tropical",
+    "type": "Smoothie",
+    "category": "Bebidas/Sucos",
+    "prepTime": "15 min",
+    "difficulty": "Iniciante",
+    "calories": 450,
+    "protein": 26.7,
+    "carbs": 81.2,
+    "fat": 4.5,
+    "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Banana",
+      "Kiwi",
+      "Manga",
+      "Mamão",
+      "Suco de Laranja",
+      "Iogurte Natural Light"
+    ],
+    "instructions": [
+      "Misture todos os ingredientes no liquidificador por 30 segundos ou mais."
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Smoothie de Pêssego",
+    "type": "Smoothie",
+    "category": "Bebidas/Sucos",
+    "prepTime": "15 min",
+    "difficulty": "Iniciante",
+    "calories": 394,
+    "protein": 26.4,
+    "carbs": 71.5,
+    "fat": 1.2,
+    "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Pêssegos em Calda",
+      "Suco de Laranja",
+      "Iogurte Natural Light"
+    ],
+    "instructions": [
+      "Misture todos os ingredientes no liquidificador por 30 segundos ou mais."
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Smoothie Energético de Frutas Vermelhas",
+    "type": "Smoothie",
+    "category": "Bebidas/Sucos",
+    "prepTime": "15 min",
+    "difficulty": "Iniciante",
+    "calories": 362,
+    "protein": 21,
+    "carbs": 67,
+    "fat": 16,
+    "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Morangos",
+      "Framboesas",
+      "Amoras",
+      "Suco de Melancia",
+      "Iogurte Natural Light"
+    ],
+    "instructions": [
+      "Misture todos os ingredientes no liquidificador por 30 segundos ou mais."
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Smoothie de Banana",
+    "type": "Smoothie",
+    "category": "Café da Manhã",
+    "prepTime": "15 min",
+    "difficulty": "Iniciante",
+    "calories": 322,
+    "protein": 10,
+    "carbs": 29.2,
+    "fat": 0.7,
+    "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Banana Congelada",
+      "Iogurte Natural Desnatado",
+      "Leite Desnatado",
+      "Aveia",
+      "Leite em Pó Desnatado",
+      "Extrato de Baunilha",
+      "Gelo"
+    ],
+    "instructions": [
+      "Misture todos os ingredientes no liquidificador por 30 segundos ou mais."
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Smoothie de Abacaxi com Laranja",
+    "type": "Smoothie",
+    "category": "Bebidas/Sucos",
+    "prepTime": "15 min",
+    "difficulty": "Iniciante",
+    "calories": 199,
+    "protein": 9.3,
+    "carbs": 43,
+    "fat": 0.4,
+    "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Laranja",
+      "Abacaxi",
+      "Banana",
+      "Iogurte Natural",
+      "Gelo"
+    ],
+    "instructions": [
+      "Misture todos os ingredientes no liquidificador por 30 segundos ou mais."
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Smoothie Proteico Com Frutas",
+    "type": "Smoothie",
+    "category": "Café da Manhã",
+    "prepTime": "15 min",
+    "difficulty": "Iniciante",
+    "calories": 257,
+    "protein": 41,
+    "carbs": 18.5,
+    "fat": 0,
+    "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Iogurte Light",
+      "Whey Protein",
+      "Framboesas",
+      "Morangos"
+    ],
+    "instructions": [
+      "Misture todos os ingredientes em um liquidificador."
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Smoothie de Café da Manhã",
+    "type": "Smoothie",
+    "category": "Café da Manhã",
+    "prepTime": "15 min",
+    "difficulty": "Iniciante",
+    "calories": 425,
+    "protein": 27,
+    "carbs": 69,
+    "fat": 6,
+    "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Banana",
+      "Aveia em Flocos",
+      "Leite de Amêndoa",
+      "Mel",
+      "Proteína de Baunilha"
+    ],
+    "instructions": [
+      "Misture todos os ingredientes no liquidificador por 30 segundos ou mais."
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Smoothie de Chocolate",
+    "type": "Smoothie",
+    "category": "Sobremesas",
+    "prepTime": "15 min",
+    "difficulty": "Iniciante",
+    "calories": 375,
+    "protein": 28,
+    "carbs": 30,
+    "fat": 16,
+    "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Banana",
+      "Manteiga de Amendoim",
+      "Leite de Amêndoa",
+      "Proteína de Chocolate"
+    ],
+    "instructions": [
+      "Misture todos os ingredientes no liquidificador por 30 segundos ou mais."
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Omelete Ocidental",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 450,
+    "protein": 35,
+    "carbs": 10,
+    "fat": 30,
+    "image": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Ovos",
+      "Creme de Leite",
+      "Queijo Ralado",
+      "Manteiga",
+      "Cebola",
+      "Pimentão",
+      "Presunto",
+      "Sal",
+      "Pimenta"
+    ],
+    "instructions": [
+      "Bata os Ovos e o Creme de leite. Tempere. Adicione metade do queijo. Derreta a manteiga e refogue o presunto, a cebola e o pimentão. Adicione o ovo batido e frite. Polvilhe o restante do queijo por cima e dobre a omelete."
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Enroladinho de Salsicha com Bacon",
+    "type": "Lanche",
+    "category": "Lanches",
+    "prepTime": "25 min",
+    "difficulty": "Iniciante",
+    "calories": 380,
+    "protein": 20,
+    "carbs": 5,
+    "fat": 32,
+    "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Salsichas de Frango",
+      "Fatias Finas de Bacon"
+    ],
+    "instructions": [
+      "Corte as salsichas em 2 partes. Enrole cada pedaço em uma fatia de bacon. Prenda com um palito e asse a 180°C por 20 minutos."
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Suco Bomba Imunológica",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 180,
+    "protein": 5,
+    "carbs": 25,
+    "fat": 7,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Amora",
+      "Ameixa",
+      "Semente de abóbora",
+      "Água de coco"
+    ],
+    "instructions": [
+      "Bata tudo no liquidificador e beba sem coar."
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Sopa Detox com Inhame",
+    "type": "Sopa",
+    "category": "Sopas",
+    "prepTime": "45 min",
+    "difficulty": "Iniciante",
+    "calories": 350,
+    "protein": 15,
+    "carbs": 50,
+    "fat": 10,
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Inhame",
+      "Cenoura",
+      "Cebola roxa",
+      "Salsa",
+      "Feijão-azuki",
+      "Azeite",
+      "Alho",
+      "Nozes"
+    ],
+    "instructions": [
+      "Refogue alho e cebola. Adicione inhame, cenoura e salsa. Cubra com água e cozinhe. Bata no liquidificador. Volte à panela, adicione o feijão e sirva com nozes."
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Tapioca Natural Light",
+    "type": "Lanche",
+    "category": "Café da Manhã",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 220,
+    "protein": 12,
+    "carbs": 25,
+    "fat": 8,
+    "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Goma de tapioca",
+      "Tomate",
+      "Queijo cottage light",
+      "Orégano",
+      "Azeite"
+    ],
+    "instructions": [
+      "Prepare a massa da tapioca, adicione o recheio, feche e sirva."
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Matchá Termogênico",
+    "type": "Chá",
+    "category": "Chás",
+    "prepTime": "5 min",
+    "difficulty": "Iniciante",
+    "calories": 10,
+    "protein": 1,
+    "carbs": 2,
+    "fat": 0,
+    "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Água",
+      "Matchá em pó"
+    ],
+    "instructions": [
+      "Ferva a água. Adicione o pó de Matchá e mexa até diluir completamente."
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Suco Verde Cubano",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 75,
+    "protein": 2,
+    "carbs": 18,
+    "fat": 0.5,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 Pepinos",
+      "5 folhas de hortelã",
+      "1 laranja lima"
+    ],
+    "instructions": [
+      "Pode bater tudo no liquidificador e coar, ou processar na centrífuga a Laranja e os Pepinos e depois bater no liquidificador junto com as folhas de hortelã."
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Suco Verde Pepino E Espinafre",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 45,
+    "protein": 2.5,
+    "carbs": 9,
+    "fat": 0.4,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "4 folhas de espinafre",
+      "1 talo de aipo ou salsão",
+      "1 pepino",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Processe na centrífuga ou bata no liquidificador coando antes de servir. Se for usar o processador, não precisa adicionar a água."
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Suco Vitamina C",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 130,
+    "protein": 3,
+    "carbs": 32,
+    "fat": 0.6,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 laranjas",
+      "5 morangos",
+      "Folhas de espinafre"
+    ],
+    "instructions": [
+      "Esprema as laranjas no espremedor e bata no liquidificador com os morangos e o espinafre."
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Suco Detox de Abacaxi Com Erva Cidreira",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "15 min",
+    "difficulty": "Iniciante",
+    "calories": 95,
+    "protein": 1,
+    "carbs": 24,
+    "fat": 0.5,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 fatia de abacaxi",
+      "3 ramos de erva cidreira",
+      "200 ml de água de coco"
+    ],
+    "instructions": [
+      "Faça o chá da erva cidreira e espere esfriar na geladeira. Depois de gelado bata com os outros ingredientes no liquidificador."
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Suco Detox de Uva, Gengibre e Canela",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "5 min",
+    "difficulty": "Iniciante",
+    "calories": 155,
+    "protein": 1,
+    "carbs": 39,
+    "fat": 0.2,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 copo de suco de uva",
+      "1 pedaço pequeno de gengibre",
+      "1 pitada de canela em pó"
+    ],
+    "instructions": [
+      "Bata todos os ingredientes no liquidificador, sirva gelado."
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Suco Doce Natural",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 140,
+    "protein": 1.5,
+    "carbs": 35,
+    "fat": 0.5,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1/2 copo de cranberry",
+      "1 laranja",
+      "1/2 maçã",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Esprema a laranja e bata no liquidificar com os outros ingredientes, adicione gelo ou use água gelada."
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Abacaxi Com Mamão",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "5 min",
+    "difficulty": "Iniciante",
+    "calories": 90,
+    "protein": 1,
+    "carbs": 23,
+    "fat": 0.3,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 fatia de abacaxi em pedaços",
+      "1/4 de mamão papaia",
+      "250 ml de água"
+    ],
+    "instructions": [
+      "Bata tudo no liquidificador, use água gelada nos dias de calor."
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Suco Cítrico",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 185,
+    "protein": 3,
+    "carbs": 45,
+    "fat": 0.8,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 Laranja",
+      "1 maçã",
+      "1 cenoura",
+      "1 pedaço pequeno de gengibre",
+      "250 ml de água ou água de coco"
+    ],
+    "instructions": [
+      "Bata todos os ingredientes no liquidificador com água gelada e coe."
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Laranja com Banana",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "5 min",
+    "difficulty": "Iniciante",
+    "calories": 215,
+    "protein": 3,
+    "carbs": 54,
+    "fat": 0.7,
+    "image": "https://images.unsplash.com/photo-1613478223719-2ab802602423?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 Banana",
+      "Suco de duas laranjas"
+    ],
+    "instructions": [
+      "Basta bater no liquidificador e servir."
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Grapefruit Com Cenoura E Gengibre",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 150,
+    "protein": 2.5,
+    "carbs": 37,
+    "fat": 0.5,
+    "image": "https://images.unsplash.com/photo-1613478223719-2ab802602423?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 Toranja ou grapefruit",
+      "2 cenouras",
+      "200 ml de água",
+      "Um pedaço pequeno de gengibre"
+    ],
+    "instructions": [
+      "Use o processador ou coe após bater no liquidificador."
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Suco Verde Vegetais Vitaminados",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 80,
+    "protein": 4,
+    "carbs": 17,
+    "fat": 0.8,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 tomates",
+      "Folhas de salsa",
+      "1/2 pimentão vermelho",
+      "1 talo de aipo ou salsão",
+      "2 folhas de acelga",
+      "250 ml de água"
+    ],
+    "instructions": [
+      "Bater todos os ingredientes no liquidificador."
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Pepino, Cenoura E Espinafre",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 60,
+    "protein": 3,
+    "carbs": 13,
+    "fat": 0.5,
+    "image": "https://images.unsplash.com/photo-1613478223719-2ab802602423?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "4 folhas de espinafre",
+      "1/2 pepino médio",
+      "1 cenoura média",
+      "250 ml de água"
+    ],
+    "instructions": [
+      "Bater todos os ingredientes no liquidificador, usar água gelada nos dias de calor. Coar e servir."
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Suco Antioxidante de Blueberry",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "5 min",
+    "difficulty": "Iniciante",
+    "calories": 85,
+    "protein": 1.5,
+    "carbs": 21,
+    "fat": 0.6,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "4 folhas de espinafre",
+      "1/2 copo de framboesas",
+      "250 ml de água",
+      "1/2 copo de blueberrys (mirtilos)"
+    ],
+    "instructions": [
+      "Bater todos os ingredientes no liquidificar, coar se achar necessário."
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Suco FZF (ferro, zinco e ácido fólico)",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 70,
+    "protein": 2,
+    "carbs": 16,
+    "fat": 0.3,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 cenoura",
+      "3 folhas de espinafre",
+      "1/2 beterraba",
+      "250 ml de água"
+    ],
+    "instructions": [
+      "Bater no liquidificador todos os ingredientes."
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Suco Fresco Light",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 150,
+    "protein": 2.5,
+    "carbs": 38,
+    "fat": 0.7,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 fatias de melão",
+      "1 laranja - suco",
+      "1 fatia de melancia"
+    ],
+    "instructions": [
+      "Esprema as laranjas e junto com os outros ingredientes no liquidificador."
+    ]
+  },
+  {
+    "id": 36,
+    "title": "Suco Racional",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 280,
+    "protein": 4,
+    "carbs": 28,
+    "fat": 18,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 maçã",
+      "1/2 tomate",
+      "2 colheres de nozes",
+      "1 colher de chá de óleo de coco",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Maçã e tomates na centrífuga e junte aos outros ingredientes no liquidificador ou adicione água e bata tudo, coe e sirva."
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Suco Alcalinizante",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "5 min",
+    "difficulty": "Iniciante",
+    "calories": 35,
+    "protein": 1,
+    "carbs": 9,
+    "fat": 0.2,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1/4 de pepino",
+      "1 limão - suco",
+      "1 talo de aipo",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bata todos os ingredientes no liquidificador."
+    ]
+  },
+  {
+    "id": 38,
+    "title": "Suco De Couve com Erva Doce",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 65,
+    "protein": 3.5,
+    "carbs": 14,
+    "fat": 0.7,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "3 folhas e couve",
+      "1 dente de alho",
+      "1 ramo de erva doce",
+      "1/2 pepino",
+      "Meio limão espremido",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bater todos os ingredientes no liquidificador e servir, coar se achar necessário."
+    ]
+  },
+  {
+    "id": 39,
+    "title": "Suco Vermelho",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 85,
+    "protein": 4,
+    "carbs": 20,
+    "fat": 0.6,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 limão - suco",
+      "Pimenta dedo de moça (bem pouco)",
+      "1 talo de salsão",
+      "2 tomates",
+      "1 pepino"
+    ],
+    "instructions": [
+      "Passe todos os ingredientes no processador ou troque o pepino por água e use o liquidificador."
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Suco Cítrico Com Melancia",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 140,
+    "protein": 2,
+    "carbs": 36,
+    "fat": 0.5,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 toranja ou laranja",
+      "1 limão",
+      "1 fatia de melancia"
+    ],
+    "instructions": [
+      "Bata o suco da toranja e limão com a melancia no liquidificador."
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Suco Verde Com Cenoura",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 110,
+    "protein": 5,
+    "carbs": 24,
+    "fat": 0.9,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "3 talos de brócolis",
+      "2 cenouras",
+      "1 pepino",
+      "1 pitada de sal",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Use o processador ou bata com 200 ml de água no liquidificador."
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Suco Verde Com Pepino",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 80,
+    "protein": 4,
+    "carbs": 18,
+    "fat": 0.8,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "4 folhas de couve",
+      "1/2 pepino",
+      "2 ramos de erva doce",
+      "1 cenoura",
+      "1 pedaço pequeno de gengibre",
+      "1 folha de manjericão",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bata todos os ingredientes no liquidificador e sirva após coar."
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Suco Tônico",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 60,
+    "protein": 2.5,
+    "carbs": 14,
+    "fat": 0.5,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 tomates",
+      "1/2 pepino",
+      "250 ml de água",
+      "1 pedaço de gengibre"
+    ],
+    "instructions": [
+      "Bata no liquidificador. Sirva gelado."
+    ]
+  },
+  {
+    "id": 44,
+    "title": "Verde e Púrpura",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 160,
+    "protein": 3,
+    "carbs": 40,
+    "fat": 0.6,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 beterraba",
+      "2 folhas de couve",
+      "1 maçã",
+      "1 limão",
+      "1 pedaço pequeno de gengibre",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Use todos os ingredientes na centrífuga ou bata no liquidificar e coe, pode adicionar gelo."
+    ]
+  },
+  {
+    "id": 45,
+    "title": "Suco Vigor",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 95,
+    "protein": 4.5,
+    "carbs": 22,
+    "fat": 0.9,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "3 folhas de couve",
+      "2 folhas de espinafre",
+      "3 folhas de repolho",
+      "1 limão",
+      "1/2 maçã",
+      "200 ml de água",
+      "1 pequeno de gengibre"
+    ],
+    "instructions": [
+      "Bata todos os ingredientes no liquidificador."
+    ]
+  },
+  {
+    "id": 46,
+    "title": "Antioxidante Super Verde",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 150,
+    "protein": 2,
+    "carbs": 37,
+    "fat": 0.8,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "6 amoras",
+      "5 morangos",
+      "1/2 copo de blueberrys",
+      "1 fatia de abacaxi",
+      "2 folhas de couve",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bata tudo no liquidificador, use água gelada."
+    ]
+  },
+  {
+    "id": 47,
+    "title": "Suco Para As Manhãs Quentes",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 240,
+    "protein": 4,
+    "carbs": 40,
+    "fat": 8,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 cenouras",
+      "1 maçã",
+      "2 folhas de couve",
+      "1/4 de copo de leite de coco",
+      "250 ml de água",
+      "Um pedaço pequeno de gengibre"
+    ],
+    "instructions": [
+      "Use o liquidificador ou processadora e adicione o leite de coco depois no liquidificador."
+    ]
+  },
+  {
+    "id": 48,
+    "title": "Suco Antioxidante de Romã",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 230,
+    "protein": 3,
+    "carbs": 56,
+    "fat": 1,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 romã descascada",
+      "1/2 copo de blueberry",
+      "6 morangos",
+      "250 ml de água",
+      "1/2 maçã"
+    ],
+    "instructions": [
+      "Bata todos os ingredientes no liquidificador e sirva após coar."
+    ]
+  },
+  {
+    "id": 49,
+    "title": "Suco Meta Detox",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 130,
+    "protein": 2.5,
+    "carbs": 33,
+    "fat": 0.7,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1/2 Pera",
+      "1/2 Maçã",
+      "1 pepino",
+      "1 pedaço pequeno de gengibre",
+      "2 folhas de couve",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bata todos os ingredientes no liquidificador e coe antes de servir."
+    ]
+  },
+  {
+    "id": 50,
+    "title": "Suco Forte Com Alho",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 55,
+    "protein": 2.8,
+    "carbs": 12,
+    "fat": 0.4,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "3 dentes de alho",
+      "1/2 pepino",
+      "1 tomate",
+      "200 ml de água",
+      "Pitada de sal (opcional)"
+    ],
+    "instructions": [
+      "Bata no liquidificador."
+    ]
+  },
+  {
+    "id": 51,
+    "title": "Suco de Tomate",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 110,
+    "protein": 5,
+    "carbs": 25,
+    "fat": 0.8,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "4 tomates",
+      "1/2 cebola",
+      "1 dente de alho",
+      "Pitada de sal",
+      "Uma pontinha de pimenta",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bata no liquidificar adicionando 200 ml de água ou use o processador."
+    ]
+  },
+  {
+    "id": 52,
+    "title": "Suco Concentrado",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 80,
+    "protein": 2.5,
+    "carbs": 19,
+    "fat": 0.4,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 tomate",
+      "1/2 beterraba",
+      "1 dente de alho",
+      "1/2 cenoura",
+      "1 limão - suco",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bata todos os ingredientes no liquidificador, coe e sirva."
+    ]
+  },
+  {
+    "id": 53,
+    "title": "Verde E Vermelho",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 180,
+    "protein": 2.5,
+    "carbs": 45,
+    "fat": 1,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 kiwis",
+      "1/2 pera",
+      "1/2 limão",
+      "5 morangos",
+      "200 ml de água de coco"
+    ],
+    "instructions": [
+      "Bata todos os ingredientes no liquidificador."
+    ]
+  },
+  {
+    "id": 54,
+    "title": "Couve Com Maçã",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 155,
+    "protein": 2,
+    "carbs": 40,
+    "fat": 0.7,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 folhas de couve",
+      "1 maçã",
+      "1/2 copo de cramberrys",
+      "5 morangos",
+      "1 limão - suco",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bater no liquidificador com gelo."
+    ]
+  },
+  {
+    "id": 55,
+    "title": "Suco De Amoras",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "5 min",
+    "difficulty": "Iniciante",
+    "calories": 180,
+    "protein": 1.5,
+    "carbs": 45,
+    "fat": 0.5,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "7 amoras",
+      "5 blueberrys",
+      "1 copo de suco de uva"
+    ],
+    "instructions": [
+      "Bata no liquidificador e coe."
+    ]
+  },
+  {
+    "id": 56,
+    "title": "Vitamina C Com Verde",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 160,
+    "protein": 3,
+    "carbs": 40,
+    "fat": 0.6,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 laranja - suco",
+      "1 toranja - suco",
+      "1 lima - suco",
+      "2 folhas de couve",
+      "3 folhas de hortelã"
+    ],
+    "instructions": [
+      "Use o espremedor de frutas para as cítricas e bata depois com a couve e a hortelã no liquidificador."
+    ]
+  },
+  {
+    "id": 57,
+    "title": "Cenoura e Tomate",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 75,
+    "protein": 3,
+    "carbs": 17,
+    "fat": 0.5,
+    "image": "https://images.unsplash.com/photo-1613478223719-2ab802602423?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 tomate",
+      "1 cenoura",
+      "2 talos de aipo",
+      "1/4 pimentão vermelho",
+      "1 limão - suco",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bata todos os ingredientes no liquidificador."
+    ]
+  },
+  {
+    "id": 58,
+    "title": "Suco Detox Completo",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 105,
+    "protein": 3.5,
+    "carbs": 25,
+    "fat": 0.6,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 aspargos",
+      "1 tomate",
+      "1/2 pepino",
+      "1 laranja",
+      "1 pedaço pequeno de gengibre",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bata no liquidificador e sirva."
+    ]
+  },
+  {
+    "id": 59,
+    "title": "Detox de Fruta",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 280,
+    "protein": 3,
+    "carbs": 72,
+    "fat": 1.2,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 maçãs",
+      "1 kiwi",
+      "1 limão - suco",
+      "1 fatia de melancia",
+      "5 morangos",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bata tudo no liquidificador, sirva gelado."
+    ]
+  },
+  {
+    "id": 60,
+    "title": "Energia Detox",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 85,
+    "protein": 2,
+    "carbs": 21,
+    "fat": 0.4,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 cenoura",
+      "1/2 beterraba",
+      "1/2 pepino",
+      "1 limão - suco",
+      "1 pedaço pequeno de gengibre",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Use os ingredientes na centrífuga ou adicione água e faça no liquidificador."
+    ]
+  },
+  {
+    "id": 61,
+    "title": "Suco de Beterraba Com Maçã e Hortelã",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 150,
+    "protein": 2.5,
+    "carbs": 38,
+    "fat": 0.5,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 beterraba",
+      "1 cenoura",
+      "1 maçã",
+      "5 folhas de hortelã",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bata tudo diretamente no liquidificador, coe e sirva."
+    ]
+  },
+  {
+    "id": 62,
+    "title": "Detox VERDE",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 70,
+    "protein": 2,
+    "carbs": 17,
+    "fat": 0.4,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "3 folhas de escarola",
+      "1/2 maçã",
+      "Suco de 1 limão",
+      "Folhas de salsa"
+    ],
+    "instructions": [
+      "Use tudo no liquidificador com água gelada."
+    ]
+  },
+  {
+    "id": 63,
+    "title": "Suco de Abobrinha com Aspargos",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 40,
+    "protein": 2.5,
+    "carbs": 8,
+    "fat": 0.3,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "3 aspargos",
+      "1/2 abobrinha média",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bater no liquidificador, coar e servir."
+    ]
+  },
+  {
+    "id": 64,
+    "title": "Suco Detox Brócolis",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 75,
+    "protein": 4,
+    "carbs": 16,
+    "fat": 0.7,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "3 talos de brócolis",
+      "1 limão",
+      "1 pepino",
+      "2 dentes de alho",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bata no liquidificar e sirva."
+    ]
+  },
+  {
+    "id": 65,
+    "title": "Suco de Frutas com Alface",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 65,
+    "protein": 1.5,
+    "carbs": 16,
+    "fat": 0.5,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1/2 maçã",
+      "1/2 pepino",
+      "3 folhas de alface",
+      "1 limão - suco",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bater todos os ingredientes no liquidificador e servir."
+    ]
+  },
+  {
+    "id": 66,
+    "title": "Suco Limão Com Pepino",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "5 min",
+    "difficulty": "Iniciante",
+    "calories": 40,
+    "protein": 1,
+    "carbs": 10,
+    "fat": 0.3,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1/2 pepino",
+      "1 limão - suco",
+      "1 pedaço pequeno de gengibre",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bater bem no liquidificador e servir."
+    ]
+  },
+  {
+    "id": 67,
+    "title": "Vitaminas de Vegetais",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 90,
+    "protein": 4.5,
+    "carbs": 20,
+    "fat": 0.6,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 tomates",
+      "1 cenoura",
+      "2 folhas de agrião",
+      "2 folhas de couve",
+      "200ml de água"
+    ],
+    "instructions": [
+      "Bater todos os ingredientes no liquidificador, coar e servir."
+    ]
+  },
+  {
+    "id": 68,
+    "title": "Tomate Com Salsão",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 70,
+    "protein": 4,
+    "carbs": 15,
+    "fat": 0.7,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 tomate",
+      "1 talo de salsão",
+      "2 talos de brócolos",
+      "1 dente de alho",
+      "2 folhas de couve"
+    ],
+    "instructions": [
+      "Use os ingredientes na centrífuga ou adicione água e faça no liquidificador."
+    ]
+  },
+  {
+    "id": 69,
+    "title": "Suco De Maçã Com Couve",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 120,
+    "protein": 3,
+    "carbs": 29,
+    "fat": 0.6,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "3 folhas de couve",
+      "1 maçã",
+      "1 cenoura",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bater todos os ingredientes no liquidificador e servir."
+    ]
+  },
+  {
+    "id": 70,
+    "title": "Cenoura, Brócolis e Couve-Flor",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 100,
+    "protein": 5,
+    "carbs": 22,
+    "fat": 0.8,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 cenouras",
+      "1 talo pequeno de couve-flor",
+      "2 talos de brócolis",
+      "1 limão - suco",
+      "250 ml de água"
+    ],
+    "instructions": [
+      "Adicione 250 ml de água e bata no liquidificador e coe antes de servir."
+    ]
+  },
+  {
+    "id": 71,
+    "title": "Detox De Maçã Verde",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 150,
+    "protein": 1.5,
+    "carbs": 39,
+    "fat": 0.5,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 maçã verde",
+      "4 folhas de hortelã",
+      "1 limão - suco",
+      "1 laranja - suco",
+      "250 ml de água"
+    ],
+    "instructions": [
+      "Bata no liquidificador o suco da laranja e do limão com as maçãs verdes e a hortelã."
+    ]
+  },
+  {
+    "id": 72,
+    "title": "Suco Verde Dos Aromas",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "5 min",
+    "difficulty": "Iniciante",
+    "calories": 50,
+    "protein": 3,
+    "carbs": 10,
+    "fat": 0.7,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 porção de Dente de leão",
+      "3 folhas de couve",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bata no liquidificador e sirva."
+    ]
+  },
+  {
+    "id": 73,
+    "title": "Detox Espanhol",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 70,
+    "protein": 3.5,
+    "carbs": 15,
+    "fat": 0.8,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 dente de alho",
+      "3 folhas de couve",
+      "1/2 tomate",
+      "1/2 pepino",
+      "1 limão",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Bata tudo no liquidificador e coe antes de servir."
+    ]
+  },
+  {
+    "id": 74,
+    "title": "Desintoxicante Verde",
+    "type": "Suco",
+    "category": "Bebidas/Sucos",
+    "prepTime": "10 min",
+    "difficulty": "Iniciante",
+    "calories": 85,
+    "protein": 5,
+    "carbs": 18,
+    "fat": 1,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 pimentão verde",
+      "2 talos pequenos de brócolis",
+      "1/2 pepino",
+      "4 folhas de couve",
+      "200 ml de água"
+    ],
+    "instructions": [
+      "Juntar todos os ingredientes no liquidificador e servir após bater bem."
+    ]
+  },
+  {
+    "id": 75,
+    "title": "Omelete Ocidental Low Carb",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 440,
+    "protein": 34,
+    "carbs": 9,
+    "fat": 31,
+    "image": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Ovos",
+      "Creme de Leite",
+      "Queijo Ralado",
+      "Manteiga",
+      "Cebola Picada",
+      "Pimentão verde picado",
+      "Presunto em cubos",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Bata os Ovos e o Creme de leite de uma tigela. Tempere com o sal e a pimenta.",
+      "Adicione a metade do queijo e misture bem.",
+      "Derreta a manteiga em uma frigideira em fogo médio e refogue o presunto, a cebola e o pimentão por alguns minutos. Adicione o ovo batido e frite até a omelete estiver quase firme.",
+      "Reduza o fogo depois de um tempo. Polvilhe o restante do queijo por cima e dobre a omelete.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 76,
+    "title": "Enroladinho de Salsicha com Bacon Low Carb",
+    "type": "Lanche",
+    "category": "Lanches",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 385,
+    "protein": 21,
+    "carbs": 4,
+    "fat": 33,
+    "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "4 Salsichas de Frango",
+      "8 Fatias Finas de Bacon"
+    ],
+    "instructions": [
+      "Corte as salsichas em 2 partes iguais.",
+      "Enrole cada pedaço das salsichas em uma fatia de bacon.",
+      "Prenda com um palito e disponha em uma assadeira.",
+      "Leve para o forno pré-aquecido a 180ºC por cerca de 20 minutos ou até o bacon ficar crocante.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 77,
+    "title": "Enrolado de Peito de Peru",
+    "type": "Lanche",
+    "category": "Lanches",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 210,
+    "protein": 25,
+    "carbs": 4,
+    "fat": 11,
+    "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "4 Fatias de Peito de Peru",
+      "4 Colheres (sopa) de Cream Cheese light"
+    ],
+    "instructions": [
+      "Coloque uma colher de cream cheese em cima de cada peito de peru.",
+      "Enrole o peito de peru de maneira que o cream cheese fique no meio.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 78,
+    "title": "Mini Pizzas de Berinjela",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 150,
+    "protein": 8,
+    "carbs": 15,
+    "fat": 7,
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 Berinjelas Grandes",
+      "1 Xícara (chá) de Tomates Cerejas",
+      "1 Xícara (chá) de Ricota ralada",
+      "1 Xícara (chá) de Molho de Tomate",
+      "1 Colher (sopa) de Azeite de Oliva",
+      "1 Colher (chá) de Margarina",
+      "Orégano a gosto",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Fatie a berinjela (não precisa retirar a casca) com mais ou menos 1,5cm de largura.",
+      "Acomode as fatias de berinjela em uma assadeira levemente untada com margarina e salpique com um pouco de sal por cima.",
+      "Em cima de cada fatia, coloque uma colher e meia de molho de tomate e acrescente o tomate cereja e o queijo branco ralado.",
+      "Polvilhe com o orégano e leve para o forno pré-aquecido a 180ºC por cerca de 30 minutos.",
+      "Retire do forno e sirva em seguida."
+    ]
+  },
+  {
+    "id": 79,
+    "title": "Cestinhas de Peito de Peru com Ovos",
+    "type": "Lanche",
+    "category": "Lanches",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 180,
+    "protein": 20,
+    "carbs": 5,
+    "fat": 9,
+    "image": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "6 Fatias de Peito de Peru",
+      "6 Ovos",
+      "3 Tomates Cereja picados ao meio",
+      "½ Cenoura Ralada",
+      "Orégano a gosto",
+      "Sal a gosto"
+    ],
+    "instructions": [
+      "Pique os tomates cerejas ao meio, rale a cenoura e reserve.",
+      "Em uma tigela, bata os ovos até ficar uma mistura uniforme. Tempere com o sal a gosto, misture bem e reserve.",
+      "Forre com as fatias de peito de peru forminhas individuais de empadinhas.",
+      "Acrescente dentro das cestinhas de peito de peru o tomate cereja e a cenoura ralada. Coloque em seguida os ovos batidos.",
+      "Polvilhe com um pouco de orégano a gosto e leve para o forno pré-aquecido a 180ºC por cerca de 15 minutos ou até as cestinhas estarem douradas e os ovos firmes.",
+      "Retire do forno e sirva sem seguida."
+    ]
+  },
+  {
+    "id": 80,
+    "title": "Omelete de Frango",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 350,
+    "protein": 45,
+    "carbs": 4,
+    "fat": 17,
+    "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 Ovos",
+      "150g de Frango Desfiado",
+      "1/2 Cebola Picada",
+      "1/2 Tomate sem Sementes Picado",
+      "1 Colher (chá) de Azeite de Oliva",
+      "Salsinha e Orégano a gosto",
+      "Sal a gosto"
+    ],
+    "instructions": [
+      "Em um recipiente, bata os ovos até se misturarem bem.",
+      "Acrescente o frango, a cebola, a salsinha, o orégano e o tomate e misture. Tempere com o sal a gosto.",
+      "Coloque a mistura em uma frigideira aquecida com um pouco de azeite de oliva e deixe ficar firme. Com ajuda de uma espátula, vire do outro lado para dourar.",
+      "Acomode a omelete em um prato e sirva em seguida."
+    ]
+  },
+  {
+    "id": 81,
+    "title": "Omelete Basca",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 320,
+    "protein": 14,
+    "carbs": 8,
+    "fat": 25,
+    "image": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Ovos",
+      "30g de Margarina",
+      "1 Pimentão Vermelho",
+      "1 Pimentão Verde",
+      "1 Dente de Alho",
+      "2 Colheres (sopa) de Azeite de Oliva",
+      "Sal",
+      "Pimenta-de-caiena a gosto"
+    ],
+    "instructions": [
+      "Corte os pimentões ao meio, retire as sementes e corte em fatias.",
+      "Em uma frigideira aquecida com o azeite de oliva adicione os pimentões e o alho e refogue por mais ou menos 10 minutos. Reserve.",
+      "Bata os ovos em uma tigela e tempere com o sal e a pimenta-de-caiena a gosto.",
+      "Em outra frigideira, aqueça a margarina e despeje os ovos batidos e deixe firmar um pouco. Adicione os pimentões distribuindo por igual. Cozinhe por mais 2 minutos.",
+      "Enrole a omelete e Sirva em Seguida."
+    ]
+  },
+  {
+    "id": 82,
+    "title": "Sanduíche de Atum com Cottage",
+    "type": "Lanche",
+    "category": "Lanches",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 390,
+    "protein": 40,
+    "carbs": 15,
+    "fat": 18,
+    "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 Fatias de Pão de forma Low Carb",
+      "150g de Atum em Água escorrido",
+      "100g de Queijo Cottage",
+      "3 Fatias de Tomate",
+      "2 Folhas de Alface",
+      "Sal e Orégano a gosto"
+    ],
+    "instructions": [
+      "Em uma vasilha, coloque o atum e o queijo cottage e misture bem até incorporar os ingredientes.",
+      "Tempere com sal e orégano a gosto.",
+      "Recheie a metade das fatias de pão com a mistura, coloque as fatias de tomate e as folhas de alface, cubra com a fatia restante.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 83,
+    "title": "Pão de Forma Low Carb",
+    "type": "Pão",
+    "category": "Pães e Lanches",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 250,
+    "protein": 10,
+    "carbs": 5,
+    "fat": 22,
+    "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 Xícara (chá) de Amêndoas sem casca",
+      "1/3 Xícara (chá) de Linhaça",
+      "1/3 Xícara (chá) de Sementes de Girassol",
+      "310g de Cream Cheese",
+      "5 Ovos",
+      "1 Xícara (chá) de Queijo ralado",
+      "1 Colher (chá) de Sal",
+      "2 Colheres (chá) de Fermento Químico",
+      "Linhaça Dourada para forrar a forma"
+    ],
+    "instructions": [
+      "Junte as amêndoas, a linhaça e as sementes de girassol no liquidificador e bate até ficar uma farinha.",
+      "Misture a farinha com o fermento e o sal.",
+      "Junte o cream cheese e ovos e misture bem até obter uma mistura lisa, depois adicione o queijo ralado.",
+      "Adicione a farinha na mistura de ovo e queijo e misture bem.",
+      "Forre uma forma com um pouco de óleo e linhaça.",
+      "Leve ao forno pré-aquecido a 180ºC por aproximadamente 60 minutos.",
+      "Retire do forno e deixe esfriar."
+    ]
+  },
+  {
+    "id": 84,
+    "title": "Enroladinho de Salsicha em Massa Low Carb",
+    "type": "Lanche",
+    "category": "Lanches",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 280,
+    "protein": 12,
+    "carbs": 6,
+    "fat": 24,
+    "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "½ Xícara (chá) de Farinha de Amêndoa",
+      "4 Colheres (sopa) de Farinha de Coco",
+      "½ Colher (chá) de Sal",
+      "1 Colher (chá) de Fermento em Pó",
+      "100g de Manteiga",
+      "1 ½ Xícara (chá) de Queijo ralado",
+      "1 Ovo",
+      "8 Salsichas"
+    ],
+    "instructions": [
+      "Pré-aqueça o forno a 180°C. Misture a farinha de amêndoa, a farinha de coco e o fermento em um recipiente. Reserve.",
+      "Derreta a manteiga e o queijo em uma panela em fogo baixo. Mexa bem com um garfo. Retire do fogo.",
+      "Junte o ovo e mexa bem. Adicione a mistura de farinha e misture até obter uma massa firme.",
+      "Achate a massa em retângulo.",
+      "Corte em 8 tiras longas.",
+      "Enrole as tiras de massa nas salsichas e com a ajuda de um pincel de culinária passe um pouco de gema de ovo na massa para dourar.",
+      "Disponha em uma assadeira forrada com papel manteiga e leve ao forno por 20 minutos até que a massa tenha ficado bem dourada.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 85,
+    "title": "Sanduíche de Peito de Peru com Rabanetes",
+    "type": "Lanche",
+    "category": "Lanches",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 350,
+    "protein": 20,
+    "carbs": 8,
+    "fat": 26,
+    "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 Fatias de Pão de Forma Low Carb",
+      "2 Folhas de Alface",
+      "2 Colheres (sopa) de Rabanete ralado",
+      "2 Fatias de Peito de Peru defumado",
+      "2 Colheres (sopa) de Queijo Parmesão Ralado",
+      "1 Colher (sopa) de Maionese"
+    ],
+    "instructions": [
+      "Em uma tigela, misture a maionese e o queijo parmesão. Reserve.",
+      "Em uma das fatias de pão, coloque a alface e o peito de peru.",
+      "Acrescente o rabanete e a mistura de queijo parmesão e maionese.",
+      "Cubra o pão com a outra fatia e sirva em seguida."
+    ]
+  },
+  {
+    "id": 86,
+    "title": "Filé de Peixe ao Molho de Alcaparras",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 280,
+    "protein": 42,
+    "carbs": 2,
+    "fat": 11,
+    "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "4 Filés de Peixe (Aproximadamente 200g cada)",
+      "2 Colheres (sopa) de Alcaparras picadas",
+      "Suco de 1 Limão",
+      "2 Colheres (sopa) de Creme Vegetal",
+      "Salsinha picada a gosto",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Em um recipiente, tempere os filés de peixe com o suco de meio limão, sal e pimenta-do-reino e deixe marinar por 15 minutos.",
+      "Em uma frigideira aquecida em fogo baixo, derreta o creme vegetal e coloque os filés para grelhar até que fiquem bem dourados.",
+      "Retire os filés e reserve.",
+      "Coloque na frigideira a outra metade do suco de limão e as alcaparras, mexa bem.",
+      "Acomode os filés em um prato e coloque sobre ele o molho de alcaparras, Polvilhe com a salsinha.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 87,
+    "title": "Espetinho de Peixe",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 210,
+    "protein": 35,
+    "carbs": 8,
+    "fat": 4,
+    "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "500g de Filé de Peixe em cubos",
+      "2 Cebolas Médias",
+      "1 Pimentão Verde",
+      "1 Pimentão Vermelho",
+      "1 Colher (sopa) de Shoyu",
+      "Suco de 1 Limão",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Corte os filés de peixe, a cebola e os pimentões em cubos de aproximadamente 3cm. Reserve os pimentões e a cebola.",
+      "Em um recipiente coloque os cubos de peixe e tempere com o suco de limão, o shoyu, o sal e a pimenta-do-reino. Deixe o peixe marinando nesta mistura por 40 minutos.",
+      "Monte os espetinhos, intercalando com um cubo de peixe, um de pimentão e um de cebola.",
+      "Repita o processo até preencher todos os espetinhos.",
+      "Coloque os espetos em uma assadeira e leve ao forno por 20 minutos. Vire na metade do tempo.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 88,
+    "title": "Sardinha na Pressão",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 350,
+    "protein": 30,
+    "carbs": 7,
+    "fat": 22,
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "800g de Sardinhas limpas (Sem a cabeça e o rabo)",
+      "5 Cebolas Grandes",
+      "6 Folhas de Manjericão",
+      "1 Xícara (chá) de Vinagre de Maçã",
+      "1 Dente de Alho",
+      "1 Xícara (chá) de Azeite de Oliva",
+      "½ Xícara (chá) de Água"
+    ],
+    "instructions": [
+      "Corte as cebolas em rodelas grossas e acomode-as ao fundo da panela de pressão.",
+      "Coloque as sardinhas sobre as cebolas. Adicione o vinagre, o azeite de oliva, o alho, as folhas de manjericão e um pouco de água. Salpique com o sal e a pimenta-do-reino a gosto.",
+      "Tampe a panela e, assim que pegar pressão, cozinhe por cerca de 40 minutos. Passado o tempo, desligue e espere esfriar sozinha.",
+      "Quando estiver bem fria, abra a panela retire as sardinhas e as cebolas e acomode-os em uma travessa.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 89,
+    "title": "Frango Grelhado com Limão",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 320,
+    "protein": 50,
+    "carbs": 3,
+    "fat": 12,
+    "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "4 Filés de Peito de Frango",
+      "1 Colher (sopa) de Alcaparras",
+      "1 Colher (sopa) de Salsinha picada",
+      "½ Xícara (chá) de Suco de Limão",
+      "2 Colheres (sopa) de Margarina",
+      "1 Colher (sopa) de Azeite de Oliva",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Tempere os filés de frango com o sal e a pimenta-do-reino a gosto.",
+      "Em uma frigideira aquecida com o azeite de oliva, grelhe os filés de frango até que fiquem bem dourados. Reserve.",
+      "Na mesma frigideira, adicione as alcaparras e o suco de limão, deixe por mais ou menos 1 minuto esquentando. Adicione a salsinha e um pouco de sal, caso precise.",
+      "Coloque os filés dentro da frigideira e deixe ele absorver um pouco do molho por cerca de 1 minuto.",
+      "Coloque os filés de frango nos pratos e adicione o molho por cima.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 90,
+    "title": "Frango ao Molho de Champignon",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 450,
+    "protein": 55,
+    "carbs": 5,
+    "fat": 23,
+    "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 Peitos de Frango Grandes sem osso",
+      "1 Cebola picada",
+      "200g de Creme de Leite",
+      "100g de Champignon cortado em fatias",
+      "1 Dente de Alho picado",
+      "1 Colher (sopa) de Margarina"
+    ],
+    "instructions": [
+      "Corte cada peito de frango ao meio para formar os filés e tempere com o sal e a pimenta-do-reino a gosto.",
+      "Em uma frigideira aquecida com margarina, grelhe os filés de frango dos dois lados até que fiquem bem dourados. Retire da frigideira e reserve.",
+      "Na mesma frigideira, coloque o alho e a cebola e deixe dourar. Acrescente o creme de leite e o champignon, misture bem e deixe no fogo por cerca de 2 minutos.",
+      "Acomode os filés de frango em uma travessa e despeje o molho de champignon por cima.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 91,
+    "title": "Coxas de Frango Assadas",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 380,
+    "protein": 40,
+    "carbs": 2,
+    "fat": 23,
+    "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 Quilos de Coxas de Frango",
+      "2 Colheres (sopa) de Azeite de Oliva",
+      "8 Dentes de Alho, cortados",
+      "Suco de 1 Limão",
+      "½ Xícara (chá) de salsa picada",
+      "4 colheres (sopa) de Margarina",
+      "1 Colher (chá) de Ervas secas",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Pré-aqueça o forno a 180ºC.",
+      "Coloque os pedaços de frango em uma assadeira untada com margarina. Tempere com sal e pimenta-do-reino a gosto.",
+      "Polvilhe o alho e a salsa sobre os pedaços de frango e regue com o suco do limão e o azeite por cima.",
+      "Leve para o forno e asse por aproximadamente 40 minutos ou até o frango ficar bem douradinho e cozido.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 92,
+    "title": "Frango à Parmegiana Low Carb",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 420,
+    "protein": 52,
+    "carbs": 8,
+    "fat": 20,
+    "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 Peito de Frango cortado em Filés finos",
+      "2 Dentes de Alho amassados",
+      "1 Cebola Pequena picada",
+      "2 Tomates Médios sem pele",
+      "Suco de 1 limão",
+      "½ Xícara (chá) de Queijo Muçarela Ralado",
+      "Sal",
+      "Pimenta-do-reino",
+      "Orégano a gosto"
+    ],
+    "instructions": [
+      "Tempere os filés com o sal, a pimenta-do-reino, o alho e o limão. Deixe os filés descansando por cerca de 30 minutos para tomar gosto.",
+      "Para o molho, refogue a cebola em uma panela aquecida com azeite. Adicione o alho, misture e acrescente os tomates.",
+      "Com uma colher, vá desmanchando os tomates. Cozinhe em fogo baixo até que os tomates se desmanchem por completo. Tempere com o sal, a pimenta-do-reino a gosto.",
+      "Depois que o molho estiver pronto, coloque-o em uma travessa própria para forno. Em uma frigideira aquecida com um fio de azeite, grelhe os filés dos dois lados até estarem dourados.",
+      "Acomode os filés por cima do molho na travessa. Polvilhe por cima o orégano e o queijo muçarela e leve ao forno até derreter o queijo.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 93,
+    "title": "Frango Assado no Saco",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 360,
+    "protein": 45,
+    "carbs": 3,
+    "fat": 18,
+    "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 Frango inteiro de 1,5Kg limpo",
+      "1 Colher (sopa) de Margarina",
+      "1 Colher (sopa) de molho Shoyu",
+      "Orégano a gosto",
+      "Alecrim a gosto",
+      "Manjericão a gosto",
+      "Suco de Meio limão",
+      "200ml de água",
+      "Sal",
+      "Pimenta-do-reino",
+      "1 Saco Plástico para Cozinhar"
+    ],
+    "instructions": [
+      "Coloque o frango já limpo dentro do saco para cozinhar.",
+      "Em uma tigela adicione o suco de limão, a água, o molho Shoyu, o orégano, o alecrim, o manjericão, o sal e a pimenta-do-reino a gosto e misture bem.",
+      "Coloque esta mistura dentro do saco junto com o frango e amarre bem. Depois de estar amarrado sacuda para que os temperos se misturem bem ao frango. Deixe marinar por 1 hora.",
+      "Retire o frango do saco plástico e coloque em uma assadeira. Cubra o frango com papel alumínio e leve ao forno pré-aquecido a 200ºC.",
+      "Após se passarem 30 minutos retire o frango do forno e pincele com a margarina. Coloque novamente o frango no forno sem o papel alumínio e deixe assar até que fique macio e bem dourado.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 94,
+    "title": "Frango com Curry e Gengibre",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 340,
+    "protein": 40,
+    "carbs": 6,
+    "fat": 17,
+    "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "250g de Peito de Frango em cubos",
+      "2 Colheres (sopa) de Iogurte Natural",
+      "1 Colher (chá) de Curry em Pó",
+      "1 Colher (chá) de Gengibre em pó",
+      "3 Dentes de Alho picado",
+      "Pimenta calabresa a gosto",
+      "3 Colheres (sopa) de Azeite de Oliva",
+      "Sal a gosto"
+    ],
+    "instructions": [
+      "Em um recipiente, misture bem o iogurte, o alho, o curry, o sal, a pimenta e o gengibre.",
+      "Corte os frangos em cubos e adicione junto ao recipiente com os ingredientes e deixe marinar por 1 hora.",
+      "Com a ajuda de uma colher, retire o frango e doure em uma frigideira aquecida com o azeite de oliva.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 95,
+    "title": "Filé de Frango com Mostarda",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 290,
+    "protein": 52,
+    "carbs": 4,
+    "fat": 7,
+    "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "500g de Filé de Frango",
+      "1 Colher (sopa) de Alho triturado",
+      "2 Colheres (sopa) de Mostarda Dijon",
+      "1 Colher (sopa) de Molho Shoyu",
+      "Sal",
+      "Pimenta-do-reino a gosto"
+    ],
+    "instructions": [
+      "Em uma travessa, coloque os filés de frango já cortados, o alho triturado, o molho shoyu, a mostarda, o sal e a pimenta-do-reino e misture bem com as mãos para que o frango fique todo coberto pela mistura.",
+      "Deixe descansar por mais ou menos 15 minutos.",
+      "Coloque os filés em uma assadeira antiaderente e leve para assar no forno pré-aquecido a (180°C) por aproximadamente 20 minutos ou até ficar dourado.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 96,
+    "title": "Torta de Couve-Flor com Frango",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 320,
+    "protein": 30,
+    "carbs": 9,
+    "fat": 18,
+    "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 Couve-flor pequena cozida em água e sal",
+      "200g de Peito de Frango cozido picadinho",
+      "1 Tomate picado",
+      "3 1/2 Colheres (sopa) de Requeijão",
+      "2 Colheres (chá) de Azeite de Oliva",
+      "1 Colher (sopa) de Queijo Parmesão",
+      "Margarina para untar"
+    ],
+    "instructions": [
+      "Desmanche a couve-flor em floretes bem pequenos.",
+      "Em um refratário untado com a margarina, faça uma camada com a metade dos floretes, amassando bem.",
+      "Em uma vasilha, misture o frango e o tomate com 2 colheres do requeijão e o azeite de oliva.",
+      "Cubra a couve-flor e, por cima, faça uma nova camada de floretes, pressionando um pouco. Espalhe o restante do requeijão e polvilhe o parmesão.",
+      "Leve ao forno médio por 40 minutos para gratinar."
+    ]
+  },
+  {
+    "id": 97,
+    "title": "Coxas de Frango com Bacon",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 550,
+    "protein": 45,
+    "carbs": 5,
+    "fat": 39,
+    "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "6 Coxas de Frango com pele",
+      "12 Fatias de Bacon fino",
+      "1 Copo de Requeijão",
+      "4 Colheres (sopa) de Queijo ralado",
+      "3 Dentes de Alho ralado",
+      "2 Colheres (sopa) de Sal",
+      "1 Cebola Média ralada",
+      "Pimenta-do-reino a gosto",
+      "Azeite"
+    ],
+    "instructions": [
+      "Tire o final do osso da coxa, deixando apenas a parte com a carne. Tempere as coxas de frango com o alho, cebola, sal e pimenta-do-reino.",
+      "Reserve para pegar o gosto do tempero por cerca de 2 horas.",
+      "Enrole 2 fatias do bacon em cada uma das coxas e disponha em um refratário, todas bem próximas uma das outras. Regue com um pouco de azeite.",
+      "Leve para o forno pré-aquecido a 160ºC por aproximadamente 40 ou até as coxas estarem bem douradas e assadas.",
+      "Quando estiver pronto retire o refratário do forno e coloque o requeijão em cima das coxas de frango. Acrescente o queijo ralado por cima de todo o frango.",
+      "Retorne o refratário ao forno por mais 10 minutos para gratinar.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 98,
+    "title": "Codornas Assadas com Laranja",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 290,
+    "protein": 30,
+    "carbs": 4,
+    "fat": 17,
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Codornas",
+      "1 Dente de Alho triturado",
+      "2 Colheres (sopa) de Suco de Laranja",
+      "1 Colher (sopa) de Raspas de Laranja",
+      "1 Colher (sopa) de Sálvia picada",
+      "1 Colher (sopa) de Orégano",
+      "1 Colher (sopa) de Azeite de Oliva",
+      "1 Colher (sopa) de Vinagre de Maçã",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Tempere as codornas com o vinagre, o suco de laranja, o alho, a sálvia, o orégano, as raspas de laranja, a pimenta-do-reino e o sal.",
+      "Leve para a geladeira por cerca de 60 minutos para tomar gosto.",
+      "Acomode as codornas em uma assadeira e cubra com o papel alumínio. Leve para o forno pré-aquecido a 180ºC por cerca de uma hora.",
+      "Tire do forno e retire o papel alumínio. Leve novamente ao forno até dourar.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 99,
+    "title": "Cebola Recheada com Carne Moída",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 280,
+    "protein": 22,
+    "carbs": 12,
+    "fat": 16,
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "4 Cebolas Grandes",
+      "350g de Carne Moída Magra",
+      "1 Dente de Alho picado",
+      "1 Pimentão Verde picado",
+      "1 Pimentão Amarelo picado",
+      "100g de Creme de Leite",
+      "1 Colher (sopa) de Salsinha",
+      "1 Colher (sopa) de Azeite de Oliva",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Coloque uma panela com água e sal em fogo alto para ferver. Quando a água estiver fervendo, coloque as cebolas descascadas na panela e deixe cozinhar por cerca de 20 minutos.",
+      "Escorra a água e deixe as cebolas esfriarem. Retire o miolo das cebolas, tomando cuidado para não furar a parte de baixo. Reserve.",
+      "Pique o miolo da cebola e leve para refogar em uma frigideira com azeite de oliva junto com o alho até dourar. Acrescente a carne moída e deixe refogar por cerca de 10 minutos.",
+      "Junte os pimentões, a salsinha e o creme de leite e mexa bem, tempere com o sal e a pimenta-do-reino a gosto.",
+      "Recheie as cebolas com a carne moída e acomode em uma forma, untada com um pouco de azeite de oliva. Leve ao forno pré-aquecido a 160ºC por 20 minutos.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 100,
+    "title": "Lasanha de Berinjela",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 350,
+    "protein": 30,
+    "carbs": 15,
+    "fat": 19,
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1Kg de Berinjela",
+      "400g de Carne moída magra",
+      "200g de Queijo Branco",
+      "1 Cebola média picada",
+      "400g de Polpa de Tomate",
+      "Azeitonas verdes picadas",
+      "1 Colher (sopa) de Azeite de Oliva",
+      "Orégano a gosto",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Lave as berinjelas e corte-as com casca.",
+      "Cozinhe em água e sal por aproximadamente 5 minutos.",
+      "Retire da água e deixe escorrer. Reserve.",
+      "Em uma frigideira, refogue com azeite de oliva a cebola picada e acrescente a carne moída.",
+      "Após estar bem refogado, junte a polpa de tomate e as azeitonas e tempere com sal e pimenta do reino a gosto.",
+      "Em um refratário, faça uma camada com molho. Depois faça outra camada com a berinjela e queijo em fatias. Repita esta sequência até preencher o refratário.",
+      "Polvilhe o orégano a gosto por cima e leve ao forno até que o queijo derreta.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 101,
+    "title": "Lasanha de Abobrinha",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 380,
+    "protein": 32,
+    "carbs": 12,
+    "fat": 23,
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1Kg de Abobrinha",
+      "400g de Carne moída magra",
+      "200g de Queijo Mussarela",
+      "1 Cebola média picada",
+      "400g de Molho de Tomate sem Glúten",
+      "1 Colher (sopa) de Azeite de Oliva",
+      "Orégano a gosto",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Lave as abobrinhas e corte-as com a casca.",
+      "Cozinhe em água e sal por aproximadamente 5 minutos.",
+      "Retire da água e deixe escorrer. Reserve.",
+      "Em uma frigideira, refogue com azeite de oliva a cebola picada e acrescente a carne moída.",
+      "Após estar bem refogado, junte o molho de tomate e tempere com sal e pimenta do reino a gosto.",
+      "Em um refratário, faça uma camada com molho. Depois faça outra camada com a abobrinha e o queijo mussarela. Repita esta sequência até preencher o refratário.",
+      "Polvilhe o orégano a gosto por cima e leve ao forno pré-aquecido a 160ºC por cerca de 15 minutos."
+    ]
+  },
+  {
+    "id": 102,
+    "title": "Iscas de Carne com Legumes",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 420,
+    "protein": 45,
+    "carbs": 14,
+    "fat": 20,
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "500g de Patinho",
+      "1 Cebola Média em Rodelas",
+      "1 Xícara (chá) de Couve-flor em buquês",
+      "1 Xícara (chá) de Brócolis em buquês",
+      "1 Xícara (chá) de Vagem cozidas e cortadas ao meio",
+      "Cenoura Média cortada em Palitos",
+      "1 Pimentão Médio picado",
+      "1 Colher (sopa) de Salsinha",
+      "1/2 Xícara (chá) de Molho Shoyu",
+      "1 Colher (sopa) de Azeite de Oliva",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Pique os brócolis, a couve-flor, a cenoura e leve para uma panela de água com sal para cozinhar até que fiquem al dente.",
+      "Pique a carne em iscas e leve para fritar em uma panela aquecida com o azeite de oliva.",
+      "Quando a carne estiver dourada adicione a cebola picada e o pimentão e deixe refogar por mais ou menos 5 minutos. Tempere com o sal e a pimenta-do-reino a gosto e mexa bem.",
+      "Escorra a água dos legumes e junte na panela. Acrescente o molho Shoyu e deixe cozinhar mais um pouco mexendo de tempos em tempos.",
+      "Polvilhe com a salsinha e sirva em seguida."
+    ]
+  },
+  {
+    "id": 103,
+    "title": "Bife com Molho de Ervas",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 480,
+    "protein": 42,
+    "carbs": 3,
+    "fat": 33,
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 Bifes (200g cada) de Contra Filé",
+      "1 Xícara (chá) de Vinagre de Maçã",
+      "½ Colher (sopa) de Manjericão",
+      "½ Colher (sopa) de Alecrim",
+      "½ Colher (sopa) de Orégano",
+      "½ Colher (sopa) de Tomilho",
+      "½ Colher (sopa) Manjerona",
+      "Azeite de Oliva a gosto",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Em um recipiente, adicione o manjericão, o alecrim, o orégano, o tomilho, a manjerona, o sal, a pimenta-do-reino, o vinagre de maçã (o suficiente para cobrir as ervas), misture bem e deixe descansar por alguns minutos.",
+      "Coloque a mistura em uma frigideira e aqueça até reduzir.",
+      "Em uma frigideira, grelhe os filés até que estejam dourados.",
+      "Acomode os filés em um prato e acrescente o molho por cima.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 104,
+    "title": "Costela Assada com Alho Poró",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 450,
+    "protein": 35,
+    "carbs": 4,
+    "fat": 32,
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 Peça de Costela (Aproximadamente 1,5Kg)",
+      "Ramos de Tomilho",
+      "1 Alho Poró",
+      "1 Colher (sopa) de Azeite de Oliva",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Corte o alho poró em rodelas e acomode no fundo de um refratário.",
+      "Tempere a carne com o sal e a pimenta-do-reino a gosto e pincele com o azeite de oliva.",
+      "Acomode a costela em cima do alho poró no refratário.",
+      "Coloque os ramos de tomilho em cima da carne e cubra com papel alumínio.",
+      "Leve ao forno pré-aquecido a 180ºC por cerca de 1 Hora e 20 minutos. Retire o papel alumínio e deixe a carne dourar por mais 20 minutos.",
+      "Retire do forno e sirva em seguida."
+    ]
+  },
+  {
+    "id": 105,
+    "title": "Picanha ao Alho e Óleo",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 520,
+    "protein": 48,
+    "carbs": 2,
+    "fat": 36,
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "3 Bifes de Picanha (Aproximadamente 300g cada)",
+      "5 Dentes de Alho",
+      "1 Colher (sopa) de Creme Vegetal",
+      "1 Maço de Salsinha batida",
+      "1 Colher (sopa) de Azeite de Oliva",
+      "Suco de Meio Limão",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Tempere os bifes com o sal e a pimenta-do-reino a gosto.",
+      "Em uma frigideira aquecida com o creme vegetal, frite os bifes até que fiquem no ponto desejado.",
+      "Retire da frigideira e reserve.",
+      "Na mesma frigideira, coloque o azeite e doure o alho, acrescente a salsinha e o suco de limão e mexa bem. Tempere com um pouco de sal se achar necessário.",
+      "Acomode os bifes em um prato e coloque por cima o molho.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 106,
+    "title": "Almôndegas Recheadas",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 380,
+    "protein": 35,
+    "carbs": 3,
+    "fat": 25,
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 ½ Quilo de Carne Moída",
+      "1 Colher (sopa) de Manjericão seco",
+      "½ Colher (chá) de Sal",
+      "Pimenta-do-reino a gosto",
+      "2 Colheres (sopa) de Água fria",
+      "2 Xícaras (chá) de Queijo Mussarela picada",
+      "1 Colher (sopa) de Azeite de Oliva"
+    ],
+    "instructions": [
+      "Coloque a carne moída em uma tigela, adicione os temperos e um pouco de água fria. Misture bem com as mãos.",
+      "Forme 10 rolinhos grandes com a carne moída.",
+      "Disponha dentro de cada rolinho de carne moída o queijo mussarela. Feche e forme as almôndegas.",
+      "Refogue as almôndegas em uma frigideira aquecida com azeite de oliva em fogo médio até dourar bem a carne moída.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 107,
+    "title": "Espetinho Misto",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 390,
+    "protein": 38,
+    "carbs": 7,
+    "fat": 22,
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "300g de Alcatra em cubos",
+      "300g de Peito de Frango em cubos",
+      "300g de Linguiça Calabresa",
+      "1 Pimentão Amarelo",
+      "1 Cebola Grande",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Corte a alcatra, a linguiça e o frango em cubos de até 4cm.",
+      "Tempere os cubos com sal e pimenta-do-reino a gosto.",
+      "Corte a cebola e o pimentão em pedaços de cerca de 3cm.",
+      "Monte espetinhos alternando entre a alcatra, a linguiça, o frango, o pimentão e a cebola.",
+      "Em uma grelha elétrica, asse os espetinhos até o ponto desejado.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 108,
+    "title": "Strogonoff de Carne Low Carb",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 460,
+    "protein": 40,
+    "carbs": 8,
+    "fat": 30,
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "300g de Alcatra ou Filé Mignon",
+      "10 Colheres (sopa) de Requeijão",
+      "1 Cebola Média picada",
+      "1 Tomate Médio picado",
+      "1 Colher (sopa) de Azeite de Oliva",
+      "1 Colher (sopa) de Salsinha",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Em uma panela aquecida com o azeite de oliva, refogue a cebola até que ela fique bem dourada.",
+      "Adicione o tomate e refogue por mais 2 minutos.",
+      "Corte a carne em tiras e adicione à panela e deixe até que ela fique cozida. Adicione um pouco de água, se necessário.",
+      "Depois que estiver cozida, tempere com o sal e a pimenta-do-reino a gosto.",
+      "Adicione o requeijão e mexa bem. Retire do fogo e salpique com a salsinha por cima."
+    ]
+  },
+  {
+    "id": 109,
+    "title": "Pimentão Recheado",
+    "type": "Prato Principal",
+    "category": "Pratos Principais",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 250,
+    "protein": 20,
+    "carbs": 10,
+    "fat": 14,
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 Pimentão Verde",
+      "1 Pimentão Amarelo",
+      "1 Pimentão Vermelho",
+      "1 Colher (sopa) de Azeite",
+      "250g de Carne Moída",
+      "1 Cebola média picada",
+      "1 Tomate médio picado",
+      "2 Colheres (sopa) de Salsinha picada",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Depois de bem lavados, retire a tampa dos pimentões, de forma a poder tampá-los novamente. Retire todas as sementes e reserve.",
+      "Em uma panela antiaderente, refogue a carne moída. Assim que estiver bem sequinha, acrescente a salsinha picada, a cebola, o tomate e tempere com sal e pimenta-do-reino.",
+      "Refogue bem até o tomate e a cebola ficarem bem dourados.",
+      "Junte a salsinha e desligue o fogo. Reserve.",
+      "Recheie o pimentão com a carne moída (Aperte bem para não sobrar espaço).",
+      "Coloque a tampa e prenda com ajuda dos palitos.",
+      "Leve para assar em uma assadeira antiaderente no forno pré-aquecido (200°C) por aproximadamente 20 a 30 minutos.",
+      "Sirva a seguir."
+    ]
+  },
+  {
+    "id": 110,
+    "title": "Pimentão em Conserva",
+    "type": "Acompanhamento",
+    "category": "Acompanhamentos",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 120,
+    "protein": 1,
+    "carbs": 8,
+    "fat": 10,
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "4 Pimentões Vermelhos",
+      "150ml de Azeite",
+      "2 Dentes de Alho picado",
+      "2 Colheres (sopa) de Vinagre de Vinho Branco",
+      "2 Colheres (sopa) de Suco de Limão Siciliano",
+      "Manjericão picado a gosto",
+      "3 Colheres (sopa) de Orégano fresco",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Coloque os pimentões na grade do forno ligado a 200ºC. Deixe até a casca ficar meio preta (vira para outro lado depois metade e tempo).",
+      "Tire a casca e corte cada pimentão em 6 pedaços e disponha em uma forma.",
+      "Junte o manjericão, o orégano, o alho picado, o azeite, o vinagre de vinho branco, o suco de limão, o sal e pimenta e espalhe em cima dos pimentões.",
+      "Misture e deixe descansar 24 horas no refrigerador."
+    ]
+  },
+  {
+    "id": 111,
+    "title": "Abobrinha Gratinada",
+    "type": "Acompanhamento",
+    "category": "Acompanhamentos",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 180,
+    "protein": 12,
+    "carbs": 9,
+    "fat": 10,
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 Abobrinhas cortadas em fatias (média)",
+      "1 Cebola Média picada",
+      "1 Pimentão picado",
+      "2 Tomates sem pele e sem sementes picados",
+      "150g de Mussarela light picada",
+      "1 Colher (sobremesa) Azeite de Oliva",
+      "Orégano a gosto",
+      "Sal a gosto"
+    ],
+    "instructions": [
+      "Em uma panela antiaderente refogue a cebola com o azeite de oliva. Depois acrescente os temperos, o pimentão e a abobrinha e deixe refogar por mais 5 minutos.",
+      "Mexa bem e então acrescente os tomates e deixe refogar por mais 5 minutos, sempre mexendo para não queimar.",
+      "Em uma travessa que possa ir ao forno, coloque metade do refogado de abobrinha, a mussarela e a outra metade do refogado por cima. Salpique orégano e leve para gratinar em forno com fogo médio (180ºC) por 10 minutos ou até o queijo derreter.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 112,
+    "title": "Sorvete de Morango Zero",
+    "type": "Sobremesa",
+    "category": "Sobremesas",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 150,
+    "protein": 4,
+    "carbs": 8,
+    "fat": 12,
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "500g de Creme de Leite",
+      "2 Gelatinas em Pó de Morango Zero",
+      "200ml de Água",
+      "1 Suco em Pó Zero de Morango",
+      "2 Colheres (sopa) de Emulsificante Gel",
+      "1 Colher (sopa) de Liga Neutra"
+    ],
+    "instructions": [
+      "Disponha 300g de creme de leite em um recipiente e leve para o congelador até quase congelar.",
+      "Em uma panela dissolva a gelatina em 100ml de água. Depois de hidratada acrescente o restante da água e deixe que esfrie em temperatura ambiente.",
+      "Junte no liquidificador os 200ml de creme de leite, o creme de leite congelado, a gelatina hidratada, o emulsificante a liga neutra e bata bem até obter uma mistura homogênea. Dissolva o suco de morango em um pouco de água, acrescente no liquidificador e bata mais até dobrar de tamanho.",
+      "Disponha a mistura em um pote e leve ao congelador até ficar firme.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 113,
+    "title": "Mousse de Abacate",
+    "type": "Sobremesa",
+    "category": "Sobremesas",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 220,
+    "protein": 4,
+    "carbs": 10,
+    "fat": 19,
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 Abacate Médio",
+      "100ml de Leite Desnatado",
+      "2 Colheres (sopa) de Creme de Leite",
+      "Suco de 1/2 Limão",
+      "Raspas da Casca do 1/2 Limão",
+      "4 Colheres (sopa) Adoçante Forno e Fogão"
+    ],
+    "instructions": [
+      "Corte o abacate ao meio e retire a polpa.",
+      "Leve ao liquidificador e acrescente o leite desnatado, o creme de leite light, o suco de 1/2 de limão e o adoçante forno e fogão.",
+      "Bata até obter uma mistura homogênea. Acomode em um recipiente e leve para o refrigerador por cerca de 30 minutos.",
+      "Sirva nos potes de sobremesa e polvilhe as raspas de limão por cima."
+    ]
+  },
+  {
+    "id": 114,
+    "title": "Sorvete de Pitaya",
+    "type": "Sobremesa",
+    "category": "Sobremesas",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 180,
+    "protein": 7,
+    "carbs": 12,
+    "fat": 11,
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 Xícaras (chá) de Polpa de Pitaya",
+      "200g de Creme de Leite",
+      "1 Colher (sopa) de Adoçante Culinário",
+      "4 Claras de Ovo"
+    ],
+    "instructions": [
+      "Retire a polpa das Pitayas com ajuda de uma colher (para duas xícaras deve-se usar de três a quatro Pitayas). Leve ao liquidificador junto do creme de leite.",
+      "Bata bem, até obter uma mistura bem homogênea. Transfira a mistura para um recipiente e reserve.",
+      "Bata as claras em neve até ficar bem firme. Acrescente o adoçante culinário e o suco de limão e volte a bater.",
+      "Misture delicadamente as claras em neve na mistura de Pitayas e reserve por cerca de 2 horas na geladeira.",
+      "Retire da geladeira e bata novamente no liquidificador. Transfira para um recipiente e reserve no congelador por cerca de 4 horas.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 115,
+    "title": "Creme de Coco",
+    "type": "Sobremesa",
+    "category": "Sobremesas",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 350,
+    "protein": 4,
+    "carbs": 8,
+    "fat": 34,
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "350g de Creme de Leite",
+      "150ml de Leite de Coco",
+      "140g de Coco ralado",
+      "Adoçante para Forno e Fogão a gosto",
+      "1 Pitada Sal",
+      "Chocolate 100% Cacau Ralado (opcional)"
+    ],
+    "instructions": [
+      "Coloque o coco ralado para hidratar no leite de coco por aproximadamente 30 minutos.",
+      "Junte o creme de leite, a pitada de sal e adoce a gosto.",
+      "Misture bem até obter uma mistura homogênea.",
+      "Leve para o congelador por 3 horas.",
+      "Disponha em taças de sobremesa e polvilhe o chocolate ralado por cima.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 116,
+    "title": "Mousse de Café",
+    "type": "Sobremesa",
+    "category": "Sobremesas",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 160,
+    "protein": 8,
+    "carbs": 7,
+    "fat": 11,
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 Envelope de Gelatina Incolor e sem Sabor",
+      "200g de Creme de Leite",
+      "1 Xícara (chá) de Leite Desnatado",
+      "1 Colher (sopa) de Café Solúvel",
+      "1 Xícara (chá) de Adoçante Forno e Fogão",
+      "2 Gemas",
+      "2 Claras"
+    ],
+    "instructions": [
+      "Em uma panela, aqueça o leite, dilua o café e misture o creme de leite.",
+      "Bata as gemas, acrescente metade do adoçante e misture bem. Misture ao leite e deixe em fogo médio por cerca de 3 minutos, mexendo sempre.",
+      "Deixe amornar e adicione a gelatina hidratada e dissolvida. Reserve.",
+      "Bata as claras em neve com o restante do adoçante e acrescente a mistura reservada.",
+      "Em uma forma untada com um pouco de óleo de coco, despeje a mistura e leve para a geladeira até ficar firme.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 117,
+    "title": "Pudim de Leite Low Carb",
+    "type": "Sobremesa",
+    "category": "Sobremesas",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 230,
+    "protein": 8,
+    "carbs": 4,
+    "fat": 20,
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "300g de Creme de Leite",
+      "200ml de Água",
+      "3 Ovos",
+      "1 Colher (sopa) de Leite Desnatado",
+      "Adoçante para Forno e Fogão a gosto",
+      "Essência de Baunilha a gosto"
+    ],
+    "instructions": [
+      "Junte todos os ingredientes no liquidificador e bata bem até obter uma mistura homogênea. Reserve.",
+      "Em uma forma com um buraco no meio, coloque 2 Colheres de sopa Adoçante e leve ao fogo baixo mexendo para dissolver.",
+      "Depois acrescente uma colher de água, deixe que seque depois espalhe na forma.",
+      "Despeje a mistura na forma e leve ao forno a 160ºC graus em banho maria por aproximadamente 40 minutos ou até enfiar um palito e ele sair limpo.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 118,
+    "title": "Sorvete de Coco Low Carb",
+    "type": "Sobremesa",
+    "category": "Sobremesas",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 280,
+    "protein": 4,
+    "carbs": 7,
+    "fat": 27,
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1/2 Xícara (chá) de Coco Ralado sem Açúcar",
+      "6 Colheres (sopa) de Leite de Coco",
+      "1 Xícara (chá) de Adoçante Culinário",
+      "400g de Creme de Leite",
+      "200ml de Leite Desnatado"
+    ],
+    "instructions": [
+      "Junte todos os ingredientes no liquidificador e bata por cerca de 3 minutos até obter uma mistura homogênea.",
+      "Transfira a mistura para um recipiente e leve ao congelador por cerca de 4 horas.",
+      "Distribua o sorvete em taças e decore com raspas de chocolate.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 119,
+    "title": "Quindim Low Carb",
+    "type": "Sobremesa",
+    "category": "Sobremesas",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 180,
+    "protein": 7,
+    "carbs": 4,
+    "fat": 16,
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Adoçante para Forno e Fogão",
+      "200g de Coco Ralado sem Açúcar",
+      "2 Colheres (sopa) de Margarina",
+      "4 Ovos",
+      "12 Gemas"
+    ],
+    "instructions": [
+      "Bata no liquidificador os 4 ovos, as 12 gemas, o adoçante culinário e a margarina light.",
+      "Acrescente o coco ralado e misture bem.",
+      "Distribua a mistura em forminhas de empadas untadas com um pouco de margarina e deixe descansar por cerca de 20 minutos.",
+      "Leve ao forno médio, em banho-maria por cerca de 40 minutos.",
+      "Retire do forno e deixe esfriar.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 120,
+    "title": "Pudim de Chia",
+    "type": "Sobremesa",
+    "category": "Sobremesas",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 250,
+    "protein": 5,
+    "carbs": 15,
+    "fat": 20,
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "¾ Xícara (chá) de Leite de Coco",
+      "2 Colheres (sopa) de Sementes de Chia",
+      "½ Colher (chá) de Extrato de Baunilha",
+      "1 Colher (sopa) de Adoçante"
+    ],
+    "instructions": [
+      "Misture todos os ingredientes em um recipiente.",
+      "Coloque uma tampa e disponha na geladeira por cerca de 4 horas para dar firmeza.",
+      "Sirva o pudim com um pouco de leite de coco adicional."
+    ]
+  },
+  {
+    "id": 121,
+    "title": "Mousse de Chocolate Low Carb",
+    "type": "Sobremesa",
+    "category": "Sobremesas",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 320,
+    "protein": 4,
+    "carbs": 9,
+    "fat": 30,
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 Xícaras (chá) de Leite de Coco",
+      "3 Colheres (sopa) de Cacau em Pó",
+      "1 Colher (chá) de Essência de Baunilha",
+      "1 Colher (sopa) de Adoçante Culinário"
+    ],
+    "instructions": [
+      "Deixe o leite de coco na geladeira por 4 horas ou mais para separar a nata da água de coco.",
+      "Com cuidado retire o creme espesso com uma colher e coloque no liquidificador.",
+      "Bata o creme de coco, a baunilha e o adoçante no liquidificador por 10 minutos ou até engrossar.",
+      "Adicione o cacau em pó e bata mais um pouco.",
+      "Sirva em taças de sobremesa."
+    ]
+  },
+  {
+    "id": 122,
+    "title": "Salada de Rabanete e Pepino",
+    "type": "Salada",
+    "category": "Saladas",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 90,
+    "protein": 2,
+    "carbs": 6,
+    "fat": 7,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "Rabanetes",
+      "Pepinos",
+      "1 Colher (sopa) de Chia",
+      "1 Colher (sopa) de Azeite de Oliva",
+      "Vinagre de Maçã a gosto",
+      "Sal",
+      "Pimenta-do-reino"
+    ],
+    "instructions": [
+      "Higienize e corte em rodelas finas os rabanetes e os pepinos.",
+      "Coloque em uma saladeira e tempere com o sal e a pimenta-do-reino a gosto.",
+      "Regue com o azeite de oliva e o vinagre de maçã. Misture cuidadosamente.",
+      "Leve para a geladeira e deixe descansar por cerca de 20 minutos.",
+      "Polvilhe a chia por cima e sirva em seguida."
+    ]
+  },
+  {
+    "id": 123,
+    "title": "Salada de Ovos com Tomate",
+    "type": "Salada",
+    "category": "Saladas",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 180,
+    "protein": 12,
+    "carbs": 7,
+    "fat": 12,
+    "image": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "5 ovos cozidos",
+      "3 Tomates Médios",
+      "1 Pepino Médio",
+      "1 Colher (chá) de Mostarda Dijon",
+      "1 Colher (sopa) de Salsinha",
+      "1 Colher (sopa) de Cebolinha",
+      "1 Colher (sopa) de Azeite de Oliva",
+      "Sal",
+      "Vinagre de Maçã a gosto"
+    ],
+    "instructions": [
+      "Em uma panela com água coloque os ovos para cozinhar. Depois de estarem cozidos, retire da água e deixe esfriar. Quando já estiverem frios, retire a casca e corte os ovos ao meio. Reserve.",
+      "Corte os tomates e o pepino em rodelas finas.",
+      "Acomode os ovos em uma saladeira e acrescente por cima os tomates e o pepino.",
+      "Em uma tigela coloque o vinagre, o sal, o azeite de oliva e a mostarda. Misture bem e coloque por cima da salada.",
+      "Polvilhe por cima da salada a cebolinha e a salsinha. Leve para a geladeira e deixe tomar gosto por cerca de 20 minutos.",
+      "Sirva em seguida."
+    ]
+  },
+  {
+    "id": 124,
+    "title": "Salada de Escarola com Agrião",
+    "type": "Salada",
+    "category": "Saladas",
+    "prepTime": "20 min",
+    "difficulty": "Iniciante",
+    "calories": 110,
+    "protein": 2,
+    "carbs": 5,
+    "fat": 9,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "4 Xícaras (chá) de Escarola",
+      "3 Xícaras (chá) de Agrião",
+      "4 Colheres (sopa) de Azeitonas picadas",
+      "1 Colher (sopa) de Vinagre de Maçã",
+      "1 Colher (sopa) de Azeite de Oliva",
+      "Sal a gosto"
+    ],
+    "instructions": [
+      "Lave bem a escarola e o agrião e pique grosseiramente.",
+      "Em uma saladeira, coloque a escarola, o agrião, as azeitonas e misture bem.",
+      "Tempere com o sal, o vinagre de maçã e regue com o azeite de oliva por cima.",
+      "Misture e sirva em seguida."
     ]
   }
 ]

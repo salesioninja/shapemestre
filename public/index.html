@@ -290,9 +290,37 @@
                 <h2 class="text-3xl font-extrabold text-white font-['Orbitron'] mb-2">
                     RECEITAS <span class="neon-text-green">FITNESS</span>
                 </h2>
-                <p class="text-gray-400 text-sm">Opções proteicas, rápidas e saborosas com tabela completa de calorias e macros.</p>
+                <p class="text-gray-400 text-sm">Mais de 120 receitas proteicas, funcionais, sucos detox e sobremesas com tabela completa de calorias e macros.</p>
             </div>
 
+            <!-- Filtros de Categorias de Receitas (Carrossel Horizontal) -->
+            <div class="flex items-center space-x-2 overflow-x-auto pb-3 mb-6 scrollbar-none" id="recipe-categories-bar">
+                <button onclick="setRecipeCategory('todas')" class="recipe-cat-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-neongreen text-black shadow-lg shadow-neongreen/20" data-cat="todas">Todas (124)</button>
+                <button onclick="setRecipeCategory('pratos')" class="recipe-cat-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-cat="pratos">🍗 Pratos Principais (31)</button>
+                <button onclick="setRecipeCategory('sucos')" class="recipe-cat-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-cat="sucos">🍹 Sucos & Detox (60)</button>
+                <button onclick="setRecipeCategory('smoothies')" class="recipe-cat-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-cat="smoothies">🥤 Smoothies & Shakes (8)</button>
+                <button onclick="setRecipeCategory('sobremesas')" class="recipe-cat-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-cat="sobremesas">🍰 Sobremesas Fit (12)</button>
+                <button onclick="setRecipeCategory('lanches')" class="recipe-cat-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-cat="lanches">🥪 Lanches & Café (16)</button>
+                <button onclick="setRecipeCategory('saladas')" class="recipe-cat-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-cat="saladas">🥗 Saladas & Acomp. (6)</button>
+            </div>
+
+            <!-- Campo de Busca de Receitas -->
+            <div class="mb-6 relative max-w-md mx-auto">
+                <i data-lucide="search" class="w-4 h-4 absolute left-3 top-3.5 text-gray-400"></i>
+                <input 
+                    type="text" 
+                    id="search-recipes" 
+                    placeholder="Buscar por receita ou ingrediente (ex: frango, aveia, whey, banana)..." 
+                    oninput="filterRecipes()" 
+                    class="w-full pl-9 pr-10 py-2.5 bg-gray-900 border border-gray-800 rounded-xl text-sm text-white placeholder-gray-500 focus:outline-none focus:border-neongreen transition"
+                />
+                <button id="clear-search-recipes" onclick="clearRecipeSearch()" class="hidden absolute right-3 top-2.5 text-gray-400 hover:text-white p-1 rounded-lg transition" title="Limpar busca">
+                    <i data-lucide="x" class="w-4 h-4"></i>
+                </button>
+                <div id="recipe-search-feedback" class="hidden text-xs text-center text-gray-400 mt-2 font-medium"></div>
+            </div>
+
+            <!-- Grid de Receitas -->
             <div id="recipes-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="col-span-full text-center py-12 text-gray-500">Carregando receitas...</div>
             </div>
@@ -555,6 +583,85 @@
                 <button onclick="closeExerciseGifModal()" class="px-5 py-2 rounded-xl text-xs font-bold bg-neoncyan text-black hover:bg-cyan-400 transition">
                     Fechar Demonstração
                 </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DETALHES DA RECEITA FITNESS -->
+    <div id="recipe-modal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-4">
+        <div class="glass-card max-w-2xl w-full max-h-[90vh] flex flex-col border border-neongreen/50 shadow-2xl shadow-neongreen/20 overflow-hidden">
+            <!-- Cabeçalho -->
+            <div class="p-4 bg-gray-900 border-b border-gray-800 flex items-center justify-between">
+                <div>
+                    <h3 id="modal-recipe-title" class="text-base sm:text-lg font-bold text-white font-['Orbitron']">Título da Receita</h3>
+                    <p id="modal-recipe-category" class="text-[11px] text-neongreen font-semibold">Categoria • Tempo</p>
+                </div>
+                <button onclick="closeRecipeModal()" class="text-gray-400 hover:text-white p-1">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <!-- Corpo Rolável -->
+            <div class="p-4 sm:p-6 overflow-y-auto space-y-5 text-sm text-gray-200">
+                <!-- Imagem da Receita -->
+                <div class="relative w-full h-48 sm:h-56 rounded-xl overflow-hidden bg-gray-950 border border-gray-800">
+                    <img id="modal-recipe-image" src="" alt="Foto da Receita" class="w-full h-full object-cover" />
+                </div>
+
+                <!-- Painel de Macros -->
+                <div class="grid grid-cols-4 gap-2 text-center p-3 rounded-xl bg-gray-950/80 border border-gray-800">
+                    <div class="p-1">
+                        <span class="text-gray-400 block text-[10px] uppercase font-bold">Calorias</span>
+                        <span id="modal-recipe-cal" class="font-extrabold text-sm sm:text-base text-white">0 kcal</span>
+                    </div>
+                    <div class="p-1">
+                        <span class="text-neoncyan block text-[10px] uppercase font-bold">Proteína</span>
+                        <span id="modal-recipe-prot" class="font-extrabold text-sm sm:text-base text-neoncyan">0g</span>
+                    </div>
+                    <div class="p-1">
+                        <span class="text-neonpink block text-[10px] uppercase font-bold">Carboidrato</span>
+                        <span id="modal-recipe-carb" class="font-extrabold text-sm sm:text-base text-neonpink">0g</span>
+                    </div>
+                    <div class="p-1">
+                        <span class="text-yellow-400 block text-[10px] uppercase font-bold">Gordura</span>
+                        <span id="modal-recipe-fat" class="font-extrabold text-sm sm:text-base text-yellow-400">0g</span>
+                    </div>
+                </div>
+
+                <!-- Ingredientes -->
+                <div class="p-4 rounded-xl bg-gray-950/80 border border-gray-800">
+                    <h4 class="text-xs font-bold text-neongreen uppercase tracking-wider mb-2.5 flex items-center space-x-1.5">
+                        <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+                        <span>Ingredientes Necessários:</span>
+                    </h4>
+                    <ul id="modal-recipe-ingredients" class="space-y-1.5 text-xs text-gray-300"></ul>
+                </div>
+
+                <!-- Modo de Preparo -->
+                <div class="p-4 rounded-xl bg-gray-950/80 border border-gray-800">
+                    <h4 class="text-xs font-bold text-neongreen uppercase tracking-wider mb-2.5 flex items-center space-x-1.5">
+                        <i data-lucide="chef-hat" class="w-4 h-4"></i>
+                        <span>Modo de Preparo Passo a Passo:</span>
+                    </h4>
+                    <ol id="modal-recipe-instructions" class="space-y-2 text-xs text-gray-300"></ol>
+                </div>
+            </div>
+
+            <!-- Rodapé de Ações -->
+            <div class="p-3 sm:p-4 bg-gray-900 border-t border-gray-800 flex flex-col sm:flex-row gap-2 sm:justify-between items-center">
+                <button onclick="askNutriAboutCurrentRecipe()" class="w-full sm:w-auto px-4 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider bg-emerald-950 border border-emerald-500/60 text-emerald-300 hover:bg-emerald-500 hover:text-black transition flex items-center justify-center space-x-1.5">
+                    <i data-lucide="salad" class="w-4 h-4"></i>
+                    <span>Pedir Substituição à Nutri IA</span>
+                </button>
+                <div class="flex space-x-2 w-full sm:w-auto">
+                    <button onclick="shareCurrentRecipeWhatsApp()" class="flex-1 sm:flex-none px-4 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider bg-emerald-500 text-black hover:bg-emerald-400 transition flex items-center justify-center space-x-1.5 shadow-lg shadow-emerald-500/20">
+                        <i data-lucide="phone" class="w-4 h-4"></i>
+                        <span>Enviar no WhatsApp</span>
+                    </button>
+                    <button onclick="closeRecipeModal()" class="px-4 py-2.5 rounded-xl text-xs font-bold bg-gray-950 text-gray-400 hover:text-white border border-gray-800">
+                        Fechar
+                    </button>
+                </div>
             </div>
         </div>
     </div>
