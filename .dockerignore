@@ -1,0 +1,9 @@
+*.zip
+*.tar.gz
+gifs
+gifs/
+public/assets/gifs
+public/assets/gifs/
+node_modules
+.git
+scripts

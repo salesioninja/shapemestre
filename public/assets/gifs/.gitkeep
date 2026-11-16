@@ -1,0 +1,2 @@
+# Mantém a pasta public/assets/gifs no repositório Git
+# Os arquivos GIF de exercícios são copiados diretamente para este diretório ou montados via volume Docker na VPS

@@ -1,0 +1,145 @@
+[
+  {
+    "id": 1,
+    "title": "Panqueca Proteica de Aveia e Banana",
+    "category": "Café da Manhã",
+    "prepTime": "10 min",
+    "calories": 320,
+    "protein": 26,
+    "carbs": 38,
+    "fat": 6,
+    "image": "https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "2 ovos inteiros",
+      "1 banana prata amassada",
+      "30g de aveia em flocos finos",
+      "1 scoop (30g) de Whey Protein de baunilha ou chocolate",
+      "1 colher de café de canela em pó"
+    ],
+    "instructions": [
+      "Em uma tigela, amasse a banana e misture os ovos até ficar homogêneo.",
+      "Adicione a aveia, o Whey Protein e a canela.",
+      "Aqueça uma frigideira antiaderente untada com um fio de azeite ou óleo de coco.",
+      "Despeje a massa em fogo baixo, tampe e doure dos dois lados por cerca de 2 minutos cada."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Frango Grelhado Crocante com Purê de Batata Doce",
+    "category": "Almoço / Jantar",
+    "prepTime": "25 min",
+    "calories": 450,
+    "protein": 48,
+    "carbs": 42,
+    "fat": 8,
+    "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "180g de peito de frango em filés finos",
+      "180g de batata doce cozida e amassada",
+      "1 colher de sobremesa de azeite de oliva",
+      "Alho, páprica defumada, sal e pimenta-do-reino a gosto",
+      "Couve flor ou brócolis cozido no vapor (à vontade)"
+    ],
+    "instructions": [
+      "Tempere o frango com alho, páprica, sal e pimenta.",
+      "Grelhe em frigideira bem quente com o azeite até dourar bem os dois lados (cerca de 4 a 5 min por lado).",
+      "Amasse a batata doce ainda quente, tempere com uma pitada de sal e noz-moscada.",
+      "Sirva o frango com o purê e os legumes no vapor."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Omelete Turbo Anabólico com Queijo Branco e Espinafre",
+    "category": "Café da Manhã / Jantar",
+    "prepTime": "12 min",
+    "calories": 310,
+    "protein": 32,
+    "carbs": 4,
+    "fat": 16,
+    "image": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "3 claras e 2 gemas",
+      "50g de queijo minas frescal ou ricota em cubos",
+      "1 xícara de folhas de espinafre picadas",
+      "1/2 tomate picadinho",
+      "Sal, orégano e cúrcuma a gosto"
+    ],
+    "instructions": [
+      "Bata os ovos com sal, cúrcuma e orégano com um garfo.",
+      "Refogue rapidamente o espinafre e o tomate em frigideira antiaderente.",
+      "Despeje os ovos batidos, distribua o queijo por cima e deixe firmar em fogo baixo com tampa.",
+      "Dobre ao meio e sirva quente."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Bowl Pré-Treino de Açaí Zero com Whey e Morangos",
+    "category": "Pré-Treino",
+    "prepTime": "5 min",
+    "calories": 340,
+    "protein": 28,
+    "carbs": 45,
+    "fat": 5,
+    "image": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "150g de polpa de açaí puro (sem xarope)",
+      "1 scoop de Whey Protein sabor morango ou baunilha",
+      "50ml de água ou leite desnatado gelado",
+      "4 morangos picados",
+      "15g de granola sem açúcar"
+    ],
+    "instructions": [
+      "Bata a polpa de açaí, o Whey e a água no liquidificador ou mixer até virar um creme bem espesso.",
+      "Despeje na tigela e finalize com morangos frescos e a granola por cima.",
+      "Consuma 40 a 60 minutos antes do treino de alta intensidade."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Mousse de Chocolate Fit 2 Ingredientes",
+    "category": "Sobremesa Fit",
+    "prepTime": "5 min (+ 1h geladeira)",
+    "calories": 190,
+    "protein": 22,
+    "carbs": 9,
+    "fat": 4,
+    "image": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "1 pote (150g) de iogurte grego natural desnatado sem açúcar",
+      "1 scoop (30g) de Whey Protein ou proteína isolada sabor chocolate belga",
+      "1 colher de chá de cacau 100% (opcional, para intensificar o sabor)",
+      "Nibs de cacau ou raspas de chocolate 70% para decorar"
+    ],
+    "instructions": [
+      "Em uma taça, misture o iogurte grego com o Whey Protein e o cacau em pó.",
+      "Mexa vigorosamente com uma colher pequena ou mini fouet até obter textura aerada de mousse.",
+      "Leve à geladeira por 1 hora para firmar.",
+      "Decore com raspas de chocolate amargo e sirva gelado."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Salmão Grelhado com Arroz Integral e Aspargos",
+    "category": "Almoço / Jantar",
+    "prepTime": "20 min",
+    "calories": 480,
+    "protein": 40,
+    "carbs": 35,
+    "fat": 18,
+    "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500&auto=format&fit=crop&q=60",
+    "ingredients": [
+      "170g de filé de salmão fresco",
+      "100g de arroz integral cozido",
+      "6 talos de aspargos frescos ou brócolis",
+      "Suco de 1/2 limão siciliano",
+      "Sal marinho, pimenta-do-reino e azeite de oliva"
+    ],
+    "instructions": [
+      "Tempere o salmão com sal, pimenta e gotas de limão.",
+      "Em frigideira bem quente com um fio de azeite, sele o salmão primeiro com a pele para baixo por 4 minutos.",
+      "Vire e grelhe por mais 3 minutos até ficar suculento por dentro.",
+      "Na mesma frigideira, salteie os aspargos por 3 minutos com sal e pimenta.",
+      "Sirva com o arroz integral quente."
+    ]
+  }
+]

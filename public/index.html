@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SHAPE MESTRE | Treinos, Nutrição e IA</title>
+    
+    <!-- Meta tags PWA -->
+    <meta name="theme-color" content="#030712">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#030712',
+                        cardbg: '#111827',
+                        neoncyan: '#00FFFF',
+                        neonpink: '#FF00FF',
+                        neongreen: '#10B981',
+                        neonpurple: '#8A2BE2'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Fontes e Ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Estilos Customizados -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-darkbg text-gray-100 min-h-screen flex flex-col antialiased selection:bg-neoncyan selection:text-black">
+
+    <!-- HEADER SUPERIOR -->
+    <header class="sticky top-0 z-40 bg-darkbg/90 backdrop-blur-md border-b border-gray-800/80 px-4 py-3">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-3 cursor-pointer" onclick="switchTab('home')">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-neonpink via-neonpurple to-neoncyan flex items-center justify-center p-0.5 shadow-lg shadow-neonpink/30">
+                    <div class="w-full h-full bg-darkbg rounded-[10px] flex items-center justify-center">
+                        <i data-lucide="flame" class="w-5 h-5 text-neonpink"></i>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-xl font-extrabold tracking-wider font-['Orbitron'] bg-clip-text text-transparent bg-gradient-to-r from-neonpink via-purple-300 to-neoncyan">
+                        SHAPE MESTRE
+                    </h1>
+                    <p class="text-[10px] uppercase tracking-widest text-gray-400 font-semibold">Treino • Nutrição • IA</p>
+                </div>
+            </div>
+
+            <!-- Navegação Desktop -->
+            <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+                <button onclick="switchTab('home')" class="nav-btn-desktop px-3 py-2 rounded-lg text-sm font-semibold hover:text-neoncyan transition" data-tab="home">
+                    <i data-lucide="layout-dashboard" class="w-4 h-4 inline mr-1"></i> Dashboard
+                </button>
+                <button onclick="switchTab('trainings')" class="nav-btn-desktop px-3 py-2 rounded-lg text-sm font-semibold hover:text-neonpink transition" data-tab="trainings">
+                    <i data-lucide="scroll-text" class="w-4 h-4 inline mr-1"></i> Fichas
+                </button>
+                <button onclick="switchTab('exercises')" class="nav-btn-desktop px-3 py-2 rounded-lg text-sm font-semibold hover:text-neoncyan transition" data-tab="exercises">
+                    <i data-lucide="dumbbell" class="w-4 h-4 inline mr-1"></i> Exercícios
+                </button>
+                <button onclick="switchTab('recipes')" class="nav-btn-desktop px-3 py-2 rounded-lg text-sm font-semibold hover:text-neongreen transition" data-tab="recipes">
+                    <i data-lucide="utensils" class="w-4 h-4 inline mr-1"></i> Receitas
+                </button>
+                <button onclick="switchTab('chat')" class="nav-btn-desktop px-3 py-2 rounded-lg text-sm font-semibold hover:text-neoncyan transition" data-tab="chat">
+                    <i data-lucide="bot" class="w-4 h-4 inline mr-1"></i> Agentes IA
+                </button>
+                <button onclick="switchTab('profile')" class="nav-btn-desktop px-3 py-2 rounded-lg text-sm font-semibold hover:text-neongreen transition" data-tab="profile">
+                    <i data-lucide="user" class="w-4 h-4 inline mr-1"></i> Perfil & Diário
+                </button>
+            </nav>
+
+            <!-- Status do Sistema / WhatsApp Badge -->
+            <div class="flex items-center space-x-2">
+                <div class="flex items-center space-x-1.5 px-2.5 py-1 rounded-full bg-emerald-950/60 border border-emerald-500/40 text-[11px] font-semibold text-emerald-400">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="hidden sm:inline">IA & WhatsApp Conectados</span>
+                    <span class="sm:hidden">Online</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL (TABS) -->
+    <main class="flex-grow max-w-7xl w-full mx-auto p-4 sm:p-6 pb-24 md:pb-12">
+
+        <!-- ============================================== -->
+        <!-- TAB 1: HOME / DASHBOARD NEURAL CORE -->
+        <!-- ============================================== -->
+        <section id="tab-home" class="tab-content">
+            <!-- Hero Banner -->
+            <div class="relative overflow-hidden rounded-2xl p-6 sm:p-8 bg-gradient-to-r from-gray-900 via-purple-950/40 to-gray-900 border border-purple-500/30 shadow-2xl mb-8">
+                <div class="relative z-10 max-w-2xl">
+                    <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-neonpink/20 text-neonpink border border-neonpink/40 inline-block mb-3">
+                        ⚡ Ecossistema Shape Mestre 2.0
+                    </span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white mb-3">
+                        Conquiste o seu <span class="neon-text-pink">Melhor Shape</span> com Inteligência
+                    </h2>
+                    <p class="text-gray-300 text-sm sm:text-base mb-6 leading-relaxed">
+                        38 fichas completas, catálogo de 289 exercícios com animação e acompanhamento diário com seus especialistas em IA: <b>MIA Nutricionista</b> e <b>Personal Trainer</b>.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <button onclick="switchTab('trainings')" class="btn-neon-pink px-5 py-2.5 rounded-xl font-bold text-sm flex items-center space-x-2">
+                            <i data-lucide="dumbbell" class="w-4 h-4"></i>
+                            <span>Ver Minhas Fichas</span>
+                        </button>
+                        <button onclick="switchTab('chat')" class="btn-neon-cyan px-5 py-2.5 rounded-xl font-bold text-sm flex items-center space-x-2">
+                            <i data-lucide="bot" class="w-4 h-4"></i>
+                            <span>Falar com os Agentes IA</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-10 sm:opacity-20 pointer-events-none flex items-center justify-center">
+                    <i data-lucide="activity" class="w-72 h-72 text-neoncyan"></i>
+                </div>
+            </div>
+
+            <!-- Métricas Vitals Rápidas -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="glass-card p-4 flex items-center space-x-3">
+                    <div class="p-3 rounded-xl bg-pink-500/20 text-neonpink border border-pink-500/30">
+                        <i data-lucide="flame" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-400 uppercase font-semibold">Meta Calórica</p>
+                        <p class="text-xl font-extrabold text-white" id="home-meta-calorias">1.850 kcal</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-4 flex items-center space-x-3">
+                    <div class="p-3 rounded-xl bg-cyan-500/20 text-neoncyan border border-cyan-500/30">
+                        <i data-lucide="timer" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-400 uppercase font-semibold">Tempo de Treino</p>
+                        <p class="text-xl font-extrabold text-white">55 min/dia</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-4 flex items-center space-x-3">
+                    <div class="p-3 rounded-xl bg-emerald-500/20 text-neongreen border border-emerald-500/30">
+                        <i data-lucide="footprints" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-400 uppercase font-semibold">Passos Diários</p>
+                        <p class="text-xl font-extrabold text-white">8.500</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-4 flex items-center space-x-3">
+                    <div class="p-3 rounded-xl bg-purple-500/20 text-purple-400 border border-purple-500/30">
+                        <i data-lucide="droplet" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-400 uppercase font-semibold">Meta de Água</p>
+                        <p class="text-xl font-extrabold text-white">2.8 L / dia</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Atalhos de Ação Rápida -->
+            <h3 class="text-xl font-bold text-white mb-4 flex items-center space-x-2">
+                <i data-lucide="zap" class="w-5 h-5 text-neoncyan"></i>
+                <span>Acesso Rápido aos Módulos</span>
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div onclick="switchTab('trainings')" class="glass-card p-5 cursor-pointer hover:border-neonpink group">
+                    <i data-lucide="scroll-text" class="w-8 h-8 text-neonpink mb-3 group-hover:scale-110 transition"></i>
+                    <h4 class="text-lg font-bold text-white mb-1">38 Fichas Oficiais</h4>
+                    <p class="text-xs text-gray-400">Treinos femininos e masculinos para hipertrofia, emagrecimento e força.</p>
+                </div>
+
+                <div onclick="switchTab('exercises')" class="glass-card p-5 cursor-pointer hover:border-neoncyan group">
+                    <i data-lucide="dumbbell" class="w-8 h-8 text-neoncyan mb-3 group-hover:scale-110 transition"></i>
+                    <h4 class="text-lg font-bold text-white mb-1">Guia de Exercícios</h4>
+                    <p class="text-xs text-gray-400">289 exercícios com biomecânica detalhada e GIFs de execução.</p>
+                </div>
+
+                <div onclick="switchTab('chat')" class="glass-card p-5 cursor-pointer hover:border-purple-400 group">
+                    <i data-lucide="message-square" class="w-8 h-8 text-purple-400 mb-3 group-hover:scale-110 transition"></i>
+                    <h4 class="text-lg font-bold text-white mb-1">Chat IA Especialista</h4>
+                    <p class="text-xs text-gray-400">Converse por texto, mande áudio ou foto do prato para a MIA e o Personal.</p>
+                </div>
+
+                <div onclick="switchTab('profile')" class="glass-card p-5 cursor-pointer hover:border-neongreen group">
+                    <i data-lucide="scale" class="w-8 h-8 text-neongreen mb-3 group-hover:scale-110 transition"></i>
+                    <h4 class="text-lg font-bold text-white mb-1">IMC & Diário Alimentar</h4>
+                    <p class="text-xs text-gray-400">Calcule sua composição corporal e registre suas refeições do dia.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- TAB 2: FICHAS DE TREINO (38 FICHAS) -->
+        <!-- ============================================== -->
+        <section id="tab-trainings" class="tab-content hidden">
+            <div class="mb-6 text-center max-w-2xl mx-auto">
+                <h2 class="text-3xl font-extrabold text-white font-['Orbitron'] mb-2">
+                    FICHAS DE <span class="neon-text-pink">TREINO OFICIAIS</span>
+                </h2>
+                <p class="text-gray-400 text-sm">Selecione seu gênero e objetivo para ver a rotina completa detalhada com séries e repetições.</p>
+            </div>
+
+            <!-- Filtros -->
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-6">
+                <!-- Seletor Gênero -->
+                <div class="flex bg-gray-900 p-1 rounded-xl border border-gray-800 w-full sm:w-auto">
+                    <button id="filter-gender-all" onclick="setTrainingGender('Todos')" class="px-4 py-2 rounded-lg text-xs font-bold transition bg-neonpink text-black">Todos</button>
+                    <button id="filter-gender-fem" onclick="setTrainingGender('Feminino')" class="px-4 py-2 rounded-lg text-xs font-bold transition text-gray-400 hover:text-white">Feminino</button>
+                    <button id="filter-gender-masc" onclick="setTrainingGender('Masculino')" class="px-4 py-2 rounded-lg text-xs font-bold transition text-gray-400 hover:text-white">Masculino</button>
+                </div>
+
+                <!-- Campo de Busca -->
+                <div class="relative w-full sm:w-72">
+                    <i data-lucide="search" class="w-4 h-4 absolute left-3 top-3 text-gray-400"></i>
+                    <input type="text" id="search-trainings" placeholder="Buscar ficha ou objetivo..." oninput="filterTrainings()" class="w-full pl-9 pr-4 py-2 bg-gray-900 border border-gray-800 rounded-xl text-sm text-white focus:outline-none focus:border-neonpink transition">
+                </div>
+            </div>
+
+            <!-- Grid de Treinos -->
+            <div id="trainings-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="col-span-full text-center py-12 text-gray-500">Carregando fichas...</div>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- TAB 3: GUIA DE EXERCÍCIOS & EXECUÇÃO -->
+        <!-- ============================================== -->
+        <section id="tab-exercises" class="tab-content hidden">
+            <div class="mb-6 text-center max-w-2xl mx-auto">
+                <h2 class="text-3xl font-extrabold text-white font-['Orbitron'] mb-2">
+                    GUIA DE <span class="neon-text-cyan">EXERCÍCIOS</span>
+                </h2>
+                <p class="text-gray-400 text-sm">Mais de 1.000 exercícios catalogados com instruções de postura, músculos ativados e animações em GIF.</p>
+            </div>
+
+            <!-- Seletor de Grupo Muscular & Modalidade (Carrossel Horizontal) -->
+            <div class="flex items-center space-x-2 overflow-x-auto pb-3 mb-6 scrollbar-none" id="muscle-groups-bar">
+                <button onclick="setMuscleGroup('todos')" class="group-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-neoncyan text-black" data-group="todos">Todos (1.079)</button>
+                <button onclick="setMuscleGroup('peito')" class="group-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-group="peito">Peitoral (97)</button>
+                <button onclick="setMuscleGroup('costas')" class="group-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-group="costas">Costas (98)</button>
+                <button onclick="setMuscleGroup('pernas')" class="group-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-group="pernas">Pernas (127)</button>
+                <button onclick="setMuscleGroup('ombros')" class="group-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-group="ombros">Ombros (116)</button>
+                <button onclick="setMuscleGroup('biceps')" class="group-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-group="biceps">Bíceps (61)</button>
+                <button onclick="setMuscleGroup('triceps')" class="group-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-group="triceps">Tríceps (102)</button>
+                <button onclick="setMuscleGroup('gluteos')" class="group-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-group="gluteos">Glúteos (46)</button>
+                <button onclick="setMuscleGroup('panturrilha')" class="group-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-group="panturrilha">Panturrilhas (33)</button>
+                <button onclick="setMuscleGroup('trapezio')" class="group-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-group="trapezio">Trapézio (29)</button>
+                <button onclick="setMuscleGroup('antebraco')" class="group-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-group="antebraco">Antebraço (18)</button>
+                <button onclick="setMuscleGroup('calistenia')" class="group-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-group="calistenia">🤸 Calistenia (105)</button>
+                <button onclick="setMuscleGroup('funcional')" class="group-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-group="funcional">⚡ Funcional & HIIT (120)</button>
+                <button onclick="setMuscleGroup('alongamento')" class="group-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-group="alongamento">🧘 Alongamento (73)</button>
+                <button onclick="setMuscleGroup('crossfit')" class="group-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-group="crossfit">🏋️‍♀️ Crossfit (42)</button>
+                <button onclick="setMuscleGroup('cardio')" class="group-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-gray-900 text-gray-300 hover:text-white border border-gray-800" data-group="cardio">🏃 Cardio (11)</button>
+            </div>
+
+            <!-- Campo de Busca -->
+            <div class="mb-6 relative max-w-md mx-auto">
+                <i data-lucide="search" class="w-4 h-4 absolute left-3 top-3.5 text-gray-400"></i>
+                <input type="text" id="search-exercises" placeholder="Buscar exercício (ex: Supino, Puxada, Agachamento)..." oninput="filterExercises()" class="w-full pl-9 pr-4 py-2.5 bg-gray-900 border border-gray-800 rounded-xl text-sm text-white focus:outline-none focus:border-neoncyan transition">
+            </div>
+
+            <!-- Grid de Exercícios -->
+            <div id="exercises-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="col-span-full text-center py-12 text-gray-500">Carregando exercícios...</div>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- TAB 4: PORTAL DE RECEITAS FITNESS -->
+        <!-- ============================================== -->
+        <section id="tab-recipes" class="tab-content hidden">
+            <div class="mb-6 text-center max-w-2xl mx-auto">
+                <h2 class="text-3xl font-extrabold text-white font-['Orbitron'] mb-2">
+                    RECEITAS <span class="neon-text-green">FITNESS</span>
+                </h2>
+                <p class="text-gray-400 text-sm">Opções proteicas, rápidas e saborosas com tabela completa de calorias e macros.</p>
+            </div>
+
+            <div id="recipes-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="col-span-full text-center py-12 text-gray-500">Carregando receitas...</div>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- TAB 5: AGENTES DE IA (MIA & PERSONAL) -->
+        <!-- ============================================== -->
+        <section id="tab-chat" class="tab-content hidden">
+            <div class="max-w-3xl mx-auto h-[calc(100dvh-170px)] sm:h-[75vh] flex flex-col glass-card border border-gray-800 rounded-2xl overflow-hidden shadow-2xl">
+                <!-- Seletor de Especialista (Mobile & Desktop) -->
+                <div class="p-2 sm:p-3 bg-gray-900/95 border-b border-gray-800 flex items-center justify-between gap-1.5">
+                    <div class="flex flex-1 p-1 bg-gray-950 rounded-xl border border-gray-800/80 space-x-1">
+                        <button id="btn-agent-personal" onclick="setChatAgent('personal')" class="flex-1 py-1.5 px-2 rounded-lg text-xs font-bold transition flex items-center justify-center space-x-1 bg-neoncyan text-black shadow">
+                            <i data-lucide="dumbbell" class="w-3.5 h-3.5 shrink-0"></i>
+                            <span class="truncate">Personal</span>
+                        </button>
+                        <button id="btn-agent-mia" onclick="setChatAgent('mia')" class="flex-1 py-1.5 px-2 rounded-lg text-xs font-bold transition flex items-center justify-center space-x-1 text-gray-400 hover:text-white">
+                            <i data-lucide="salad" class="w-3.5 h-3.5 shrink-0"></i>
+                            <span class="truncate">Nutri (MIA)</span>
+                        </button>
+                    </div>
+
+                    <!-- Enviar conversa para WhatsApp -->
+                    <button onclick="openWhatsAppShareModal()" title="Enviar para meu WhatsApp" class="text-emerald-400 hover:text-emerald-300 px-2.5 py-2 rounded-xl bg-emerald-950/60 border border-emerald-500/40 flex items-center space-x-1 text-xs font-bold shrink-0">
+                        <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+                        <span class="hidden sm:inline">WhatsApp</span>
+                    </button>
+                </div>
+
+                <!-- Janela de Mensagens -->
+                <div id="chat-messages" class="flex-grow p-3 sm:p-4 overflow-y-auto space-y-3 sm:space-y-4">
+                    <!-- Mensagem de boas-vindas inicial -->
+                    <div class="chat-bubble-ai max-w-[90%] sm:max-w-[85%] p-3.5 rounded-2xl text-xs sm:text-sm leading-relaxed">
+                        <div class="flex items-center space-x-1.5 mb-2 pb-1 border-b border-gray-800/80">
+                            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-neoncyan" id="chat-welcome-icon"></i>
+                            <span id="chat-welcome-agent" class="font-bold text-xs uppercase tracking-wider text-neoncyan">Personal Trainer IA</span>
+                        </div>
+                        <p id="chat-welcome-text" class="text-gray-300">Olá! Eu sou o seu Personal Trainer IA do Shape Mestre. Como posso turbinar seu treino hoje? Você pode digitar, mandar áudio pelo microfone ou tirar foto de um exercício!</p>
+                    </div>
+                </div>
+
+                <!-- Prévia de Imagem Selecionada (se houver) -->
+                <div id="image-preview-container" class="hidden px-3 py-1.5 bg-gray-900 border-t border-gray-800 flex items-center justify-between">
+                    <div class="flex items-center space-x-2">
+                        <img id="image-preview" src="" class="w-9 h-9 object-cover rounded-lg border border-gray-700">
+                        <span class="text-xs text-gray-300 truncate max-w-[150px]" id="image-preview-name">foto.jpg</span>
+                    </div>
+                    <button onclick="clearImagePreview()" class="text-red-400 hover:text-red-300 text-xs font-bold">Remover</button>
+                </div>
+
+                <!-- Input e Controles (100% Responsivo no Celular) -->
+                <div class="p-2 sm:p-3 bg-gray-900/95 border-t border-gray-800">
+                    <form id="chat-form" onsubmit="handleChatSubmit(event)" class="flex items-center space-x-1.5 sm:space-x-2 w-full">
+                        <!-- Botão Anexar Foto -->
+                        <label for="chat-file-input" class="p-2 sm:p-2.5 rounded-xl bg-gray-800 text-gray-300 hover:text-neoncyan hover:bg-gray-700 cursor-pointer transition shrink-0 flex items-center justify-center">
+                            <i data-lucide="camera" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                            <input type="file" id="chat-file-input" accept="image/*" class="hidden" onchange="handleImageSelected(event)">
+                        </label>
+
+                        <!-- Botão Microfone / Gravar Áudio -->
+                        <button type="button" id="chat-mic-btn" onclick="toggleAudioRecording()" class="p-2 sm:p-2.5 rounded-xl bg-gray-800 text-gray-300 hover:text-neonpink hover:bg-gray-700 transition shrink-0 flex items-center justify-center" title="Gravar Áudio">
+                            <i data-lucide="mic" class="w-4 h-4 sm:w-5 sm:h-5" id="mic-icon"></i>
+                        </button>
+
+                        <!-- Campo de Texto (min-w-0 flex-1 para nunca quebrar ou empurrar o botão Enviar) -->
+                        <input type="text" id="chat-input" placeholder="Dúvida de treino ou dieta..." class="min-w-0 flex-1 bg-gray-950 border border-gray-800 rounded-xl px-3 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-neoncyan transition">
+
+                        <!-- Botão Enviar (Sempre visível) -->
+                        <button type="submit" id="chat-send-btn" class="btn-neon-cyan p-2 sm:p-2.5 rounded-xl font-bold shrink-0 flex items-center justify-center">
+                            <i data-lucide="send" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- TAB 6: PERFIL, IMC & DIÁRIO ALIMENTAR -->
+        <!-- ============================================== -->
+        <section id="tab-profile" class="tab-content hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Calculadora de IMC -->
+                <div class="glass-card p-6 border border-gray-800">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="p-3 rounded-xl bg-neongreen/20 text-neongreen border border-neongreen/40">
+                            <i data-lucide="scale" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Calculadora de IMC</h3>
+                            <p class="text-xs text-gray-400">Índice de Massa Corporal e Faixa de Peso Ideal</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 mb-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 uppercase mb-1">Seu Peso (kg)</label>
+                            <input type="number" id="imc-weight" placeholder="Ex: 75.5" step="0.1" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-neongreen">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 uppercase mb-1">Sua Altura (cm)</label>
+                            <input type="number" id="imc-height" placeholder="Ex: 175" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-neongreen">
+                        </div>
+                        <button onclick="calculateIMC()" class="w-full py-3 rounded-xl font-bold text-sm bg-neongreen text-black hover:bg-emerald-400 transition shadow-lg shadow-neongreen/20">
+                            Calcular Meu IMC
+                        </button>
+                    </div>
+
+                    <div id="imc-result" class="hidden p-4 rounded-xl bg-gray-900 border border-gray-800 text-center">
+                        <p class="text-xs text-gray-400 uppercase font-semibold">Seu Resultado</p>
+                        <p class="text-3xl font-extrabold text-neongreen my-1" id="imc-value">23.4</p>
+                        <p class="text-sm font-bold text-white" id="imc-classification">Peso Saudável</p>
+                    </div>
+                </div>
+
+                <!-- Diário Alimentar do Dia -->
+                <div class="glass-card p-6 border border-gray-800">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center space-x-3">
+                            <div class="p-3 rounded-xl bg-neonpink/20 text-neonpink border border-neonpink/40">
+                                <i data-lucide="utensils" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Diário de Refeições</h3>
+                                <p class="text-xs text-gray-400">Total do dia com calorias e macronutrientes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resumo de Macros do Dia -->
+                    <div class="grid grid-cols-4 gap-2 text-center mb-6 p-3 rounded-xl bg-gray-900 border border-gray-800">
+                        <div>
+                            <p class="text-[10px] text-gray-400 uppercase">Calorias</p>
+                            <p class="text-sm font-extrabold text-white" id="total-kcal">0 kcal</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-neoncyan uppercase">Proteínas</p>
+                            <p class="text-sm font-extrabold text-neoncyan" id="total-prot">0g</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-neonpink uppercase">Carbos</p>
+                            <p class="text-sm font-extrabold text-neonpink" id="total-carb">0g</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-yellow-400 uppercase">Gorduras</p>
+                            <p class="text-sm font-extrabold text-yellow-400" id="total-fat">0g</p>
+                        </div>
+                    </div>
+
+                    <!-- Formulário Rápido de Adicionar Alimento -->
+                    <div class="flex gap-2 mb-4">
+                        <input type="text" id="food-name" placeholder="Alimento (ex: 150g Frango)" class="flex-grow bg-gray-900 border border-gray-800 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-neonpink">
+                        <input type="number" id="food-kcal" placeholder="Kcal" class="w-20 bg-gray-900 border border-gray-800 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-neonpink">
+                        <button onclick="addManualFood()" class="px-3 py-2 rounded-xl bg-neonpink text-black font-bold text-xs hover:bg-pink-400 transition">
+                            Adicionar
+                        </button>
+                    </div>
+
+                    <!-- Lista de Alimentos do Dia -->
+                    <div id="food-diary-list" class="space-y-2 max-h-56 overflow-y-auto">
+                        <p class="text-xs text-gray-500 text-center py-4">Nenhuma refeição registrada hoje.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- NAVEGAÇÃO MOBILE INFERIOR (ESTILO APP NATIVO) -->
+    <nav class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-darkbg/95 backdrop-blur-lg border-t border-gray-800 px-1 py-1.5 shadow-[0_-4px_20px_rgba(0,0,0,0.7)]">
+        <div class="flex items-center justify-around max-w-lg mx-auto">
+            <button onclick="switchTab('home')" class="nav-btn-mobile flex-1 flex flex-col items-center py-1 rounded-lg text-neonpink" data-tab="home">
+                <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
+                <span class="text-[10px] font-semibold mt-0.5">Início</span>
+            </button>
+            <button onclick="switchTab('trainings')" class="nav-btn-mobile flex-1 flex flex-col items-center py-1 rounded-lg text-gray-400" data-tab="trainings">
+                <i data-lucide="scroll-text" class="w-4 h-4"></i>
+                <span class="text-[10px] font-semibold mt-0.5">Fichas</span>
+            </button>
+            <button onclick="switchTab('exercises')" class="nav-btn-mobile flex-1 flex flex-col items-center py-1 rounded-lg text-gray-400" data-tab="exercises">
+                <i data-lucide="dumbbell" class="w-4 h-4"></i>
+                <span class="text-[10px] font-semibold mt-0.5">Exercícios</span>
+            </button>
+            <button onclick="switchTab('recipes')" class="nav-btn-mobile flex-1 flex flex-col items-center py-1 rounded-lg text-gray-400" data-tab="recipes">
+                <i data-lucide="utensils" class="w-4 h-4"></i>
+                <span class="text-[10px] font-semibold mt-0.5">Receitas</span>
+            </button>
+            <button onclick="switchTab('chat')" class="nav-btn-mobile flex-1 flex flex-col items-center py-1 rounded-lg text-gray-400" data-tab="chat">
+                <i data-lucide="bot" class="w-4 h-4"></i>
+                <span class="text-[10px] font-semibold mt-0.5">IA</span>
+            </button>
+            <button onclick="switchTab('profile')" class="nav-btn-mobile flex-1 flex flex-col items-center py-1 rounded-lg text-gray-400" data-tab="profile">
+                <i data-lucide="user" class="w-4 h-4"></i>
+                <span class="text-[10px] font-semibold mt-0.5">Perfil</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MODAL DETALHES DE FICHA DE TREINO -->
+    <div id="training-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="glass-card max-w-2xl w-full max-h-[85vh] flex flex-col border border-neonpink/50 shadow-2xl shadow-neonpink/20 overflow-hidden">
+            <div class="p-4 bg-gray-900 border-b border-gray-800 flex items-center justify-between">
+                <div>
+                    <h3 id="modal-training-title" class="text-lg font-bold text-white font-['Orbitron']">Título do Treino</h3>
+                    <p id="modal-training-category" class="text-xs text-neonpink font-semibold">Categoria</p>
+                </div>
+                <button onclick="closeTrainingModal()" class="text-gray-400 hover:text-white p-1">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div id="modal-training-body" class="p-6 overflow-y-auto space-y-6 text-sm text-gray-200">
+                <!-- Conteúdo preenchido via JS -->
+            </div>
+            <div class="p-3 sm:p-4 bg-gray-900 border-t border-gray-800 flex flex-wrap items-center justify-end gap-2">
+                <button onclick="printTrainingSheet()" class="flex-1 sm:flex-none px-3.5 py-2.5 rounded-xl text-xs font-bold bg-gray-800 hover:bg-gray-700 text-white flex items-center justify-center space-x-1.5 transition border border-gray-700 shadow">
+                    <i data-lucide="printer" class="w-4 h-4 text-neoncyan"></i>
+                    <span>Imprimir / PDF</span>
+                </button>
+                <button onclick="shareTrainingViaWhatsApp()" class="flex-1 sm:flex-none px-3.5 py-2.5 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center space-x-1.5 transition shadow-lg shadow-emerald-600/30">
+                    <i data-lucide="phone" class="w-4 h-4"></i>
+                    <span>Mandar no WhatsApp</span>
+                </button>
+                <button onclick="closeTrainingModal()" class="w-full sm:w-auto px-4 py-2.5 rounded-xl text-xs font-bold bg-gray-950 text-gray-400 hover:text-white transition border border-gray-800">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL VISUALIZADOR DE GIF DE EXERCÍCIO -->
+    <div id="exercise-gif-modal" class="hidden fixed inset-0 z-[60] bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-4">
+        <div class="glass-card max-w-lg w-full max-h-[90vh] flex flex-col border border-neoncyan/50 shadow-2xl shadow-neoncyan/20 overflow-hidden">
+            <div class="p-3 sm:p-4 bg-gray-900 border-b border-gray-800 flex items-center justify-between">
+                <div>
+                    <h3 id="modal-gif-title" class="text-base font-bold text-white font-['Orbitron']">Nome do Exercício</h3>
+                    <p id="modal-gif-subtitle" class="text-[11px] text-neoncyan font-semibold">Músculo Alvo • Demonstração</p>
+                </div>
+                <button onclick="closeExerciseGifModal()" class="text-gray-400 hover:text-white p-1">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div class="p-4 overflow-y-auto space-y-4 text-sm text-gray-200">
+                <!-- GIF Animado -->
+                <div class="relative w-full h-56 sm:h-64 rounded-xl overflow-hidden bg-gray-950 border border-gray-800 flex items-center justify-center shadow-inner">
+                    <img id="modal-gif-image" src="" alt="Execução do Exercício" class="w-full h-full object-contain" />
+                </div>
+                <!-- Informações -->
+                <div class="space-y-2 text-xs">
+                    <div id="modal-gif-how-box" class="p-3 rounded-lg bg-gray-950/80 border border-gray-800">
+                        <span class="font-bold text-neonpink block mb-1">Como Executar:</span>
+                        <p id="modal-gif-how" class="text-gray-300 leading-relaxed"></p>
+                    </div>
+                    <div id="modal-gif-muscles-box" class="p-3 rounded-lg bg-gray-950/80 border border-gray-800">
+                        <span class="font-bold text-neoncyan block mb-1">Músculos Focados:</span>
+                        <p id="modal-gif-muscles" class="text-gray-300"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 bg-gray-900 border-t border-gray-800 flex justify-end">
+                <button onclick="closeExerciseGifModal()" class="px-5 py-2 rounded-xl text-xs font-bold bg-neoncyan text-black hover:bg-cyan-400 transition">
+                    Fechar Demonstração
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE COMPARTILHAMENTO COM WHATSAPP (EVOLUTION API) -->
+    <div id="whatsapp-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="glass-card max-w-md w-full p-6 border border-emerald-500/50 shadow-2xl shadow-emerald-500/20">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="p-3 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">
+                    <i data-lucide="phone" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-white">Enviar para o WhatsApp</h3>
+                    <p class="text-xs text-gray-400">Via Evolution API do Shape Mestre</p>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-xs font-semibold text-gray-300 uppercase mb-1">Seu WhatsApp (com DDD)</label>
+                <input type="tel" id="whatsapp-phone-input" placeholder="Ex: 11999998888" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-emerald-400">
+                <p class="text-[11px] text-gray-400 mt-1">Você receberá o treino ou dieta formatado diretamente no seu WhatsApp.</p>
+            </div>
+            <div class="flex justify-end space-x-2">
+                <button onclick="closeWhatsAppModal()" class="px-4 py-2 rounded-xl text-xs font-bold bg-gray-800 text-gray-300">Cancelar</button>
+                <button onclick="confirmSendWhatsApp()" id="btn-confirm-whatsapp" class="px-5 py-2 rounded-xl text-xs font-bold bg-emerald-500 text-black hover:bg-emerald-400">
+                    Enviar Agora
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS DA APLICAÇÃO -->
+    <script src="js/trainings.js"></script>
+    <script src="js/exercises.js"></script>
+    <script src="js/recipes.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

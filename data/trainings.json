@@ -1,0 +1,5283 @@
+[
+  {
+    "id": 1,
+    "name": "TREINO 1 FEMININO - HIPERTROFIA",
+    "gender": "Feminino",
+    "category": "Hipertrofia",
+    "description": "Programa focado no aumento de massa muscular, ideal para ganhos de volume e força.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/feminino/treino-1-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Extensora + Progressão",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Agachamento Sumô",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Passada (andando)",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexora + Progressão",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Francês",
+            "sets": 5,
+            "reps": 15
+          },
+          {
+            "exercise": "Voador Articulado",
+            "sets": 5,
+            "reps": 15
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Afundo Com Halter (parado)",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Stiff Com Barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Sissy Squat",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Cadeira Flexora + Progressão",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca Polia Baixa Corda",
+            "sets": 5,
+            "reps": 15
+          },
+          {
+            "exercise": "Desenvolvimento Máquina",
+            "sets": 5,
+            "reps": 15
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "SUPRA NA BOLA (A)",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "LATERAL CALCANHAR (B)",
+            "sets": 4,
+            "reps": 20
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 2,
+    "name": "TREINO 2 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Feminino",
+    "category": "Emagrecimento/Definição",
+    "description": "Sessões metabólicas de alta intensidade combinadas com exercícios de definição corporal.",
+    "icon": "Zap",
+    "pdfPath": "/treinos/feminino/treino-2-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B Metabólico)",
+      "aerobic": "10 min esteira ou elíptico (Treino A) | 20 min Bike + 20 min Esteira (Treino B)",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "CRUCIFIXO COM HALTER",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "AGACHAMENTO COM HALTER",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "EXTENSORA",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "MESA FLEXORA",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "FLEXÃO PLANTAR NA ANILHA",
+            "sets": 4,
+            "reps": 25
+          },
+          {
+            "exercise": "REMADA SERROTE",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "PUXADA FRONTAL + POLIA ALTA BARRA",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO B (Metabólico)": [
+          {
+            "exercise": "Swing + Corrida Estacionária",
+            "sets": 3,
+            "reps": "12"
+          },
+          {
+            "exercise": "Agachamento + Elevação Lateral c/ Caneleira",
+            "sets": 3,
+            "reps": "12-12"
+          },
+          {
+            "exercise": "Polichinelo",
+            "sets": 4,
+            "reps": "20 seg"
+          },
+          {
+            "exercise": "Abdominal Prancha",
+            "sets": 5,
+            "reps": "Máximo (20s intervalo)"
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "Abdominal Prancha (B)",
+            "sets": 5,
+            "reps": "Máximo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 3,
+    "name": "TREINO 3 FEMININO - CONDICIONAMENTO GERAL",
+    "gender": "Feminino",
+    "category": "Condicionamento",
+    "description": "Melhore sua resistência cardiovascular e prepare seu corpo para desafios diários.",
+    "icon": "Activity",
+    "pdfPath": "/treinos/feminino/treino-3-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "15 MINUTOS em TODOS os treinos",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Leg press sentado",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Afundo com halter (parado)",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento hack",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Passada (andando)",
+            "sets": 4,
+            "reps": "X"
+          },
+          {
+            "exercise": "Rosca alternada",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Puxada costas",
+            "sets": 4,
+            "reps": 12
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Flexora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Leg press 45°",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Sissy Squat",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Cadeira flexora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação lateral c/ caneleira",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Tríceps Polia alta barra",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Voador",
+            "sets": 4,
+            "reps": 12
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "EXTENSÃO DE PERNAS (A)",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "LATERAL CALCANHAR (B)",
+            "sets": 4,
+            "reps": 15
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 4,
+    "name": "TREINO 4 FEMININO - RESISTÊNCIA & ENDURANCE",
+    "gender": "Feminino",
+    "category": "Resistência",
+    "description": "Foco em treinos de circuito para aumentar a capacidade de endurance muscular e física.",
+    "icon": "Clock",
+    "pdfPath": "/treinos/feminino/treino-4-resistencia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "15 MINUTOS ESTEIRA no início TODOS OS DIAS",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Flexora sentada",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento Sissy Squat",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento Búlgaro",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Panturrilha Livre",
+            "sets": 3,
+            "reps": 12
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Remada Cavalinho",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Puxada a Frente Aberta",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Crucifixo c/ halter",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Voador",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Direta",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Concentrada",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Tríceps barra inversa",
+            "sets": 3,
+            "reps": 12
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "SUPRA SOLO (A)",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "LATERAL COM HALTER (A)",
+            "sets": 3,
+            "reps": 20
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "name": "TREINO 1 MASCULINO - HIPERTROFIA",
+    "gender": "Masculino",
+    "category": "Hipertrofia",
+    "description": "Base de força para hipertrofia, ideal para iniciantes avançados no ganho de volume.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/masculino/treino-1-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Reto com Halteres",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada Curvada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento com Halteres",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Direta",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Tríceps Testa",
+            "sets": 3,
+            "reps": 12
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Crucifixo Inclinado",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Puxada Frontal",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação Lateral",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca Alternada",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Tríceps Corda",
+            "sets": 3,
+            "reps": 12
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "Abdominal Curto (A)",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "Elevação de Pernas (B)",
+            "sets": 3,
+            "reps": 15
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 6,
+    "name": "TREINO 2 MASCULINO - FORÇA MÁXIMA",
+    "gender": "Masculino",
+    "category": "Força",
+    "description": "Programa dedicado ao aumento da força máxima em levantamentos básicos.",
+    "icon": "Weight",
+    "pdfPath": "/treinos/masculino/treino-2-forca.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "10 minutos de aquecimento",
+      "routine": {
+        "TREINO A (Peito/Tríceps)": [
+          {
+            "exercise": "Supino Reto Barra",
+            "sets": 5,
+            "reps": 5
+          },
+          {
+            "exercise": "Supino Inclinado Halteres",
+            "sets": 3,
+            "reps": 8
+          },
+          {
+            "exercise": "Tríceps Paralela",
+            "sets": 4,
+            "reps": "Máximo"
+          },
+          {
+            "exercise": "Tríceps Pulley",
+            "sets": 3,
+            "reps": 10
+          }
+        ],
+        "TREINO B (Costas/Bíceps)": [
+          {
+            "exercise": "Levantamento Terra",
+            "sets": 5,
+            "reps": 5
+          },
+          {
+            "exercise": "Remada Cavalinho",
+            "sets": 3,
+            "reps": 8
+          },
+          {
+            "exercise": "Puxada Alta Neutra",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca Martelo",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO C (Pernas/Ombro)": [
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 5,
+            "reps": 5
+          },
+          {
+            "exercise": "Leg Press",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento Militar",
+            "sets": 4,
+            "reps": 8
+          },
+          {
+            "exercise": "Elevação Lateral Máquina",
+            "sets": 3,
+            "reps": 12
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "Abdominal Canivete",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rotação de Tronco",
+            "sets": 4,
+            "reps": "12 por lado"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 7,
+    "name": "TREINO 3 MASCULINO - CONDICIONAMENTO",
+    "gender": "Masculino",
+    "category": "Condicionamento",
+    "description": "Rotina para manter a forma e melhorar o preparo físico geral e agilidade.",
+    "icon": "Activity",
+    "pdfPath": "/treinos/masculino/treino-3-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino Full Body)",
+      "aerobic": "20 minutos de HIIT (Esteira/Bike)",
+      "routine": {
+        "TREINO FULL BODY (Circuito)": [
+          {
+            "exercise": "Jumping Jacks",
+            "sets": 3,
+            "reps": "45 seg"
+          },
+          {
+            "exercise": "Burpees",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Agachamento com Salto",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Flexão de Braço",
+            "sets": 3,
+            "reps": "Máximo"
+          },
+          {
+            "exercise": "Mountain Climbers",
+            "sets": 3,
+            "reps": "45 seg"
+          },
+          {
+            "exercise": "Remada com Elástico",
+            "sets": 3,
+            "reps": 20
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "Prancha",
+            "sets": 4,
+            "reps": "60 seg"
+          },
+          {
+            "exercise": "Abdominal Bicicleta",
+            "sets": 4,
+            "reps": "15 por lado"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 8,
+    "name": "TREINO 1 FEMININO - CONDICIONAMENTO",
+    "gender": "Feminino",
+    "category": "Condicionamento",
+    "description": "Treino de volume moderado focado na base muscular e resistência inicial.",
+    "icon": "Activity",
+    "pdfPath": "/treinos/feminino/treino-1-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Agachamento Sumô",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Passada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps Francês",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Voador Articulado",
+            "sets": 3,
+            "reps": 10
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Afundo Com Halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Stiff Com Barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Sissy Squat",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Cadeira Flexora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca Polia Baixa Corda",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento Máquina",
+            "sets": 3,
+            "reps": 10
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "SUPRA NA BOLA (A)",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "LATERAL CALCANHAR (B)",
+            "sets": 4,
+            "reps": 20
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 9,
+    "name": "TREINO 1 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Feminino",
+    "category": "Emagrecimento/Definição",
+    "description": "Combinação de treino de força (A) e circuito metabólico (B) para queima de gordura e definição.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/feminino/treino-1-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B Metabólico)",
+      "aerobic": "10 min esteira ou elíptico (Treino A) | Bike/Esteira 20 min (Treino B)",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "VOADOR",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "LEG PRESS 45°",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "EXTENSORA",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "FLEXORA",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "FLEXÃO PLANTAR STEP",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "VOADOR DORSAL",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "PUXADA COSTAS",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "POLIA ALTA CORDA",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO B (Metabólico)": [
+          {
+            "exercise": "Swing + Flexão de Braços",
+            "sets": 3,
+            "reps": "10-15"
+          },
+          {
+            "exercise": "Agachamento c/ salto + Elevação lateral c/ halter + Polichinelo",
+            "sets": 3,
+            "reps": "10-15-15"
+          },
+          {
+            "exercise": "Abdominal Prancha",
+            "sets": 5,
+            "reps": "Máximo (20s intervalo)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 10,
+    "name": "TREINO 2 FEMININO - CONDICIONAMENTO",
+    "gender": "Feminino",
+    "category": "Condicionamento",
+    "description": "Foco na resistência muscular e alto volume, com rotinas mais completas de abdominais.",
+    "icon": "Activity",
+    "pdfPath": "/treinos/feminino/treino-2-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Francês",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Voador Articulado",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Afundo Com Halter(parado)",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Stiff Com Barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Sissy Squat",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Cadeira Flexora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca Polia Baixa Corda",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento Máquina",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "SUPRA NA BOLA (A)",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "EXTENSÃO DE PERNAS (A)",
+            "sets": 3,
+            "reps": 25
+          },
+          {
+            "exercise": "LATERAL CALCANHAR (B)",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "LATERAL CROSS (B)",
+            "sets": 3,
+            "reps": 25
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 11,
+    "name": "TREINO 2 FEMININO - HIPERTROFIA",
+    "gender": "Feminino",
+    "category": "Hipertrofia",
+    "description": "Progressão do treino de hipertrofia com foco em mais séries e cadência controlada.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/feminino/treino-2-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Extensora + Progressão",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Flexora + Progressão",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Francês",
+            "sets": 6,
+            "reps": 10
+          },
+          {
+            "exercise": "Voador Articulado",
+            "sets": 6,
+            "reps": 10
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Afundo Com Halter (parado)",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Stiff Com Barra",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Sissy Squat",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Cadeira Flexora + Progressão",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca Polia Baixa Corda",
+            "sets": 6,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento Máquina",
+            "sets": 6,
+            "reps": 10
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "SUPRA NA BOLA (A)",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "EXTENSÃO DE PERNAS (A)",
+            "sets": 3,
+            "reps": 25
+          },
+          {
+            "exercise": "LATERAL CALCANHAR (B)",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "LATERAL CROSS (B)",
+            "sets": 3,
+            "reps": 25
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 12,
+    "name": "TREINO 3 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Feminino",
+    "category": "Emagrecimento/Definição",
+    "description": "Treino com alta repetição (endurance) e circuitos metabólicos curtos para maximizar a definição.",
+    "icon": "Zap",
+    "pdfPath": "/treinos/feminino/treino-3-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B Metabólico)",
+      "aerobic": "15 min esteira ou elíptico (Treino A) | 3x 10min Esteira ou Bike (Treino B)",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "MOBILIDADE (Aquec. ombro/agach. livre/prancha)",
+            "sets": 3,
+            "reps": "15+15+15s"
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "Panturrilha Gêmeos",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "Puxada alta aberta",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "Rosca concentrada",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "Desenvolvimento anilha",
+            "sets": 3,
+            "reps": 20
+          }
+        ],
+        "TREINO B (Metabólico)": [
+          {
+            "exercise": "Avanço alternado + Corrida step + Supra curto",
+            "sets": 3,
+            "reps": "20 + 20 (10 cada perna) + 20"
+          },
+          {
+            "exercise": "Swing + Polichinelo frontal + Panturrilha step",
+            "sets": 3,
+            "reps": "15 + 30 + 15"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "name": "TREINO 5 FEMININO - INICIANTE EMAGRECIMENTO",
+    "gender": "Feminino",
+    "category": "Emagrecimento",
+    "description": "Treino focado em emagrecimento e definição para iniciantes, com divisão de treino A e B para ser realizado durante 8 semanas.",
+    "icon": "Fitness",
+    "pdfPath": "/treinos/feminino/treino-5-iniciante-emagrecimento.pdf",
+    "details": {
+      "duration": "8 Semanas (Treino A e B)",
+      "aerobic": "TREINO A: 10 min de esteira/elíptico no início + HIIT no final. TREINO B: 20 min de bike + 20 min de esteira com inclinação.",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Crucifixo com halter",
+            "sets": 4,
+            "reps": "10"
+          },
+          {
+            "exercise": "Agachamento com halter",
+            "sets": 4,
+            "reps": "10"
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": "10"
+          },
+          {
+            "exercise": "Mesa Flexora",
+            "sets": 4,
+            "reps": "10"
+          },
+          {
+            "exercise": "Flexão plantar no step + no chão",
+            "sets": 5,
+            "reps": "10"
+          },
+          {
+            "exercise": "Remada serrote",
+            "sets": 4,
+            "reps": "15"
+          },
+          {
+            "exercise": "Puxada costas",
+            "sets": 4,
+            "reps": "15"
+          },
+          {
+            "exercise": "Polia alta barra",
+            "sets": 4,
+            "reps": "15"
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Swing + corrida estacionária",
+            "sets": 3,
+            "reps": "12"
+          },
+          {
+            "exercise": "Agachamento + elevação lateral com caneleira",
+            "sets": 3,
+            "reps": "12-12"
+          },
+          {
+            "exercise": "Polichinelo",
+            "sets": 4,
+            "reps": "20 segundos"
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "Abdominal prancha",
+            "sets": 5,
+            "reps": "Máximo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 4,
+    "name": "TREINO 4 FEMININO - RESISTÊNCIA & ENDURANCE",
+    "gender": "Feminino",
+    "category": "Resistência",
+    "description": "Foco em treinos de circuito para aumentar a capacidade de endurance muscular e física.",
+    "icon": "Clock",
+    "pdfPath": "/treinos/feminino/treino-4-resistencia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "15 MINUTOS ESTEIRA no início TODOS OS DIAS",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Flexora sentada",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento Sissy Squat",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento Búlgaro",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Panturrilha Livre",
+            "sets": 3,
+            "reps": 12
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Remada Cavalinho",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Puxada a Frente Aberta",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Crucifixo c/ halter",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Voador",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Direta",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Concentrada",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Tríceps barra inversa",
+            "sets": 3,
+            "reps": 12
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "SUPRA SOLO (A)",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "LATERAL COM HALTER (A)",
+            "sets": 3,
+            "reps": 20
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "name": "TREINO 4 FEMININO - HIPERTROFIA",
+    "gender": "Feminino",
+    "category": "Hipertrofia",
+    "description": "Treino focado em ganho de massa muscular, com divisão de membros inferiores e superiores.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/feminino/treino-4-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "15 MINUTOS ESTEIRA no início TODOS OS DIAS",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Flexora sentada",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Sissy Squat",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento Búlgaro",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Extensora + Stiff",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Panturrilha Livre",
+            "sets": 3,
+            "reps": 12
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Remada Cavalinho",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Puxada a Frente Aberta",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Crucifixo com halter",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Voador",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Direta com barra",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Concentrada",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Tríceps barra inversa na polia",
+            "sets": 3,
+            "reps": 12
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "SUPRA SOLO",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "LATERAL COM HALTER",
+            "sets": 3,
+            "reps": 20
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 6,
+    "name": "TREINO 4 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Feminino",
+    "category": "Emagrecimento",
+    "description": "Treino metabólico e em circuito para alta queima calórica e definição muscular.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/feminino/treino-4-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "10 a 15 minutos de esteira, bike ou elíptico, conforme o dia.",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Mesa Flexora",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "Elevação Pélvica Solo",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "Supino Inclinado Halter",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "Tríceps polia alta barra",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "Elevação Frontal Alternada",
+            "sets": 3,
+            "reps": 20
+          }
+        ],
+        "TREINO B (Metabólico)": [
+          {
+            "exercise": "Circuito (3 a 4 voltas): Prancha (20s), Passada (16x), Remada curvada halter (15x), Mountain Climber (30x), Infra Alternado (20x), Extensora (15x), Rosca Martelo (15x), Corrida Estacionária (30x)",
+            "sets": 1,
+            "reps": "N/A"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 7,
+    "name": "TREINO 5 FEMININO - CONDICIONAMENTO",
+    "gender": "Feminino",
+    "category": "Condicionamento",
+    "description": "Foco no condicionamento físico geral, combinando força e resistência.",
+    "icon": "Lightning",
+    "pdfPath": "/treinos/feminino/treino-5-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "Não especificado diretamente, mas faz parte da rotina.",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Extensora (aquecimento)",
+            "sets": 2,
+            "reps": 25
+          },
+          {
+            "exercise": "Sissy Squat",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 5,
+            "reps": 15
+          },
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 5,
+            "reps": 15
+          },
+          {
+            "exercise": "Passada com halteres (andando)",
+            "sets": 4,
+            "reps": "X"
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Stiff com barra",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Supino Reto",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Voador Articulado",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Sentada Fechada",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Puxada Fechada",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca Alternada",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Pulley Barra",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Francês Unilateral",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Desenvolvimento Máquina",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Alta cross",
+            "sets": 3,
+            "reps": 15
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "ELEVAÇÃO PERNAS (A)",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "LATERAL COM HALTER (B)",
+            "sets": 4,
+            "reps": 20
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 8,
+    "name": "TREINO 5 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Feminino",
+    "category": "Emagrecimento",
+    "description": "Combinação de treino de força e metabólico para maximizar a queima de gordura.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/feminino/treino-5-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "Parte integrada do Treino B (Metabólico) e 10 min no Treino A.",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "SUPINO RETO",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "FRANCÊS BILATERAL",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "AGACHAMENTO HACK",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "LEG PRESS 45°",
+            "sets": 5,
+            "reps": 10
+          },
+          {
+            "exercise": "EXTENSORA UNILATERAL",
+            "sets": 5,
+            "reps": 10
+          },
+          {
+            "exercise": "FLEXORA SENTADA",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "FLEXÃO PLANTAR STEP",
+            "sets": 3,
+            "reps": 30
+          },
+          {
+            "exercise": "VOADOR",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "PULLDOWN",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "ROSCA DIRETA",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO B (Metabólico)": [
+          {
+            "exercise": "Bike (20 min), Swing + Flexão de Braços (3x10-15), Esteira (10 min HIIT), Agachamento com salto + Elevação lateral + Polichinelo (3x10-15-15), Prancha (5x MAX), Esteira (10 min HIIT), Esteira (10 min inclinado).",
+            "sets": 1,
+            "reps": "N/A"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 9,
+    "name": "TREINO 5 FEMININO - HIPERTROFIA",
+    "gender": "Feminino",
+    "category": "Hipertrofia",
+    "description": "Treino intenso para ganho de massa muscular com foco em membros inferiores e superiores.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/feminino/treino-5-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "Não especificado.",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Extensora (aquecimento)",
+            "sets": 2,
+            "reps": 25
+          },
+          {
+            "exercise": "Sissy Squat",
+            "sets": 5,
+            "reps": 15
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 5,
+            "reps": 15
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 6,
+            "reps": 15
+          },
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 6,
+            "reps": 15
+          },
+          {
+            "exercise": "Passada com halteres",
+            "sets": 4,
+            "reps": "X"
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 5,
+            "reps": 15
+          },
+          {
+            "exercise": "Stiff com barra",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Supino Reto com halter",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Voador braço flexionado",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Sentada Supinada",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Puxada frontal Triângulo",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca Martelo Alternada",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Pulley Barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Coice com Halter",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Desenvolvimento Maquina",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Alta com anilha",
+            "sets": 3,
+            "reps": 15
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "ELEVAÇÃO PERNAS",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "LATERAL COM HALTER",
+            "sets": 4,
+            "reps": 20
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 10,
+    "name": "TREINO 6 FEMININO - CONDICIONAMENTO",
+    "gender": "Feminino",
+    "category": "Condicionamento",
+    "description": "Treino dividido em Quadríceps, Posterior e Superiores para um condicionamento completo.",
+    "icon": "Lightning",
+    "pdfPath": "/treinos/feminino/treino-6-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "20 MINUTOS ANTES DO TREINO.",
+      "routine": {
+        "TREINO A (Quadríceps)": [
+          {
+            "exercise": "Sissy Squat",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Abdutora + Agachamento Sumô",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Passada Halter (andando)",
+            "sets": 4,
+            "reps": "X"
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO B (Superiores)": [
+          {
+            "exercise": "Remada Cavalo Aberta",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Puxada Frontal Aberta",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Crucifixo com halter",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Tríceps Pulley barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca Pulley Barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Lateral",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Desenvolvimento Máquina",
+            "sets": 4,
+            "reps": 12
+          }
+        ],
+        "TREINO C (Posterior de Perna)": [
+          {
+            "exercise": "Mesa Flexora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Stiff Halter + Alongamento 30s",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação Pélvica",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Leg Press Sentada",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Glúteo 4 apoios",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Cadeira Flexora",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "ELEVAÇÃO PERNAS",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "SUPRA NA BOLA",
+            "sets": 4,
+            "reps": 20
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 11,
+    "name": "TREINO 6 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Feminino",
+    "category": "Emagrecimento",
+    "description": "Treino com foco em alta intensidade e queima calórica, com divisão por grupos musculares.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/feminino/treino-6-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "10 minutos de esteira ou elíptico ao final de cada treino.",
+      "routine": {
+        "TREINO A (Quadríceps)": [
+          {
+            "exercise": "Agachamento no Smith + Agachamento livre s/ peso",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Levantamento terra Sumô",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Glúteo Cross",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Abdutora + Sumô",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": "X"
+          }
+        ],
+        "TREINO B (Superiores)": [
+          {
+            "exercise": "Remada baixa + Puxada fechada + Remada curvada",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação lateral + Remada alta",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Desenvolvimento com halter",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Abdominal remador + Infra solo + Supra solo + Bola suiça",
+            "sets": 5,
+            "reps": 15
+          }
+        ],
+        "TREINO C (Posterior de Perna)": [
+          {
+            "exercise": "Extensora",
+            "sets": 2,
+            "reps": 50
+          },
+          {
+            "exercise": "Afundo Smith",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Leg Press Horizontal",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 8
+          },
+          {
+            "exercise": "Glúteo Cross",
+            "sets": 2,
+            "reps": 20
+          },
+          {
+            "exercise": "Elevação Pélvica",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Flexão Plantar Step",
+            "sets": 6,
+            "reps": 10
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 12,
+    "name": "TREINO 6 FEMININO - HIPERTROFIA",
+    "gender": "Feminino",
+    "category": "Hipertrofia",
+    "description": "Treino para ganho de massa muscular com divisão em três treinos (A, B, C).",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/feminino/treino-6-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "20 MINUTOS ANTES DO TREINO.",
+      "routine": {
+        "TREINO A (Quadríceps)": [
+          {
+            "exercise": "Sissy Squat + Sumô com halter",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Agachamento Hack segurando 2s",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Passada Halter",
+            "sets": 4,
+            "reps": "X"
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO B (Superiores)": [
+          {
+            "exercise": "Remada Cavalo triângulo",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Puxada Frontal Supinada",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Supino reto",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Pulley corda",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca Pulley Barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação frontal",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Desenvolvimento com barra",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO C (Posterior de Perna)": [
+          {
+            "exercise": "Mesa Flexora segurando na descida",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Stiff Halter no step",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação Pélvica",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Leg Press Horizontal",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Glúteo 4 apoios no banco",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Cadeira Flexora",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "ELEVAÇÃO PERNAS",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "SUPRA NA BOLA",
+            "sets": 4,
+            "reps": 20
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 13,
+    "name": "TREINO 7 FEMININO - CONDICIONAMENTO",
+    "gender": "Feminino",
+    "category": "Condicionamento",
+    "description": "Treino de condicionamento físico com divisão A, B e C para um trabalho corporal completo.",
+    "icon": "Lightning",
+    "pdfPath": "/treinos/feminino/treino-7-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "15 minutos de esteira ou bike dependendo do treino.",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Extensora",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Sissy Squat",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Passada com halteres (andando)",
+            "sets": 4,
+            "reps": "X"
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "15 MINUTOS DE BIKE",
+            "sets": 1,
+            "reps": "N/A"
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Supino Reto",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Sentada Fechada",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Puxada Fechada",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca Alternada",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Pulley Barra",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Pulley corda",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Desenvolvimento Maquina",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Alta cross",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "15 MINUTOS ESTEIRA",
+            "sets": 1,
+            "reps": "N/A"
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Mesa Flexora",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Cadeira Flexora",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação Pélvica",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Glúteo Cross",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Afundo com Halter (parado)",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Agachamento Hack Articulado",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "15 MINUTOS ESTEIRA",
+            "sets": 1,
+            "reps": "N/A"
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "ELEVAÇÃO PERNAS",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "LATERAL CROSS",
+            "sets": 4,
+            "reps": 20
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 14,
+    "name": "TREINO 8 FEMININO - HIPERTROFIA",
+    "gender": "Feminino",
+    "category": "Hipertrofia",
+    "description": "Treino focado no ganho de massa muscular, com divisão de treinos A, B e C para abranger todos os grupos musculares.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/feminino/treino-8-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Não especificado.",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Leg Press horizontal",
+            "sets": 5,
+            "reps": "10"
+          },
+          {
+            "exercise": "Stiff",
+            "sets": 3,
+            "reps": "15"
+          },
+          {
+            "exercise": "Cadeira Extensora",
+            "sets": 3,
+            "reps": "12"
+          },
+          {
+            "exercise": "Mesa Flexora",
+            "sets": 3,
+            "reps": "12"
+          },
+          {
+            "exercise": "Levantamento Terra Sumo",
+            "sets": 3,
+            "reps": "15"
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Afundo",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Panturrilha em pé",
+            "sets": 5,
+            "reps": "10"
+          },
+          {
+            "exercise": "Panturrilha Sentado",
+            "sets": 3,
+            "reps": "20"
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Supino Reto",
+            "sets": 5,
+            "reps": "10"
+          },
+          {
+            "exercise": "Remada Unilateral",
+            "sets": 3,
+            "reps": "10"
+          },
+          {
+            "exercise": "Desenvolvimento com Halter",
+            "sets": 3,
+            "reps": "12"
+          },
+          {
+            "exercise": "Rosca Alternada",
+            "sets": 3,
+            "reps": "12"
+          },
+          {
+            "exercise": "Pulley Corda",
+            "sets": 3,
+            "reps": "15"
+          },
+          {
+            "exercise": "Crucifixo",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Pulley Frente",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Desenvolvimento Arnold",
+            "sets": 5,
+            "reps": "10"
+          },
+          {
+            "exercise": "Bíceps Scott",
+            "sets": 3,
+            "reps": "10"
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 5,
+            "reps": "10"
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 3,
+            "reps": "15"
+          },
+          {
+            "exercise": "Cadeira Extensora",
+            "sets": 3,
+            "reps": "12"
+          },
+          {
+            "exercise": "Cadeira (ou mesa) Flexora",
+            "sets": 3,
+            "reps": "12"
+          },
+          {
+            "exercise": "Stiff",
+            "sets": 3,
+            "reps": "15"
+          },
+          {
+            "exercise": "Flexora",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Agachamento Smith",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Elevação Gêmeos",
+            "sets": 5,
+            "reps": "10"
+          },
+          {
+            "exercise": "Panturrilha em pé",
+            "sets": 3,
+            "reps": "25"
+          }
+        ],
+        "ABDOMINAIS (A-C)": [
+          {
+            "exercise": "Elevação de Pernas",
+            "sets": 4,
+            "reps": "20"
+          },
+          {
+            "exercise": "Lateral Cross",
+            "sets": 4,
+            "reps": "20"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 15,
+    "name": "TREINO 9 FEMININO - HIPERTROFIA",
+    "gender": "Feminino",
+    "category": "Hipertrofia",
+    "description": "Treino avançado para hipertrofia com foco em cargas progressivas e diferentes faixas de repetições.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/feminino/treino-9-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Não especificado.",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 5,
+            "reps": "6"
+          },
+          {
+            "exercise": "Terra Sumo",
+            "sets": 4,
+            "reps": "5"
+          },
+          {
+            "exercise": "Leg Press",
+            "sets": 4,
+            "reps": "10"
+          },
+          {
+            "exercise": "Stiff Halter",
+            "sets": 4,
+            "reps": "8"
+          },
+          {
+            "exercise": "Afundo",
+            "sets": 3,
+            "reps": "10"
+          },
+          {
+            "exercise": "Flexora",
+            "sets": 4,
+            "reps": "8"
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 3,
+            "reps": "12"
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 3,
+            "reps": "12"
+          },
+          {
+            "exercise": "Panturrilha em pé",
+            "sets": 4,
+            "reps": "20"
+          },
+          {
+            "exercise": "Panturrilha Sentado",
+            "sets": 3,
+            "reps": "12"
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Supino Reto Halter",
+            "sets": 5,
+            "reps": "10"
+          },
+          {
+            "exercise": "Puxada Alta Aberta",
+            "sets": 4,
+            "reps": "6-8"
+          },
+          {
+            "exercise": "Desenvolvimento Militar Barra em Pé",
+            "sets": 3,
+            "reps": "5"
+          },
+          {
+            "exercise": "Remada Baixa",
+            "sets": 3,
+            "reps": "8-10"
+          },
+          {
+            "exercise": "Elevação Lateral",
+            "sets": 3,
+            "reps": "25"
+          },
+          {
+            "exercise": "Flexão",
+            "sets": 3,
+            "reps": "10"
+          },
+          {
+            "exercise": "Bíceps Rosca Barra W",
+            "sets": 3,
+            "reps": "7-9"
+          },
+          {
+            "exercise": "Tríceps Francesa",
+            "sets": 3,
+            "reps": "8"
+          },
+          {
+            "exercise": "Bíceps Scott",
+            "sets": 2,
+            "reps": "15"
+          },
+          {
+            "exercise": "Tríceps Corda",
+            "sets": 2,
+            "reps": "15"
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 4,
+            "reps": "8"
+          },
+          {
+            "exercise": "Stiff",
+            "sets": 3,
+            "reps": "12"
+          },
+          {
+            "exercise": "Hip Thruster",
+            "sets": 4,
+            "reps": "8"
+          },
+          {
+            "exercise": "Leg Press Pés Altos Abertos",
+            "sets": 3,
+            "reps": "15"
+          },
+          {
+            "exercise": "Leg Press Pés Juntos Baixos",
+            "sets": 3,
+            "reps": "15"
+          },
+          {
+            "exercise": "Passada Peso Corporal",
+            "sets": 2,
+            "reps": "15"
+          },
+          {
+            "exercise": "Flexora Unilateral",
+            "sets": 3,
+            "reps": "15"
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 3,
+            "reps": "15"
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 3,
+            "reps": "15"
+          },
+          {
+            "exercise": "Panturrilha Em Pé",
+            "sets": 4,
+            "reps": "25"
+          }
+        ],
+        "ABDOMINAIS (A-C)": [
+          {
+            "exercise": "Elevação de Pernas",
+            "sets": 4,
+            "reps": "20"
+          },
+          {
+            "exercise": "Lateral Cross",
+            "sets": 4,
+            "reps": "20"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 16,
+    "name": "TREINO 7 FEMININO - HIPERTROFIA",
+    "gender": "Feminino",
+    "category": "Hipertrofia",
+    "description": "Treino estruturado em A, B e C para promover a hipertrofia muscular de forma equilibrada.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/feminino/treino-7-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Não especificado.",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 5,
+            "reps": "10"
+          },
+          {
+            "exercise": "Afundo no Smith",
+            "sets": 4,
+            "reps": "20 passadas"
+          },
+          {
+            "exercise": "Cadeira Extensora",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Adutora + Sumô",
+            "sets": 3,
+            "reps": "15"
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 3,
+            "reps": "15"
+          },
+          {
+            "exercise": "Elevação Gêmeos",
+            "sets": 3,
+            "reps": "15"
+          },
+          {
+            "exercise": "Prancha",
+            "sets": 4,
+            "reps": "1min"
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Crucifixo",
+            "sets": 4,
+            "reps": "10"
+          },
+          {
+            "exercise": "Puxada Frontal com barra",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Desenvolvimento Militar (halter)",
+            "sets": 4,
+            "reps": "10"
+          },
+          {
+            "exercise": "Tríceps Francês Unilateral",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Rosca Martelo",
+            "sets": 3,
+            "reps": "15"
+          },
+          {
+            "exercise": "Abdominal Canivete",
+            "sets": 4,
+            "reps": "12"
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Leg Press",
+            "sets": 5,
+            "reps": "8"
+          },
+          {
+            "exercise": "Stiff",
+            "sets": 5,
+            "reps": "10"
+          },
+          {
+            "exercise": "Cadeira Extensora",
+            "sets": 2,
+            "reps": "20"
+          },
+          {
+            "exercise": "Mesa Flexora",
+            "sets": 4,
+            "reps": "10"
+          },
+          {
+            "exercise": "Agachamento Sumo",
+            "sets": 4,
+            "reps": "10"
+          },
+          {
+            "exercise": "Glúteo Cross",
+            "sets": 2,
+            "reps": "20"
+          },
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 4,
+            "reps": "15"
+          },
+          {
+            "exercise": "Panturrilha em pé",
+            "sets": 4,
+            "reps": "10"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 17,
+    "name": "TREINO 8 FEMININO - CONDICIONAMENTO",
+    "gender": "Feminino",
+    "category": "Condicionamento",
+    "description": "Treino focado no condicionamento físico com ênfase em quadríceps, posteriores, glúteos e superiores.",
+    "icon": "Lightning",
+    "pdfPath": "/treinos/feminino/treino-8-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "15 a 20 min de esteira ou bike no final do treino B.",
+      "routine": {
+        "TREINO A (Quadríceps)": [
+          {
+            "exercise": "Sissy Squat (Aquecimento)",
+            "sets": "3",
+            "reps": "15"
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Extensora (progressão)",
+            "sets": "4",
+            "reps": "15-10"
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Passada com Halter (curta)",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Stiff",
+            "sets": 4,
+            "reps": "15"
+          }
+        ],
+        "TREINO B (Superiores)": [
+          {
+            "exercise": "Remada Sentada Convergente",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Puxada Frontal pegador U",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Supino Inclinado",
+            "sets": 4,
+            "reps": "10"
+          },
+          {
+            "exercise": "Tríceps Pulley barra",
+            "sets": 4,
+            "reps": "10"
+          },
+          {
+            "exercise": "Tríceps Testa com Halter",
+            "sets": 3,
+            "reps": "10"
+          },
+          {
+            "exercise": "Rosca Pulley corda",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Desenvolvimento com Halteres",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Panturrilha Gêmeos",
+            "sets": 3,
+            "reps": "10"
+          }
+        ],
+        "TREINO C (Posterior de Perna e Glúteos)": [
+          {
+            "exercise": "Mesa Flexora (Aquecimento)",
+            "sets": 2,
+            "reps": "12"
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Agachamento Livre",
+            "sets": "4",
+            "reps": "12-8"
+          },
+          {
+            "exercise": "Agachamento Búlgaro (com apoio)",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Glúteo Cross",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Elevação Pélvica",
+            "sets": 4,
+            "reps": "12"
+          },
+          {
+            "exercise": "Agachamento Sumô",
+            "sets": 4,
+            "reps": "15"
+          }
+        ],
+        "ABDOMINAIS (A-C)": [
+          {
+            "exercise": "Elevação de Pernas",
+            "sets": 4,
+            "reps": "20"
+          },
+          {
+            "exercise": "Supra Solo",
+            "sets": 4,
+            "reps": "20"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 18,
+    "name": "TREINO 9 FEMININO - CONDICIONAMENTO",
+    "gender": "Feminino",
+    "category": "Condicionamento",
+    "description": "Programa de condicionamento dividido em 4 treinos (A, B, C, D) para trabalhar pernas e superiores de forma alternada.",
+    "icon": "Lightning",
+    "pdfPath": "/treinos/feminino/treino-9-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C e D)",
+      "aerobic": "Não especificado.",
+      "routine": {
+        "TREINO A (Perna)": [
+          {
+            "exercise": "Agachamento livre + agachamento sem carga",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Passada (andando)",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Sumô",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Stiff",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Glúteo cruzado no cross over",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO B (Superior)": [
+          {
+            "exercise": "Voador peito",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Supino inclinado",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps corda",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Ombro máquina",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação frontal com halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada alta",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO C (Perna)": [
+          {
+            "exercise": "Agachamento hack + stiff",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Afundo no Smith",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Leg 45°",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexora sentada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexora deitada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Abdutora + Sumô",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Pélvica",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO D (Superior)": [
+          {
+            "exercise": "Puxada frente",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada baixa",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada cavalinho",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada convergente",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca direta com a barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca martelo com halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca direta no cross over",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "ABDOMINAL": [
+          {
+            "exercise": "INFRA - Extensão de pernas (A)",
+            "sets": 4,
+            "reps": 25
+          },
+          {
+            "exercise": "Lateral Calcanhar (C)",
+            "sets": 4,
+            "reps": 25
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 19,
+    "name": "TREINO 10 FEMININO - CONDICIONAMENTO",
+    "gender": "Feminino",
+    "category": "Condicionamento",
+    "description": "Treino de condicionamento com 4 divisões, focando em membros superiores e inferiores em dias separados.",
+    "icon": "Lightning",
+    "pdfPath": "/treinos/feminino/treino-10-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C e D)",
+      "aerobic": "Não especificado.",
+      "routine": {
+        "TREINO A (Membros Superiores)": [
+          {
+            "exercise": "Supino Reto",
+            "sets": "4",
+            "reps": "12-8"
+          },
+          {
+            "exercise": "Supino Declinado",
+            "sets": 4,
+            "reps": 8
+          },
+          {
+            "exercise": "Supino Inclinado com Halter",
+            "sets": "4",
+            "reps": "12-8"
+          },
+          {
+            "exercise": "Supino Reto - Halter",
+            "sets": "4",
+            "reps": "12-8"
+          },
+          {
+            "exercise": "Cross Over Baixo para Cima",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Cross Over Cima para Baixo",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Voador Articulado",
+            "sets": 3,
+            "reps": 10
+          }
+        ],
+        "TREINO B (Inferiores)": [
+          {
+            "exercise": "Mesa Flexora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Cadeira Flexora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Pélvica",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Glúteo Cross",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Afundo com Halter (parado)",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento Hack Articulado",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO C (Membros Superiores)": [
+          {
+            "exercise": "Desenvolvimento Arnold",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento com Halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Frontal com Halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada Alta (barra ou cross)",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação Lateral Inclinado Halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Lateral com Halter",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Voador dorsal articulado",
+            "sets": 4,
+            "reps": 12
+          }
+        ],
+        "TREINO D (Inferiores)": [
+          {
+            "exercise": "Extensora (rápido com pouco peso)",
+            "sets": "2",
+            "reps": 25
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Cadeira Flexora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Afundo com Halter (parado)",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Extensora (progressão de carga)",
+            "sets": "4",
+            "reps": "15-10"
+          },
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": "4",
+            "reps": "12-8"
+          },
+          {
+            "exercise": "Agachamento Hack Articulado Invertido",
+            "sets": 4,
+            "reps": 12
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 20,
+    "name": "TREINO 7 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Feminino",
+    "category": "Emagrecimento",
+    "description": "Treino de alta intensidade focado na queima de calorias, combinando exercícios de força e aeróbicos.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/feminino/treino-7-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Sessões de 10 a 15 minutos de esteira, bike ou elíptico no início e/ou fim dos treinos.",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Leg Press 45° + Supino Inclinado Halter",
+            "sets": 4,
+            "reps": "20+20"
+          },
+          {
+            "exercise": "Elevação Tronco",
+            "sets": 1,
+            "reps": "40x"
+          },
+          {
+            "exercise": "Cadeira Extensora + Tríceps Francês",
+            "sets": 4,
+            "reps": "20+20"
+          },
+          {
+            "exercise": "Corrida esteira",
+            "sets": 1,
+            "reps": "5 min"
+          },
+          {
+            "exercise": "Agachamento Hack + Elevação Alternada",
+            "sets": 4,
+            "reps": "20+20"
+          },
+          {
+            "exercise": "Meio Sugado",
+            "sets": 1,
+            "reps": "30"
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Remada Baixa Supinada + Afundo Bulgaro",
+            "sets": 4,
+            "reps": "20+20"
+          },
+          {
+            "exercise": "Agachamento Sumo + Rosca Alternada Giro",
+            "sets": 4,
+            "reps": "20+20"
+          },
+          {
+            "exercise": "Abdução Banco Inclinado + Desenvolvimento Halter",
+            "sets": 4,
+            "reps": "20+20"
+          },
+          {
+            "exercise": "Infra Banco Reto + Bike + Lombar iso solo",
+            "sets": 4,
+            "reps": "20 + 3min + 3min"
+          },
+          {
+            "exercise": "Swing + Prancha tocando ombro + corrida esteira",
+            "sets": 4,
+            "reps": "20+20 + 3min"
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Flexora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Panturrilha Livre",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Passada",
+            "sets": 3,
+            "reps": 20
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 21,
+    "name": "TREINO 8 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Feminino",
+    "category": "Emagrecimento",
+    "description": "Treino em circuito com exercícios conjugados para máxima queima calórica e definição muscular.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/feminino/treino-8-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "10 min no início e 10-15 min no final dos treinos.",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Reto Halter Giro + Tríceps Banco + Avanço Alternado",
+            "sets": 4,
+            "reps": "15+15+20"
+          },
+          {
+            "exercise": "Voador + Tríceps Francês + Agachamento Sumo",
+            "sets": 4,
+            "reps": "15+15+15"
+          },
+          {
+            "exercise": "5 tiros de 30s na Esteira",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Desenvolvimento Neutro Halter + Prancha + Elevação Pélvica Maq.",
+            "sets": 4,
+            "reps": "15 + 1min + 15"
+          },
+          {
+            "exercise": "Elevação Tronco + Elevação Pernas + Lateral Banco Romano",
+            "sets": 4,
+            "reps": "15+15+15"
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Puxada Supinada + Rosca Concentrada + Agachamento Anilha",
+            "sets": 4,
+            "reps": "15+15+15"
+          },
+          {
+            "exercise": "Remada Cavalinho + Rosca Alternada Giro + Stiff Halter",
+            "sets": 4,
+            "reps": "15+16+15"
+          },
+          {
+            "exercise": "5 tiros de 30s na Esteira",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Elevação Frontal Alternada + Abd Lateral Halter + Abdução Cross",
+            "sets": 4,
+            "reps": "16+15+15"
+          },
+          {
+            "exercise": "Abd Lateral Calcanhar + Remador + Prancha",
+            "sets": 4,
+            "reps": "20+20+1min"
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Extensora Alternada + Simultânea",
+            "sets": 4,
+            "reps": "20+10"
+          },
+          {
+            "exercise": "Passada com Agachamento",
+            "sets": 4,
+            "reps": "10"
+          },
+          {
+            "exercise": "Panturrilha Gêmeos",
+            "sets": 3,
+            "reps": "20"
+          },
+          {
+            "exercise": "Swing",
+            "sets": 4,
+            "reps": "10-12"
+          },
+          {
+            "exercise": "Abdução Cross",
+            "sets": 4,
+            "reps": "8+8"
+          },
+          {
+            "exercise": "Glúteo Cross",
+            "sets": 4,
+            "reps": "10+10"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 22,
+    "name": "TREINO 9 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Feminino",
+    "category": "Emagrecimento",
+    "description": "Programa de emagrecimento que combina treinos de força (A e B) com um treino metabólico (C) para otimizar resultados.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/feminino/treino-9-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Integrado ao treino C (metabólico).",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Flexora",
+            "sets": 4,
+            "reps": 16
+          },
+          {
+            "exercise": "Afundo",
+            "sets": 4,
+            "reps": 16
+          },
+          {
+            "exercise": "Glúteo Cross",
+            "sets": 4,
+            "reps": 16
+          },
+          {
+            "exercise": "Puxada Frontal",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Francês Deitada",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 16
+          },
+          {
+            "exercise": "Flexão Plantar com Anilha",
+            "sets": 4,
+            "reps": 16
+          },
+          {
+            "exercise": "Elevação Pélvica com pés no step",
+            "sets": 4,
+            "reps": 16
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 16
+          },
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 4,
+            "reps": 16
+          },
+          {
+            "exercise": "Leg Press",
+            "sets": 4,
+            "reps": 16
+          },
+          {
+            "exercise": "Rosca Direta",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Crucifixo com Halter",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 16
+          },
+          {
+            "exercise": "Gravitron ou Pisada no cross",
+            "sets": 4,
+            "reps": 16
+          },
+          {
+            "exercise": "Agachamento Sumô no Step",
+            "sets": 4,
+            "reps": 16
+          }
+        ],
+        "TREINO C (metabólico)": [
+          {
+            "exercise": "Bike",
+            "sets": 1,
+            "reps": "20 min"
+          },
+          {
+            "exercise": "Swing + Flexão de Braços",
+            "sets": 3,
+            "reps": "10-15"
+          },
+          {
+            "exercise": "Esteira HIIT (1min corre / 1min anda)",
+            "sets": 1,
+            "reps": "10 min"
+          },
+          {
+            "exercise": "Agachamento com salto + Elevação lateral + Polichinelo",
+            "sets": 3,
+            "reps": "10-15-15"
+          },
+          {
+            "exercise": "Abdominal prancha",
+            "sets": 5,
+            "reps": "Máx com 20s intervalo"
+          },
+          {
+            "exercise": "Esteira HIIT (1min corre / 1min anda)",
+            "sets": 1,
+            "reps": "10 min"
+          },
+          {
+            "exercise": "Esteira (inclinada)",
+            "sets": 1,
+            "reps": "20 min"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 23,
+    "name": "TREINO 10 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Feminino",
+    "category": "Emagrecimento",
+    "description": "Treino intenso com 4 divisões (A, B, C, D) incluindo um dia metabólico para acelerar a queima de gordura.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/feminino/treino-10-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C e D)",
+      "aerobic": "20 minutos no final dos treinos B e C, e treino D totalmente metabólico.",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Abdutora",
+            "sets": "4",
+            "reps": "12-8"
+          },
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 4,
+            "reps": 8
+          },
+          {
+            "exercise": "Levantamento Terra",
+            "sets": "4",
+            "reps": "12-8"
+          },
+          {
+            "exercise": "Elevação Pélvica",
+            "sets": "4",
+            "reps": "12-8"
+          },
+          {
+            "exercise": "Abdutora inclinada + Sumô",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Glúteo Cross",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Afundo",
+            "sets": "N/A",
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Abdominal Prancha",
+            "sets": "N/A",
+            "reps": "N/A"
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Puxada Frontal pronada",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Puxada Frontal supinada",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Remada Sentada Aberta + Voador Invertido",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Crucifixo Invertido no cross",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Tríceps Corda",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Extensora (aquecimento)",
+            "sets": "2",
+            "reps": 25
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Afundo com Step na frente",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Stiff",
+            "sets": "4",
+            "reps": "15-10"
+          },
+          {
+            "exercise": "Sumô com halter",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Mesa Flexora",
+            "sets": "4",
+            "reps": "12-8"
+          }
+        ],
+        "TREINO D (metabólico)": [
+          {
+            "exercise": "Bike",
+            "sets": 1,
+            "reps": "20 min"
+          },
+          {
+            "exercise": "Swing + Flexão de Braços + Burpee",
+            "sets": 3,
+            "reps": "10-15"
+          },
+          {
+            "exercise": "Esteira HIIT (1min corre / 1min anda)",
+            "sets": 1,
+            "reps": "10 min"
+          },
+          {
+            "exercise": "Agachamento com salto + Desenvolvimento em pé barra + Polichinelo",
+            "sets": 3,
+            "reps": "10-15"
+          },
+          {
+            "exercise": "Abdominal prancha",
+            "sets": 5,
+            "reps": "Máx com 20s intervalo"
+          },
+          {
+            "exercise": "Esteira HIIT (1min corre / 1min anda)",
+            "sets": 1,
+            "reps": "10 min"
+          },
+          {
+            "exercise": "Esteira (inclinada)",
+            "sets": 1,
+            "reps": "20 min"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 24,
+    "name": "TREINO 10 FEMININO - HIPERTROFIA",
+    "gender": "Feminino",
+    "category": "Hipertrofia",
+    "description": "Treino de hipertrofia com divisão focada em quadríceps, superiores e posterior de perna/glúteos.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/feminino/treino-10-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Não especificado.",
+      "routine": {
+        "TREINO A (Quadríceps)": [
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 5,
+            "reps": "8/8/8/6/6"
+          },
+          {
+            "exercise": "Terra Sumô",
+            "sets": 4,
+            "reps": "5/5/4/4"
+          },
+          {
+            "exercise": "Leg Press Pés Neutros",
+            "sets": 3,
+            "reps": 6
+          },
+          {
+            "exercise": "Elevação Pélvica",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Flexora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Passada (andando)",
+            "sets": 3,
+            "reps": "10 (cada perna)"
+          },
+          {
+            "exercise": "Cadeira Isométrica",
+            "sets": 3,
+            "reps": "1 min"
+          },
+          {
+            "exercise": "Elevação de Panturrilha em pé (peso corporal)",
+            "sets": 4,
+            "reps": 50
+          },
+          {
+            "exercise": "Elevação de Panturrilha Sentado",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO B (Superiores)": [
+          {
+            "exercise": "Supino Reto Barra",
+            "sets": 5,
+            "reps": "8/8/6/6/4"
+          },
+          {
+            "exercise": "Desenvolvimento Militar Barra",
+            "sets": 4,
+            "reps": 5
+          },
+          {
+            "exercise": "Barra Fixa (5s negativa)",
+            "sets": 3,
+            "reps": "3-6"
+          },
+          {
+            "exercise": "PullOver",
+            "sets": 3,
+            "reps": "7-9"
+          },
+          {
+            "exercise": "Remada Cavalinho",
+            "sets": 3,
+            "reps": "7-9"
+          },
+          {
+            "exercise": "Elevação Lateral Polia (unilateral)",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Bíceps Barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Drag Curl (Mesma Barra)",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Supino Pegada Fechada",
+            "sets": 4,
+            "reps": 6
+          }
+        ],
+        "TREINO C (Posterior de Perna e Glúteos)": [
+          {
+            "exercise": "Agachamento Frontal",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Passada (Longa) acentuando a negativa",
+            "sets": 3,
+            "reps": "10 (cada perna)"
+          },
+          {
+            "exercise": "Leg Press",
+            "sets": 2,
+            "reps": 12
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Flexora",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Stiff Halter",
+            "sets": 5,
+            "reps": 10
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 3,
+            "reps": 15
+          }
+        ],
+        "ABDOMINAIS (A-C)": [
+          {
+            "exercise": "ELEVAÇÃO PERNAS",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "SUPRA SOLO",
+            "sets": 4,
+            "reps": 20
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 25,
+    "name": "TREINO 11 FEMININO - CONDICIONAMENTO",
+    "gender": "Feminino",
+    "category": "Condicionamento",
+    "description": "Treino de condicionamento completo com 5 divisões de treino para abranger todos os grupos musculares.",
+    "icon": "Lightning",
+    "pdfPath": "/treinos/feminino/treino-11-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C, D e E)",
+      "aerobic": "Não especificado.",
+      "routine": {
+        "TREINO A (Perna)": [
+          {
+            "exercise": "Agachamento hack + agachamento sem carga",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Agachamento búlgaro + afundo (parado)",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Extensora + STIFF",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Sumô",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação pélvica",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Panturrilha livre com step",
+            "sets": 4,
+            "reps": 20
+          }
+        ],
+        "TREINO B (Costas e Bíceps)": [
+          {
+            "exercise": "Puxada na corda",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada curvada na corda",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada baixa",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca direta com a barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca alternada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Bíceps com a corda",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO C (Perna)": [
+          {
+            "exercise": "Flexora sentada + stiff",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rack articulado + progressão de carga",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação pélvica",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Afundo no Smith",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO D (Peito, Ombro e Tríceps)": [
+          {
+            "exercise": "Supino inclinado",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Voador peito",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps banco",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps coice",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento ombro",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação frontal com barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação lateral cross",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO E (Perna)": [
+          {
+            "exercise": "Agachamento livre",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Passada (andando)",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Agachamento sumo com barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexora deitada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Stiff",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação pélvica no Smith",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "ABDOMINAL": [
+          {
+            "exercise": "SUPRA banco declinado (B)",
+            "sets": 4,
+            "reps": 25
+          },
+          {
+            "exercise": "Prancha Lateral (D)",
+            "sets": 4,
+            "reps": "1'"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 26,
+    "name": "TREINO 11 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Feminino",
+    "category": "Emagrecimento",
+    "description": "Treino focado em emagrecimento com treinos de força (A, C) e um treino metabólico em circuito (B).",
+    "icon": "Fire",
+    "pdfPath": "/treinos/feminino/treino-11-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Ordem: A/B/C/B)",
+      "aerobic": "5 tiros de 30s na esteira nos treinos A e C, e treino B totalmente metabólico.",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Inclinado Smith",
+            "sets": 4,
+            "reps": "12/8/12/8"
+          },
+          {
+            "exercise": "Triceps Francês Corda Cross",
+            "sets": 4,
+            "reps": "12 a 15"
+          },
+          {
+            "exercise": "Desenvolvimento Arnold",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 3,
+            "reps": "5/10/15"
+          },
+          {
+            "exercise": "Leg Press 45° c/ isometria",
+            "sets": 4,
+            "reps": "10 + iso"
+          },
+          {
+            "exercise": "Extensora (10s desc)",
+            "sets": 5,
+            "reps": 10
+          },
+          {
+            "exercise": "Sissy",
+            "sets": 4,
+            "reps": "RM"
+          }
+        ],
+        "TREINO B (Metabólico)": [
+          {
+            "exercise": "Bike (20 min)",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Corda Naval simult. + Passada (peso p/ cima) + Abd Remador + Meio Sugado",
+            "sets": 4,
+            "reps": "30+20+20+15"
+          },
+          {
+            "exercise": "Prancha Tocando Ombro + Mountain Climb + Thruster + Remada Curvada Halter",
+            "sets": 4,
+            "reps": "20+50+15+15"
+          },
+          {
+            "exercise": "PoliAgachamento + Infra alternada caneleira + Elevação Frontal + Lateral alternada",
+            "sets": 4,
+            "reps": "20+20+16+20"
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Afundo Búlgaro com e sem peso",
+            "sets": 4,
+            "reps": "8+8"
+          },
+          {
+            "exercise": "Afundo Smith com elevação",
+            "sets": 4,
+            "reps": "10+10"
+          },
+          {
+            "exercise": "Abdução cruzada cross",
+            "sets": 4,
+            "reps": "12+12"
+          },
+          {
+            "exercise": "Elevação Pélvica Smith",
+            "sets": 4,
+            "reps": "10 + iso"
+          },
+          {
+            "exercise": "Terra",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Pull Down Cross",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Lombar solo iso",
+            "sets": 3,
+            "reps": "1'"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 27,
+    "name": "TREINO 11 FEMININO - HIPERTROFIA",
+    "gender": "Feminino",
+    "category": "Hipertrofia",
+    "description": "Treino de hipertrofia com 4 divisões, alternando entre pernas e superiores.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/feminino/treino-11-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C e D)",
+      "aerobic": "Não especificado.",
+      "routine": {
+        "TREINO A (Perna)": [
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 4,
+            "reps": 5
+          },
+          {
+            "exercise": "Terra Convencional",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Afundo Com Pé no Banco",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Stiff Halter",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Flexora",
+            "sets": 5,
+            "reps": 12
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação de Panturrilha Em pé (peso corporal)",
+            "sets": 4,
+            "reps": 50
+          },
+          {
+            "exercise": "Elevação de Panturrilha Sentado",
+            "sets": 3,
+            "reps": 10
+          }
+        ],
+        "TREINO B (Superior)": [
+          {
+            "exercise": "Supino Inclinado Halter",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Flexão",
+            "sets": 3,
+            "reps": 8
+          },
+          {
+            "exercise": "Puxada Alta Pegada Aberta",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Desenvolvimento Máquina",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Remada Baixa",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Lateral",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Bíceps Rosca Martelo",
+            "sets": 2,
+            "reps": 12
+          },
+          {
+            "exercise": "Bíceps Scott",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Corda",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Tríceps Coice",
+            "sets": 3,
+            "reps": 10
+          }
+        ],
+        "TREINO C (Perna)": [
+          {
+            "exercise": "Agachamento Frontal",
+            "sets": 4,
+            "reps": 8
+          },
+          {
+            "exercise": "Passada",
+            "sets": 3,
+            "reps": "10 (cada perna)"
+          },
+          {
+            "exercise": "Leg Press Pés Altos e Abertos",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Flexora",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Hip Thruster",
+            "sets": 3,
+            "reps": 8
+          },
+          {
+            "exercise": "Stiff Unilateral Halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Panturrilha Em Pé Unilateral",
+            "sets": 6,
+            "reps": 15
+          }
+        ],
+        "TREINO D (Superior)": [
+          {
+            "exercise": "Supino Reto Barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento Unilateral Halter Em Pé",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Barra Fixa",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Supino Inclinado Halter",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Remada Curvada",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação Lateral",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Bíceps Rosca Halter (Simultâneo)",
+            "sets": 4,
+            "reps": 8
+          },
+          {
+            "exercise": "Supino Pegada Fechada (Smith ou Livre)",
+            "sets": 4,
+            "reps": 8
+          },
+          {
+            "exercise": "Rotação Externa Polia",
+            "sets": 3,
+            "reps": 15
+          }
+        ],
+        "ABDOMINAL": [
+          {
+            "exercise": "INFRA - Extensão de pernas (A)",
+            "sets": 4,
+            "reps": 25
+          },
+          {
+            "exercise": "Lateral Calcanhar (C)",
+            "sets": 4,
+            "reps": 25
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 28,
+    "name": "TREINO 12 FEMININO - CONDICIONAMENTO",
+    "gender": "Feminino",
+    "category": "Condicionamento",
+    "description": "Treino de condicionamento com 5 divisões (A, B, C, D, E) e foco aeróbico diário.",
+    "icon": "Lightning",
+    "pdfPath": "/treinos/feminino/treino-12-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C, D e E)",
+      "aerobic": "30 min na esteira todos os dias.",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Agachamento livre + prog carga",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Leg com prog carga",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Agachamento hack prog carga",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Leg horizontal unilateral",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Extensora + passada (andando)",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Puxada fechada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada baixa com prog carga",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Serrote",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada cavalinho",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Bíceps com a corda",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca martelo",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca direta",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Afundo no Smith",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexora deitada + stiff",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Agachamento sumo com a barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Adutora + drop reduzindo a carga",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação pélvica com prog carga",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO D": [
+          {
+            "exercise": "Supino com Halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps coice",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps unilateral",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps corda",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Ombro máquina",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação frontal com Halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Puxada testa",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO E": [
+          {
+            "exercise": "Agachamento terra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Agachamento búlgaro",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Stiff",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Extensora unilateral",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Hack articulado",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação pélvica",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "ABDOMINAL": [
+          {
+            "exercise": "INFRA SEGURANDO NA BARRA (B)",
+            "sets": 4,
+            "reps": 25
+          },
+          {
+            "exercise": "OBLÍQUO COM EXTENSÃO DE PERNA (D)",
+            "sets": 4,
+            "reps": 25
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 29,
+    "name": "TREINO 12 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Feminino",
+    "category": "Emagrecimento",
+    "description": "Treino para emagrecimento com treinos em circuito (A), conjugados (B) e focados (C).",
+    "icon": "Fire",
+    "pdfPath": "/treinos/feminino/treino-12-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Ordem: A/B/A/C)",
+      "aerobic": "Treino A é um circuito cardio, e 15 min de esteira ou bike no final do treino B.",
+      "routine": {
+        "TREINO A (Circuito - 4 Rodadas)": [
+          {
+            "exercise": "Burpee",
+            "sets": 1,
+            "reps": "15x"
+          },
+          {
+            "exercise": "Salto no step com agachamento",
+            "sets": 1,
+            "reps": "15x"
+          },
+          {
+            "exercise": "Supra ponta pé",
+            "sets": 1,
+            "reps": "30x"
+          },
+          {
+            "exercise": "Flexão de braço",
+            "sets": 1,
+            "reps": "15x"
+          },
+          {
+            "exercise": "Avanço alternado",
+            "sets": 1,
+            "reps": "30x"
+          },
+          {
+            "exercise": "Prancha com mov. Perna (abre/fecha)",
+            "sets": 1,
+            "reps": "20x"
+          },
+          {
+            "exercise": "2 min cardio (esteira/bike/elíptico)",
+            "sets": 1,
+            "reps": "N/A"
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Leg Press 45° + Panturrilha Leg + Agachamento Livre c/ Halteres",
+            "sets": 4,
+            "reps": "15+20+15"
+          },
+          {
+            "exercise": "Agachamento Hack + Passada",
+            "sets": 5,
+            "reps": "12+20"
+          },
+          {
+            "exercise": "Cross Over P. Alta + Tríceps Unil. Cross",
+            "sets": 4,
+            "reps": "12+15"
+          },
+          {
+            "exercise": "Desenvolvimento Anilha c/ Tríceps Francês",
+            "sets": 4,
+            "reps": "12+12"
+          },
+          {
+            "exercise": "Supra Declinado + Lombar solo + Prancha c/ mov. braço",
+            "sets": 4,
+            "reps": "20+20+10 cada braço"
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Stiff Barra + Elevação Pélvica Maq + Mesa Flexora",
+            "sets": 4,
+            "reps": "12+12+10 c/ iso final"
+          },
+          {
+            "exercise": "Adutora (rest pause)",
+            "sets": 4,
+            "reps": "8+iso+8"
+          },
+          {
+            "exercise": "Agachamento Sumo",
+            "sets": 4,
+            "reps": "12 a 15"
+          },
+          {
+            "exercise": "Glúteo Cross (com giro pé)",
+            "sets": 4,
+            "reps": "12+12"
+          },
+          {
+            "exercise": "Abdução Cross",
+            "sets": 3,
+            "reps": "15+15"
+          },
+          {
+            "exercise": "Remada Baixa Supinada",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Convergente",
+            "sets": 3,
+            "reps": "5/10/15"
+          },
+          {
+            "exercise": "Desenvolvimento Olímpico",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Abd Canivete",
+            "sets": 4,
+            "reps": 20
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 30,
+    "name": "TREINO 12 FEMININO - HIPERTROFIA",
+    "gender": "Feminino",
+    "category": "Hipertrofia",
+    "description": "Treino de hipertrofia com 5 divisões de treino (A, B, C, D, E) e foco aeróbico diário.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/feminino/treino-12-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C, D e E)",
+      "aerobic": "30 min na esteira todos os dias.",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Levantamento Terra",
+            "sets": 2,
+            "reps": 20
+          },
+          {
+            "exercise": "Stiff com barra",
+            "sets": 5,
+            "reps": 12
+          },
+          {
+            "exercise": "Mesa Flexora",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Cadeira Extensora",
+            "sets": 5,
+            "reps": 10
+          },
+          {
+            "exercise": "Panturrilha Sentado",
+            "sets": 1,
+            "reps": 100
+          },
+          {
+            "exercise": "Abdominal Solo",
+            "sets": 3,
+            "reps": 20
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Remada Curvada",
+            "sets": 5,
+            "reps": 6
+          },
+          {
+            "exercise": "Supino Reto Halter",
+            "sets": 5,
+            "reps": 8
+          },
+          {
+            "exercise": "Puxada frontal com barra ou Gravitron",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Cavalinho",
+            "sets": 1,
+            "reps": 50
+          },
+          {
+            "exercise": "Crucifixo",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca alternada",
+            "sets": 5,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps pulley corda",
+            "sets": 5,
+            "reps": 10
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 5,
+            "reps": "10/10/8/8/6"
+          },
+          {
+            "exercise": "Terra Sumô",
+            "sets": 4,
+            "reps": "8/8/6/6"
+          },
+          {
+            "exercise": "Leg Press Pés Neutros",
+            "sets": 3,
+            "reps": 6
+          },
+          {
+            "exercise": "Hip Thruster (Elevação de Quadril)",
+            "sets": 4,
+            "reps": "10/10/8/8"
+          },
+          {
+            "exercise": "Flexora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Passada (andando)",
+            "sets": 3,
+            "reps": "10 (cada perna)"
+          },
+          {
+            "exercise": "Cadeira isométrica",
+            "sets": 3,
+            "reps": "1 min"
+          }
+        ],
+        "TREINO D": [
+          {
+            "exercise": "Supino Halter",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Crucifixo Polia",
+            "sets": 1,
+            "reps": 50
+          },
+          {
+            "exercise": "Tríceps Banco",
+            "sets": 4,
+            "reps": "15/12/10/8"
+          },
+          {
+            "exercise": "Desenvolvimento Máquina",
+            "sets": 5,
+            "reps": 12
+          },
+          {
+            "exercise": "Remada Pegada Supinada",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "PullDown",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação Lateral",
+            "sets": 1,
+            "reps": 40
+          }
+        ],
+        "TREINO E": [
+          {
+            "exercise": "Agachamento terra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Agachamento búlgaro",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Stiff",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Extensora drop na última série",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rack articulado",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação pélvica",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "ABDOMINAL": [
+          {
+            "exercise": "INFRA SEGURANDO NA BARRA (B)",
+            "sets": 4,
+            "reps": 25
+          },
+          {
+            "exercise": "OBLÍQUO COM EXTENSÃO DE PERNA (D)",
+            "sets": 4,
+            "reps": 25
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 13,
+    "name": "TREINO 3 FEMININO - HIPERTROFIA",
+    "gender": "Feminino",
+    "category": "Hipertrofia",
+    "description": "Treino avançado com técnicas como drop-set e exercícios combinados para estímulo máximo.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/feminino/treino-3-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "15 MINUTOS EM TODOS os treinos",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Extensora + Sumô com halter (Combinado)",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Leg press sentado",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Afundo com halter (parado)",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento hack",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Extensora com drop-set na última",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca alternada",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Puxada costas",
+            "sets": 4,
+            "reps": 12
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Flexora + alongamento isquiotibiais",
+            "sets": 4,
+            "reps": "12 + 30 seg"
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Leg press 45°",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Sissy Squat",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Cadeira flexora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação lateral caneleira",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Polia alta barra",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Voador",
+            "sets": 4,
+            "reps": 12
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "EXTENSÃO DE PERNAS (A)",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "LATERAL CALCANHAR (B)",
+            "sets": 4,
+            "reps": 15
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 14,
+    "name": "TREINO 1 MASCULINO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Masculino",
+    "category": "Emagrecimento/Definição",
+    "description": "Treino metabólico e de definição com foco em exercícios multiarticulares e alta queima calórica.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/masculino/treino-1-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B Metabólico)",
+      "aerobic": "30 minutos de cardio em dias alternados",
+      "routine": {
+        "TREINO A (Força/Definição)": [
+          {
+            "exercise": "Supino Inclinado com Halteres",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Puxada no Pulley Aberta",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Stiff com Halteres",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Leg Press",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Desenvolvimento Militar com Barra",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Concentrada",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Coice com Halter",
+            "sets": 3,
+            "reps": 15
+          }
+        ],
+        "TREINO B (Metabólico - Circuito)": [
+          {
+            "exercise": "Burpee + Agachamento com Salto (Combinado)",
+            "sets": 3,
+            "reps": "10+15"
+          },
+          {
+            "exercise": "Remada Alta (Cabo) + Flexão de Braço (Combinado)",
+            "sets": 3,
+            "reps": "15+Máx"
+          },
+          {
+            "exercise": "Afundo com Halter (Alternado)",
+            "sets": 3,
+            "reps": "20 (10 por perna)"
+          },
+          {
+            "exercise": "Mountain Climbers",
+            "sets": 4,
+            "reps": "40 seg"
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "Abdominal Remador",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Prancha lateral (alternado)",
+            "sets": 3,
+            "reps": "30 seg por lado"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 15,
+    "name": "TREINO 2 MASCULINO - RESISTÊNCIA",
+    "gender": "Masculino",
+    "category": "Resistência",
+    "description": "Foco na resistência muscular e alto volume, utilizando a divisão Push/Pull/Legs para recuperação.",
+    "icon": "Clock",
+    "pdfPath": "/treinos/masculino/treino-2-resistencia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino PPL)",
+      "aerobic": "15 minutos de aquecimento com intensidade moderada",
+      "routine": {
+        "TREINO PUSH (Empurrar)": [
+          {
+            "exercise": "Supino Reto Máquina",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Desenvolvimento Halter Sentado",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação Frontal com Anilhas",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Voador Peitoral",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Francês (Corda)",
+            "sets": 3,
+            "reps": 15
+          }
+        ],
+        "TREINO PULL (Puxar)": [
+          {
+            "exercise": "Remada Baixa (Triângulo)",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Puxada Frontal Aberta",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Encolhimento com Halteres",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "Rosca Direta (Barra)",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca Inversa (Antebraço)",
+            "sets": 3,
+            "reps": 20
+          }
+        ],
+        "TREINO LEGS (Pernas)": [
+          {
+            "exercise": "Cadeira Extensora",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Cadeira Flexora",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Agachamento Sumô com Halter",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Panturrilha Leg Press",
+            "sets": 4,
+            "reps": 20
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "Abdominal na Máquina (Cabo)",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "Elevação de Quadril no Solo",
+            "sets": 3,
+            "reps": 15
+          }
+        ]
+      }
+    }
+  }
+]

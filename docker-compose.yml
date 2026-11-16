@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  shape-mestre:
+    build: .
+    container_name: shape_mestre_app
+    restart: always
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    volumes:
+      - ./data:/app/data
+      - ./public:/app/public
+      # Se quiser montar os GIFs na VPS:
+      # - /var/www/shapemestre/gifs:/app/public/assets/gifs
