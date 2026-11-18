@@ -318,21 +318,25 @@ function renderExercisesList() {
     const displayList = filtered.slice(0, currentDisplayLimit);
 
     grid.innerHTML = displayList.map(ex => {
-        let gifSrc = ex.gif || '';
-        if (gifSrc.startsWith('images/')) {
-            gifSrc = `/assets/gifs/${gifSrc.replace('images/', '')}`;
+        const cleanName = (ex.name || '').replace(/\s*\(\d+\)$/, '').trim();
+        const webpSrc = `/assets/webp/${encodeURIComponent(cleanName)}.webp`;
+        let gifFallback = ex.gif || '';
+        if (gifFallback.startsWith('images/')) {
+            gifFallback = `/assets/gifs/${gifFallback.replace('images/', '')}`;
+        } else if (!gifFallback.startsWith('http') && !gifFallback.startsWith('/assets/')) {
+            gifFallback = `/assets/gifs/${encodeURIComponent(cleanName)}.gif`;
         }
 
         return `
             <div class="glass-card p-4 flex flex-col justify-between hover:border-neoncyan transition">
                 <div>
-                    <!-- Imagem / GIF do Exercício -->
+                    <!-- Imagem / GIF do Exercício (Prioridade WebP Ultraleve com Fallback automático para GIF) -->
                     <div class="relative w-full h-44 rounded-xl overflow-hidden bg-gray-950 border border-gray-800 mb-3 flex items-center justify-center">
                         <img 
-                            src="${gifSrc || 'https://placehold.co/400x250/111827/00FFFF?text=Shape+Mestre'}" 
+                            src="${webpSrc}" 
                             alt="${escapeHtml(ex.name)}" 
                             loading="lazy" 
-                            onerror="this.src='https://placehold.co/400x250/111827/00FFFF?text=${encodeURIComponent(ex.name)}'"
+                            onerror="if (!this.dataset.fallback) { this.dataset.fallback = 'gif'; this.src = '${gifFallback || 'https://placehold.co/400x250/111827/00FFFF?text=Shape+Mestre'}'; } else { this.src = 'https://placehold.co/400x250/111827/00FFFF?text=${encodeURIComponent(ex.name)}'; }"
                             class="w-full h-full object-contain"
                         />
                         <span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-black/70 text-neoncyan border border-neoncyan/40">

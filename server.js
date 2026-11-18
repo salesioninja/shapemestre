@@ -33,19 +33,25 @@ app.use(express.urlencoded({ extended: true, limit: '15mb' }));
 // Servir arquivos estáticos do Frontend PWA
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Servir GIFs de exercícios com busca inteligente e recursiva (suporta subpastas de grupamentos)
+// Diretórios de mídias dos exercícios
 const gifsLocalDir = path.join(__dirname, 'public', 'assets', 'gifs');
+const webpLocalDir = path.join(__dirname, 'public', 'assets', 'webp');
 const gifsFallbackDir = path.join(__dirname, '..', 'TODOS OS GIFS MUSCULAÇÃO');
 const gifSearchCache = new Map();
+const webpSearchCache = new Map();
 
-function findGifRecursively(dir, targetName) {
-    if (!fs.existsSync(dir)) return null;
-    const cleanTarget = targetName.toLowerCase()
+function cleanKey(str) {
+    return (str || '').toLowerCase()
         .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
         .replace(/[^a-z0-9]/g, '');
+}
 
-    if (gifSearchCache.has(cleanTarget)) {
-        return gifSearchCache.get(cleanTarget);
+function findFileRecursively(dir, targetName, ext, cacheMap) {
+    if (!fs.existsSync(dir)) return null;
+    const cleanTarget = cleanKey(targetName).replace(new RegExp(`${ext}$`), '');
+
+    if (cacheMap.has(cleanTarget)) {
+        return cacheMap.get(cleanTarget);
     }
 
     const stack = [dir];
@@ -57,12 +63,10 @@ function findGifRecursively(dir, targetName) {
                 const fullPath = path.join(currentDir, entry.name);
                 if (entry.isDirectory()) {
                     stack.push(fullPath);
-                } else if (entry.name.toLowerCase().endsWith('.gif')) {
-                    const cleanName = entry.name.toLowerCase()
-                        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-                        .replace(/[^a-z0-9]/g, '');
-                    if (cleanName === cleanTarget || cleanName.replace(/gif$/, '') === cleanTarget.replace(/gif$/, '')) {
-                        gifSearchCache.set(cleanTarget, fullPath);
+                } else if (entry.name.toLowerCase().endsWith('.' + ext)) {
+                    const cleanName = cleanKey(entry.name).replace(new RegExp(`${ext}$`), '');
+                    if (cleanName === cleanTarget) {
+                        cacheMap.set(cleanTarget, fullPath);
                         return fullPath;
                     }
                 }
@@ -72,10 +76,55 @@ function findGifRecursively(dir, targetName) {
     return null;
 }
 
+// 1. Rota de WebP de alta velocidade com Cache Permanente no Navegador
+app.get('/assets/webp/*', (req, res, next) => {
+    const rawParam = req.params[0] || '';
+    const filename = path.basename(rawParam);
+    if (!filename) return next();
+
+    res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+
+    // Busca exata no diretório webp
+    const exactLocal = path.join(webpLocalDir, rawParam);
+    if (fs.existsSync(exactLocal) && fs.statSync(exactLocal).isFile()) {
+        return res.sendFile(exactLocal);
+    }
+
+    // Busca inteligente com tolerância a acentos e espaços
+    const foundWebp = findFileRecursively(webpLocalDir, filename, 'webp', webpSearchCache);
+    if (foundWebp) {
+        return res.sendFile(foundWebp);
+    }
+
+    // Fallback transparente: se não houver webp, tenta achar o GIF correspondente
+    const gifName = filename.replace(/\.webp$/i, '.gif');
+    const fallbackGif = findFileRecursively(gifsLocalDir, gifName, 'gif', gifSearchCache) 
+                     || (fs.existsSync(gifsFallbackDir) ? findFileRecursively(gifsFallbackDir, gifName, 'gif', gifSearchCache) : null);
+    if (fallbackGif) {
+        return res.sendFile(fallbackGif);
+    }
+
+    next();
+});
+
+// 2. Rota de GIFs com negociação automática para WebP e Cache Agressivo
 app.get('/assets/gifs/*', (req, res, next) => {
     const rawParam = req.params[0] || '';
     const filename = path.basename(rawParam);
     if (!filename) return next();
+
+    res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+
+    // Se existir a versão WebP otimizada equivalente, serve o WebP automaticamente
+    const baseName = filename.replace(/\.gif$/i, '');
+    const webpFile = path.join(webpLocalDir, `${baseName}.webp`);
+    if (fs.existsSync(webpFile)) {
+        return res.sendFile(webpFile);
+    }
+    const smartWebp = findFileRecursively(webpLocalDir, baseName, 'webp', webpSearchCache);
+    if (smartWebp) {
+        return res.sendFile(smartWebp);
+    }
 
     // 1. Verificar se existe exatamente no caminho pedido dentro de public/assets/gifs
     const exactLocal = path.join(gifsLocalDir, rawParam);
@@ -83,12 +132,12 @@ app.get('/assets/gifs/*', (req, res, next) => {
         return res.sendFile(exactLocal);
     }
 
-    // 2. Procurar recursivamente em public/assets/gifs (em qualquer subpasta enviada pelo usuário)
-    let found = findGifRecursively(gifsLocalDir, filename);
+    // 2. Procurar recursivamente em public/assets/gifs
+    let found = findFileRecursively(gifsLocalDir, filename, 'gif', gifSearchCache);
 
-    // 3. Se não achou e estiver em ambiente local de dev, procurar em TODOS OS GIFS MUSCULAÇÃO
+    // 3. Fallback em dev local
     if (!found && fs.existsSync(gifsFallbackDir)) {
-        found = findGifRecursively(gifsFallbackDir, filename);
+        found = findFileRecursively(gifsFallbackDir, filename, 'gif', gifSearchCache);
     }
 
     if (found) {

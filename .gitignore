@@ -38,6 +38,8 @@ dist/
 build/
 .cache/
 
-# Mídia Pesada (GIFs devem ser montados via volume Docker na VPS)
+# Mídia Pesada (GIFs e WebPs devem ser montados via volume Docker na VPS)
 public/assets/gifs/*
 !public/assets/gifs/.gitkeep
+public/assets/webp/*
+!public/assets/webp/.gitkeep

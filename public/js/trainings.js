@@ -216,25 +216,32 @@ async function viewExerciseDetails(encodedName, sets, reps) {
     modalTitle.textContent = rawName;
     modalSubtitle.textContent = `${sets || 4} séries × ${reps || 15} repetições`;
 
-    let gifSrc = '';
+    const cleanName = rawName.replace(/\s*\(\d+\)$/, '').trim();
+    const webpSrc = `/assets/webp/${encodeURIComponent(cleanName)}.webp`;
+    let gifFallback = '';
     if (found && found.gif) {
-        gifSrc = found.gif;
-        if (gifSrc.startsWith('images/')) {
-            gifSrc = `/assets/gifs/${gifSrc.replace('images/', '')}`;
+        gifFallback = found.gif;
+        if (gifFallback.startsWith('images/')) {
+            gifFallback = `/assets/gifs/${gifFallback.replace('images/', '')}`;
         }
         modalHow.textContent = found.how || 'Execute com movimento controlado, postura alinhada e foco na contração muscular.';
         modalMuscles.textContent = found.muscles || found.group || 'Grupamento muscular principal';
     } else {
-        // Se ainda não estiver na lista com URL externa, aponta para a pasta de GIFs locais da VPS
-        gifSrc = `/assets/gifs/${encodeURIComponent(rawName)}.gif`;
+        gifFallback = `/assets/gifs/${encodeURIComponent(cleanName)}.gif`;
         modalHow.textContent = 'Mantenha a postura alinhada, execute a fase excêntrica de forma controlada e concentre a força no músculo alvo.';
         modalMuscles.textContent = 'Grupamento muscular alvo do exercício.';
     }
 
     modalImg.onerror = function() {
-        this.src = `https://placehold.co/500x320/111827/00FFFF?text=${encodeURIComponent(rawName)}`;
+        if (!this.dataset.fallback) {
+            this.dataset.fallback = 'gif';
+            this.src = gifFallback || `https://placehold.co/500x320/111827/00FFFF?text=${encodeURIComponent(rawName)}`;
+        } else {
+            this.src = `https://placehold.co/500x320/111827/00FFFF?text=${encodeURIComponent(rawName)}`;
+        }
     };
-    modalImg.src = gifSrc;
+    delete modalImg.dataset.fallback;
+    modalImg.src = webpSrc;
 
     document.getElementById('exercise-gif-modal').classList.remove('hidden');
     if (window.lucide) {
