@@ -4,10 +4,30 @@
  */
 
 require('dotenv').config();
-const express = require('express');
-const cors = require('cors');
 const path = require('path');
 const fs = require('fs');
+
+// Garantir carregamento robusto das chaves mesmo se o Docker Swarm passar variável vazia
+if (!process.env.GEMINI_API_KEY || !process.env.GEMINI_API_KEY.trim()) {
+    const envCandidates = [
+        path.join(__dirname, '.env'),
+        path.join('/app', '.env'),
+        path.join('/var/www/shapemestre', '.env'),
+        path.join(__dirname, '..', '.env')
+    ];
+    for (const p of envCandidates) {
+        if (fs.existsSync(p)) {
+            require('dotenv').config({ path: p, override: true });
+            if (process.env.GEMINI_API_KEY && process.env.GEMINI_API_KEY.trim()) {
+                console.log('✅ Chaves de IA carregadas de:', p);
+                break;
+            }
+        }
+    }
+}
+
+const express = require('express');
+const cors = require('cors');
 const multer = require('multer');
 
 // Serviços internos

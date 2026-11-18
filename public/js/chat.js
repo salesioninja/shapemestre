@@ -46,6 +46,28 @@ function setChatAgent(agent) {
     }
 }
 
+// Auto-redimensionamento do campo de texto para mostrar todo o texto sem corte
+function autoResizeChatInput(el) {
+    if (!el) return;
+    el.style.height = 'auto';
+    el.style.height = Math.min(el.scrollHeight, 140) + 'px';
+}
+
+// Enviar mensagem com Enter (Shift+Enter pula linha)
+function handleChatKeyDown(event) {
+    if (event.key === 'Enter' && !event.shiftKey) {
+        event.preventDefault();
+        const form = document.getElementById('chat-form');
+        if (form) {
+            if (typeof form.requestSubmit === 'function') {
+                form.requestSubmit();
+            } else {
+                handleChatSubmit(event);
+            }
+        }
+    }
+}
+
 // Submissão do Chat
 async function handleChatSubmit(event) {
     event.preventDefault();
@@ -59,6 +81,7 @@ async function handleChatSubmit(event) {
         const file = selectedImageFile;
         clearImagePreview();
         input.value = '';
+        input.style.height = 'auto';
 
         appendMessage('user', text ? `${text} (com foto)` : '📷 Foto enviada para análise');
         const loadingId = appendLoadingIndicator();
@@ -91,6 +114,7 @@ async function handleChatSubmit(event) {
 
     // Envio de texto normal
     input.value = '';
+    input.style.height = 'auto';
     appendMessage('user', text);
     const loadingId = appendLoadingIndicator();
 

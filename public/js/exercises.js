@@ -410,6 +410,11 @@ function askAIAbaoutExercise(exerciseName) {
     const input = document.getElementById('chat-input');
     if (input) {
         input.value = `Como faço para executar perfeitamente o exercício "${exerciseName}" e quais são os erros mais comuns?`;
+        if (typeof autoResizeChatInput === 'function') {
+            autoResizeChatInput(input);
+        }
         input.focus();
+        // Colocar cursor no final do texto
+        input.setSelectionRange(input.value.length, input.value.length);
     }
 }

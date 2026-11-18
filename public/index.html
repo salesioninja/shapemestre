@@ -386,8 +386,8 @@
                             <i data-lucide="mic" class="w-4 h-4 sm:w-5 sm:h-5" id="mic-icon"></i>
                         </button>
 
-                        <!-- Campo de Texto (min-w-0 flex-1 para nunca quebrar ou empurrar o botão Enviar) -->
-                        <input type="text" id="chat-input" placeholder="Dúvida de treino ou dieta..." class="min-w-0 flex-1 bg-gray-950 border border-gray-800 rounded-xl px-3 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-neoncyan transition">
+                        <!-- Campo de Texto Multilinha Expansível (Visualização completa do texto sem corte) -->
+                        <textarea id="chat-input" rows="1" placeholder="Dúvida de treino ou dieta..." class="min-w-0 flex-1 bg-gray-950 border border-gray-800 rounded-xl px-3 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-neoncyan transition resize-none max-h-36 leading-relaxed overflow-y-auto" onkeydown="handleChatKeyDown(event)" oninput="autoResizeChatInput(this)"></textarea>
 
                         <!-- Botão Enviar (Sempre visível) -->
                         <button type="submit" id="chat-send-btn" class="btn-neon-cyan p-2 sm:p-2.5 rounded-xl font-bold shrink-0 flex items-center justify-center">
