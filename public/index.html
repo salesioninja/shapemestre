@@ -403,42 +403,172 @@
         <!-- ============================================== -->
         <section id="tab-profile" class="tab-content hidden">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Calculadora de IMC -->
-                <div class="glass-card p-6 border border-gray-800">
-                    <div class="flex items-center space-x-3 mb-6">
-                        <div class="p-3 rounded-xl bg-neongreen/20 text-neongreen border border-neongreen/40">
-                            <i data-lucide="scale" class="w-6 h-6"></i>
+                <!-- Coluna Esquerda: IMC + Plano de Metas de Macros -->
+                <div class="space-y-6">
+                    <!-- Calculadora de IMC -->
+                    <div class="glass-card p-6 border border-gray-800">
+                        <div class="flex items-center space-x-3 mb-6">
+                            <div class="p-3 rounded-xl bg-neongreen/20 text-neongreen border border-neongreen/40">
+                                <i data-lucide="scale" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Calculadora de IMC</h3>
+                                <p class="text-xs text-gray-400">Índice de Massa Corporal e Faixa de Peso Ideal</p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-white">Calculadora de IMC</h3>
-                            <p class="text-xs text-gray-400">Índice de Massa Corporal e Faixa de Peso Ideal</p>
-                        </div>
-                    </div>
 
-                    <div class="space-y-4 mb-6">
-                        <div>
-                            <label class="block text-xs font-semibold text-gray-300 uppercase mb-1">Seu Peso (kg)</label>
-                            <input type="number" id="imc-weight" placeholder="Ex: 75.5" step="0.1" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-neongreen">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 uppercase mb-1">Seu Peso (kg)</label>
+                                <input type="number" id="imc-weight" placeholder="Ex: 75.5" step="0.1" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-neongreen">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 uppercase mb-1">Sua Altura (cm)</label>
+                                <input type="number" id="imc-height" placeholder="Ex: 175" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-neongreen">
+                            </div>
                         </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-gray-300 uppercase mb-1">Sua Altura (cm)</label>
-                            <input type="number" id="imc-height" placeholder="Ex: 175" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-neongreen">
-                        </div>
-                        <button onclick="calculateIMC()" class="w-full py-3 rounded-xl font-bold text-sm bg-neongreen text-black hover:bg-emerald-400 transition shadow-lg shadow-neongreen/20">
+
+                        <button onclick="calculateIMC()" class="w-full py-2.5 rounded-xl font-bold text-sm bg-neongreen text-black hover:bg-emerald-400 transition shadow-lg shadow-neongreen/20">
                             Calcular Meu IMC
                         </button>
+
+                        <div id="imc-result" class="hidden mt-4 p-4 rounded-xl bg-gray-900 border border-gray-800 text-center">
+                            <p class="text-xs text-gray-400 uppercase font-semibold">Seu Resultado</p>
+                            <p class="text-3xl font-extrabold text-neongreen my-1" id="imc-value">23.4</p>
+                            <p class="text-sm font-bold text-white" id="imc-classification">Peso Saudável</p>
+                        </div>
                     </div>
 
-                    <div id="imc-result" class="hidden p-4 rounded-xl bg-gray-900 border border-gray-800 text-center">
-                        <p class="text-xs text-gray-400 uppercase font-semibold">Seu Resultado</p>
-                        <p class="text-3xl font-extrabold text-neongreen my-1" id="imc-value">23.4</p>
-                        <p class="text-sm font-bold text-white" id="imc-classification">Peso Saudável</p>
+                    <!-- CARD DE METAS & DISTRIBUIÇÃO DE MACRONUTRIENTES -->
+                    <div class="glass-card p-6 border border-gray-800 shadow-2xl relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-5 flex-wrap gap-2">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2.5 rounded-xl bg-neoncyan/15 text-neoncyan border border-neoncyan/30">
+                                    <i data-lucide="target" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-white">Plano de Consumo & Macros</h3>
+                                    <p class="text-xs text-gray-400">Diretriz esportiva diária com base no seu peso</p>
+                                </div>
+                            </div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-neoncyan/10 text-neoncyan border border-neoncyan/30">
+                                1.5 a 2.2 g/kg Prot
+                            </span>
+                        </div>
+
+                        <!-- 1. ABAS DE PERFIL DE TREINO -->
+                        <div class="flex bg-gray-950 p-1 rounded-full border border-gray-800 gap-1 mb-5 overflow-x-auto select-none">
+                            <button type="button" id="macro-tab-fitness" onclick="setMacroProfile('fitness')" class="flex-1 py-2 px-3 rounded-full text-[11px] sm:text-xs font-bold transition text-center whitespace-nowrap text-gray-400 hover:text-white">
+                                Quem treina (Fitness)
+                            </button>
+                            <button type="button" id="macro-tab-hipertrofia" onclick="setMacroProfile('hipertrofia')" class="flex-1 py-2 px-3 rounded-full text-[11px] sm:text-xs font-bold transition text-center whitespace-nowrap bg-white text-gray-950 border border-white shadow">
+                                Hipertrofia / Força
+                            </button>
+                            <button type="button" id="macro-tab-endurance" onclick="setMacroProfile('endurance')" class="flex-1 py-2 px-3 rounded-full text-[11px] sm:text-xs font-bold transition text-center whitespace-nowrap text-gray-400 hover:text-white">
+                                Atleta Endurance
+                            </button>
+                            <button type="button" id="macro-tab-atleta" onclick="setMacroProfile('atleta')" class="flex-1 py-2 px-3 rounded-full text-[11px] sm:text-xs font-bold transition text-center whitespace-nowrap text-gray-400 hover:text-white">
+                                Atleta Alto Volume
+                            </button>
+                        </div>
+
+                        <!-- 2. GRID DE 4 CARDS DE MÉTRICAS DIÁRIAS -->
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
+                            <!-- Proteína -->
+                            <div class="p-3.5 rounded-xl bg-gray-950 border border-gray-800 flex flex-col justify-between hover:border-neoncyan/40 transition">
+                                <span class="text-[11px] text-gray-400 font-medium">Proteína / dia</span>
+                                <div class="my-1.5">
+                                    <span class="text-base sm:text-lg font-extrabold text-white block tracking-tight" id="macro-prot-val">126 - 154 g</span>
+                                </div>
+                                <span class="text-[10px] text-neoncyan font-semibold" id="macro-prot-sub">1.8 - 2.2 g/kg</span>
+                            </div>
+
+                            <!-- Carboidrato -->
+                            <div class="p-3.5 rounded-xl bg-gray-950 border border-gray-800 flex flex-col justify-between hover:border-blue-500/40 transition">
+                                <span class="text-[11px] text-gray-400 font-medium">Carboidrato / dia</span>
+                                <div class="my-1.5">
+                                    <span class="text-base sm:text-lg font-extrabold text-white block tracking-tight" id="macro-carb-val">280 - 420 g</span>
+                                </div>
+                                <span class="text-[10px] text-blue-400 font-semibold" id="macro-carb-sub">4.0 - 6.0 g/kg</span>
+                            </div>
+
+                            <!-- Gordura -->
+                            <div class="p-3.5 rounded-xl bg-gray-950 border border-gray-800 flex flex-col justify-between hover:border-amber-500/40 transition">
+                                <span class="text-[11px] text-gray-400 font-medium">Gordura / dia</span>
+                                <div class="my-1.5">
+                                    <span class="text-base sm:text-lg font-extrabold text-white block tracking-tight" id="macro-fat-val">56 - 84 g</span>
+                                </div>
+                                <span class="text-[10px] text-amber-400 font-semibold" id="macro-fat-sub">0.8 - 1.2 g/kg</span>
+                            </div>
+
+                            <!-- Água basal -->
+                            <div class="p-3.5 rounded-xl bg-gray-950 border border-gray-800 flex flex-col justify-between hover:border-emerald-500/40 transition">
+                                <span class="text-[11px] text-gray-400 font-medium">Água basal / dia</span>
+                                <div class="my-1.5">
+                                    <span class="text-base sm:text-lg font-extrabold text-white block tracking-tight" id="macro-water-val">2,45 - 3,15 L</span>
+                                </div>
+                                <span class="text-[10px] text-emerald-400 font-semibold" id="macro-water-sub">35 - 45 mL/kg</span>
+                            </div>
+                        </div>
+
+                        <!-- 3. DISTRIBUIÇÃO CALÓRICA MÉDIA ESTIMADA -->
+                        <div class="p-4 rounded-xl bg-gray-950 border border-gray-800 mb-5">
+                            <div class="flex items-center justify-between mb-2 text-xs">
+                                <span class="text-gray-400 font-medium">Distribuição calórica média estimada</span>
+                                <span class="font-extrabold text-white" id="macro-kcal-total">~2.503 kcal / dia</span>
+                            </div>
+                            
+                            <!-- Barra Segmentada -->
+                            <div class="w-full h-7 rounded-lg overflow-hidden flex font-bold text-[11px] text-white select-none">
+                                <div id="macro-bar-carb" class="bg-blue-600 flex items-center justify-center transition-all duration-300" style="width: 56%;">56%</div>
+                                <div id="macro-bar-prot" class="bg-emerald-600 flex items-center justify-center transition-all duration-300" style="width: 20%;">20%</div>
+                                <div id="macro-bar-fat" class="bg-amber-700 flex items-center justify-center transition-all duration-300" style="width: 24%;">24%</div>
+                            </div>
+
+                            <!-- Legenda -->
+                            <div class="flex items-center space-x-4 mt-2.5 text-[11px] text-gray-400 flex-wrap gap-y-1">
+                                <span class="flex items-center space-x-1.5">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+                                    <span>Carboidrato (4 kcal/g)</span>
+                                </span>
+                                <span class="flex items-center space-x-1.5">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+                                    <span>Proteína (4 kcal/g)</span>
+                                </span>
+                                <span class="flex items-center space-x-1.5">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-amber-700"></span>
+                                    <span>Gordura (9 kcal/g)</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 4. SLIDER INTERATIVO DE PESO CORPORAL -->
+                        <div class="p-4 rounded-xl bg-gray-950 border border-gray-800 mb-5">
+                            <div class="flex items-center justify-between mb-3 text-xs">
+                                <span class="text-gray-300 font-bold uppercase tracking-wider">Peso corporal</span>
+                                <div class="px-3 py-1 rounded-lg bg-gray-900 border border-gray-700 text-white font-extrabold text-sm" id="macro-weight-badge">
+                                    70 kg
+                                </div>
+                            </div>
+                            <input type="range" min="40" max="160" step="1" value="70" id="macro-weight-slider" oninput="setMacroWeight(this.value)" class="w-full accent-neoncyan h-2 bg-gray-800 rounded-lg cursor-pointer">
+                            <div class="flex justify-between text-[10px] text-gray-500 mt-1 select-none">
+                                <span>40 kg</span>
+                                <span>100 kg</span>
+                                <span>160 kg</span>
+                            </div>
+                        </div>
+
+                        <!-- 5. BOTÃO DE AÇÃO: ATIVAR META NO DIÁRIO -->
+                        <button onclick="applyMacroPlanAsDailyGoal()" class="w-full py-3 rounded-xl font-bold text-xs sm:text-sm bg-gradient-to-r from-neoncyan via-blue-500 to-indigo-600 text-black hover:opacity-95 transition flex items-center justify-center space-x-2 shadow-lg shadow-neoncyan/20 active:scale-[0.99]">
+                            <i data-lucide="check-circle" class="w-4 h-4"></i>
+                            <span>Ativar Como Minha Meta do Diário ⚡</span>
+                        </button>
                     </div>
                 </div>
 
                 <!-- Diário Alimentar do Dia -->
                 <div class="glass-card p-6 border border-gray-800">
-                    <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center justify-between mb-4">
                         <div class="flex items-center space-x-3">
                             <div class="p-3 rounded-xl bg-neonpink/20 text-neonpink border border-neonpink/40">
                                 <i data-lucide="utensils" class="w-6 h-6"></i>
@@ -450,8 +580,77 @@
                         </div>
                     </div>
 
+                    <!-- BANNER DA META ATIVA DO DIA COM BARRAS DE PROGRESSO -->
+                    <div id="diary-goal-banner" class="hidden mb-5 p-4 rounded-xl bg-gray-950 border border-gray-800 shadow-inner">
+                        <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
+                            <div class="flex items-center space-x-2">
+                                <span class="w-2 h-2 rounded-full bg-neoncyan animate-pulse"></span>
+                                <span class="text-xs font-bold text-white uppercase tracking-wider" id="goal-profile-name">Meta: Hipertrofia / Força</span>
+                            </div>
+                            <span class="text-xs font-extrabold text-neongreen" id="goal-remaining-kcal">Restam 0 kcal</span>
+                        </div>
+                        
+                        <!-- Barra Geral de Calorias -->
+                        <div class="w-full bg-gray-900 rounded-full h-3 mb-3 overflow-hidden border border-gray-800/80">
+                            <div id="goal-progress-bar" class="bg-gradient-to-r from-neoncyan via-blue-500 to-neonpink h-3 rounded-full transition-all duration-500" style="width: 0%;"></div>
+                        </div>
+
+                        <!-- Sub-barras de Macros -->
+                        <div class="grid grid-cols-3 gap-3 text-[11px] pt-1">
+                            <div>
+                                <div class="flex justify-between text-gray-400 mb-1">
+                                    <span class="text-neoncyan font-semibold">Proteína</span>
+                                    <span id="goal-prog-prot-txt" class="font-bold text-white">0g</span>
+                                </div>
+                                <div class="w-full bg-gray-900 rounded-full h-1.5 overflow-hidden">
+                                    <div id="goal-prog-prot-bar" class="bg-neoncyan h-1.5 rounded-full transition-all duration-500" style="width: 0%;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-gray-400 mb-1">
+                                    <span class="text-amber-400 font-semibold">Carbos</span>
+                                    <span id="goal-prog-carb-txt" class="font-bold text-white">0g</span>
+                                </div>
+                                <div class="w-full bg-gray-900 rounded-full h-1.5 overflow-hidden">
+                                    <div id="goal-prog-carb-bar" class="bg-amber-400 h-1.5 rounded-full transition-all duration-500" style="width: 0%;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-gray-400 mb-1">
+                                    <span class="text-rose-400 font-semibold">Gorduras</span>
+                                    <span id="goal-prog-fat-txt" class="font-bold text-white">0g</span>
+                                </div>
+                                <div class="w-full bg-gray-900 rounded-full h-1.5 overflow-hidden">
+                                    <div id="goal-prog-fat-bar" class="bg-rose-400 h-1.5 rounded-full transition-all duration-500" style="width: 0%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BOTÕES DE AÇÃO: FOTO IA & CATÁLOGO TACO -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-5">
+                        <button onclick="openPhotoMealModal()" class="p-3 rounded-xl bg-gradient-to-r from-neonpink/20 to-purple-600/20 border border-neonpink/50 hover:border-neonpink text-white flex items-center justify-center space-x-2 transition group shadow-lg shadow-neonpink/10">
+                            <div class="p-1.5 rounded-lg bg-neonpink text-black group-hover:scale-105 transition">
+                                <i data-lucide="camera" class="w-4 h-4"></i>
+                            </div>
+                            <div class="text-left">
+                                <span class="text-xs font-bold block text-white">Registrar por Foto com IA</span>
+                                <span class="text-[10px] text-gray-400 block">Câmera ou Galeria com macros e benefícios</span>
+                            </div>
+                        </button>
+                        <button onclick="openTacoCatalogModal()" class="p-3 rounded-xl bg-gradient-to-r from-neongreen/15 to-emerald-600/15 border border-neongreen/40 hover:border-neongreen text-white flex items-center justify-center space-x-2 transition group shadow-lg shadow-neongreen/10">
+                            <div class="p-1.5 rounded-lg bg-neongreen text-black group-hover:scale-105 transition">
+                                <i data-lucide="salad" class="w-4 h-4"></i>
+                            </div>
+                            <div class="text-left">
+                                <span class="text-xs font-bold block text-white">Tabela TACO (597 Alimentos)</span>
+                                <span class="text-[10px] text-gray-400 block">Dados da UNICAMP com busca instantânea</span>
+                            </div>
+                        </button>
+                    </div>
+
                     <!-- Resumo de Macros do Dia -->
-                    <div class="grid grid-cols-4 gap-2 text-center mb-6 p-3 rounded-xl bg-gray-900 border border-gray-800">
+                    <div class="grid grid-cols-5 gap-2 text-center mb-5 p-3 rounded-xl bg-gray-900 border border-gray-800">
                         <div>
                             <p class="text-[10px] text-gray-400 uppercase">Calorias</p>
                             <p class="text-sm font-extrabold text-white" id="total-kcal">0 kcal</p>
@@ -468,19 +667,88 @@
                             <p class="text-[10px] text-yellow-400 uppercase">Gorduras</p>
                             <p class="text-sm font-extrabold text-yellow-400" id="total-fat">0g</p>
                         </div>
+                        <div>
+                            <p class="text-[10px] text-neongreen uppercase">Fibras</p>
+                            <p class="text-sm font-extrabold text-neongreen" id="total-fiber">0g</p>
+                        </div>
                     </div>
 
-                    <!-- Formulário Rápido de Adicionar Alimento -->
-                    <div class="flex gap-2 mb-4">
-                        <input type="text" id="food-name" placeholder="Alimento (ex: 150g Frango)" class="flex-grow bg-gray-900 border border-gray-800 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-neonpink">
-                        <input type="number" id="food-kcal" placeholder="Kcal" class="w-20 bg-gray-900 border border-gray-800 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-neonpink">
-                        <button onclick="addManualFood()" class="px-3 py-2 rounded-xl bg-neonpink text-black font-bold text-xs hover:bg-pink-400 transition">
-                            Adicionar
-                        </button>
+                    <!-- Lançador Rápido Inteligente por Alimento + Gramas (Tabela TACO Oficial) -->
+                    <div class="relative mb-4">
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <!-- Input Inteligente com Autocomplete TACO -->
+                            <div class="relative flex-1">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-500">
+                                    <i data-lucide="search" class="w-3.5 h-3.5"></i>
+                                </div>
+                                <input 
+                                    type="text" 
+                                    id="quick-food-input" 
+                                    placeholder="Ex: Arroz 150g, Frango grelhado, Ovo cozido..." 
+                                    autocomplete="off"
+                                    oninput="handleQuickFoodSearch(this.value)"
+                                    onkeydown="handleQuickFoodKeydown(event)"
+                                    class="w-full pl-9 pr-8 py-2.5 bg-gray-900 border border-gray-800 rounded-xl text-xs text-white placeholder-gray-500 focus:outline-none focus:border-neonpink transition shadow-inner"
+                                >
+                                <button 
+                                    type="button" 
+                                    id="quick-food-clear-btn" 
+                                    onclick="clearQuickFoodInput()" 
+                                    class="hidden absolute inset-y-0 right-0 pr-2.5 flex items-center text-gray-500 hover:text-white transition">
+                                    <i data-lucide="x" class="w-3.5 h-3.5"></i>
+                                </button>
+
+                                <!-- Dropdown Flutuante de Sugestões TACO -->
+                                <div id="quick-food-dropdown" class="hidden absolute left-0 right-0 top-full mt-1.5 max-h-64 overflow-y-auto bg-gray-950 border border-gray-800 rounded-xl shadow-[0_12px_32px_rgba(0,0,0,0.85)] z-50 divide-y divide-gray-800/60 no-scrollbar">
+                                    <!-- Itens injetados via JS -->
+                                </div>
+                            </div>
+
+                            <!-- Input de Gramas + Botão Lançar -->
+                            <div class="flex items-center gap-2">
+                                <div class="relative w-28 sm:w-24">
+                                    <input 
+                                        type="number" 
+                                        id="quick-food-grams" 
+                                        value="100" 
+                                        min="1" 
+                                        max="3000" 
+                                        step="10"
+                                        placeholder="100" 
+                                        oninput="updateQuickFoodLivePreview()"
+                                        onkeydown="handleQuickFoodKeydown(event)"
+                                        class="w-full pr-6 pl-2.5 py-2.5 bg-gray-900 border border-gray-800 rounded-xl text-xs text-white text-center font-bold focus:outline-none focus:border-neonpink transition"
+                                        title="Peso do alimento consumido em gramas"
+                                    >
+                                    <span class="absolute right-2.5 top-1/2 -translate-y-1/2 text-[11px] font-bold text-gray-400 pointer-events-none">g</span>
+                                </div>
+
+                                <button 
+                                    type="button" 
+                                    id="quick-food-add-btn" 
+                                    onclick="addQuickFoodToDiary()" 
+                                    class="px-4 py-2.5 rounded-xl bg-neonpink text-black font-extrabold text-xs hover:brightness-110 active:scale-95 transition shadow-lg shadow-pink-500/20 flex items-center justify-center space-x-1.5 whitespace-nowrap">
+                                    <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+                                    <span>Lançar</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Live Preview do Alimento Selecionado -->
+                        <div id="quick-food-preview" class="hidden mt-2 p-2.5 rounded-xl bg-gray-950/90 border border-neonpink/30 flex items-center justify-between text-xs animate-fadeIn">
+                            <div class="flex items-center space-x-2 truncate">
+                                <span class="w-2 h-2 rounded-full bg-neonpink shrink-0 animate-pulse"></span>
+                                <span id="quick-food-preview-name" class="font-bold text-white truncate">Alimento</span>
+                                <span id="quick-food-preview-badge" class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-gray-900 border border-gray-800 text-neoncyan">100g</span>
+                            </div>
+                            <div id="quick-food-preview-macros" class="text-[11px] text-gray-300 font-mono shrink-0 ml-2">
+                                <span class="text-neonpink font-bold">0 kcal</span> • P: 0g • C: 0g • G: 0g
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Lista de Alimentos do Dia -->
-                    <div id="food-diary-list" class="space-y-2 max-h-56 overflow-y-auto">
+                    <div id="food-diary-list" class="space-y-2 max-h-72 overflow-y-auto">
                         <p class="text-xs text-gray-500 text-center py-4">Nenhuma refeição registrada hoje.</p>
                     </div>
                 </div>
@@ -582,6 +850,128 @@
             <div class="p-3 bg-gray-900 border-t border-gray-800 flex justify-end">
                 <button onclick="closeExerciseGifModal()" class="px-5 py-2 rounded-xl text-xs font-bold bg-neoncyan text-black hover:bg-cyan-400 transition">
                     Fechar Demonstração
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL RAIO-X BIOMECÂNICO & CINESIOLOGIA (SHAPE MESTRE) -->
+    <div id="biomechanics-modal" class="hidden fixed inset-0 z-[70] bg-black/90 backdrop-blur-md flex items-center justify-center p-2 sm:p-4" onclick="if (event.target === this) closeBiomechanicsModal()">
+        <div class="glass-card max-w-4xl w-full max-h-[92vh] flex flex-col border border-neoncyan/50 shadow-2xl shadow-neoncyan/25 overflow-hidden animate-fadeIn">
+            <!-- Cabeçalho -->
+            <div class="p-3 sm:p-4 bg-gray-900 border-b border-gray-800 flex items-center justify-between shrink-0">
+                <div class="flex items-center space-x-3">
+                    <div class="p-2.5 rounded-xl bg-neoncyan/10 border border-neoncyan/40 text-neoncyan">
+                        <i data-lucide="scan" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 id="modal-bio-title" class="text-base sm:text-lg font-bold text-white font-['Orbitron'] leading-snug">Nome do Exercício</h3>
+                        <p id="modal-bio-subtitle" class="text-[11px] sm:text-xs text-neoncyan font-semibold">🔬 Raio-X Biomecânico • Membros Inferiores</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <button onclick="toggleBiomechanicsZoom()" class="hidden sm:flex items-center space-x-1 px-3 py-1.5 rounded-xl text-xs font-bold bg-gray-800 text-gray-300 hover:text-white hover:bg-gray-700 transition" title="Alternar Zoom">
+                        <i data-lucide="zoom-in" class="w-4 h-4 text-neoncyan"></i>
+                        <span>Zoom</span>
+                    </button>
+                    <button onclick="closeBiomechanicsModal()" class="text-gray-400 hover:text-white p-2 rounded-lg hover:bg-gray-800 transition">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Corpo Rolável em 2 Colunas -->
+            <div class="p-4 sm:p-5 overflow-y-auto space-y-5 text-sm text-gray-200">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+                    <!-- Coluna da Prancha Visual em Alta Resolução -->
+                    <div class="lg:col-span-6 flex flex-col space-y-2">
+                        <div class="relative w-full rounded-2xl overflow-hidden bg-gray-950 border border-gray-800 flex items-center justify-center shadow-2xl group cursor-zoom-in min-h-[260px] sm:min-h-[320px]" onclick="toggleBiomechanicsZoom()" title="Clique para ampliar o mapa">
+                            <img id="modal-bio-image" src="" alt="Prancha Cinesiológica" class="w-full h-auto object-contain transition-transform duration-300 select-none" />
+                            <span class="absolute bottom-2.5 right-2.5 px-2.5 py-1 rounded-lg text-[10px] font-bold bg-black/80 text-neoncyan border border-neoncyan/40 backdrop-blur flex items-center space-x-1 pointer-events-none">
+                                <i data-lucide="zoom-in" class="w-3 h-3"></i>
+                                <span>Toque para Ampliar</span>
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between text-[11px] text-gray-400 px-1">
+                            <span class="flex items-center space-x-1 text-neoncyan">
+                                <i data-lucide="check" class="w-3 h-3"></i>
+                                <span>Prancha Oficial em WebP Ultraleve</span>
+                            </span>
+                            <span class="text-gray-500">Toque na imagem para zoom</span>
+                        </div>
+                    </div>
+
+                    <!-- Coluna dos Detalhes Anatômicos & Biomecânicos -->
+                    <div class="lg:col-span-6 space-y-3.5">
+                        <!-- Músculos Primários e Secundários -->
+                        <div class="p-3.5 rounded-xl bg-gray-950/80 border border-gray-800 space-y-2.5">
+                            <div>
+                                <span class="text-[11px] uppercase tracking-wider font-bold text-rose-400 flex items-center space-x-1.5 mb-1.5">
+                                    <i data-lucide="flame" class="w-3.5 h-3.5"></i>
+                                    <span>Músculos Primários (Alvo Principal)</span>
+                                </span>
+                                <div id="modal-bio-primary" class="flex flex-wrap gap-1.5"></div>
+                            </div>
+                            <div class="pt-2 border-t border-gray-800/80">
+                                <span class="text-[11px] uppercase tracking-wider font-bold text-amber-400 flex items-center space-x-1.5 mb-1.5">
+                                    <i data-lucide="zap" class="w-3.5 h-3.5"></i>
+                                    <span>Músculos Secundários (Sinergistas)</span>
+                                </span>
+                                <div id="modal-bio-secondary" class="flex flex-wrap gap-1.5"></div>
+                            </div>
+                        </div>
+
+                        <!-- Estabilizadores & Plano -->
+                        <div class="p-3.5 rounded-xl bg-gray-950/80 border border-gray-800 space-y-2">
+                            <span class="text-[11px] uppercase tracking-wider font-bold text-emerald-400 flex items-center space-x-1.5">
+                                <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+                                <span>Estabilizadores & Articulações</span>
+                            </span>
+                            <div id="modal-bio-stabilizers" class="flex flex-wrap gap-1"></div>
+                            <div class="pt-2 border-t border-gray-800/80 flex items-center justify-between text-xs text-gray-300">
+                                <span class="text-gray-400 font-semibold">Plano Anatômico:</span>
+                                <span id="modal-bio-plane" class="text-neoncyan font-bold">Plano Sagital</span>
+                            </div>
+                        </div>
+
+                        <!-- Erros Comuns (O que NÃO fazer) -->
+                        <div class="p-3.5 rounded-xl bg-rose-950/30 border border-rose-600/30 space-y-2">
+                            <span class="text-[11px] uppercase tracking-wider font-bold text-rose-400 flex items-center space-x-1.5">
+                                <i data-lucide="alert-triangle" class="w-3.5 h-3.5"></i>
+                                <span>Erros Comuns (Evite Lesões)</span>
+                            </span>
+                            <ul id="modal-bio-errors" class="space-y-1.5 text-xs text-gray-300"></ul>
+                        </div>
+
+                        <!-- Execução Correta -->
+                        <div class="p-3.5 rounded-xl bg-gray-950/80 border border-gray-800 space-y-2">
+                            <span class="text-[11px] uppercase tracking-wider font-bold text-neongreen flex items-center space-x-1.5">
+                                <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i>
+                                <span>Execução Técnica Recomendada</span>
+                            </span>
+                            <ul id="modal-bio-execution" class="space-y-1.5 text-xs text-gray-300"></ul>
+                        </div>
+
+                        <!-- Dica de Ouro -->
+                        <div class="p-3.5 rounded-xl bg-gradient-to-r from-amber-950/40 to-yellow-950/20 border border-amber-500/40 space-y-1.5 shadow-lg shadow-amber-500/5">
+                            <span class="text-[11px] uppercase tracking-wider font-bold text-amber-300 flex items-center space-x-1.5">
+                                <i data-lucide="star" class="w-3.5 h-3.5 text-amber-400"></i>
+                                <span>Dica de Ouro do Mestre</span>
+                            </span>
+                            <p id="modal-bio-tip" class="text-xs text-amber-100 font-medium leading-relaxed"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rodapé de Ações -->
+            <div class="p-3 sm:p-4 bg-gray-900 border-t border-gray-800 flex flex-col sm:flex-row gap-2 sm:justify-between items-center shrink-0">
+                <button id="modal-bio-ask-ai" class="w-full sm:w-auto px-4 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider bg-gray-950 border border-neoncyan/50 text-neoncyan hover:bg-neoncyan hover:text-black transition flex items-center justify-center space-x-2">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                    <span>Tirar Dúvida desta Biomecânica com a IA</span>
+                </button>
+                <button onclick="closeBiomechanicsModal()" class="w-full sm:w-auto px-6 py-2.5 rounded-xl text-xs font-bold bg-neoncyan text-black hover:bg-cyan-400 transition">
+                    Fechar Raio-X
                 </button>
             </div>
         </div>
@@ -692,12 +1082,228 @@
         </div>
     </div>
 
+    <!-- ========================================== -->
+    <!-- MODAIS DO MÓDULO DE NUTRIÇÃO INTELIGENTE   -->
+    <!-- ========================================== -->
+
+    <!-- 1. MODAL DE REGISTRO DE REFEIÇÃO POR FOTO COM IA -->
+    <div id="photo-meal-modal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+        <div class="glass-card max-w-lg w-full p-4 sm:p-6 border border-neonpink/40 shadow-2xl shadow-neonpink/10 my-auto">
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center space-x-3">
+                    <div class="p-2.5 rounded-xl bg-neonpink/20 text-neonpink border border-neonpink/40">
+                        <i data-lucide="camera" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base sm:text-lg font-bold text-white flex items-center gap-1.5">
+                            <span>Registrar Refeição por Foto</span>
+                            <span class="text-[10px] px-1.5 py-0.5 rounded bg-neoncyan/15 text-neoncyan border border-neoncyan/40 font-mono">IA</span>
+                        </h3>
+                        <p class="text-[11px] text-gray-400">Tire uma foto do seu prato ou envie da galeria</p>
+                    </div>
+                </div>
+                <button onclick="closePhotoMealModal()" class="text-gray-400 hover:text-white p-1 rounded-lg">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+
+            <!-- Formulário de Foto & Envio -->
+            <div class="space-y-4">
+                <!-- Seletor do Tipo de Refeição -->
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1.5">Tipo de Refeição</label>
+                    <div class="grid grid-cols-4 gap-1.5" id="meal-type-selector">
+                        <button type="button" onclick="selectMealType('Café da Manhã')" class="meal-type-btn py-2 px-1 rounded-xl text-xs font-bold border border-gray-800 bg-gray-900 text-gray-300 hover:border-neonpink/50 transition active:scale-95 text-center" data-type="Café da Manhã">Café</button>
+                        <button type="button" onclick="selectMealType('Almoço')" class="meal-type-btn py-2 px-1 rounded-xl text-xs font-bold border border-neonpink bg-neonpink/20 text-white transition active:scale-95 text-center" data-type="Almoço">Almoço</button>
+                        <button type="button" onclick="selectMealType('Jantar')" class="meal-type-btn py-2 px-1 rounded-xl text-xs font-bold border border-gray-800 bg-gray-900 text-gray-300 hover:border-neonpink/50 transition active:scale-95 text-center" data-type="Jantar">Jantar</button>
+                        <button type="button" onclick="selectMealType('Lanche')" class="meal-type-btn py-2 px-1 rounded-xl text-xs font-bold border border-gray-800 bg-gray-900 text-gray-300 hover:border-neonpink/50 transition active:scale-95 text-center" data-type="Lanche">Lanche</button>
+                    </div>
+                    <input type="hidden" id="selected-meal-type" value="Almoço">
+                </div>
+
+                <!-- Área de Foto / Preview -->
+                <div>
+                    <input type="file" id="meal-photo-input" accept="image/*" capture="environment" class="hidden" onchange="handleMealPhotoSelected(event)">
+                    
+                    <div id="photo-dropzone" onclick="document.getElementById('meal-photo-input').click()" class="cursor-pointer border-2 border-dashed border-gray-700 hover:border-neonpink/60 rounded-2xl p-6 text-center transition bg-gray-950/60 hover:bg-gray-900/40 group">
+                        <div id="photo-placeholder-content" class="flex flex-col items-center">
+                            <div class="w-14 h-14 rounded-2xl bg-gray-900 border border-gray-800 flex items-center justify-center text-neonpink group-hover:scale-110 transition mb-3 shadow-lg">
+                                <i data-lucide="camera" class="w-7 h-7"></i>
+                            </div>
+                            <p class="text-sm font-bold text-white mb-1">Toque para tirar foto ou escolher</p>
+                            <p class="text-xs text-gray-400">Compressão inteligente automática no navegador</p>
+                            <span class="inline-block mt-3 px-3 py-1 rounded-full text-[10px] font-semibold bg-gray-900 border border-gray-800 text-gray-300">Câmera ou Galeria</span>
+                        </div>
+
+                        <div id="photo-preview-wrapper" class="hidden relative w-full h-56 rounded-xl overflow-hidden">
+                            <img id="photo-preview-img" src="" alt="Prato" class="w-full h-full object-cover">
+                            <button type="button" onclick="event.stopPropagation(); resetPhotoSelection();" class="absolute top-2 right-2 p-1.5 rounded-full bg-black/80 text-white hover:text-neonpink transition backdrop-blur border border-white/20" title="Trocar foto">
+                                <i data-lucide="refresh-cw" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Campo Opcional de Observação -->
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1">Observações (Opcional)</label>
+                    <input type="text" id="meal-photo-notes" placeholder="Ex: usei azeite no preparo, coca zero, 1 fatia de sobremesa" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-neonpink">
+                </div>
+
+                <!-- Estado de Loading da IA -->
+                <div id="photo-analysis-loading" class="hidden p-4 rounded-xl bg-gray-950 border border-neonpink/30 flex flex-col items-center justify-center text-center space-y-2">
+                    <div class="w-10 h-10 border-4 border-neonpink/30 border-t-neonpink rounded-full animate-spin"></div>
+                    <p class="text-xs font-bold text-white" id="photo-loading-text">Analisando nutrientes e porções com IA...</p>
+                    <p class="text-[11px] text-gray-400">Identificando alimentos, calorias, macros e benefícios</p>
+                </div>
+
+                <!-- Botões de Ação -->
+                <div class="flex space-x-2 pt-2">
+                    <button type="button" onclick="closePhotoMealModal()" class="w-1/3 py-2.5 rounded-xl text-xs font-bold bg-gray-900 border border-gray-800 text-gray-400 hover:text-white transition">
+                        Cancelar
+                    </button>
+                    <button type="button" id="btn-submit-meal-photo" onclick="submitMealPhotoAnalysis()" class="w-2/3 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-neonpink to-purple-600 text-white hover:opacity-95 transition shadow-lg shadow-neonpink/20 flex items-center justify-center space-x-1.5 disabled:opacity-50 disabled:cursor-not-allowed">
+                        <i data-lucide="sparkles" class="w-4 h-4"></i>
+                        <span>Analisar e Registrar</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. MODAL DE DETALHES DA REFEIÇÃO / BENEFÍCIOS -->
+    <div id="meal-details-modal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+        <div class="glass-card max-w-xl w-full p-4 sm:p-6 border border-neoncyan/40 shadow-2xl shadow-neoncyan/10 my-auto max-h-[90vh] flex flex-col">
+            <div class="flex items-center justify-between pb-3 border-b border-gray-800 shrink-0">
+                <div class="flex items-center space-x-3">
+                    <div class="p-2.5 rounded-xl bg-neoncyan/20 text-neoncyan border border-neoncyan/40">
+                        <i data-lucide="sparkles" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base sm:text-lg font-bold text-white flex items-center gap-2">
+                            <span id="details-meal-title">Detalhes da Refeição</span>
+                            <span id="details-meal-type" class="text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-neonpink/15 text-neonpink border border-neonpink/30">Almoço</span>
+                        </h3>
+                        <p class="text-[11px] text-gray-400">Avaliação nutricional e benefícios dos alimentos</p>
+                    </div>
+                </div>
+                <button onclick="closeMealDetailsModal()" class="text-gray-400 hover:text-white p-1 rounded-lg">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+
+            <!-- Conteúdo Rolável -->
+            <div class="overflow-y-auto py-4 space-y-4 pr-1">
+                <!-- Foto Thumbnail e Totais -->
+                <div class="flex flex-col sm:flex-row gap-4 items-center">
+                    <img id="details-meal-thumb" src="" alt="Prato" class="w-full sm:w-36 h-36 rounded-xl object-cover border border-gray-800 shrink-0 hidden">
+                    <div class="flex-grow w-full">
+                        <div class="grid grid-cols-4 sm:grid-cols-5 gap-2 text-center p-3 rounded-xl bg-gray-950 border border-gray-800">
+                            <div>
+                                <p class="text-[10px] text-gray-400 uppercase">Kcal</p>
+                                <p class="text-sm font-extrabold text-neonpink" id="details-meal-kcal">0</p>
+                            </div>
+                            <div>
+                                <p class="text-[10px] text-neoncyan uppercase">Proteína</p>
+                                <p class="text-sm font-extrabold text-neoncyan" id="details-meal-prot">0g</p>
+                            </div>
+                            <div>
+                                <p class="text-[10px] text-amber-400 uppercase">Carbo</p>
+                                <p class="text-sm font-extrabold text-amber-400" id="details-meal-carb">0g</p>
+                            </div>
+                            <div>
+                                <p class="text-[10px] text-rose-400 uppercase">Gordura</p>
+                                <p class="text-sm font-extrabold text-rose-400" id="details-meal-fat">0g</p>
+                            </div>
+                            <div class="col-span-4 sm:col-span-1">
+                                <p class="text-[10px] text-neongreen uppercase">Fibras</p>
+                                <p class="text-sm font-extrabold text-neongreen" id="details-meal-fiber">0g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resumo da Nutri IA -->
+                <div class="p-3.5 rounded-xl bg-gradient-to-r from-neoncyan/10 to-transparent border border-neoncyan/30 text-xs text-gray-200">
+                    <div class="flex items-center space-x-1.5 font-bold text-neoncyan mb-2">
+                        <i data-lucide="bot" class="w-4 h-4"></i>
+                        <span>Avaliação da MIA Nutri:</span>
+                    </div>
+                    <div id="details-meal-summary" class="space-y-2 text-xs"></div>
+                </div>
+
+                <!-- Lista de Alimentos com Benefícios -->
+                <div>
+                    <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 flex items-center justify-between">
+                        <span>Alimentos Identificados</span>
+                        <span class="text-[10px] text-neongreen font-normal">Com benefícios nutricionais</span>
+                    </h4>
+                    <div id="details-meal-foods-list" class="space-y-2.5"></div>
+                </div>
+            </div>
+
+            <!-- Rodapé -->
+            <div class="pt-3 border-t border-gray-800 flex justify-end shrink-0">
+                <button onclick="closeMealDetailsModal()" class="px-5 py-2 rounded-xl text-xs font-bold bg-gray-900 border border-gray-800 text-white hover:bg-gray-800 transition">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. MODAL DO CATÁLOGO BRASILEIRO (TABELA TACO) COM BENEFÍCIOS -->
+    <div id="taco-catalog-modal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+        <div class="glass-card max-w-2xl w-full p-4 sm:p-6 border border-neongreen/40 shadow-2xl shadow-neongreen/10 my-auto max-h-[90vh] flex flex-col">
+            <div class="flex items-center justify-between pb-3 border-b border-gray-800 shrink-0">
+                <div class="flex items-center space-x-3">
+                    <div class="p-2.5 rounded-xl bg-neongreen/20 text-neongreen border border-neongreen/40">
+                        <i data-lucide="salad" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base sm:text-lg font-bold text-white flex items-center gap-2">
+                            <span>Tabela TACO - Alimentos do Brasil</span>
+                            <span class="text-[10px] px-2 py-0.5 rounded bg-neongreen/15 text-neongreen border border-neongreen/30 font-mono">597 Itens</span>
+                        </h3>
+                        <p class="text-[11px] text-gray-400">Dados oficiais da UNICAMP com benefícios e dicas de consumo</p>
+                    </div>
+                </div>
+                <button onclick="closeTacoCatalogModal()" class="text-gray-400 hover:text-white p-1 rounded-lg">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+
+            <!-- Barra de Busca e Filtros -->
+            <div class="py-3 space-y-2.5 shrink-0">
+                <div class="relative">
+                    <input type="text" id="search-taco" oninput="filterTacoFoods()" placeholder="Buscar alimento (ex: arroz, feijão, frango, aveia, patinho)..." class="w-full bg-gray-900 border border-gray-800 rounded-xl pl-9 pr-4 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-neongreen">
+                    <i data-lucide="search" class="w-4 h-4 text-gray-500 absolute left-3 top-3"></i>
+                </div>
+                <div id="taco-category-pills" class="flex gap-1.5 overflow-x-auto pb-1 text-xs no-scrollbar"></div>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 px-1">
+                    <span id="taco-count-info">Carregando catálogo...</span>
+                    <span>Valores base por 100g</span>
+                </div>
+            </div>
+
+            <!-- Lista de Alimentos com Rolagem -->
+            <div id="taco-foods-list" class="overflow-y-auto space-y-2.5 pr-1 flex-grow"></div>
+
+            <!-- Rodapé -->
+            <div class="pt-3 border-t border-gray-800 flex justify-end shrink-0">
+                <button onclick="closeTacoCatalogModal()" class="px-5 py-2 rounded-xl text-xs font-bold bg-gray-900 border border-gray-800 text-white hover:bg-gray-800 transition">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- SCRIPTS DA APLICAÇÃO -->
     <script src="js/trainings.js"></script>
     <script src="js/exercises.js"></script>
     <script src="js/recipes.js"></script>
     <script src="js/chat.js"></script>
     <script src="js/profile.js"></script>
+    <script src="js/nutrition.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

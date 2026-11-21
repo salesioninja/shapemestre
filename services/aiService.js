@@ -27,7 +27,7 @@ Diretrizes:
 /**
  * Chama o Google Gemini (Gemini 2.5 Flash / 1.5 Flash)
  */
-async function callGemini({ prompt, history = [], agent = 'personal', imageBase64 = null, mimeType = 'image/jpeg' }) {
+async function callGemini({ prompt, history = [], agent = 'personal', imageBase64 = null, mimeType = 'image/jpeg', jsonMode = false }) {
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) {
         throw new Error('GEMINI_API_KEY não configurada no servidor.');
@@ -37,10 +37,8 @@ async function callGemini({ prompt, history = [], agent = 'personal', imageBase6
     const model = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
 
-    // Montar histórico de conversação
     const contents = [];
 
-    // Histórico prévio
     history.forEach(msg => {
         contents.push({
             role: msg.role === 'user' ? 'user' : 'model',
@@ -48,7 +46,6 @@ async function callGemini({ prompt, history = [], agent = 'personal', imageBase6
         });
     });
 
-    // Mensagem atual
     const currentParts = [];
     if (imageBase64) {
         currentParts.push({
@@ -61,15 +58,21 @@ async function callGemini({ prompt, history = [], agent = 'personal', imageBase6
     currentParts.push({ text: prompt });
     contents.push({ role: 'user', parts: currentParts });
 
+    const generationConfig = {
+        temperature: jsonMode ? 0.2 : 0.7,
+        maxOutputTokens: 8192
+    };
+
+    if (jsonMode) {
+        generationConfig.responseMimeType = "application/json";
+    }
+
     const payload = {
         system_instruction: {
             parts: [{ text: systemInstruction }]
         },
         contents: contents,
-        generationConfig: {
-            temperature: 0.7,
-            maxOutputTokens: 1500
-        }
+        generationConfig: generationConfig
     };
 
     const response = await fetch(url, {
@@ -92,7 +95,7 @@ async function callGemini({ prompt, history = [], agent = 'personal', imageBase6
 /**
  * Chama a OpenAI (GPT-4o-mini / GPT-4o)
  */
-async function callOpenAI({ prompt, history = [], agent = 'personal', imageBase64 = null }) {
+async function callOpenAI({ prompt, history = [], agent = 'personal', imageBase64 = null, jsonMode = false }) {
     const apiKey = process.env.OPENAI_API_KEY;
     if (!apiKey) {
         throw new Error('OPENAI_API_KEY não configurada no servidor.');
@@ -133,8 +136,13 @@ async function callOpenAI({ prompt, history = [], agent = 'personal', imageBase6
     const payload = {
         model: model,
         messages: messages,
-        temperature: 0.7
+        temperature: jsonMode ? 0.2 : 0.7,
+        max_tokens: 4000
     };
+
+    if (jsonMode) {
+        payload.response_format = { type: "json_object" };
+    }
 
     const response = await fetch(url, {
         method: 'POST',
@@ -176,9 +184,132 @@ async function askAI(options) {
     } else if (process.env.GEMINI_API_KEY) {
         return await callGemini(options);
     } else {
-        // Modo de demonstração / mock local caso nenhuma chave ainda esteja preenchida no .env
         const agentName = options.agent === 'mia' ? 'MIA Nutri' : 'Personal Trainer';
-        return `[Modo Demonstração ${agentName}]: Olá! Para ativar minhas respostas completas com inteligência artificial, configure suas chaves GEMINI_API_KEY ou OPENAI_API_KEY no arquivo .env da aplicação.`;
+        return `[Modo Demonstração ${agentName}]: Configure suas chaves GEMINI_API_KEY ou OPENAI_API_KEY no arquivo .env da aplicação.`;
+    }
+}
+
+function safeParseJSON(str) {
+    if (!str) return null;
+    let text = str.trim();
+    if (text.startsWith('```json')) text = text.replace(/^```json\s*/, '').replace(/\s*```$/, '');
+    else if (text.startsWith('```')) text = text.replace(/^```\s*/, '').replace(/\s*```$/, '');
+
+    try { return JSON.parse(text); } catch (e) {}
+
+    const firstBrace = text.indexOf('{');
+    const lastBrace = text.lastIndexOf('}');
+    if (firstBrace !== -1 && lastBrace > firstBrace) {
+        try { return JSON.parse(text.slice(firstBrace, lastBrace + 1)); } catch (e) {}
+    }
+    return null;
+}
+
+/**
+ * Análise Nutricional Estruturada por Foto de Prato (Vision IA com Structured JSON)
+ * Retorna alimentos identificados, porções em gramas, medidas caseiras, macros e benefícios.
+ */
+async function analyzeMealPhoto({ imageBase64, mimeType = 'image/jpeg', mealType = 'Almoço', userNotes = '' }) {
+    const prompt = `Atue como nutricionista clínica e esportiva de alta precisão (MIA Nutri - Shape Mestre).
+Analise a fotografia do prato/refeição enviada. Identifique detalhadamente cada alimento visível no prato e estime com rigor científico o peso e os macronutrientes.
+
+Tipo de refeição informado pelo usuário: "${mealType}".
+Notas adicionais do usuário (ingredientes ou detalhes não visíveis): "${userNotes || 'Nenhuma'}".
+
+Diretrizes obrigatórias de precisão científica:
+1. Decomponha o prato em alimentos individuais específicos da culinária brasileira (ex: Arroz branco cozido, Peito de frango grelhado, Salada de alface e tomate, Biscoito wafer, etc.).
+2. Para cada alimento estime a porção em gramas (porcao_estimada_g), a medida caseira brasileira (medida_caseira: ex: "1 filé médio", "3 colheres de sopa", "2 unidades"), proteínas (g), carboidratos (g), gorduras (g) e fibras (g).
+3. CÁLCULO DE CALORIAS RIGOROSO (Fórmula de Atwater): calorias_kcal DEVE ser exatamente: (proteinas_g * 4) + (carboidratos_g * 4) + (gorduras_g * 9). As calorias NUNCA podem divergir da soma dos macros.
+4. "beneficios": 1 frase curta e direta sobre os benefícios reais do alimento.
+5. AVALIAÇÃO DA NUTRI (Em frases curtas e objetivas, NUNCA texto corrido denso):
+   - "veredito": Frase curta de impacto com emoji sobre o prato (ex: "⚡ Fonte de energia rápida com moderada densidade calórica").
+   - "ponto_atencao": Frase curta com emoji apontando o ponto crítico (ex: "⚠️ Baixo teor proteico e de fibras, gerando menor saciedade").
+   - "dica_nutri": Sugestão prática e aplicável para equilibrar (ex: "💡 Combine com 1 dose de whey ou iogurte natural para manter a massa muscular").
+6. "confianca": "alta" | "media" | "baixa".
+7. REGRAS ANTI-DUPLICAÇÃO E BOM SENSO VISUAL:
+   - Nunca duplique a base de carboidratos: se houver uma massa de grãos, escolha apenas UMA opção dominante (ex: ou Arroz OU Cuscuz, NUNCA liste ambos para a mesma porção do prato).
+   - Se houver cubos amarelos/alaranjados, identifique apenas um alimento dominante (ex: Manga fresca OU Abóbora, não invente dois alimentos no mesmo espaço).
+   - Fatias vermelhas diagonais com pele lisa e sementes são pimentão vermelho ou pimenta doce, não confunda com tomate cereja.
+
+RESPONDA ESTRITAMENTE em formato JSON com o seguinte schema:
+{
+  "tipo_refeicao": "${mealType}",
+  "titulo_prato": "Nome descritivo e apetitoso do prato",
+  "alimentos": [
+    {
+      "nome": "string",
+      "porcao_estimada_g": number,
+      "medida_caseira": "string",
+      "calorias_kcal": number,
+      "proteinas_g": number,
+      "carboidratos_g": number,
+      "gorduras_g": number,
+      "fibras_g": number,
+      "beneficios": "string curta"
+    }
+  ],
+  "totais": {
+    "calorias_kcal": number,
+    "proteinas_g": number,
+    "carboidratos_g": number,
+    "gorduras_g": number,
+    "fibras_g": number
+  },
+  "resumo_prato": "Síntese geral em 1 frase",
+  "veredito": "⚡ Frase curta de impacto",
+  "ponto_atencao": "⚠️ Ponto de atenção nutricional",
+  "dica_nutri": "💡 Sugestão prática da nutricionista",
+  "confianca": "alta"
+}`;
+
+    const rawResponse = await askAI({
+        prompt,
+        agent: 'mia',
+        imageBase64,
+        mimeType,
+        jsonMode: true
+    });
+
+    try {
+        const parsed = safeParseJSON(rawResponse);
+        if (!parsed) {
+            throw new Error('Falha ao interpretar JSON da IA');
+        }
+
+        // Sanitize and ensure totals are mathematically consistent (Atwater: 4 * P + 4 * C + 9 * G)
+        if (parsed.alimentos && Array.isArray(parsed.alimentos)) {
+            let sumKcal = 0, sumProt = 0, sumCarb = 0, sumFat = 0, sumFib = 0;
+            parsed.alimentos.forEach(item => {
+                item.porcao_estimada_g = Math.round(Number(item.porcao_estimada_g) || 0);
+                item.proteinas_g = Math.round((Number(item.proteinas_g) || 0) * 10) / 10;
+                item.carboidratos_g = Math.round((Number(item.carboidratos_g) || 0) * 10) / 10;
+                item.gorduras_g = Math.round((Number(item.gorduras_g) || 0) * 10) / 10;
+                item.fibras_g = Math.round((Number(item.fibras_g) || 0) * 10) / 10;
+
+                // Força rigor matemático clínico: Kcal = (P * 4) + (C * 4) + (G * 9)
+                const atwaterKcal = Math.round((item.proteinas_g * 4) + (item.carboidratos_g * 4) + (item.gorduras_g * 9));
+                item.calorias_kcal = atwaterKcal > 0 ? atwaterKcal : Math.round(Number(item.calorias_kcal) || 0);
+
+                sumKcal += item.calorias_kcal;
+                sumProt += item.proteinas_g;
+                sumCarb += item.carboidratos_g;
+                sumFat += item.gorduras_g;
+                sumFib += item.fibras_g;
+            });
+
+            parsed.totais = {
+                calorias_kcal: Math.round(sumKcal),
+                proteinas_g: Math.round(sumProt * 10) / 10,
+                carboidratos_g: Math.round(sumCarb * 10) / 10,
+                gorduras_g: Math.round(sumFat * 10) / 10,
+                fibras_g: Math.round(sumFib * 10) / 10
+            };
+        }
+
+        return parsed;
+    } catch (err) {
+        console.error('Erro ao fazer parse do JSON da análise nutricional:', err, 'Resposta bruta:', rawResponse);
+        throw new Error('A IA não conseguiu estruturar os dados nutricionais da foto. Tente novamente.');
     }
 }
 
@@ -186,5 +317,6 @@ module.exports = {
     askAI,
     callGemini,
     callOpenAI,
+    analyzeMealPhoto,
     SYSTEM_PROMPTS
 };

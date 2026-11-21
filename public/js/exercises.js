@@ -7,6 +7,10 @@ let allExercises = [];
 let currentMuscleGroup = 'todos';
 let currentDisplayLimit = 60;
 let searchDebounceTimer = null;
+let cinesiologiaData = [];
+let cinesiologiaRules = [];
+let cinesiologiaMap = {};
+let currentBioZoomed = false;
 
 // Normalização de texto: remove acentos, pontuação e converte para minúsculas
 function normalizeText(str) {
@@ -81,9 +85,82 @@ function indexExercises(list) {
     });
 }
 
+// Carrega e indexa as fichas cinesiológicas e pranchas anatômicas (Raio-X Biomecânico)
+async function loadCinesiologia() {
+    try {
+        let loaded = false;
+        // Prioridade 1: Arquivo estático direto no PWA
+        try {
+            const resStatic = await fetch('/data/cinesiologia.json');
+            if (resStatic.ok) {
+                const text = await resStatic.text();
+                if (text && text.trim().startsWith('[')) {
+                    cinesiologiaData = JSON.parse(text);
+                    loaded = true;
+                }
+            }
+        } catch (e) {
+            console.warn('Tentando rota de API para cinesiologia...');
+        }
+
+        // Prioridade 2: Endpoint de API
+        if (!loaded) {
+            const resApi = await fetch('/api/cinesiologia');
+            if (resApi.ok) {
+                const text = await resApi.text();
+                if (text && text.trim().startsWith('[')) {
+                    cinesiologiaData = JSON.parse(text);
+                    loaded = true;
+                }
+            }
+        }
+
+        window.cinesiologiaData = cinesiologiaData || [];
+
+        cinesiologiaRules = [];
+        cinesiologiaMap = {};
+
+        (cinesiologiaData || []).forEach(item => {
+            cinesiologiaMap[item.id] = item;
+            if (item.matching_keys && Array.isArray(item.matching_keys)) {
+                item.matching_keys.forEach(k => {
+                    const normK = normalizeText(k);
+                    if (normK) {
+                        cinesiologiaRules.push({ key: normK, item: item });
+                    }
+                });
+            }
+            const normName = normalizeText(item.name);
+            if (normName) {
+                cinesiologiaRules.push({ key: normName, item: item });
+            }
+        });
+
+        // Ordena por especificidade (chaves mais longas primeiro)
+        cinesiologiaRules.sort((a, b) => b.key.length - a.key.length);
+    } catch (e) {
+        console.warn('Fichas de cinesiologia não carregadas:', e);
+    }
+}
+
+// Localiza a ficha de cinesiologia compatível com o exercício
+function findCinesiologia(exerciseName) {
+    if (!exerciseName || !cinesiologiaRules.length) return null;
+    const norm = normalizeText(exerciseName);
+    for (let i = 0; i < cinesiologiaRules.length; i++) {
+        if (norm.includes(cinesiologiaRules[i].key)) {
+            return cinesiologiaRules[i].item;
+        }
+    }
+    return null;
+}
+
 async function loadExercises() {
     const grid = document.getElementById('exercises-grid');
     try {
+        // Carrega base de cinesiologia antes de renderizar os cards
+        await loadCinesiologia();
+
         const response = await fetch('/api/exercises');
         allExercises = await response.json();
         window.allExercises = allExercises;
@@ -320,6 +397,8 @@ function renderExercisesList() {
     grid.innerHTML = displayList.map(ex => {
         const cleanName = (ex.name || '').replace(/\s*\(\d+\)$/, '').trim();
         const webpSrc = `/assets/webp/${encodeURIComponent(cleanName)}.webp`;
+        const asciiName = normalizeText(cleanName);
+        const asciiWebp = `/assets/webp/${encodeURIComponent(asciiName)}.webp`;
         let gifFallback = ex.gif || '';
         if (gifFallback.startsWith('images/')) {
             gifFallback = `/assets/gifs/${gifFallback.replace('images/', '')}`;
@@ -327,21 +406,29 @@ function renderExercisesList() {
             gifFallback = `/assets/gifs/${encodeURIComponent(cleanName)}.gif`;
         }
 
+        const bio = findCinesiologia(ex.name);
+
         return `
-            <div class="glass-card p-4 flex flex-col justify-between hover:border-neoncyan transition">
+            <div class="glass-card p-4 flex flex-col justify-between hover:border-neoncyan transition relative group/card">
                 <div>
-                    <!-- Imagem / GIF do Exercício (Prioridade WebP Ultraleve com Fallback automático para GIF) -->
+                    <!-- Imagem / GIF do Exercício (Prioridade WebP Ultraleve com Fallback automático em 3 Níveis) -->
                     <div class="relative w-full h-44 rounded-xl overflow-hidden bg-gray-950 border border-gray-800 mb-3 flex items-center justify-center">
                         <img 
                             src="${webpSrc}" 
                             alt="${escapeHtml(ex.name)}" 
                             loading="lazy" 
-                            onerror="if (!this.dataset.fallback) { this.dataset.fallback = 'gif'; this.src = '${gifFallback || 'https://placehold.co/400x250/111827/00FFFF?text=Shape+Mestre'}'; } else { this.src = 'https://placehold.co/400x250/111827/00FFFF?text=${encodeURIComponent(ex.name)}'; }"
+                            onerror="if (!this.dataset.step) { this.dataset.step = 'ascii'; this.src = '${asciiWebp}'; } else if (this.dataset.step === 'ascii') { this.dataset.step = 'gif'; this.src = '${gifFallback || ''}'; } else { this.src = 'https://placehold.co/400x250/111827/00FFFF?text=${encodeURIComponent(ex.name)}'; }"
                             class="w-full h-full object-contain"
                         />
                         <span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-black/70 text-neoncyan border border-neoncyan/40">
                             ${ex.group}
                         </span>
+                        ${bio ? `
+                            <button onclick="openBiomechanicsModal('${bio.id}')" class="absolute bottom-2 left-2 px-2 py-0.5 rounded text-[10px] font-bold bg-black/80 text-neoncyan border border-neoncyan/40 hover:bg-neoncyan hover:text-black transition flex items-center space-x-1 backdrop-blur z-10 shadow-sm" title="Prancha Cinesiológica disponível">
+                                <i data-lucide="scan" class="w-3 h-3"></i>
+                                <span>Raio-X 3D</span>
+                            </button>
+                        ` : ''}
                     </div>
 
                     <h3 class="text-base font-bold text-white mb-1.5 leading-snug">${escapeHtml(ex.name)}</h3>
@@ -363,11 +450,19 @@ function renderExercisesList() {
                 </div>
 
                 <div class="mt-4 pt-3 border-t border-gray-800/80 flex items-center justify-between text-[11px] text-gray-400">
-                    <span>${escapeHtml(ex.when || 'Geral')}</span>
-                    <button onclick="askAIAbaoutExercise('${escapeJsString(ex.name)}')" class="text-neoncyan hover:underline font-bold flex items-center space-x-1">
-                        <i data-lucide="sparkles" class="w-3 h-3"></i>
-                        <span>Dúvida com a IA</span>
-                    </button>
+                    <span class="truncate max-w-[100px]">${escapeHtml(ex.when || 'Geral')}</span>
+                    <div class="flex items-center space-x-2">
+                        ${bio ? `
+                            <button onclick="openBiomechanicsModal('${bio.id}')" class="px-2.5 py-1 rounded-lg text-[11px] font-bold text-neoncyan bg-neoncyan/10 border border-neoncyan/30 hover:bg-neoncyan/25 hover:border-neoncyan transition flex items-center space-x-1 shadow-sm" title="Abrir Raio-X Biomecânico & Cinesiologia">
+                                <i data-lucide="scan" class="w-3.5 h-3.5 text-neoncyan"></i>
+                                <span>🔬 Raio-X</span>
+                            </button>
+                        ` : ''}
+                        <button onclick="askAIAbaoutExercise('${escapeJsString(ex.name)}')" class="text-gray-400 hover:text-white font-medium flex items-center space-x-1 py-1 px-1.5 transition" title="Tirar dúvida com a IA">
+                            <i data-lucide="sparkles" class="w-3 h-3 text-neoncyan"></i>
+                            <span>IA</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         `;
@@ -418,3 +513,142 @@ function askAIAbaoutExercise(exerciseName) {
         input.setSelectionRange(input.value.length, input.value.length);
     }
 }
+
+// ========================================================
+// CONTROLE DO MODAL DE RAIO-X BIOMECÂNICO & CINESIOLOGIA
+// ========================================================
+
+function openBiomechanicsModal(cinesioId) {
+    const modal = document.getElementById('biomechanics-modal');
+    if (!modal) return;
+
+    const data = cinesiologiaMap[cinesioId];
+    if (!data) return;
+
+    currentBioZoomed = false;
+    const imgEl = document.getElementById('modal-bio-image');
+    if (imgEl) {
+        imgEl.style.transform = 'scale(1)';
+        imgEl.style.cursor = 'zoom-in';
+        imgEl.src = data.image;
+        imgEl.alt = `Prancha Cinesiológica - ${data.name}`;
+    }
+
+    const titleEl = document.getElementById('modal-bio-title');
+    if (titleEl) titleEl.textContent = data.name;
+
+    const subEl = document.getElementById('modal-bio-subtitle');
+    if (subEl) subEl.textContent = `🔬 Raio-X Biomecânico • ${data.subgroup ? data.subgroup.toUpperCase() : data.group.toUpperCase()}`;
+
+    // Músculos Primários
+    const primEl = document.getElementById('modal-bio-primary');
+    if (primEl) {
+        primEl.innerHTML = (data.primary_muscles && data.primary_muscles.length > 0)
+            ? data.primary_muscles.map(m => `<span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-rose-950/80 text-rose-300 border border-rose-600/40">${escapeHtml(m)}</span>`).join('')
+            : '<span class="text-gray-500 text-xs">Conforme prancha oficial</span>';
+    }
+
+    // Músculos Secundários
+    const secEl = document.getElementById('modal-bio-secondary');
+    if (secEl) {
+        secEl.innerHTML = (data.secondary_muscles && data.secondary_muscles.length > 0)
+            ? data.secondary_muscles.map(m => `<span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-amber-950/80 text-amber-300 border border-amber-600/40">${escapeHtml(m)}</span>`).join('')
+            : '<span class="text-gray-500 text-xs">Músculos sinergistas auxiliares</span>';
+    }
+
+    // Estabilizadores
+    const estabEl = document.getElementById('modal-bio-stabilizers');
+    if (estabEl) {
+        estabEl.innerHTML = (data.stabilizers && data.stabilizers.length > 0)
+            ? data.stabilizers.map(m => `<span class="px-2 py-0.5 rounded text-[11px] font-medium bg-emerald-950/70 text-emerald-300 border border-emerald-600/30">${escapeHtml(m)}</span>`).join('')
+            : '<span class="text-gray-500 text-xs">Core e estabilizadores articulares</span>';
+    }
+
+    // Plano Anatômico
+    const planeEl = document.getElementById('modal-bio-plane');
+    if (planeEl) {
+        planeEl.textContent = data.plane || 'Plano sagital';
+    }
+
+    // Erros Comuns
+    const errEl = document.getElementById('modal-bio-errors');
+    if (errEl) {
+        errEl.innerHTML = (data.common_errors && data.common_errors.length > 0)
+            ? data.common_errors.map(err => `
+                <li class="flex items-start space-x-2">
+                    <i data-lucide="x-circle" class="w-4 h-4 text-rose-400 shrink-0 mt-0.5"></i>
+                    <span class="text-gray-300 text-xs leading-relaxed">${escapeHtml(err)}</span>
+                </li>
+            `).join('')
+            : '<li class="text-xs text-gray-400">Evite cargas excessivas e perda de alinhamento postural.</li>';
+    }
+
+    // Execução Correta
+    const execEl = document.getElementById('modal-bio-execution');
+    if (execEl) {
+        execEl.innerHTML = (data.correct_execution && data.correct_execution.length > 0)
+            ? data.correct_execution.map(item => `
+                <li class="flex items-start space-x-2">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-neongreen shrink-0 mt-0.5"></i>
+                    <span class="text-gray-300 text-xs leading-relaxed">${escapeHtml(item)}</span>
+                </li>
+            `).join('')
+            : '<li class="text-xs text-gray-400">Execute com postura alinhada e movimento controlado.</li>';
+    }
+
+    // Dica de Ouro
+    const tipEl = document.getElementById('modal-bio-tip');
+    if (tipEl) {
+        tipEl.textContent = data.golden_tip || 'Mantenha o foco na contração muscular máxima e na cadência controlada.';
+    }
+
+    // Botão de Perguntar à IA sobre este Raio-X
+    const askBtn = document.getElementById('modal-bio-ask-ai');
+    if (askBtn) {
+        askBtn.onclick = () => {
+            closeBiomechanicsModal();
+            askAIAbaoutExercise(data.name);
+        };
+    }
+
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+
+    if (window.lucide) {
+        lucide.createIcons();
+    }
+}
+
+function closeBiomechanicsModal() {
+    const modal = document.getElementById('biomechanics-modal');
+    if (modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+        currentBioZoomed = false;
+        const imgEl = document.getElementById('modal-bio-image');
+        if (imgEl) {
+            imgEl.style.transform = 'scale(1)';
+            imgEl.style.cursor = 'zoom-in';
+        }
+    }
+}
+
+function toggleBiomechanicsZoom() {
+    const imgEl = document.getElementById('modal-bio-image');
+    if (!imgEl) return;
+    currentBioZoomed = !currentBioZoomed;
+    if (currentBioZoomed) {
+        imgEl.style.transform = 'scale(1.75)';
+        imgEl.style.cursor = 'zoom-out';
+    } else {
+        imgEl.style.transform = 'scale(1)';
+        imgEl.style.cursor = 'zoom-in';
+    }
+}
+
+// Fechamento de modais com a tecla ESC
+window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeBiomechanicsModal();
+    }
+});

@@ -1,0 +1,1340 @@
+[
+  {
+    "id": "agachamento-livre",
+    "name": "Agachamento Livre",
+    "group": "pernas",
+    "subgroup": "quadriceps",
+    "page": 3,
+    "image": "/assets/cinesiologia/agachamento-livre.webp",
+    "primary_muscles": [
+      "Quadríceps",
+      "Glúteo máximo",
+      "Adutores",
+      "Isquiotibiais"
+    ],
+    "secondary_muscles": [
+      "Eretor da espinha",
+      "Glúteo médio",
+      "Gastrocnêmio",
+      "Sóleo"
+    ],
+    "stabilizers": [
+      "Core (abdômen)",
+      "Lombares",
+      "Glúteo médio",
+      "Serrátil anterior",
+      "Músculos do quadril"
+    ],
+    "movement": [
+      "Extensão e flexão do quadril",
+      "Flexão e extensão do joelho",
+      "Dorsiflexão do tornozelo"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Pés na largura dos ombros (ou levemente mais largos)",
+      "Pontas dos pés levemente abertas (15º a 30º)",
+      "Coluna neutra e peito aberto com olhar para frente",
+      "Descer até a coxa ficar paralela ao chão (ou mais)",
+      "Joelhos alinhados com a direção das pontas dos pés",
+      "Distribuir a pressão no meio dos pés e calcanhar"
+    ],
+    "common_errors": [
+      "Valgo dinâmico (joelhos colapsando para dentro)",
+      "Elevar os calcanhares do solo na descida",
+      "Retroversão pélvica excessiva / arredondar a lombar",
+      "Amplitude curta (meio agachamento sem profundidade)",
+      "Inclinar o tronco em excesso à frente"
+    ],
+    "golden_tip": "Mantenha a coluna neutra, o core firme e os joelhos sempre alinhados com as pontas dos pés durante todo o movimento.",
+    "matching_keys": [
+      "agachamento livre",
+      "agachamento barra",
+      "agachamento costas",
+      "barbell squat",
+      "back squat",
+      "agachamento tradicional"
+    ]
+  },
+  {
+    "id": "agachamento-smith",
+    "name": "Agachamento no Smith",
+    "group": "pernas",
+    "subgroup": "quadriceps",
+    "page": 4,
+    "image": "/assets/cinesiologia/agachamento-smith.webp",
+    "primary_muscles": [
+      "Quadríceps",
+      "Glúteo máximo",
+      "Adutor magno"
+    ],
+    "secondary_muscles": [
+      "Isquiotibiais",
+      "Gastrocnêmio",
+      "Eretor da coluna",
+      "Glúteo médio"
+    ],
+    "stabilizers": [
+      "Core (abdômen)",
+      "Lombares",
+      "Glúteos e abdutores",
+      "Panturrilhas"
+    ],
+    "movement": [
+      "Flexão e extensão do quadril",
+      "Flexão e extensão do joelho",
+      "Dorsiflexão do tornozelo"
+    ],
+    "plane": "Plano sagital (trajetória guiada vertical)",
+    "correct_execution": [
+      "Ajustar a barra sobre o trapézio e posicionar travas de segurança",
+      "Posicionar os pés levemente à frente da linha da barra",
+      "Descer com os joelhos alinhados com as pontas dos pés",
+      "Manter coluna alinhada e peito aberto",
+      "Subir pressionando o chão pelos calcanhares e meio do pé"
+    ],
+    "common_errors": [
+      "Juntar os joelhos no início da subida",
+      "Tirar os calcanhares do chão",
+      "Descer sem controle motor",
+      "Arredondar a lombar na base do movimento",
+      "Ignorar o ajuste dos suportes de segurança da máquina"
+    ],
+    "golden_tip": "Mantenha os joelhos alinhados aos pés, a coluna neutra e utilize sempre os suportes de segurança da máquina.",
+    "matching_keys": [
+      "agachamento smith",
+      "agachamento no smith",
+      "smith machine squat"
+    ]
+  },
+  {
+    "id": "agachamento-bulgaro",
+    "name": "Agachamento Búlgaro",
+    "group": "pernas",
+    "subgroup": "quadriceps",
+    "page": 5,
+    "image": "/assets/cinesiologia/agachamento-bulgaro.webp",
+    "primary_muscles": [
+      "Quadríceps da perna dianteira",
+      "Glúteo máximo",
+      "Adutor magno"
+    ],
+    "secondary_muscles": [
+      "Isquiotibiais",
+      "Glúteo médio",
+      "Gastrocnêmio",
+      "Eretores da coluna"
+    ],
+    "stabilizers": [
+      "Core (abdômen e lombar)",
+      "Glúteo médio e mínimo",
+      "Panturrilhas e tornozelo"
+    ],
+    "movement": [
+      "Flexão e extensão unilateral do quadril e joelho",
+      "Dorsiflexão do tornozelo dianteiro"
+    ],
+    "plane": "Plano sagital (unilateral)",
+    "correct_execution": [
+      "Apoiar o peito do pé traseiro em um banco estável",
+      "Manter a perna dianteira firme com calcanhar totalmente apoiado",
+      "Descer controladamente com o joelho dianteiro alinhado ao pé",
+      "Manter o tronco levemente inclinado à frente para maior foco no glúteo",
+      "Subir empurrando o chão com a perna dianteira"
+    ],
+    "common_errors": [
+      "Deixar o joelho dianteiro colapsar para dentro",
+      "Tirar o calcanhar dianteiro do solo",
+      "Usar distância inadequada (muito curta ou muito longa)",
+      "Impulsionar o movimento com a perna de trás",
+      "Perder o equilíbrio por falta de ativação do core"
+    ],
+    "golden_tip": "Concentre toda a força e pressão no calcanhar da perna dianteira, descendo com o joelho alinhado e o abdômen travado.",
+    "matching_keys": [
+      "agachamento bulgaro",
+      "bulgaro",
+      "bulgarian split squat"
+    ]
+  },
+  {
+    "id": "hack-squat",
+    "name": "Hack Squat (Agachamento Hack)",
+    "group": "pernas",
+    "subgroup": "quadriceps",
+    "page": 6,
+    "image": "/assets/cinesiologia/hack-squat.webp",
+    "primary_muscles": [
+      "Quadríceps (vasto lateral, medial e intermédio, reto femoral)",
+      "Glúteo máximo",
+      "Adutor magno"
+    ],
+    "secondary_muscles": [
+      "Isquiotibiais",
+      "Gastrocnêmio",
+      "Eretor da coluna",
+      "Glúteo médio"
+    ],
+    "stabilizers": [
+      "Core (abdômen)",
+      "Lombares",
+      "Abdutores do quadril",
+      "Panturrilhas"
+    ],
+    "movement": [
+      "Flexão e extensão do joelho e quadril",
+      "Dorsiflexão do tornozelo"
+    ],
+    "plane": "Plano sagital (plataforma inclinada)",
+    "correct_execution": [
+      "Apoiar totalmente as costas e os ombros no acolchoado do encosto",
+      "Posicionar os pés firmes na plataforma na largura dos ombros",
+      "Descer com controle até 90 graus ou mais sem desencostar o quadril",
+      "Empurrar a plataforma pelo meio dos pés e calcanhares",
+      "Não travar os joelhos em hiperextensão no topo"
+    ],
+    "common_errors": [
+      "Tirar o quadril ou lombar do encosto durante a descida profunda",
+      "Elevar os calcanhares da plataforma",
+      "Juntar os joelhos para dentro na subida",
+      "Travar agressivamente os joelhos no topo do movimento",
+      "Descer rápido demais sem controle excêntrico"
+    ],
+    "golden_tip": "Mantenha costas e quadril 100% colados no encosto durante toda a descida e nunca dê tranco nos joelhos ao estender.",
+    "matching_keys": [
+      "hack",
+      "hack squat",
+      "agachamento hack",
+      "hack machine"
+    ]
+  },
+  {
+    "id": "leg-press",
+    "name": "Leg Press 45º",
+    "group": "pernas",
+    "subgroup": "quadriceps",
+    "page": 7,
+    "image": "/assets/cinesiologia/leg-press.webp",
+    "primary_muscles": [
+      "Quadríceps",
+      "Glúteo máximo"
+    ],
+    "secondary_muscles": [
+      "Glúteo médio",
+      "Adutores",
+      "Sóleo e Gastrocnêmio",
+      "Isquiotibiais"
+    ],
+    "stabilizers": [
+      "Core (abdômen e lombar)",
+      "Eretores da espinha",
+      "Pelve"
+    ],
+    "movement": [
+      "Extensão e flexão do joelho",
+      "Extensão e flexão do quadril"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Manter lombar e glúteos firmemente apoiados no banco",
+      "Pés afastados na largura dos ombros no meio da plataforma",
+      "Destravar a máquina segurando firme nas manoplas laterais",
+      "Descer o carrinho de forma controlada até cerca de 90° nos joelhos",
+      "Empurrar a plataforma pelos calcanhares sem estender totalmente os joelhos"
+    ],
+    "common_errors": [
+      "Tirar a lombar/báscula do quadril na descida máxima",
+      "Travar os joelhos em hiperextensão no final da subida",
+      "Valgo dinâmico (joelhos fechando para dentro)",
+      "Apoiar as mãos sobre os joelhos para empurrar o peso",
+      "Usar carga excessiva com amplitude de 5 centímetros"
+    ],
+    "golden_tip": "Segure firme nas manoplas para travar o quadril no banco e pare a descida um centímetro antes da sua lombar querer descolar.",
+    "matching_keys": [
+      "leg press",
+      "leg press 45",
+      "legpress"
+    ]
+  },
+  {
+    "id": "cadeira-extensora",
+    "name": "Cadeira Extensora",
+    "group": "pernas",
+    "subgroup": "quadriceps",
+    "page": 8,
+    "image": "/assets/cinesiologia/cadeira-extensora.webp",
+    "primary_muscles": [
+      "Reto femoral",
+      "Vasto lateral",
+      "Vasto medial",
+      "Vasto intermédio"
+    ],
+    "secondary_muscles": [
+      "Nenhum (Exercício de isolamento monoarticular do quadríceps)"
+    ],
+    "stabilizers": [
+      "Core (abdominais)",
+      "Eretores da espinha",
+      "Glúteo médio"
+    ],
+    "movement": [
+      "Extensão do joelho (cadeia cinética aberta)"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Ajustar o encosto para o joelho ficar exatamente no eixo de rotação da máquina",
+      "Ajustar o rolo acolchoado logo acima da articulação do tornozelo",
+      "Segurar firme nas manoplas para travar o quadril contra o assento",
+      "Estender as pernas contraindo o quadríceps até a horizontal",
+      "Segurar 1 segundo no pico de contração e descer com controle lento"
+    ],
+    "common_errors": [
+      "Levantar o quadril do banco durante a extensão com excesso de peso",
+      "Dar tranco balançando o tronco para iniciar o movimento",
+      "Deixar o peso despencar na fase excêntrica de descida",
+      "Rolo mal posicionado sobre as canelas ou sobre os dedos do pé"
+    ],
+    "golden_tip": "Segure as manoplas puxando seu corpo para baixo contra o assento e faça uma pausa de 1 segundo espremendo o quadríceps no topo.",
+    "matching_keys": [
+      "cadeira extensora",
+      "extensora",
+      "leg extension"
+    ]
+  },
+  {
+    "id": "avanco",
+    "name": "Avanço / Lunge",
+    "group": "pernas",
+    "subgroup": "quadriceps",
+    "page": 9,
+    "image": "/assets/cinesiologia/avanco.webp",
+    "primary_muscles": [
+      "Quadríceps",
+      "Glúteo máximo"
+    ],
+    "secondary_muscles": [
+      "Isquiotibiais",
+      "Adutor magno",
+      "Gastrocnêmio"
+    ],
+    "stabilizers": [
+      "Core (abdominais)",
+      "Glúteo médio",
+      "Eretores da espinha"
+    ],
+    "movement": [
+      "Extensão e flexão do joelho",
+      "Extensão e flexão do quadril"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Dar um passo largo à frente mantendo o tronco ereto e o olhar à frente",
+      "Descer o joelho de trás em direção ao chão até formar 90 graus em ambas as pernas",
+      "Manter o joelho da frente apontado para a frente, alinhado ao segundo dedo do pé",
+      "Empurrar o chão com o calcanhar da frente para retornar à posição inicial",
+      "Manter o abdômen contraído para não oscilar para os lados"
+    ],
+    "common_errors": [
+      "Passo muito curto, sobrecarregando a patela dianteira",
+      "Bater o joelho traseiro com força no chão",
+      "Deixar o joelho da frente desviar para dentro (valgo)",
+      "Inclinar o tronco em demasia perdendo a postura da coluna"
+    ],
+    "golden_tip": "Imagine que está descendo em um elevador reto: o joelho de trás vai em direção ao chão sem deixar o tronco tombar à frente.",
+    "matching_keys": [
+      "avanco",
+      "avancos",
+      "lunge",
+      "afundo"
+    ]
+  },
+  {
+    "id": "agachamento-sumo",
+    "name": "Agachamento Sumô",
+    "group": "pernas",
+    "subgroup": "quadriceps",
+    "page": 10,
+    "image": "/assets/cinesiologia/agachamento-sumo.webp",
+    "primary_muscles": [
+      "Quadríceps",
+      "Glúteo máximo",
+      "Adutores da coxa (magno, longo e curto)"
+    ],
+    "secondary_muscles": [
+      "Isquiotibiais",
+      "Gastrocnêmio",
+      "Sóleo"
+    ],
+    "stabilizers": [
+      "Core (abdominais e lombares)",
+      "Glúteo médio",
+      "Eretores da espinha"
+    ],
+    "movement": [
+      "Flexão e extensão do quadril e joelho",
+      "Abdução e rotação externa de quadril"
+    ],
+    "plane": "Plano frontal e sagital combinado",
+    "correct_execution": [
+      "Afastar as pernas além da largura dos ombros",
+      "Girar as pontas dos pés para fora em ângulo de aproximadamente 45°",
+      "Manter a coluna ereta, peito aberto e escápulas travadas",
+      "Descer direcionando os joelhos rigorosamente para onde os pés apontam",
+      "Subir apertando os glúteos e adutores no topo do movimento"
+    ],
+    "common_errors": [
+      "Deixar os joelhos fecharem para dentro durante a subida",
+      "Tirar os calcanhares do chão ou apoiar só na borda interna do pé",
+      "Inclinar excessivamente o tronco para frente virando um stiff",
+      "Não atingir profundidade suficiente"
+    ],
+    "golden_tip": "Aponte os joelhos ativamente para fora na mesma linha dos dedos dos pés, sentindo a ativação dos adutores e da parte interna das coxas.",
+    "matching_keys": [
+      "agachamento sumo",
+      "sumo",
+      "sumo squat"
+    ]
+  },
+  {
+    "id": "passada",
+    "name": "Passada com Halteres",
+    "group": "pernas",
+    "subgroup": "quadriceps",
+    "page": 11,
+    "image": "/assets/cinesiologia/passada.webp",
+    "primary_muscles": [
+      "Quadríceps",
+      "Glúteo máximo",
+      "Adutor magno"
+    ],
+    "secondary_muscles": [
+      "Isquiotibiais",
+      "Glúteo médio",
+      "Gastrocnêmio",
+      "Eretores da coluna"
+    ],
+    "stabilizers": [
+      "Core (abdômen e lombar)",
+      "Músculos estabilizadores do tornozelo"
+    ],
+    "movement": [
+      "Flexão e extensão do quadril e joelho em locomoção"
+    ],
+    "plane": "Plano sagital com dinâmica de marcha",
+    "correct_execution": [
+      "Segurar um halter em cada mão com braços estendidos ao lado do corpo",
+      "Dar um passo firme à frente e descer flexionando ambos os joelhos a 90°",
+      "O tronco deve ficar firme e levemente inclinado para frente",
+      "Impulsionar com a perna dianteira e passar a perna de trás já emendando o próximo passo",
+      "Manter uma linha imaginária entre os pés como se andasse sobre trilhos de trem"
+    ],
+    "common_errors": [
+      "Caminhar em 'linha reta de equilibrista', perdendo a estabilidade lateral",
+      "Deixar o joelho colapsar para dentro no momento do impacto",
+      "Arredondar os ombros e a coluna com o peso dos halteres",
+      "Bater o joelho traseiro no solo"
+    ],
+    "golden_tip": "Caminhe como se estivesse sobre trilhos de trem (pés com largura do quadril) para manter o equilíbrio perfeito e a tensão constante.",
+    "matching_keys": [
+      "passada",
+      "passadas",
+      "walking lunge",
+      "passada com halteres"
+    ]
+  },
+  {
+    "id": "agachamento-frontal",
+    "name": "Agachamento Frontal",
+    "group": "pernas",
+    "subgroup": "quadriceps",
+    "page": 12,
+    "image": "/assets/cinesiologia/agachamento-frontal.webp",
+    "primary_muscles": [
+      "Quadríceps (ênfase máxima em vastos e reto femoral)",
+      "Glúteo máximo"
+    ],
+    "secondary_muscles": [
+      "Isquiotibiais",
+      "Adutor magno",
+      "Gastrocnêmio"
+    ],
+    "stabilizers": [
+      "Core anterior (reto abdominal e oblíquos)",
+      "Eretores da espinha torácica",
+      "Romboides e Trapézio"
+    ],
+    "movement": [
+      "Flexão e extensão de joelho e quadril com tronco vertical"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Apoiar a barra sobre a porção anterior dos deltoides e clavícula",
+      "Cotovelos elevados e apontados para a frente durante toda a execução",
+      "Descer com o tronco o mais vertical possível, projetando os joelhos para a frente",
+      "Alcançar amplitude profunda mantendo os calcanhares no chão",
+      "Subir empurrando o chão e mantendo os cotovelos altos"
+    ],
+    "common_errors": [
+      "Deixar os cotovelos caírem, fazendo a barra escorregar para a frente",
+      "Inclinar o tronco à frente arredondando a coluna torácica",
+      "Tirar os calcanhares do chão na parte mais baixa",
+      "Segurar a barra com a força das mãos em vez de apoiá-la nos ombros"
+    ],
+    "golden_tip": "Foque em manter os cotovelos sempre apontados para a frente e para o alto: se o cotovelo não cair, a sua postura não desmorona.",
+    "matching_keys": [
+      "agachamento frontal",
+      "front squat"
+    ]
+  },
+  {
+    "id": "agachamento-calcanhar-elevado",
+    "name": "Agachamento com Calcanhar Elevado",
+    "group": "pernas",
+    "subgroup": "quadriceps",
+    "page": 13,
+    "image": "/assets/cinesiologia/agachamento-calcanhar-elevado.webp",
+    "primary_muscles": [
+      "Quadríceps (vasto medial e reto femoral)",
+      "Glúteo máximo"
+    ],
+    "secondary_muscles": [
+      "Adutores",
+      "Glúteo médio",
+      "Isquiotibiais",
+      "Sóleo"
+    ],
+    "stabilizers": [
+      "Core e estabilizadores do tornozelo"
+    ],
+    "movement": [
+      "Flexão e extensão de joelho com maior projeção anterior"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Posicionar os calcanhares sobre uma anilha ou rampa de elevação (3 a 5 cm)",
+      "Pés paralelos ou levemente abertos na largura dos quadris",
+      "Descer projetando os joelhos para a frente sobre a ponta dos pés",
+      "Manter o tronco o mais vertical possível, focando no isolamento do quadríceps",
+      "Subir estendendo os joelhos com contração focada nas coxas"
+    ],
+    "common_errors": [
+      "Deixar os calcanhares escorregarem da anilha",
+      "Descer rápido demais sem controle excêntrico",
+      "Arredondar a coluna lombar",
+      "Valgo dinâmico (joelhos fechando para dentro)"
+    ],
+    "golden_tip": "A elevação do calcanhar anula limitações de tornozelo e foca a carga diretamente no quadríceps. Mantenha o tronco bem ereto e o movimento controlado.",
+    "matching_keys": [
+      "agachamento calcanhar elevado",
+      "agachamento sissy",
+      "sissy squat",
+      "agachamento com calco"
+    ]
+  },
+  {
+    "id": "elevacao-pelvica",
+    "name": "Elevação Pélvica (Hip Thrust)",
+    "group": "gluteos",
+    "subgroup": "gluteos",
+    "page": 84,
+    "image": "/assets/cinesiologia/elevacao-pelvica.webp",
+    "primary_muscles": [
+      "Glúteo máximo (porções superior e inferior)",
+      "Glúteo médio"
+    ],
+    "secondary_muscles": [
+      "Isquiotibiais",
+      "Adutor magno",
+      "Quadríceps"
+    ],
+    "stabilizers": [
+      "Core (transverso do abdômen e oblíquos)",
+      "Eretores da coluna lombar"
+    ],
+    "movement": [
+      "Extensão pura do quadril com braço de momento máximo no topo"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Apoiar a parte inferior das escápulas na borda de um banco acolchoado",
+      "Barra posicionada na dobra do quadril com proteção acolchoada",
+      "Pés afastados na largura dos ombros, formando 90° nos joelhos no topo",
+      "Subir empurrando o chão pelos calcanhares e encaixando a pelve (retroversão)",
+      "No topo, queixo junto ao peito e olhar para a frente (não para o teto)",
+      "Segurar 1 a 2 segundos em contração máxima de glúteos"
+    ],
+    "common_errors": [
+      "Hiperestender a coluna lombar no topo em vez de estender o quadril",
+      "Olhar para o teto, arqueando as costas",
+      "Posicionar os pés muito longe (foco vai para posterior) ou muito perto (foco no joelho)",
+      "Empurrar a barra com a ponta dos pés em vez dos calcanhares"
+    ],
+    "golden_tip": "Mantenha o queixo colado no peito e os olhos apontados para a frente no topo do movimento; assim sua lombar fica protegida e o glúteo trabalha 100%.",
+    "matching_keys": [
+      "elevacao pelvica",
+      "hip thrust",
+      "elevacao de quadril",
+      "ponte pelvica",
+      "elevacao pelvica com barra"
+    ]
+  },
+  {
+    "id": "cadeira-abdutora",
+    "name": "Cadeira Abdutora",
+    "group": "gluteos",
+    "subgroup": "gluteos",
+    "page": 85,
+    "image": "/assets/cinesiologia/cadeira-abdutora.webp",
+    "primary_muscles": [
+      "Glúteo médio",
+      "Glúteo mínimo",
+      "Tensor da fáscia lata"
+    ],
+    "secondary_muscles": [
+      "Glúteo máximo (fibras superiores)",
+      "Piriforme"
+    ],
+    "stabilizers": [
+      "Core e estabilizadores pélvicos"
+    ],
+    "movement": [
+      "Abdução do quadril no plano transversal/frontal"
+    ],
+    "plane": "Plano transversal e frontal",
+    "correct_execution": [
+      "Sentar com as costas bem apoiadas no encosto da máquina",
+      "Ajustar as almofadas na parte lateral externa dos joelhos",
+      "Abrir as pernas afastando as almofadas o máximo possível",
+      "Segurar 1 a 2 segundos no ponto de maior abertura sentindo a lateral do glúteo",
+      "Retornar lentamente sem deixar as placas de peso baterem"
+    ],
+    "common_errors": [
+      "Usar impulso do corpo para abrir o peso",
+      "Fechar as pernas sem controlar a fase excêntrica",
+      "Descolar a lombar do encosto para compensar carga alta",
+      "Colocar o pé muito solto ou fora do apoio"
+    ],
+    "golden_tip": "Segure a contração por 2 segundos na abertura máxima e resista à volta bem devagar para queimar as fibras do glúteo médio.",
+    "matching_keys": [
+      "cadeira abdutora",
+      "abdutora",
+      "abducao de quadril"
+    ]
+  },
+  {
+    "id": "gluteo-polia-coice",
+    "name": "Glúteo na Polia (Coice / Extensão)",
+    "group": "gluteos",
+    "subgroup": "gluteos",
+    "page": 86,
+    "image": "/assets/cinesiologia/gluteo-polia-coice.webp",
+    "primary_muscles": [
+      "Glúteo máximo (contração isométrica e dinâmica no topo)",
+      "Glúteo médio"
+    ],
+    "secondary_muscles": [
+      "Isquiotibiais",
+      "Adutor magno",
+      "Eretores da espinha"
+    ],
+    "stabilizers": [
+      "Core e abdômen",
+      "Lombares",
+      "Perna de apoio (glúteo e quadríceps)"
+    ],
+    "movement": [
+      "Extensão de quadril unilateral contra resistência contínua"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Prender a tornozeleira na polia baixa e afastar-se levemente",
+      "Inclinar o tronco segurando firme na estrutura para estabilizar a coluna",
+      "Perna de apoio com joelho levemente flexionado",
+      "Empurrar o calcanhar para trás e para o alto com o glúteo",
+      "Apertar o glúteo no pico do movimento sem girar a bacia",
+      "Retornar com controle sem deixar o cabo puxar de repente"
+    ],
+    "common_errors": [
+      "Arquear a lombar para chutar mais alto",
+      "Girar o quadril/bacia para o lado",
+      "Usar impulso de balanço do tronco",
+      "Carga excessiva que impede o bloqueio e contração do glúteo"
+    ],
+    "golden_tip": "Mantenha a bacia apontada para a frente sem rodar de lado e pense em empurrar a parede atrás com o calcanhar, contraindo o glúteo no final.",
+    "matching_keys": [
+      "gluteo na polia",
+      "gluteo cabo",
+      "gluteo coice",
+      "extensao de quadril polia",
+      "quatro apoios cabo"
+    ]
+  },
+  {
+    "id": "gluteo-polia-extensao",
+    "name": "Glúteo Coice com Perna Estendida",
+    "group": "gluteos",
+    "subgroup": "gluteos",
+    "page": 87,
+    "image": "/assets/cinesiologia/gluteo-polia-extensao.webp",
+    "primary_muscles": [
+      "Glúteo máximo",
+      "Isquiotibiais"
+    ],
+    "secondary_muscles": [
+      "Glúteo médio",
+      "Glúteo mínimo",
+      "Adutor magno"
+    ],
+    "stabilizers": [
+      "Core",
+      "Eretor da coluna",
+      "Perna de apoio"
+    ],
+    "movement": [
+      "Extensão de quadril com joelho estendido"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Prender a tornozeleira na polia baixa",
+      "Manter a perna que executa o movimento quase toda estendida",
+      "Elevar a perna para trás sentindo a tensão contínua do glúteo e posterior",
+      "Pausar no topo e descer controlando o cabo",
+      "Coluna totalmente estabilizada durante todo o percurso"
+    ],
+    "common_errors": [
+      "Arredondar ou hiperestender a lombar durante o movimento",
+      "Balançar o tronco para frente para compensar o peso",
+      "Fazer o movimento rápido e curto"
+    ],
+    "golden_tip": "Trave o abdômen e faça o movimento apenas na articulação do quadril, mantendo o joelho fixo e a perna longa.",
+    "matching_keys": [
+      "gluteo polia estendida",
+      "gluteo cabo coice",
+      "gluteo na polia baixa"
+    ]
+  },
+  {
+    "id": "ponte-de-gluteo",
+    "name": "Ponte de Glúteo no Solo",
+    "group": "gluteos",
+    "subgroup": "gluteos",
+    "page": 88,
+    "image": "/assets/cinesiologia/ponte-de-gluteo.webp",
+    "primary_muscles": [
+      "Glúteo máximo",
+      "Glúteo médio"
+    ],
+    "secondary_muscles": [
+      "Isquiotibiais",
+      "Eretores da espinha",
+      "Quadríceps"
+    ],
+    "stabilizers": [
+      "Core (abdômen e assoalho pélvico)",
+      "Lombares"
+    ],
+    "movement": [
+      "Extensão do quadril no solo"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Deitar de costas no colchonete com joelhos flexionados e pés no chão",
+      "Calcanhares alinhados com a largura do quadril, próximos aos glúteos",
+      "Braços estendidos ao lado do corpo ou segurando halter sobre a pelve",
+      "Elevar o quadril empurrando os calcanhares contra o chão até alinhar joelhos, quadril e ombros",
+      "Contrair fortemente os glúteos no ponto mais alto por 2 segundos",
+      "Descer controladamente sem relaxar completamente no chão"
+    ],
+    "common_errors": [
+      "Arquear excessivamente a lombar no topo",
+      "Apoiar o peso nas pontas dos pés em vez dos calcanhares",
+      "Afastar os joelhos para fora ou fechá-los",
+      "Fazer o movimento sem pausa de contração no topo"
+    ],
+    "golden_tip": "Aperte os glúteos no topo como se estivesse segurando uma moeda entre eles e mantenha as costelas abaixadas.",
+    "matching_keys": [
+      "ponte de gluteo",
+      "ponte com halteres",
+      "glute bridge",
+      "ponte gluteo no chao"
+    ]
+  },
+  {
+    "id": "cadeira-abdutora-inclinada",
+    "name": "Cadeira Abdutora 45º (Tronco Inclinado)",
+    "group": "gluteos",
+    "subgroup": "gluteos",
+    "page": 89,
+    "image": "/assets/cinesiologia/cadeira-abdutora-inclinada.webp",
+    "primary_muscles": [
+      "Glúteo médio",
+      "Glúteo máximo (fibras póstero-superiores)",
+      "Glúteo mínimo"
+    ],
+    "secondary_muscles": [
+      "Tensor da fáscia lata",
+      "Piriforme"
+    ],
+    "stabilizers": [
+      "Core e estabilizadores pélvicos"
+    ],
+    "movement": [
+      "Abdução do quadril com flexão de tronco a 45º"
+    ],
+    "plane": "Plano frontal e transversal",
+    "correct_execution": [
+      "Desencostar as costas do encosto e inclinar o tronco à frente a 45°",
+      "Apoiar as mãos nas manoplas ou na frente da máquina",
+      "Manter a coluna neutra e o abdômen travado",
+      "Abrir as pernas com força do glúteo até a amplitude máxima",
+      "Segurar 2 segundos em isometria no topo e fechar lentamente"
+    ],
+    "common_errors": [
+      "Arredondar as costas na inclinação do tronco",
+      "Usar impulso e balanço do tronco para abrir as placas",
+      "Fechar rápido sem controlar o retorno"
+    ],
+    "golden_tip": "Ao inclinar o tronco a 45°, você alonga previamente o glúteo e coloca as fibras em uma linha de tração perfeita para ativação máxima.",
+    "matching_keys": [
+      "cadeira abdutora 45",
+      "abdutora tronco inclinado",
+      "abdutora inclinada"
+    ]
+  },
+  {
+    "id": "agachamento-sumo-halter",
+    "name": "Agachamento Sumô com Halter",
+    "group": "gluteos",
+    "subgroup": "gluteos",
+    "page": 90,
+    "image": "/assets/cinesiologia/agachamento-sumo-halter.webp",
+    "primary_muscles": [
+      "Glúteo máximo",
+      "Quadríceps",
+      "Adutores da coxa"
+    ],
+    "secondary_muscles": [
+      "Isquiotibiais",
+      "Eretores da espinha",
+      "Panturrilhas"
+    ],
+    "stabilizers": [
+      "Core (abdômen e lombar)",
+      "Glúteo médio",
+      "Trapézio e antebraços"
+    ],
+    "movement": [
+      "Flexão e extensão combinada de quadril e joelho com base aberta"
+    ],
+    "plane": "Plano frontal e sagital",
+    "correct_execution": [
+      "Pés bem afastados (mais que a largura dos ombros) com pontas a 45° para fora",
+      "Segurar um halter pesado na vertical com as duas mãos entre as pernas",
+      "Manter peito estufado e coluna reta durante toda a descida",
+      "Descer até o halter quase tocar o solo ou a linha dos steps",
+      "Subir empurrando pelos calcanhares e adutores, apertando os glúteos no topo"
+    ],
+    "common_errors": [
+      "Deixar os joelhos colapsarem para dentro na subida",
+      "Arredondar a lombar para buscar o halter no chão",
+      "Olhar para baixo e curvar os ombros",
+      "Não descer com profundidade adequada"
+    ],
+    "golden_tip": "Se quiser mais amplitude para trabalhar ainda mais o glúteo, faça em cima de dois steps para o halter descer abaixo da linha dos pés.",
+    "matching_keys": [
+      "agachamento sumo com halter",
+      "sumo halter",
+      "agachamento sumo halter"
+    ]
+  },
+  {
+    "id": "levantamento-terra-romeno",
+    "name": "Levantamento Terra Romeno (RDL)",
+    "group": "pernas",
+    "subgroup": "posterior",
+    "page": 91,
+    "image": "/assets/cinesiologia/levantamento-terra-romeno.webp",
+    "primary_muscles": [
+      "Isquiotibiais (semitendíneo, semimembranoso, bíceps femoral)",
+      "Glúteo máximo",
+      "Eretor da coluna"
+    ],
+    "secondary_muscles": [
+      "Adutores",
+      "Glúteo médio",
+      "Trapézio e dorsais",
+      "Antebraços"
+    ],
+    "stabilizers": [
+      "Core e transverso do abdômen",
+      "Lombares e multifidos"
+    ],
+    "movement": [
+      "Dobradiça do quadril (hip hinge) com flexão mínima de joelho"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Segurar a barra com pegada pronada na largura dos ombros",
+      "Pés na largura dos quadris com joelhos levemente 'destravados' (15° a 20°)",
+      "Iniciar o movimento jogando o quadril para trás como se fosse fechar uma porta com o glúteo",
+      "Descer a barra colada nas pernas até sentir o alongamento máximo dos isquiotibiais (abaixo dos joelhos)",
+      "Subir estendendo o quadril e contraindo glúteos sem hiperestender a lombar"
+    ],
+    "common_errors": [
+      "Agachar flexionando os joelhos em excesso (virando agachamento)",
+      "Afastar a barra das pernas, sobrecarregando a lombar",
+      "Arredondar as costas na descida",
+      "Hiperestender a coluna para trás no topo"
+    ],
+    "golden_tip": "O segredo do RDL não é descer a barra, é empurrar o quadril o máximo possível para trás. Quando o quadril não for mais para trás, suba contraindo o glúteo.",
+    "matching_keys": [
+      "levantamento terra romeno",
+      "rdl",
+      "terra romeno",
+      "romanian deadlift"
+    ]
+  },
+  {
+    "id": "stiff",
+    "name": "Stiff (Barra / Halteres)",
+    "group": "pernas",
+    "subgroup": "posterior",
+    "page": 125,
+    "image": "/assets/cinesiologia/stiff.webp",
+    "primary_muscles": [
+      "Isquiotibiais (posterior de coxa)",
+      "Glúteo máximo",
+      "Eretor da espinha"
+    ],
+    "secondary_muscles": [
+      "Adutores",
+      "Glúteo médio",
+      "Panturrilhas",
+      "Dorsais"
+    ],
+    "stabilizers": [
+      "Core (abdômen e lombar)",
+      "Trapézio",
+      "Músculos da pegada"
+    ],
+    "movement": [
+      "Extensão de quadril com ênfase no alongamento excêntrico da cadeia posterior"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Pés paralelos na largura do quadril",
+      "Pegada na barra um pouco mais aberta que a linha das coxas",
+      "Joelhos quase totalmente estendidos (apenas uma microflexão de segurança)",
+      "Descer o tronco mantendo a curvatura natural da coluna e peito aberto",
+      "Sentir queimar o alongamento da parte posterior das coxas",
+      "Subir contraindo glúteos e puxando pelos isquiotibiais"
+    ],
+    "common_errors": [
+      "Arredondar a coluna lombar por falta de flexibilidade",
+      "Dobrar os joelhos durante a descida (transformando em terra)",
+      "Afastar o peso das pernas",
+      "Jogar o peso na ponta dos pés em vez dos calcanhares"
+    ],
+    "golden_tip": "O stiff é um exercício de flexibilidade com sobrecarga: desça apenas até onde a sua lombar continuar 100% reta e neutra.",
+    "matching_keys": [
+      "stiff",
+      "stiff com barra",
+      "stiff com halteres",
+      "stiff barra"
+    ]
+  },
+  {
+    "id": "mesa-flexora",
+    "name": "Mesa Flexora",
+    "group": "pernas",
+    "subgroup": "posterior",
+    "page": 126,
+    "image": "/assets/cinesiologia/mesa-flexora.webp",
+    "primary_muscles": [
+      "Isquiotibiais (bíceps femoral cabeça longa e curta, semitendíneo, semimembranoso)"
+    ],
+    "secondary_muscles": [
+      "Gastrocnêmio (panturrilha)",
+      "Glúteo máximo",
+      "Grácil"
+    ],
+    "stabilizers": [
+      "Core",
+      "Eretores da espinha",
+      "Músculos do quadril"
+    ],
+    "movement": [
+      "Flexão pura de joelho em cadeia cinética aberta"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Deitar de bruços com o rolo acolchoado logo acima dos calcanhares",
+      "Ajustar o joelho alinhado exatamente ao eixo de rotação da máquina",
+      "Segurar firme nas manoplas da máquina e manter a bacia colada no banco",
+      "Flexionar as pernas levando os calcanhares em direção ao glúteo",
+      "Segurar 1 segundo na contração máxima e estender lentamente resistindo ao peso"
+    ],
+    "common_errors": [
+      "Empinar ou levantar o quadril do banco durante a subida (roubo)",
+      "Fazer movimentos curtos com excesso de peso",
+      "Descer rápido demais sem controle excêntrico",
+      "Posicionar o rolo muito alto nas panturrilhas"
+    ],
+    "golden_tip": "Pressione a bacia contra o banco o tempo todo e mantenha os pés em dorsiflexão (pontas apontadas para as canelas) para isolar o posterior de coxa.",
+    "matching_keys": [
+      "mesa flexora",
+      "flexora deitada",
+      "lying leg curl"
+    ]
+  },
+  {
+    "id": "bom-dia-good-morning",
+    "name": "Bom Dia (Good Morning)",
+    "group": "pernas",
+    "subgroup": "posterior",
+    "page": 127,
+    "image": "/assets/cinesiologia/bom-dia-good-morning.webp",
+    "primary_muscles": [
+      "Isquiotibiais (semitendíneo, bíceps femoral)",
+      "Glúteo máximo",
+      "Eretores da espinha"
+    ],
+    "secondary_muscles": [
+      "Adutor magno",
+      "Glúteo médio",
+      "Trapézio e romboides"
+    ],
+    "stabilizers": [
+      "Core anterior e oblíquos",
+      "Musculatura profunda da coluna"
+    ],
+    "movement": [
+      "Dobradiça do quadril com barra apoiada sobre os ombros"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Posicionar a barra nas costas como no agachamento",
+      "Pés afastados na largura dos quadris, joelhos levemente destravados",
+      "Empurrar o quadril para trás inclinando o tronco à frente com coluna neutra",
+      "Descer até o tronco ficar próximo da linha paralela ao solo (ou limite do alongamento)",
+      "Subir contraindo glúteos e posteriores de coxa até ficar ereto"
+    ],
+    "common_errors": [
+      "Arredondar a lombar colocando pressão perigosa nos discos",
+      "Usar carga excessiva para um exercício com braço de alavanca longo",
+      "Flexionar os joelhos demais virando agachamento",
+      "Projetar a cabeça para frente perdendo o alinhamento cervical"
+    ],
+    "golden_tip": "Comece sempre com cargas leves ou barra vazia; o segredo é a contração do core e o alongamento ativo dos isquiotibiais com costas retas.",
+    "matching_keys": [
+      "bom dia",
+      "good morning",
+      "bom dia barra"
+    ]
+  },
+  {
+    "id": "cadeira-flexora",
+    "name": "Cadeira Flexora",
+    "group": "pernas",
+    "subgroup": "posterior",
+    "page": 128,
+    "image": "/assets/cinesiologia/cadeira-flexora.webp",
+    "primary_muscles": [
+      "Isquiotibiais (semimembranoso, semitendíneo, bíceps femoral)"
+    ],
+    "secondary_muscles": [
+      "Gastrocnêmio (porção superior)",
+      "Grácil",
+      "Sartório"
+    ],
+    "stabilizers": [
+      "Core e estabilizadores pélvicos"
+    ],
+    "movement": [
+      "Flexão de joelhos com quadril flexionado a 90°"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Sentar e encostar totalmente as costas no banco",
+      "Travar o acolchoado superior firmemente sobre as coxas para não levantar os joelhos",
+      "Rolo inferior posicionado atrás dos calcanhares",
+      "Flexionar as pernas puxando o rolo para baixo e para trás até a contração máxima",
+      "Segurar 1 segundo no pico e retornar controlando a subida até quase estender"
+    ],
+    "common_errors": [
+      "Não travar bem o apoio das coxas, deixando os joelhos subirem",
+      "Fazer o movimento com pressa sem pausar no pico",
+      "Tirar a lombar do encosto",
+      "Estender os joelhos de forma descontrolada batendo os pesos"
+    ],
+    "golden_tip": "Por estar sentada, a cabeça longa do bíceps femoral fica em maior alongamento prévio, gerando um estímulo de hipertrofia fantástico. Controle cada milímetro da subida!",
+    "matching_keys": [
+      "cadeira flexora",
+      "flexora sentada",
+      "seated leg curl"
+    ]
+  },
+  {
+    "id": "panturrilha-em-pe",
+    "name": "Panturrilha em Pé (Máquina / Smith)",
+    "group": "panturrilha",
+    "subgroup": "panturrilha",
+    "page": 130,
+    "image": "/assets/cinesiologia/panturrilha-em-pe.webp",
+    "primary_muscles": [
+      "Gastrocnêmio (cabeças medial e lateral)",
+      "Sóleo"
+    ],
+    "secondary_muscles": [
+      "Tibial posterior",
+      "Fibular longo e curto",
+      "Flexores dos dedos"
+    ],
+    "stabilizers": [
+      "Core (abdominais e lombares)",
+      "Glúteos e quadríceps"
+    ],
+    "movement": [
+      "Flexão plantar do tornozelo com joelhos estendidos"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Apoiar a almofada sobre os ombros e a parte anterior dos pés sobre o degrau",
+      "Calcanhares livres para descer abaixo da linha da plataforma",
+      "Manter joelhos estendidos mas não travados (microflexão de 5 graus)",
+      "Descer os calcanhares sentindo o alongamento máximo na panturrilha",
+      "Subir o mais alto possível até a ponta dos pés, contraindo no topo",
+      "Segurar 1 a 2 segundos no ponto mais alto"
+    ],
+    "common_errors": [
+      "Pular ou usar 'efeito mola' sem pausar embaixo ou em cima",
+      "Falta de amplitude (descer apenas até a metade)",
+      "Dobrar e esticar os joelhos durante a repetição (roubo)",
+      "Girar os tornozelos para fora"
+    ],
+    "golden_tip": "Elimine o reflexo miotático: faça uma pausa de 1 segundo no ponto mais baixo (alongamento) e 2 segundos no ponto mais alto (pico de contração).",
+    "matching_keys": [
+      "panturrilha em pe",
+      "elevacao de panturrilha em pe",
+      "gemeos em pe",
+      "standing calf raise"
+    ]
+  },
+  {
+    "id": "panturrilha-sentado",
+    "name": "Panturrilha Sentado (Gêmeos Sentado)",
+    "group": "panturrilha",
+    "subgroup": "panturrilha",
+    "page": 131,
+    "image": "/assets/cinesiologia/panturrilha-sentado.webp",
+    "primary_muscles": [
+      "Sóleo (isolamento do músculo mais profundo da panturrilha)",
+      "Gastrocnêmio (ação reduzida pela flexão do joelho)"
+    ],
+    "secondary_muscles": [
+      "Tibial posterior",
+      "Flexor longo dos dedos"
+    ],
+    "stabilizers": [
+      "Músculos dos pés e tornozelos"
+    ],
+    "movement": [
+      "Flexão plantar com joelhos flexionados a 90°"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Sentar na máquina com o apoio almofadado sobre a parte inferior das coxas",
+      "Pontas dos pés sobre o degrau com calcanhares totalmente livres",
+      "Descer os calcanhares sentindo alongamento profundo do sóleo",
+      "Elevar os calcanhares o mais alto possível com força da panturrilha",
+      "Pausar 1 segundo no topo e descer com controle"
+    ],
+    "common_errors": [
+      "Usar peso excessivo e fazer amplitude minúscula",
+      "Deixar o apoio das coxas muito frouxo",
+      "Balançar o corpo para ajudar a subir as placas",
+      "Tirar os pés do degrau"
+    ],
+    "golden_tip": "Com os joelhos flexionados, o gastrocnêmio perde tensão, deixando o músculo sóleo fazer praticamente todo o trabalho. Essencial para dar largura à panturrilha.",
+    "matching_keys": [
+      "panturrilha sentado",
+      "gemeos sentado",
+      "elevacao de panturrilha sentado",
+      "seated calf raise"
+    ]
+  },
+  {
+    "id": "panturrilha-unilateral",
+    "name": "Panturrilha Unilateral com Halter",
+    "group": "panturrilha",
+    "subgroup": "panturrilha",
+    "page": 132,
+    "image": "/assets/cinesiologia/panturrilha-unilateral.webp",
+    "primary_muscles": [
+      "Gastrocnêmio medial e lateral",
+      "Sóleo"
+    ],
+    "secondary_muscles": [
+      "Tibial posterior",
+      "Fibular longo e curto"
+    ],
+    "stabilizers": [
+      "Core e estabilizadores do tornozelo de apoio"
+    ],
+    "movement": [
+      "Flexão plantar unilateral com carga livre"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Apoiar a parte anterior de um dos pés em um degrau ou step",
+      "Segurar um halter na mão do mesmo lado da perna que trabalha",
+      "Com a outra mão, apoiar levemente em uma parede para equilíbrio",
+      "Descer o calcanhar até o alongamento máximo confortável",
+      "Subir até a contração total na ponta do pé e segurar por 1 segundo",
+      "Executar as repetições e repetir com a outra perna"
+    ],
+    "common_errors": [
+      "Pular no degrau para subir rápido",
+      "Apoiar a perna livre no degrau para ajudar",
+      "Girar o tornozelo para dentro ou para fora",
+      "Fazer amplitude curta"
+    ],
+    "golden_tip": "O trabalho unilateral corrige assimetrias de força e volume entre as duas pernas e permite amplitude ainda maior.",
+    "matching_keys": [
+      "panturrilha unilateral",
+      "panturrilha em pe unilateral",
+      "gemeos unilateral"
+    ]
+  },
+  {
+    "id": "panturrilha-smith",
+    "name": "Panturrilha no Smith",
+    "group": "panturrilha",
+    "subgroup": "panturrilha",
+    "page": 133,
+    "image": "/assets/cinesiologia/panturrilha-smith.webp",
+    "primary_muscles": [
+      "Gastrocnêmio",
+      "Sóleo"
+    ],
+    "secondary_muscles": [
+      "Tibial posterior",
+      "Fibulares"
+    ],
+    "stabilizers": [
+      "Core",
+      "Eretores da coluna",
+      "Quadríceps"
+    ],
+    "movement": [
+      "Flexão plantar do tornozelo sob barra guiada"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Posicionar um step firme abaixo da barra do Smith",
+      "Apoiar a barra sobre o trapézio e posicionar travas de segurança",
+      "Colocar a ponta dos pés na borda do step com calcanhares livres",
+      "Descer os calcanhares alongando ao máximo a panturrilha",
+      "Subir verticalmente até a flexão plantar máxima e pausar no topo"
+    ],
+    "common_errors": [
+      "Step instável ou escorregadio",
+      "Flexionar demais os joelhos",
+      "Girar os tornozelos",
+      "Não ajustar as travas de segurança do Smith"
+    ],
+    "golden_tip": "A barra guiada do Smith dá estabilidade total: aproveite para colocar o foco 100% na conexão mente-músculo com amplitude completa.",
+    "matching_keys": [
+      "panturrilha no smith",
+      "panturrilha smith",
+      "elevacao de panturrilha no smith"
+    ]
+  },
+  {
+    "id": "salto-de-panturrilha",
+    "name": "Salto de Panturrilha (Pliometria)",
+    "group": "panturrilha",
+    "subgroup": "panturrilha",
+    "page": 134,
+    "image": "/assets/cinesiologia/salto-de-panturrilha.webp",
+    "primary_muscles": [
+      "Gastrocnêmio medial e lateral",
+      "Sóleo"
+    ],
+    "secondary_muscles": [
+      "Quadríceps",
+      "Glúteo máximo",
+      "Isquiotibiais"
+    ],
+    "stabilizers": [
+      "Core",
+      "Glúteo médio",
+      "Estabilizadores do joelho e tornozelo"
+    ],
+    "movement": [
+      "Flexão plantar explosiva e amortecimento pliométrico"
+    ],
+    "plane": "Plano sagital (dinâmica pliométrica)",
+    "correct_execution": [
+      "Pés afastados na largura dos quadris com corpo ereto",
+      "Saltar verticalmente impulsionando com a parte anterior dos pés e tornozelos",
+      "Aterrissar suavemente na ponta dos pés flexionando levemente os joelhos para absorver o impacto",
+      "Manter ritmo constante e respiração fluida"
+    ],
+    "common_errors": [
+      "Aterrissar batendo o calcanhar duro no solo",
+      "Travar os joelhos retos na aterrissagem",
+      "Perder o alinhamento corporal e cair para os lados"
+    ],
+    "golden_tip": "Aterrisse como um felino: suave, na ponta dos pés, absorvendo com tornozelo e joelhos para reativar o ciclo de alongamento-encurtamento.",
+    "matching_keys": [
+      "salto de panturrilha",
+      "calf hops",
+      "pulos de panturrilha",
+      "panturrilha funcional"
+    ]
+  },
+  {
+    "id": "panturrilha-leg-press",
+    "name": "Panturrilha no Leg Press",
+    "group": "panturrilha",
+    "subgroup": "panturrilha",
+    "page": 135,
+    "image": "/assets/cinesiologia/panturrilha-leg-press.webp",
+    "primary_muscles": [
+      "Gastrocnêmio (ênfase alta)",
+      "Sóleo"
+    ],
+    "secondary_muscles": [
+      "Plantar",
+      "Tibial posterior",
+      "Flexores dos dedos"
+    ],
+    "stabilizers": [
+      "Core e estabilizadores pélvicos"
+    ],
+    "movement": [
+      "Flexão plantar no carrinho do Leg Press a 45°"
+    ],
+    "plane": "Plano sagital",
+    "correct_execution": [
+      "Sentar no Leg Press com lombar e glúteos bem apoiados no encosto",
+      "Posicionar as pontas dos pés na borda inferior da plataforma com calcanhares livres",
+      "Manter os joelhos com leve microflexão (nunca hiperextendidos)",
+      "Deixar a plataforma descer controladamente sentindo o alongamento da panturrilha",
+      "Empurrar a plataforma pela ponta dos pés até a contração máxima",
+      "Manter sempre as mãos nas travas de segurança prontas para acionar"
+    ],
+    "common_errors": [
+      "Tirar a ponta do pé da plataforma e deixar escorregar",
+      "Travar os joelhos retos em hiperextensão",
+      "Usar carga excessiva e fazer movimentos curtinhos de 2 cm",
+      "Soltar as travas de segurança sem controle"
+    ],
+    "golden_tip": "Mantenha sempre uma microflexão de 5 graus nos joelhos durante todo o exercício para proteger a articulação e focar a tensão só nas panturrilhas.",
+    "matching_keys": [
+      "panturrilha leg press",
+      "panturrilha no leg press",
+      "elevacao de panturrilha no leg press"
+    ]
+  }
+]

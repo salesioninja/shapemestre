@@ -395,249 +395,6 @@
   },
   {
     "id": 5,
-    "name": "TREINO 1 MASCULINO - HIPERTROFIA",
-    "gender": "Masculino",
-    "category": "Hipertrofia",
-    "description": "Base de força para hipertrofia, ideal para iniciantes avançados no ganho de volume.",
-    "icon": "Dumbbell",
-    "pdfPath": "/treinos/masculino/treino-1-hipertrofia.pdf",
-    "details": {
-      "duration": "6 Semanas (Treino A e B)",
-      "aerobic": "Não especificado",
-      "routine": {
-        "TREINO A": [
-          {
-            "exercise": "Supino Reto com Halteres",
-            "sets": 4,
-            "reps": 10
-          },
-          {
-            "exercise": "Remada Curvada",
-            "sets": 4,
-            "reps": 10
-          },
-          {
-            "exercise": "Agachamento Livre",
-            "sets": 4,
-            "reps": 10
-          },
-          {
-            "exercise": "Desenvolvimento com Halteres",
-            "sets": 3,
-            "reps": 12
-          },
-          {
-            "exercise": "Rosca Direta",
-            "sets": 3,
-            "reps": 12
-          },
-          {
-            "exercise": "Tríceps Testa",
-            "sets": 3,
-            "reps": 12
-          }
-        ],
-        "TREINO B": [
-          {
-            "exercise": "Crucifixo Inclinado",
-            "sets": 4,
-            "reps": 10
-          },
-          {
-            "exercise": "Puxada Frontal",
-            "sets": 4,
-            "reps": 10
-          },
-          {
-            "exercise": "Leg Press 45°",
-            "sets": 4,
-            "reps": 12
-          },
-          {
-            "exercise": "Elevação Lateral",
-            "sets": 3,
-            "reps": 15
-          },
-          {
-            "exercise": "Rosca Alternada",
-            "sets": 3,
-            "reps": 12
-          },
-          {
-            "exercise": "Tríceps Corda",
-            "sets": 3,
-            "reps": 12
-          }
-        ],
-        "ABDOMINAIS": [
-          {
-            "exercise": "Abdominal Curto (A)",
-            "sets": 3,
-            "reps": 20
-          },
-          {
-            "exercise": "Elevação de Pernas (B)",
-            "sets": 3,
-            "reps": 15
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 6,
-    "name": "TREINO 2 MASCULINO - FORÇA MÁXIMA",
-    "gender": "Masculino",
-    "category": "Força",
-    "description": "Programa dedicado ao aumento da força máxima em levantamentos básicos.",
-    "icon": "Weight",
-    "pdfPath": "/treinos/masculino/treino-2-forca.pdf",
-    "details": {
-      "duration": "6 Semanas (Treino A, B e C)",
-      "aerobic": "10 minutos de aquecimento",
-      "routine": {
-        "TREINO A (Peito/Tríceps)": [
-          {
-            "exercise": "Supino Reto Barra",
-            "sets": 5,
-            "reps": 5
-          },
-          {
-            "exercise": "Supino Inclinado Halteres",
-            "sets": 3,
-            "reps": 8
-          },
-          {
-            "exercise": "Tríceps Paralela",
-            "sets": 4,
-            "reps": "Máximo"
-          },
-          {
-            "exercise": "Tríceps Pulley",
-            "sets": 3,
-            "reps": 10
-          }
-        ],
-        "TREINO B (Costas/Bíceps)": [
-          {
-            "exercise": "Levantamento Terra",
-            "sets": 5,
-            "reps": 5
-          },
-          {
-            "exercise": "Remada Cavalinho",
-            "sets": 3,
-            "reps": 8
-          },
-          {
-            "exercise": "Puxada Alta Neutra",
-            "sets": 3,
-            "reps": 10
-          },
-          {
-            "exercise": "Rosca Martelo",
-            "sets": 4,
-            "reps": 10
-          }
-        ],
-        "TREINO C (Pernas/Ombro)": [
-          {
-            "exercise": "Agachamento Livre",
-            "sets": 5,
-            "reps": 5
-          },
-          {
-            "exercise": "Leg Press",
-            "sets": 3,
-            "reps": 10
-          },
-          {
-            "exercise": "Desenvolvimento Militar",
-            "sets": 4,
-            "reps": 8
-          },
-          {
-            "exercise": "Elevação Lateral Máquina",
-            "sets": 3,
-            "reps": 12
-          }
-        ],
-        "ABDOMINAIS": [
-          {
-            "exercise": "Abdominal Canivete",
-            "sets": 4,
-            "reps": 15
-          },
-          {
-            "exercise": "Rotação de Tronco",
-            "sets": 4,
-            "reps": "12 por lado"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 7,
-    "name": "TREINO 3 MASCULINO - CONDICIONAMENTO",
-    "gender": "Masculino",
-    "category": "Condicionamento",
-    "description": "Rotina para manter a forma e melhorar o preparo físico geral e agilidade.",
-    "icon": "Activity",
-    "pdfPath": "/treinos/masculino/treino-3-condicionamento.pdf",
-    "details": {
-      "duration": "6 Semanas (Treino Full Body)",
-      "aerobic": "20 minutos de HIIT (Esteira/Bike)",
-      "routine": {
-        "TREINO FULL BODY (Circuito)": [
-          {
-            "exercise": "Jumping Jacks",
-            "sets": 3,
-            "reps": "45 seg"
-          },
-          {
-            "exercise": "Burpees",
-            "sets": 3,
-            "reps": 10
-          },
-          {
-            "exercise": "Agachamento com Salto",
-            "sets": 3,
-            "reps": 15
-          },
-          {
-            "exercise": "Flexão de Braço",
-            "sets": 3,
-            "reps": "Máximo"
-          },
-          {
-            "exercise": "Mountain Climbers",
-            "sets": 3,
-            "reps": "45 seg"
-          },
-          {
-            "exercise": "Remada com Elástico",
-            "sets": 3,
-            "reps": 20
-          }
-        ],
-        "ABDOMINAIS": [
-          {
-            "exercise": "Prancha",
-            "sets": 4,
-            "reps": "60 seg"
-          },
-          {
-            "exercise": "Abdominal Bicicleta",
-            "sets": 4,
-            "reps": "15 por lado"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 8,
     "name": "TREINO 1 FEMININO - CONDICIONAMENTO",
     "gender": "Feminino",
     "category": "Condicionamento",
@@ -738,7 +495,7 @@
     }
   },
   {
-    "id": 9,
+    "id": 6,
     "name": "TREINO 1 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
     "gender": "Feminino",
     "category": "Emagrecimento/Definição",
@@ -812,7 +569,7 @@
     }
   },
   {
-    "id": 10,
+    "id": 7,
     "name": "TREINO 2 FEMININO - CONDICIONAMENTO",
     "gender": "Feminino",
     "category": "Condicionamento",
@@ -923,7 +680,7 @@
     }
   },
   {
-    "id": 11,
+    "id": 8,
     "name": "TREINO 2 FEMININO - HIPERTROFIA",
     "gender": "Feminino",
     "category": "Hipertrofia",
@@ -1034,7 +791,7 @@
     }
   },
   {
-    "id": 12,
+    "id": 9,
     "name": "TREINO 3 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
     "gender": "Feminino",
     "category": "Emagrecimento/Definição",
@@ -1103,10 +860,10 @@
     }
   },
   {
-    "id": 5,
+    "id": 10,
     "name": "TREINO 5 FEMININO - INICIANTE EMAGRECIMENTO",
     "gender": "Feminino",
-    "category": "Emagrecimento",
+    "category": "Emagrecimento/Definição",
     "description": "Treino focado em emagrecimento e definição para iniciantes, com divisão de treino A e B para ser realizado durante 8 semanas.",
     "icon": "Fitness",
     "pdfPath": "/treinos/feminino/treino-5-iniciante-emagrecimento.pdf",
@@ -1184,7 +941,7 @@
     }
   },
   {
-    "id": 4,
+    "id": 11,
     "name": "TREINO 4 FEMININO - RESISTÊNCIA & ENDURANCE",
     "gender": "Feminino",
     "category": "Resistência",
@@ -1285,7 +1042,7 @@
     }
   },
   {
-    "id": 5,
+    "id": 12,
     "name": "TREINO 4 FEMININO - HIPERTROFIA",
     "gender": "Feminino",
     "category": "Hipertrofia",
@@ -1386,10 +1143,10 @@
     }
   },
   {
-    "id": 6,
+    "id": 13,
     "name": "TREINO 4 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
     "gender": "Feminino",
-    "category": "Emagrecimento",
+    "category": "Emagrecimento/Definição",
     "description": "Treino metabólico e em circuito para alta queima calórica e definição muscular.",
     "icon": "Fire",
     "pdfPath": "/treinos/feminino/treino-4-emagrecimento-definicao.pdf",
@@ -1445,7 +1202,7 @@
     }
   },
   {
-    "id": 7,
+    "id": 14,
     "name": "TREINO 5 FEMININO - CONDICIONAMENTO",
     "gender": "Feminino",
     "category": "Condicionamento",
@@ -1561,10 +1318,10 @@
     }
   },
   {
-    "id": 8,
+    "id": 15,
     "name": "TREINO 5 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
     "gender": "Feminino",
-    "category": "Emagrecimento",
+    "category": "Emagrecimento/Definição",
     "description": "Combinação de treino de força e metabólico para maximizar a queima de gordura.",
     "icon": "Fire",
     "pdfPath": "/treinos/feminino/treino-5-emagrecimento-definicao.pdf",
@@ -1635,7 +1392,7 @@
     }
   },
   {
-    "id": 9,
+    "id": 16,
     "name": "TREINO 5 FEMININO - HIPERTROFIA",
     "gender": "Feminino",
     "category": "Hipertrofia",
@@ -1751,7 +1508,7 @@
     }
   },
   {
-    "id": 10,
+    "id": 17,
     "name": "TREINO 6 FEMININO - CONDICIONAMENTO",
     "gender": "Feminino",
     "category": "Condicionamento",
@@ -1889,10 +1646,10 @@
     }
   },
   {
-    "id": 11,
+    "id": 18,
     "name": "TREINO 6 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
     "gender": "Feminino",
-    "category": "Emagrecimento",
+    "category": "Emagrecimento/Definição",
     "description": "Treino com foco em alta intensidade e queima calórica, com divisão por grupos musculares.",
     "icon": "Fire",
     "pdfPath": "/treinos/feminino/treino-6-emagrecimento-definicao.pdf",
@@ -1995,7 +1752,7 @@
     }
   },
   {
-    "id": 12,
+    "id": 19,
     "name": "TREINO 6 FEMININO - HIPERTROFIA",
     "gender": "Feminino",
     "category": "Hipertrofia",
@@ -2133,7 +1890,7 @@
     }
   },
   {
-    "id": 13,
+    "id": 20,
     "name": "TREINO 7 FEMININO - CONDICIONAMENTO",
     "gender": "Feminino",
     "category": "Condicionamento",
@@ -2291,7 +2048,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 21,
     "name": "TREINO 8 FEMININO - HIPERTROFIA",
     "gender": "Feminino",
     "category": "Hipertrofia",
@@ -2459,7 +2216,7 @@
     }
   },
   {
-    "id": 15,
+    "id": 22,
     "name": "TREINO 9 FEMININO - HIPERTROFIA",
     "gender": "Feminino",
     "category": "Hipertrofia",
@@ -2642,7 +2399,7 @@
     }
   },
   {
-    "id": 16,
+    "id": 23,
     "name": "TREINO 7 FEMININO - HIPERTROFIA",
     "gender": "Feminino",
     "category": "Hipertrofia",
@@ -2768,7 +2525,7 @@
     }
   },
   {
-    "id": 17,
+    "id": 24,
     "name": "TREINO 8 FEMININO - CONDICIONAMENTO",
     "gender": "Feminino",
     "category": "Condicionamento",
@@ -2911,7 +2668,7 @@
     }
   },
   {
-    "id": 18,
+    "id": 25,
     "name": "TREINO 9 FEMININO - CONDICIONAMENTO",
     "gender": "Feminino",
     "category": "Condicionamento",
@@ -3086,7 +2843,7 @@
     }
   },
   {
-    "id": 19,
+    "id": 26,
     "name": "TREINO 10 FEMININO - CONDICIONAMENTO",
     "gender": "Feminino",
     "category": "Condicionamento",
@@ -3254,10 +3011,10 @@
     }
   },
   {
-    "id": 20,
+    "id": 27,
     "name": "TREINO 7 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
     "gender": "Feminino",
-    "category": "Emagrecimento",
+    "category": "Emagrecimento/Definição",
     "description": "Treino de alta intensidade focado na queima de calorias, combinando exercícios de força e aeróbicos.",
     "icon": "Fire",
     "pdfPath": "/treinos/feminino/treino-7-emagrecimento-definicao.pdf",
@@ -3360,10 +3117,10 @@
     }
   },
   {
-    "id": 21,
+    "id": 28,
     "name": "TREINO 8 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
     "gender": "Feminino",
-    "category": "Emagrecimento",
+    "category": "Emagrecimento/Definição",
     "description": "Treino em circuito com exercícios conjugados para máxima queima calórica e definição muscular.",
     "icon": "Fire",
     "pdfPath": "/treinos/feminino/treino-8-emagrecimento-definicao.pdf",
@@ -3461,10 +3218,10 @@
     }
   },
   {
-    "id": 22,
+    "id": 29,
     "name": "TREINO 9 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
     "gender": "Feminino",
-    "category": "Emagrecimento",
+    "category": "Emagrecimento/Definição",
     "description": "Programa de emagrecimento que combina treinos de força (A e B) com um treino metabólico (C) para otimizar resultados.",
     "icon": "Fire",
     "pdfPath": "/treinos/feminino/treino-9-emagrecimento-definicao.pdf",
@@ -3597,10 +3354,10 @@
     }
   },
   {
-    "id": 23,
+    "id": 30,
     "name": "TREINO 10 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
     "gender": "Feminino",
-    "category": "Emagrecimento",
+    "category": "Emagrecimento/Definição",
     "description": "Treino intenso com 4 divisões (A, B, C, D) incluindo um dia metabólico para acelerar a queima de gordura.",
     "icon": "Fire",
     "pdfPath": "/treinos/feminino/treino-10-emagrecimento-definicao.pdf",
@@ -3760,7 +3517,7 @@
     }
   },
   {
-    "id": 24,
+    "id": 31,
     "name": "TREINO 10 FEMININO - HIPERTROFIA",
     "gender": "Feminino",
     "category": "Hipertrofia",
@@ -3923,7 +3680,7 @@
     }
   },
   {
-    "id": 25,
+    "id": 32,
     "name": "TREINO 11 FEMININO - CONDICIONAMENTO",
     "gender": "Feminino",
     "category": "Condicionamento",
@@ -4120,10 +3877,10 @@
     }
   },
   {
-    "id": 26,
+    "id": 33,
     "name": "TREINO 11 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
     "gender": "Feminino",
-    "category": "Emagrecimento",
+    "category": "Emagrecimento/Definição",
     "description": "Treino focado em emagrecimento com treinos de força (A, C) e um treino metabólico em circuito (B).",
     "icon": "Fire",
     "pdfPath": "/treinos/feminino/treino-11-emagrecimento-definicao.pdf",
@@ -4231,7 +3988,7 @@
     }
   },
   {
-    "id": 27,
+    "id": 34,
     "name": "TREINO 11 FEMININO - HIPERTROFIA",
     "gender": "Feminino",
     "category": "Hipertrofia",
@@ -4456,7 +4213,7 @@
     }
   },
   {
-    "id": 28,
+    "id": 35,
     "name": "TREINO 12 FEMININO - CONDICIONAMENTO",
     "gender": "Feminino",
     "category": "Condicionamento",
@@ -4648,10 +4405,10 @@
     }
   },
   {
-    "id": 29,
+    "id": 36,
     "name": "TREINO 12 FEMININO - EMAGRECIMENTO & DEFINIÇÃO",
     "gender": "Feminino",
-    "category": "Emagrecimento",
+    "category": "Emagrecimento/Definição",
     "description": "Treino para emagrecimento com treinos em circuito (A), conjugados (B) e focados (C).",
     "icon": "Fire",
     "pdfPath": "/treinos/feminino/treino-12-emagrecimento-definicao.pdf",
@@ -4774,7 +4531,7 @@
     }
   },
   {
-    "id": 30,
+    "id": 37,
     "name": "TREINO 12 FEMININO - HIPERTROFIA",
     "gender": "Feminino",
     "category": "Hipertrofia",
@@ -4981,7 +4738,7 @@
     }
   },
   {
-    "id": 13,
+    "id": 38,
     "name": "TREINO 3 FEMININO - HIPERTROFIA",
     "gender": "Feminino",
     "category": "Hipertrofia",
@@ -5092,192 +4849,5438 @@
     }
   },
   {
-    "id": 14,
-    "name": "TREINO 1 MASCULINO - EMAGRECIMENTO & DEFINIÇÃO",
+    "num": 1,
+    "name": "TREINO 1 MASCULINO - HIPERTROFIA",
     "gender": "Masculino",
-    "category": "Emagrecimento/Definição",
-    "description": "Treino metabólico e de definição com foco em exercícios multiarticulares e alta queima calórica.",
-    "icon": "Fire",
-    "pdfPath": "/treinos/masculino/treino-1-emagrecimento-definicao.pdf",
+    "category": "Hipertrofia",
+    "description": "Base de hipertrofia muscular para iniciantes e intermediários, focada no desenvolvimento de volume e densidade do peitoral e dorsais.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/masculino/treino-1-hipertrofia.pdf",
     "details": {
-      "duration": "6 Semanas (Treino A e B Metabólico)",
-      "aerobic": "30 minutos de cardio em dias alternados",
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "Não especificado",
       "routine": {
-        "TREINO A (Força/Definição)": [
+        "TREINO A": [
           {
-            "exercise": "Supino Inclinado com Halteres",
+            "exercise": "Supino reto + progressão",
             "sets": 4,
             "reps": 12
           },
           {
-            "exercise": "Puxada no Pulley Aberta",
+            "exercise": "Supino inclinado c/ halter",
             "sets": 4,
             "reps": 12
           },
           {
-            "exercise": "Stiff com Halteres",
+            "exercise": "Cross over + progressão",
             "sets": 4,
-            "reps": 15
-          },
-          {
-            "exercise": "Leg Press",
-            "sets": 4,
-            "reps": 15
-          },
-          {
-            "exercise": "Desenvolvimento Militar com Barra",
-            "sets": 3,
             "reps": 12
           },
           {
-            "exercise": "Rosca Concentrada",
-            "sets": 3,
-            "reps": 15
+            "exercise": "Tríceps inverso",
+            "sets": 4,
+            "reps": 12
           },
           {
-            "exercise": "Tríceps Coice com Halter",
-            "sets": 3,
-            "reps": 15
+            "exercise": "Tríceps testa barra",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação frontal",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Desenvolvimento máquina",
+            "sets": 4,
+            "reps": 12
           }
         ],
-        "TREINO B (Metabólico - Circuito)": [
+        "TREINO B": [
           {
-            "exercise": "Burpee + Agachamento com Salto (Combinado)",
-            "sets": 3,
-            "reps": "10+15"
-          },
-          {
-            "exercise": "Remada Alta (Cabo) + Flexão de Braço (Combinado)",
-            "sets": 3,
-            "reps": "15+Máx"
-          },
-          {
-            "exercise": "Afundo com Halter (Alternado)",
-            "sets": 3,
-            "reps": "20 (10 por perna)"
-          },
-          {
-            "exercise": "Mountain Climbers",
+            "exercise": "Remada cavalo aberta",
             "sets": 4,
-            "reps": "40 seg"
+            "reps": 12
+          },
+          {
+            "exercise": "Gravitacional",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Puxada frontal Triângulo",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca polia corda",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca direta barra",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Extensora + progressão",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Flexora + progressão",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento hack",
+            "sets": 4,
+            "reps": 12
           }
         ],
         "ABDOMINAIS": [
           {
-            "exercise": "Abdominal Remador",
+            "exercise": "BANCO DECLINADO",
             "sets": 4,
             "reps": 20
           },
           {
-            "exercise": "Prancha lateral (alternado)",
+            "exercise": "LATERAL COM HALTER",
             "sets": 3,
-            "reps": "30 seg por lado"
+            "reps": 25
           }
         ]
       }
-    }
+    },
+    "id": 39
   },
   {
-    "id": 15,
-    "name": "TREINO 2 MASCULINO - RESISTÊNCIA",
+    "num": 2,
+    "name": "TREINO 2 MASCULINO - HIPERTROFIA",
     "gender": "Masculino",
-    "category": "Resistência",
-    "description": "Foco na resistência muscular e alto volume, utilizando a divisão Push/Pull/Legs para recuperação.",
-    "icon": "Clock",
-    "pdfPath": "/treinos/masculino/treino-2-resistencia.pdf",
+    "category": "Hipertrofia",
+    "description": "Progressão de carga com técnicas de sobrecarga para membros superiores e inferiores, acelerando o ganho de massa magra.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/masculino/treino-2-hipertrofia.pdf",
     "details": {
-      "duration": "6 Semanas (Treino PPL)",
-      "aerobic": "15 minutos de aquecimento com intensidade moderada",
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "15 MINUTOS EM TODOS OS TREINOS",
       "routine": {
-        "TREINO PUSH (Empurrar)": [
+        "TREINO A": [
           {
-            "exercise": "Supino Reto Máquina",
+            "exercise": "Supino reto + Progressão",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Supino inclinado",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Voador + Progressão",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Polia alta barra",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Polia alta corda + Progressão",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Coice com halter",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação lateral + Progressão",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação frontal",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Encolhimento com halter",
+            "sets": 4,
+            "reps": 20
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Puxada costas",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Remada polia baixa + Progressão",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada serrote",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca direta",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca alternada + Progressão",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca polia baixa",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Extensora + Progressão",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Leg press",
+            "sets": 4,
+            "reps": 12
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "EXTENSÃO DE PERNAS SOLO",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "LATERAL COM HALTER",
+            "sets": 4,
+            "reps": 15
+          }
+        ]
+      }
+    },
+    "id": 40
+  },
+  {
+    "num": 3,
+    "name": "TREINO 3 MASCULINO - HIPERTROFIA",
+    "gender": "Masculino",
+    "category": "Hipertrofia",
+    "description": "Divisão ABC clássica com maior volume de séries e estímulos específicos para grupos musculares grandes (peito, costas e pernas).",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/masculino/treino-3-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Reto",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Supino inclinado",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Voador  + Progressão",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Crucifixo com halter",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Polia alta barra  + Progressão",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Polia alta unilateral",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Francês bilateral",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Triceps banco",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Passada com halteres",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação lateral sentado",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Desenvolvimento maquina",
+            "sets": 5,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada alta barra",
             "sets": 3,
             "reps": 15
           },
           {
-            "exercise": "Desenvolvimento Halter Sentado",
+            "exercise": "Encolhimento com barra + Progressão",
+            "sets": 4,
+            "reps": 25
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Puxada frontal + Progressão",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada articulada",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada serrote",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Voador dorsal + Progressão",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca martelo",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca concentrada + Progressão",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca direta",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca corda polia",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "ELEVAÇÃO TRONCO BANCO",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "ELEVAÇÃO PERNAS SOLO",
+            "sets": 4,
+            "reps": 15
+          }
+        ]
+      }
+    },
+    "id": 41
+  },
+  {
+    "num": 4,
+    "name": "TREINO 4 MASCULINO - HIPERTROFIA",
+    "gender": "Masculino",
+    "category": "Hipertrofia",
+    "description": "Treino focado em estímulos combinados, bi-sets e intensidade muscular para romper platôs de desenvolvimento.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/masculino/treino-4-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino reto + Crucifixo com Halter",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Supino inclinado",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Cross over",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Voador + Progressão",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Polia alta corda",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Polia alta barra + coice com Halter",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Tríceps banco",
+            "sets": 4,
+            "reps": 12
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Remada articulada",
+            "sets": "2X15",
+            "reps": 12
+          },
+          {
+            "exercise": "Puxada frontal pegada aberta",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Voador dorsal + Progressão",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Remada baixa no cross",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca direta barra + Rosca Alternada",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca barra “W” banco scott",
+            "sets": 4,
+            "reps": 12
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Mesa Flexora + Afundo",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Encolhimento com halter",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Desenvolvimento com halter",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação frontal barra + Encolhimento",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação lateral com halter",
+            "sets": 4,
+            "reps": 15
+          }
+        ]
+      }
+    },
+    "id": 42
+  },
+  {
+    "num": 5,
+    "name": "TREINO 5 MASCULINO - HIPERTROFIA",
+    "gender": "Masculino",
+    "category": "Hipertrofia",
+    "description": "Divisão ABCD permitindo isolamento muscular acentuado, com ênfase em elevação pélvica, supino e terra.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/masculino/treino-5-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C e D)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Elevação pélvica",
+            "sets": 5,
+            "reps": 10
+          },
+          {
+            "exercise": "Agachamento Livre + Progressão",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Passada com halter",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Extensora + Progressão",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexora + Progressão",
+            "sets": 4,
+            "reps": 8
+          },
+          {
+            "exercise": "Agachamento Frontal",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Flexão Plantar na Máquina",
+            "sets": 4,
+            "reps": 20
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Supino Reto + Progressão",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Crucifixo Reto com Halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Crucifixo Cross alta + Progressão",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação Frontal",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação Lateral + Progressão",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Lateral no Cross",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Barra Fixa ou Graviton",
+            "sets": 4,
+            "reps": "Máx"
+          },
+          {
+            "exercise": "Pulldown + Progressão",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Remada Baixa",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada Cavalinho + Progressão",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Posterior de Ombro no Voador",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Posterior de Ombro no Cross",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO D": [
+          {
+            "exercise": "Rosca Direta Barra + Progressão",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Rosca Martelo Alternado",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca Invertida no Cross",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Pulley com Barra",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Tríceps Pulley Corda + Progressão",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps Coice com Halter",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "ELEVAÇÃO DE PERNAS SOLO",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "LATERAL CALCANHAR",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "SUPRA NO CROSS",
+            "sets": 4,
+            "reps": 15
+          }
+        ]
+      }
+    },
+    "id": 43
+  },
+  {
+    "num": 6,
+    "name": "TREINO 6 MASCULINO - HIPERTROFIA",
+    "gender": "Masculino",
+    "category": "Hipertrofia",
+    "description": "Hipertrofia avançada com drop-sets e progressão de carga para deltoides, peitoral e coxas, com 20 min de cardio.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/masculino/treino-6-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C e D)",
+      "aerobic": "20 minutos de aeróbio em todos os treinos",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Elevação Pélvica + Progressão",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento hack",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Extensora + Progressão",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Afundo Smith",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento Sumô + Progressão",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Mesa Flexora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Flexão Plantar Smith",
+            "sets": 4,
+            "reps": 12
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Voador  + Progressão",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Supino Inclinado Smith",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Crucifixo Polia Baixa",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Crucifixo Polia Alta + Progressão",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Tríceps Polia Alta",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Tríceps Frances no cross",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Levantamento Terra + Progressão",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Remada Serrote",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Puxada Alta Frontal",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Remada baixa Supinada",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Polia Baixa Cross",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Corda no Cross",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO D": [
+          {
+            "exercise": "Desenvolvimento Maquina",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação Frontal com Barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação Lateral + Progressão",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação Lateral no Cross",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação Polia Baixa Corda",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Crucifixo Invertido Voador",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "PRANCHA ISOMETRICA",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "BANCO DECLINADO",
+            "sets": 4,
+            "reps": 15
+          }
+        ]
+      }
+    },
+    "id": 44
+  },
+  {
+    "num": 7,
+    "name": "TREINO 7 MASCULINO - HIPERTROFIA",
+    "gender": "Masculino",
+    "category": "Hipertrofia",
+    "description": "Divisão ABCD de alta intensidade com foco em deltoides, peitoral, costas e posterior de pernas.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/masculino/treino-7-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C e D)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Agachamento Búlgaro",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexão Plantar Máquina",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Voador",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Supino Inclinado com Halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Crucifixo inclinado",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Crucifixo no Cross Polia Baixa",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps Corda Polia Alta",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps Barra inversa Polia Alta",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Pulldown com Corda",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Puxada Frontal",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada Cavalinho",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada Curvada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada Baixa com Triângulo",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO D": [
+          {
+            "exercise": "Rosca direta Banco Scott",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca Martelo Unilateral",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento Máquina",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Frontal Polia Baixa Corda",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Lateral",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Lateral Banco Inclinado",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "ELEVAÇÃO DE PERNAS",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "LATERAL CROSS",
+            "sets": 4,
+            "reps": 20
+          }
+        ]
+      }
+    },
+    "id": 45
+  },
+  {
+    "num": 8,
+    "name": "TREINO 8 MASCULINO - HIPERTROFIA",
+    "gender": "Masculino",
+    "category": "Hipertrofia",
+    "description": "Divisão ABCDE completa para lapidação de volume e densidade muscular, permitindo foco total em cada grupo por dia.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/masculino/treino-8-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C, D e E)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Elevação pélvica",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Mesa Flexora + Cadeira Flexora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexão Plantar Smith",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Voador",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Supino inclinado com Halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Crucifixo Inclinado com Halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Crucifixo no Cross",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Supino Reto",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "PRANCHA ISOMETRICA",
+            "sets": 4,
+            "reps": "1’"
+          },
+          {
+            "exercise": "LATERAL CALCANHAR",
+            "sets": 4,
+            "reps": 20
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Pulldown",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Barra Fixa ou Graviton",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada Serrote no Cross",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Puxada Frontal com Triângulo",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Voador Dorsal",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO D": [
+          {
+            "exercise": "Desenvolvimento com halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Frontal com Halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Lateral com Halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Lateral Cross",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Crucifixo Inverso no Cross",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Puxada Testa no cross",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO E": [
+          {
+            "exercise": "Tríceps Polia Alta Barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca Martelo Simultâneo",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Polia Alta Corda",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Polia Baixa Corda",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Francês Bilateral",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca Alternada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "ELEVAÇÃO DE PERNAS NA PARALELA",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "SUPRA BANCO DECLINADO",
+            "sets": 4,
+            "reps": 15
+          }
+        ]
+      }
+    },
+    "id": 46
+  },
+  {
+    "num": 9,
+    "name": "TREINO 9 MASCULINO - HIPERTROFIA",
+    "gender": "Masculino",
+    "category": "Hipertrofia",
+    "description": "Rotina avançada com pirâmides decrescentes e progressão de sobrecarga para pico de estímulo hipertrófico.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/masculino/treino-9-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C e D)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Reto",
+            "sets": 5,
+            "reps": 10
+          },
+          {
+            "exercise": "Barra Fixa",
+            "sets": 3,
+            "reps": "Max"
+          },
+          {
+            "exercise": "Supino Inclinado (Barra ou Halter)",
             "sets": 3,
             "reps": 15
           },
           {
-            "exercise": "Elevação Frontal com Anilhas",
-            "sets": 3,
-            "reps": 15
+            "exercise": "Crucifixo (Banco Declinado)",
+            "sets": 4,
+            "reps": 10
           },
           {
-            "exercise": "Voador Peitoral",
-            "sets": 3,
-            "reps": 15
+            "exercise": "PullOver",
+            "sets": 4,
+            "reps": 10
           },
           {
-            "exercise": "Tríceps Francês (Corda)",
+            "exercise": "Cavalinho (REST PAUSE)",
+            "sets": "-",
+            "reps": "começar com 12repetições"
+          },
+          {
+            "exercise": "Remada Curvada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada Unilateral Halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "PullDown",
             "sets": 3,
             "reps": 15
           }
         ],
-        "TREINO PULL (Puxar)": [
+        "TREINO B": [
           {
-            "exercise": "Remada Baixa (Triângulo)",
+            "exercise": "Rosca Direta Barra",
+            "sets": 5,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps Testa",
+            "sets": 5,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca Alternada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Pulley Corda",
             "sets": 3,
             "reps": 15
           },
           {
-            "exercise": "Puxada Frontal Aberta",
-            "sets": 3,
-            "reps": 15
-          },
-          {
-            "exercise": "Encolhimento com Halteres",
+            "exercise": "Rosca Martelo",
             "sets": 3,
             "reps": 20
           },
           {
-            "exercise": "Rosca Direta (Barra)",
+            "exercise": "Tríceps Francês Unilateral",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca 21",
+            "sets": 2,
+            "reps": 21
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Desenvolvimento com Halter",
+            "sets": 5,
+            "reps": "8 a 10"
+          },
+          {
+            "exercise": "Elevação Lateral",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Frontal",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento Arnold",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Encolhimento com Halter",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Remada Alta (REST PAUSE)",
+            "sets": "-",
+            "reps": "começar com 12repetições"
+          },
+          {
+            "exercise": "Abdominal Canivete",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Abdomen Prancha",
+            "sets": 5,
+            "reps": "1min"
+          }
+        ],
+        "TREINO D": [
+          {
+            "exercise": "Leg Press",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Cadeira Extensora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Mesa Flexora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Afundo",
+            "sets": 5,
+            "reps": "10 passadas"
+          },
+          {
+            "exercise": "Stiff no Smith",
+            "sets": 3,
+            "reps": "-"
+          },
+          {
+            "exercise": "Adutor",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Panturrilha em pé",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação Gêmeos",
+            "sets": 3,
+            "reps": 15
+          }
+        ]
+      }
+    },
+    "id": 47
+  },
+  {
+    "num": 10,
+    "name": "TREINO 10 MASCULINO - HIPERTROFIA",
+    "gender": "Masculino",
+    "category": "Hipertrofia",
+    "description": "Treino pesado focado nos grandes levantamentos básicos (agachamento livre, supino reto e levantamento terra convencional).",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/masculino/treino-10-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 5,
+            "reps": 5
+          },
+          {
+            "exercise": "Stiff",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Passada (ANDANDO)",
+            "sets": 4,
+            "reps": 8
+          },
+          {
+            "exercise": "Cadeira Flexora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Cadeira Extensora",
+            "sets": 1,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexão Plantar (Em pé)",
+            "sets": 5,
+            "reps": 15
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Supino Reto Barra",
+            "sets": 5,
+            "reps": 5
+          },
+          {
+            "exercise": "Supino Inclinado  Halter",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Crucifixo no Cabo  Deitado",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps Polia",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps Corda",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Francesa",
             "sets": 3,
             "reps": 15
           },
           {
-            "exercise": "Rosca Inversa (Antebraço)",
+            "exercise": "Elevação Lateral",
             "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Rotação Externa",
+            "sets": 2,
             "reps": 20
           }
         ],
-        "TREINO LEGS (Pernas)": [
+        "TREINO C": [
+          {
+            "exercise": "Terra Convencional",
+            "sets": 5,
+            "reps": 5
+          },
+          {
+            "exercise": "Desenvolvimento  Militar",
+            "sets": 3,
+            "reps": 6
+          },
+          {
+            "exercise": "Puxada Alta Aberta",
+            "sets": 8,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada Baixa",
+            "sets": 3,
+            "reps": "10-8-6"
+          },
+          {
+            "exercise": "Remada Serrote  Halter",
+            "sets": 3,
+            "reps": 8
+          },
+          {
+            "exercise": "Elevação Lateral",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Barra Reta",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca Halter  Simultâneo",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Scott",
+            "sets": 3,
+            "reps": 15
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "SUPRA COM PÉS EM CIMA DO BANCO",
+            "sets": 4,
+            "reps": 25
+          },
+          {
+            "exercise": "CRUZADO ESTENDENDO A PERNA",
+            "sets": 4,
+            "reps": 25
+          }
+        ]
+      }
+    },
+    "id": 48
+  },
+  {
+    "num": 11,
+    "name": "TREINO 11 MASCULINO - HIPERTROFIA",
+    "gender": "Masculino",
+    "category": "Hipertrofia",
+    "description": "Divisão ABCDE com exercícios combinados e técnicas de alta intensidade para máxima congestão e vascularização muscular.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/masculino/treino-11-hipertrofia.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C, D e E)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Extensora + agachamento Livre",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Mesa Flexora + Stiff",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Abdutora + Sumô",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Afundo com halter (parado)",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Flexão Plantar no Smith",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Crucifixo no Cross",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Supino reto no Smith",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Supino Inclinado com Barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Crucifixo banco Declinado",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Supino Reto com Barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Supino Inclinado com Halter",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação de Pernas na paralela",
+            "sets": 4,
+            "reps": 25
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Puxada frontal",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Curvada",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Polia baixa com Barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Máquina",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Serrote",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Puxada Frontal com Triângulo",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Levantamento Terra",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO D": [
+          {
+            "exercise": "Elevação Lateral Sentado",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Desenvolvimento Arnold Unilateral",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Alta",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Crucifixo inverso no Voador",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Desenvolvimento Frontal com Barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação Lateral no Cabo",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO E": [
+          {
+            "exercise": "Rosca direta + Tríceps Testa",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca pulley com barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps pulley com barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca Inversa no cabo",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca 21",
+            "sets": 3,
+            "reps": "X"
+          },
+          {
+            "exercise": "Supino Fechado Tríceps",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca alternada + Francês",
+            "sets": 4,
+            "reps": 10
+          }
+        ]
+      }
+    },
+    "id": 49
+  },
+  {
+    "num": 12,
+    "name": "TREINO 12 MASCULINO - HIPERTROFIA",
+    "gender": "Masculino",
+    "category": "Hipertrofia",
+    "description": "Ciclo de choque de 4 semanas com divisão ABCDE e exercícios de peso corporal (paralelas, barra fixa) combinados com cargas pesadas.",
+    "icon": "Dumbbell",
+    "pdfPath": "/treinos/masculino/treino-12-hipertrofia.pdf",
+    "details": {
+      "duration": "4 Semanas (Treino A, B, C, D e E)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Paralelas",
+            "sets": 3,
+            "reps": "-"
+          },
+          {
+            "exercise": "Tríceps Francês Unilateral",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Pulley Corda",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Martelo",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Supininho Tríceps",
+            "sets": 5,
+            "reps": 8
+          },
+          {
+            "exercise": "Rosca Alternada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca 21",
+            "sets": 3,
+            "reps": 21
+          },
+          {
+            "exercise": "Rosca Scott",
+            "sets": 2,
+            "reps": 15
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Desenvolvimento Arnold",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação Lateral",
+            "sets": 10,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Frontal",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento Ombro",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Encolhimento com Halter",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Crucifixo Invertido",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 5,
+            "reps": 12
+          },
+          {
+            "exercise": "Leg Press",
+            "sets": 5,
+            "reps": 10
+          },
           {
             "exercise": "Cadeira Extensora",
             "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Mesa Flexora",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Stiff",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Afundo",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Gêmeos",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Panturrilha em pé",
+            "sets": 3,
+            "reps": 15
+          }
+        ],
+        "TREINO D": [
+          {
+            "exercise": "Crucifixo",
+            "sets": 5,
+            "reps": 10
+          },
+          {
+            "exercise": "Supino Inclinado c/ Halter",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Cross Over",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Supino Reto com Halter (REST PAUSE)",
+            "sets": "-",
+            "reps": "começar com 12"
+          },
+          {
+            "exercise": "Cross Over Invertido",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "PullOver",
+            "sets": 3,
+            "reps": 15
+          }
+        ],
+        "TREINO E": [
+          {
+            "exercise": "Barra Fixa",
+            "sets": 4,
+            "reps": "-"
+          },
+          {
+            "exercise": "Remada Curvada",
+            "sets": 5,
+            "reps": 10
+          },
+          {
+            "exercise": "Cavalinho",
+            "sets": "-",
+            "reps": "começar com 10"
+          },
+          {
+            "exercise": "Remada Unilateral Halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Pulldown (Barra ou Corda)",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Puxada Frontal com Triângulo",
+            "sets": 4,
+            "reps": 10
+          }
+        ]
+      }
+    },
+    "id": 50
+  },
+  {
+    "num": 1,
+    "name": "TREINO 1 MASCULINO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Masculino",
+    "category": "Emagrecimento/Definição",
+    "description": "Treino focado em queima de gordura e definição corporal, unindo musculação de alto gasto energético e circuito cardio metabólico.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/masculino/treino-1-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "Treino metabólico integrado em circuito + aeróbio",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Reto",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Mesa Flexora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexão Plantar no Step",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Voador",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Puxada Costas",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Polia Alta Barra",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO B (Metabólico)": [
+          {
+            "exercise": "Bike: 20 min",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Swing + Flexão de Braços",
+            "sets": 3,
+            "reps": "10-15"
+          },
+          {
+            "exercise": "Agachamento com salto + elevação lateral com halter + polichinelo",
+            "sets": 3,
+            "reps": "10-15-15"
+          },
+          {
+            "exercise": "Abdominal prancha áximo com 20 s de intervalo",
+            "sets": 5,
+            "reps": "m"
+          },
+          {
+            "exercise": "Esteira: 20 min velocidade 6.0 com inclinação de 5% (se possível).",
+            "sets": 1,
+            "reps": "N/A"
+          }
+        ]
+      }
+    },
+    "id": 51
+  },
+  {
+    "num": 2,
+    "name": "TREINO 2 MASCULINO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Masculino",
+    "category": "Emagrecimento/Definição",
+    "description": "Combinação de treino resistido para preservação de massa magra com estímulos metabólicos de alta frequência cardíaca.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/masculino/treino-2-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "Treino metabólico integrado em circuito + aeróbio",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Inclinado",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Mesa Flexora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexão Plantar",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Crucifixo com Halter",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Polia Baixa",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Polia Alta Corda",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Coice com Halter",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO B (Metabólico)": [
+          {
+            "exercise": "Bike: 20 min",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Swing + Flexão de Braços",
+            "sets": 4,
+            "reps": "10-15"
+          },
+          {
+            "exercise": "Afundo + elevação lateral com halter + polichinelo",
+            "sets": 3,
+            "reps": "10-15-15"
+          },
+          {
+            "exercise": "Abdominal supra áximo com 20 s de intervalo",
+            "sets": 5,
+            "reps": "m"
+          },
+          {
+            "exercise": "Esteira: 20 min velocidade 6.0 com inclinação de 5% (se possível).",
+            "sets": 1,
+            "reps": "N/A"
+          }
+        ]
+      }
+    },
+    "id": 52
+  },
+  {
+    "num": 3,
+    "name": "TREINO 3 MASCULINO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Masculino",
+    "category": "Emagrecimento/Definição",
+    "description": "Rotina para acelerar o efeito EPOC pós-exercício, combinando musculação, esteira intervalada e prancha abdominal.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/masculino/treino-3-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "Treino metabólico integrado em circuito + aeróbio",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Reto",
+            "sets": 5,
+            "reps": 15
+          },
+          {
+            "exercise": "Francês Bilateral",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Extensora Unilateral",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexora Unilateral",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexão Plantar na Anilha",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Remada Serrote",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Puxada Costas",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Polia Alta Corda",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "ELEVAÇÃO DE PERNAS SOLO",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "LATERAL CROSS",
+            "sets": 4,
+            "reps": 20
+          }
+        ],
+        "TREINO B (Metabólico)": [
+          {
+            "exercise": "Bike: 20 min",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Swing + Flexão de Braços",
+            "sets": 4,
+            "reps": "10-15"
+          },
+          {
+            "exercise": "Esteira 10 min: corre 1 min a 9,0 km/h anda 1 min a 5,0 km/h",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Corrida estacionária + elevação lateral com halter + polichinelo ”-15-15",
+            "sets": 3,
+            "reps": "20"
+          },
+          {
+            "exercise": "Abd prancha áximo com 20 s de intervalo",
+            "sets": 5,
+            "reps": "m"
+          },
+          {
+            "exercise": "Esteira: 20 min velocidade 6.0 com inclinação de 5% (se possível).",
+            "sets": 1,
+            "reps": "N/A"
+          }
+        ]
+      }
+    },
+    "id": 53
+  },
+  {
+    "num": 4,
+    "name": "TREINO 4 MASCULINO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Masculino",
+    "category": "Emagrecimento/Definição",
+    "description": "Treino intervalado com mountain climbers, swing e corrida intervalada para acelerar a oxidação de lipídios.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/masculino/treino-4-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "Treino metabólico integrado em circuito + aeróbio",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Reto com halter",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Polia Alta Barra (tríceps)",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Flexão Plantar no Step",
+            "sets": 5,
+            "reps": 15
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Mesa Flexora",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação Lateral (ombro)",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Polia Baixa",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Puxada Frontal Pegada Romana",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca Direta com Barra",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "ELEVAÇÃO PERNAS",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "LATERAL COM HALTER",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO B (Metabólico)": [
+          {
+            "exercise": "Bike: 20 min",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Swing + Flexão de Braços",
+            "sets": 4,
+            "reps": "10-15"
+          },
+          {
+            "exercise": "Esteira 10 min: corre 1 min a 9,0 km/h anda 1 min a 5,0 km/h",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Corrida estacionária + elevação lateral com halter + Climber mountain”-15-20”",
+            "sets": 3,
+            "reps": "20"
+          },
+          {
+            "exercise": "Abdominal prancha áximo com 20 segundos de intervalo",
+            "sets": 5,
+            "reps": "m"
+          },
+          {
+            "exercise": "Esteira: 20 min velocidade 6.0 com inclinação de 5% (se possível).",
+            "sets": 1,
+            "reps": "N/A"
+          }
+        ]
+      }
+    },
+    "id": 54
+  },
+  {
+    "num": 5,
+    "name": "TREINO 5 MASCULINO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Masculino",
+    "category": "Emagrecimento/Definição",
+    "description": "Divisão com circuitos metabólicos de corrida, remador e exercícios multiarticulares para queima calórica prolongada.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/masculino/treino-5-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Treino metabólico integrado em circuito + aeróbio",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Reto Halter c/Giro",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Crucifixo Inclinado",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Cross Over Polia Baixa",
+            "sets": 3,
+            "reps": "8/10/12"
+          },
+          {
+            "exercise": "Triceps Frances Cross Barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Triceps Cross Unil",
+            "sets": 4,
+            "reps": "12+12"
+          },
+          {
+            "exercise": "Desenvolvimento Arnold",
+            "sets": 4,
+            "reps": "10a12"
+          },
+          {
+            "exercise": "Remada Alta Polia",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Prancha Tocando Ombro+Infra Banco Reto",
+            "sets": 4,
+            "reps": "20+20"
+          },
+          {
+            "exercise": "Esteira alternando c/corrida",
+            "sets": "10’",
+            "reps": ""
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Puxada Frente Corda",
+            "sets": 4,
+            "reps": "10a12"
+          },
+          {
+            "exercise": "Remada Curvada",
+            "sets": 4,
+            "reps": "10/12/10/12"
+          },
+          {
+            "exercise": "Serrote Halter",
+            "sets": 4,
+            "reps": "12+12"
+          },
+          {
+            "exercise": "Rosca Scott",
+            "sets": 4,
+            "reps": "10a12"
+          },
+          {
+            "exercise": "Rosca Alternada Giro",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Rosca Punho",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação Lateral Unil banco inclinado",
+            "sets": 4,
+            "reps": "10+10"
+          },
+          {
+            "exercise": "Encolhimento Cross Barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação Tronco c/carga+Remador",
+            "sets": 4,
+            "reps": "20+20"
+          },
+          {
+            "exercise": "Bike",
+            "sets": "10’",
+            "reps": ""
+          }
+        ],
+        "TREINO B (Metabólico)": [
+          {
+            "exercise": "Corrida 10’",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Meio Sugado + Prancha mov braço + Remador c/carga + Agachamento c/elevação braço unil. ()",
+            "sets": 4,
+            "reps": "20+20+20+1cada"
+          },
+          {
+            "exercise": "Passada c/carga + Terra + Burpee (salto na barra) + Prancha Lateral+Corrida elástico (’’+2’)",
+            "sets": 4,
+            "reps": "20+15+20+20"
+          },
+          {
+            "exercise": "Bike 15’ a 20’",
+            "sets": 1,
+            "reps": "N/A"
+          }
+        ]
+      }
+    },
+    "id": 55
+  },
+  {
+    "num": 6,
+    "name": "TREINO 6 MASCULINO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Masculino",
+    "category": "Emagrecimento/Definição",
+    "description": "Sessões dinâmicas de alta densidade combinando esteira, bike, kettlebell swing e exercícios de peso corporal.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/masculino/treino-6-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Treino metabólico integrado em circuito + aeróbio",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Reto Halter",
+            "sets": "1+4",
+            "reps": "20+12"
+          },
+          {
+            "exercise": "Voador (isometria na ultima)",
+            "sets": 4,
+            "reps": "12+iso"
+          },
+          {
+            "exercise": "Triceps Corda",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Triceps Testa Barra H",
+            "sets": 4,
+            "reps": "12a15"
+          },
+          {
+            "exercise": "Elevação Lateral Sentado",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Desenvolvimento Maq.",
+            "sets": 4,
+            "reps": "12/10/12/10"
+          },
+          {
+            "exercise": "Leg Press 45°+Panturrilha Leg",
+            "sets": 4,
+            "reps": "12+15"
+          },
+          {
+            "exercise": "Abdutora+Adutora",
+            "sets": 4,
+            "reps": "12+12"
+          },
+          {
+            "exercise": "Prancha+Elevação Tronco",
+            "sets": 4,
+            "reps": "30’’+30"
+          },
+          {
+            "exercise": "BIKE",
+            "sets": "",
+            "reps": "10’"
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Remada Convergente",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Puxada Frontal Neutra",
+            "sets": 4,
+            "reps": "8/10/12"
+          },
+          {
+            "exercise": "Rosca Polia Barra",
+            "sets": 4,
+            "reps": "10a12"
+          },
+          {
+            "exercise": "Rosca Scott Halter",
+            "sets": 4,
+            "reps": "12+iso"
+          },
+          {
+            "exercise": "Desenvolvimento Neutro Halter",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação Frontal Alternada",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Flexora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Infra Paralela",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "ESTEIRA",
+            "sets": "",
+            "reps": "10’"
+          }
+        ],
+        "TREINO B (Metabólico)": [
+          {
+            "exercise": "BIKE 10’",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Corrida Estacionaria+Swing+Lombar Solo+Supra Ponta Pé 4x()",
+            "sets": 100,
+            "reps": "+20+15+20"
+          },
+          {
+            "exercise": "Infra Elevando Pernas+Desenvolvimento Olimpico+Polichinelo+Panturrilha Livre 4x(20+20+50+30)",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "MontainClimber+Flexão de Braço+Passada+Caminhada Mãos Chão 4x(50+15+20+15)",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Esteira 15’",
+            "sets": 1,
+            "reps": "N/A"
+          }
+        ]
+      }
+    },
+    "id": 56
+  },
+  {
+    "num": 7,
+    "name": "TREINO 7 MASCULINO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Masculino",
+    "category": "Emagrecimento/Definição",
+    "description": "Circuito cardio-metabólico potente com agachamentos dinâmicos, passadas com carga e definição abdominal.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/masculino/treino-7-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Treino metabólico integrado em circuito + aeróbio",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Puxada Frontal Aberta",
+            "sets": "1+4",
+            "reps": "20+12"
+          },
+          {
+            "exercise": "Remada Baixa Triangulo",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Pull Douwn",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação Y",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca Apoio 90°",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Scott Cross",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Unil Polia Alta",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Desenvolvimento Arnold",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Infra Banco Declinado",
+            "sets": 4,
+            "reps": 20
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Supino Reto Barra+Halter",
+            "sets": "1+4",
+            "reps": "20+12/8"
+          },
+          {
+            "exercise": "Crucifixo Inclinado",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Cross Over Polia Média",
+            "sets": 4,
+            "reps": "12+iso"
+          },
+          {
+            "exercise": "Tríceps Frances Corda Cross",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Corda Fechado",
+            "sets": 4,
+            "reps": "RM"
+          },
+          {
+            "exercise": "Tríceps Coice Unil Halter",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Lateral Unil Banco Inclinado",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Encolhimento Smith",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Elevação Tronco c/carga",
+            "sets": 4,
+            "reps": 20
+          }
+        ],
+        "TREINO B (Metabólico)": [
+          {
+            "exercise": "’ Esteira",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Agachamento c/ desenvolvimento Anilha+Polichinelo+Passada",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Agachamento Hack+Corrida estacionária+Remador",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Leg 45°+Panturrilha Leg",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Prancha Bola+Corrida Step+Swing",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "’Esteira",
+            "sets": 1,
+            "reps": "N/A"
+          }
+        ]
+      }
+    },
+    "id": 57
+  },
+  {
+    "num": 8,
+    "name": "TREINO 8 MASCULINO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Masculino",
+    "category": "Emagrecimento/Definição",
+    "description": "Super-séries metabólicas focadas na queima de gordura e definição muscular profunda de braços, abdômen e pernas.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/masculino/treino-8-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Treino metabólico integrado em circuito + aeróbio",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Puxada Frontal Fechada+Rosca Concentrada",
+            "sets": 4,
+            "reps": "12+10"
+          },
+          {
+            "exercise": "PullFace +Rosca Direta Barra",
+            "sets": 4,
+            "reps": ""
+          },
+          {
+            "exercise": "Remada Cavalinho+Rosca Martelo",
+            "sets": 4,
+            "reps": "12+12"
+          },
+          {
+            "exercise": "Elevação Frontal Alternada+Encolhimento Halter",
+            "sets": 4,
+            "reps": "20+25"
+          },
+          {
+            "exercise": "Elevação de Tronco c/ Giro",
+            "sets": 4,
+            "reps": 30
+          },
+          {
+            "exercise": "Esteira Livre",
+            "sets": "",
+            "reps": ""
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Supino Reto Halter+Tríceps Testa Barra H",
+            "sets": 4,
+            "reps": "12+15"
+          },
+          {
+            "exercise": "Crucifixo Inclinado+Tríceps banco",
+            "sets": 4,
+            "reps": "12+RM"
+          },
+          {
+            "exercise": "Cross Over Polia Alta+Triceps Unil Cross",
+            "sets": 4,
+            "reps": "12+15"
+          },
+          {
+            "exercise": "Desenvolvimento Halter+Remada Alta Barra",
+            "sets": 4,
+            "reps": "12+12"
+          },
+          {
+            "exercise": "Abd Remador",
+            "sets": 4,
+            "reps": 30
+          },
+          {
+            "exercise": "Esteira livre",
+            "sets": "",
+            "reps": ""
+          }
+        ],
+        "TREINO B (Metabólico)": [
+          {
+            "exercise": "Corrida 10’",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Flexão de Braço+Swing ()",
+            "sets": 4,
+            "reps": "15+20"
+          },
+          {
+            "exercise": "Corrida Elastico+Passada ()",
+            "sets": 4,
+            "reps": "50+20"
+          },
+          {
+            "exercise": "Lombar iso solo+Corda Naval Lateral (’+30)",
+            "sets": 4,
+            "reps": "1"
+          },
+          {
+            "exercise": "Prancha+Panturrilha Livre (’+30)",
+            "sets": 4,
+            "reps": "1"
+          },
+          {
+            "exercise": "Agachamento Livre+Meio Sugado ()",
+            "sets": 4,
+            "reps": "20+20"
+          },
+          {
+            "exercise": "Bike livre",
+            "sets": 1,
+            "reps": "N/A"
+          }
+        ]
+      }
+    },
+    "id": 58
+  },
+  {
+    "num": 9,
+    "name": "TREINO 9 MASCULINO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Masculino",
+    "category": "Emagrecimento/Definição",
+    "description": "Rotina em 4 divisões com dia exclusivo de choque metabólico (HIIT, saltos, corda e sprints) para queima de gordura acelerada.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/masculino/treino-9-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C e D)",
+      "aerobic": "Treino metabólico integrado em circuito + aeróbio",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Reto",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Supino Declinado",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Supino Inclinado com Halter",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento Barra",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Polia Alta Barra (triceps)",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Tríceps Testa",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexão Plantar Step",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Puxada Costas",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Curvada",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Polia Baixa",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexora",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Leg Press Horizontal",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 3,
+            "reps": 8
+          },
+          {
+            "exercise": "Rosca Direta",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca Scott",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Flexão Plantar no Leg",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Flexão Plantar Step",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Supino Reto",
+            "sets": 2,
+            "reps": 20
+          },
+          {
+            "exercise": "Puxada Frontal",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Desenvolvimento com Halter",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Agachamento Livre",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Agachamento Smith",
+            "sets": 4,
+            "reps": 8
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Direta com Barra",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Polia Alta Barra (tríceps)",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Flexão Plantar com Anilha",
+            "sets": 5,
+            "reps": 20
+          }
+        ],
+        "TREINO D (Metabólico)": [
+          {
+            "exercise": "Bike: 20 min",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Swing + burpee",
+            "sets": 4,
+            "reps": "10-15"
+          },
+          {
+            "exercise": "Esteira 10 min: corre 1 min a 10 km/h anda 1 min a 6,0 km/h",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Agachamento com salto + Corrida estacionária + polichinelo ”-15",
+            "sets": 3,
+            "reps": "15-20"
+          },
+          {
+            "exercise": "Abd prancha áximo com 20 s de intervalo",
+            "sets": 5,
+            "reps": "m"
+          },
+          {
+            "exercise": "Esteira 10 min: corre 1 min a 10 km/h anda 1 min a 6,0 km/h",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Esteira: 20 min velocidade 6.0 com inclinação de 5%.",
+            "sets": 1,
+            "reps": "N/A"
+          }
+        ]
+      }
+    },
+    "id": 59
+  },
+  {
+    "num": 10,
+    "name": "TREINO 10 MASCULINO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Masculino",
+    "category": "Emagrecimento/Definição",
+    "description": "Treino focado em queima acelerada e definição muscular com estações de treino metabólico funcional e musculação pesada.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/masculino/treino-10-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C e D)",
+      "aerobic": "Treino metabólico integrado em circuito + aeróbio",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino com Halteres",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Puxada Frontal Pegada Supinada",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Voador",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Remada Cavalinho",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento com Halteres",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Encolhimento de Ombros com Halteres",
+            "sets": 3,
+            "reps": 25
+          },
+          {
+            "exercise": "Mergulho Entre Bancos (tríceps)",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca alternada com Halteres",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Polia Alta Barra (tríceps)",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca Martelo",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Agachamento Livre (com barra)",
+            "sets": 6,
+            "reps": 10
+          },
+          {
+            "exercise": "Goodmorning (bom dia)",
+            "sets": 6,
+            "reps": 10
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Mesa Flexora",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Flexão Plantar no Step",
+            "sets": 3,
+            "reps": 25
+          },
+          {
+            "exercise": "Extensão Lombar",
+            "sets": 5,
+            "reps": 10
+          },
+          {
+            "exercise": "Infra no Banco (extensão de pernas)",
+            "sets": 5,
+            "reps": 15
+          }
+        ],
+        "TREINO D": [
+          {
+            "exercise": "Supino Reto",
+            "sets": 2,
+            "reps": 20
+          },
+          {
+            "exercise": "Puxada Dorsal",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Crucifixo com Halteres banco reto",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Serrote",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento Frontal com barra",
+            "sets": 4,
+            "reps": 8
+          },
+          {
+            "exercise": "Remada Alta com Barra",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Supino pegada Fechada (tríceps)",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Direta com Barra",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Tríceps Testa com Barra",
+            "sets": 5,
+            "reps": 20
+          },
+          {
+            "exercise": "Rosca inversa com Barra",
+            "sets": "",
+            "reps": ""
+          }
+        ],
+        "TREINO C (Metabólico)": [
+          {
+            "exercise": "Bike: 20 min",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Swing + burpee",
+            "sets": 4,
+            "reps": "10-15"
+          },
+          {
+            "exercise": "Esteira 10 min: corre 1 min a 10 km/h anda 1 min a 6,0 km/h",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Agachamento com salto + Corrida estacionária + polichinelo ”-15",
+            "sets": 3,
+            "reps": "15-20"
+          },
+          {
+            "exercise": "Abd prancha áximo com 20 s de intervalo",
+            "sets": 5,
+            "reps": "m"
+          },
+          {
+            "exercise": "Esteira 10 min: corre 1 min a 10 km/h anda 1 min a 6,0 km/h",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Esteira: 25 min velocidade 6.0 com inclinação de 5%.",
+            "sets": 1,
+            "reps": "N/A"
+          }
+        ]
+      }
+    },
+    "id": 60
+  },
+  {
+    "num": 11,
+    "name": "TREINO 11 MASCULINO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Masculino",
+    "category": "Emagrecimento/Definição",
+    "description": "Treino de definição avançada com barra fixa, burpees e tiros de esteira para condicionamento metabólico máximo.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/masculino/treino-11-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Treino metabólico integrado em circuito + aeróbio",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Reto Barra+Halter",
+            "sets": 4,
+            "reps": "8+12"
+          },
+          {
+            "exercise": "Supino Inclinado Halter c/ Giro",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Supino Declinado",
+            "sets": 3,
+            "reps": "RM"
+          },
+          {
+            "exercise": "Tríceps Cross Unil",
+            "sets": 4,
+            "reps": "12+12"
+          },
+          {
+            "exercise": "Triceps Francês Corda Cross",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Desenvolvimento Arnold",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação Frontal+Lateral Alternada",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Infra Paralela+Prancha Bola",
+            "sets": 4,
+            "reps": "20+1’"
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Remada Cavalinho",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Puxada Frontal Neutra",
+            "sets": 3,
+            "reps": "15/10/5"
+          },
+          {
+            "exercise": "Serrote Halter (s/desc)",
+            "sets": 4,
+            "reps": "12+12"
+          },
+          {
+            "exercise": "Rosca Cross Barra Reta",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Scott Barra",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca Punho Barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Desenvolvimento Smith",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Encolhimento Barra",
+            "sets": 5,
+            "reps": 15
+          },
+          {
+            "exercise": "Abd Lateral Banco Romano",
+            "sets": 4,
+            "reps": 20
+          }
+        ],
+        "TREINO B (Metabólico)": [
+          {
+            "exercise": "Corrida Esteira 10’",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Burpee + Barra Fixa Gravitron + Prancha + Abd Canivete (”+10)",
+            "sets": 5,
+            "reps": "10+10+30"
+          },
+          {
+            "exercise": "’ Bike (rápido)",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Thruster + Polia agachamento + Corrida + American Swing (’+10)",
+            "sets": 4,
+            "reps": "15+15+1"
+          },
+          {
+            "exercise": "’Bike (rápido)",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Abd supra banco declinado + Agachamento c/elevação braços (c/ktbl) + Corda naval batida simultânea ()",
+            "sets": 4,
+            "reps": "15+15+20"
+          }
+        ]
+      }
+    },
+    "id": 61
+  },
+  {
+    "num": 12,
+    "name": "TREINO 12 MASCULINO - EMAGRECIMENTO & DEFINIÇÃO",
+    "gender": "Masculino",
+    "category": "Emagrecimento/Definição",
+    "description": "Protocolo extremo de queima calórica e definição rápida integrando corda naval, terra dinâmico, bike e corrida.",
+    "icon": "Fire",
+    "pdfPath": "/treinos/masculino/treino-12-emagrecimento-definicao.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C e D)",
+      "aerobic": "Treino metabólico integrado em circuito + aeróbio",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Reto Barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Supino Inclinado Barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Voador",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Corda",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Frances Corda",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps Banco (perna estendida)",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação Frontal Supinada Barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Desenvolvimento Smith",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Supra Declinado",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Pulley Frente Neutro",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada Baixa Fechada",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Pulldown Corda (c/mov tronco)",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca Unil Cross",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca Scott Cross",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca Articulada",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação Y Banco",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Encolhimento Frontal e Lateral",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Infra Paralela",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO D": [
+          {
+            "exercise": "Leg Press 45º+Panturrilha no Leg",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Afundo Smith",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Flexora",
+            "sets": 4,
             "reps": 15
           },
           {
             "exercise": "Cadeira Flexora",
-            "sets": 3,
-            "reps": 15
-          },
-          {
-            "exercise": "Agachamento Sumô com Halter",
-            "sets": 3,
-            "reps": 15
-          },
-          {
-            "exercise": "Panturrilha Leg Press",
             "sets": 4,
-            "reps": 20
+            "reps": 15
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Panturrilha Gêmeos",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Abd Lateral Banco |Romano",
+            "sets": 4,
+            "reps": 25
+          }
+        ],
+        "TREINO C (Metabólico)": [
+          {
+            "exercise": "’Bike",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Burpee + Passada (peso para cima)+American Swing + Corrida velocidade max suportada 1’ (’)",
+            "sets": 5,
+            "reps": "20+30+20+1"
+          },
+          {
+            "exercise": "’Bike",
+            "sets": 1,
+            "reps": "N/A"
+          },
+          {
+            "exercise": "Corda Naval Simultânea + Terra + Corrida velocidade max suportada 1’ (’)",
+            "sets": 5,
+            "reps": "50+20+1"
+          },
+          {
+            "exercise": "’Bike ou Esteira",
+            "sets": 1,
+            "reps": "N/A"
+          }
+        ]
+      }
+    },
+    "id": 62
+  },
+  {
+    "num": 1,
+    "name": "TREINO 1 MASCULINO - CONDICIONAMENTO",
+    "gender": "Masculino",
+    "category": "Condicionamento",
+    "description": "Condicionamento físico geral e fortalecimento funcional para melhora da resistência cardiorrespiratória e muscular.",
+    "icon": "Activity",
+    "pdfPath": "/treinos/masculino/treino-1-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino reto",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Supino inclinado c/ halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Cross over",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps cross over",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps testa barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação frontal",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento máquina",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Remada cavalo aberta",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Gravitacional",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Puxada frontal Triângulo",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca polia corda",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca direta barra",
+            "sets": 3,
+            "reps": 21
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Agachamento hack",
+            "sets": 4,
+            "reps": 10
           }
         ],
         "ABDOMINAIS": [
           {
-            "exercise": "Abdominal na Máquina (Cabo)",
-            "sets": 3,
+            "exercise": "BANCO DECLINADO",
+            "sets": 4,
             "reps": 20
           },
           {
-            "exercise": "Elevação de Quadril no Solo",
+            "exercise": "ELEVAÇÃO DE PERNAS",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "LATERAL CROSS",
             "sets": 3,
+            "reps": 25
+          }
+        ]
+      }
+    },
+    "id": 63
+  },
+  {
+    "num": 2,
+    "name": "TREINO 2 MASCULINO - CONDICIONAMENTO",
+    "gender": "Masculino",
+    "category": "Condicionamento",
+    "description": "Treino de condicionamento de intensidade moderada combinado com bloco aeróbico diário de 15 minutos para elevar o gasto calórico.",
+    "icon": "Activity",
+    "pdfPath": "/treinos/masculino/treino-2-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A e B)",
+      "aerobic": "15 MINUTOS EM TODOS OS TREINOS",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino reto",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Supino inclinado",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Voador",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Polia alta barra",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Polia alta corda",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Coice com halter",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação lateral",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação frontal",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Encolhimento com halter",
+            "sets": 4,
+            "reps": 20
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Puxada costas",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Remada polia baixa",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Remada serrote",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca direta",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca alternada",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca polia baixa",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Leg press",
+            "sets": 4,
+            "reps": 12
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "EXTENSÃO DE PERNAS",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "LATERAL COM HALTER",
+            "sets": 4,
             "reps": 15
           }
         ]
       }
-    }
+    },
+    "id": 64
+  },
+  {
+    "num": 3,
+    "name": "TREINO 3 MASCULINO - CONDICIONAMENTO",
+    "gender": "Masculino",
+    "category": "Condicionamento",
+    "description": "Divisão ABC com alta cadência e ritmo dinâmico para desenvolver resistência à fadiga muscular e coordenação motora.",
+    "icon": "Activity",
+    "pdfPath": "/treinos/masculino/treino-3-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Reto",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Supino inclinado",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Voador",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Crucifixo com halter",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Polia alta barra",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Polia alta unilateral",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Francês bilateral",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Triceps banco",
+            "sets": 3,
+            "reps": 15
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Extensora",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Passada com halteres (andando)",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação lateral sentado",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Desenvolvimento maquina",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada alta barra",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Encolhimento com barra",
+            "sets": 4,
+            "reps": 25
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Puxada frontal",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada articulada",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada serrote",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada unilateral cross",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca martelo",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca concentrada",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca direta",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca corda polia",
+            "sets": 3,
+            "reps": 15
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "ELEVAÇÃO TRONCO",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "ELEVAÇÃO PERNAS",
+            "sets": 4,
+            "reps": 15
+          }
+        ]
+      }
+    },
+    "id": 65
+  },
+  {
+    "num": 4,
+    "name": "TREINO 4 MASCULINO - CONDICIONAMENTO",
+    "gender": "Masculino",
+    "category": "Condicionamento",
+    "description": "Rotina com exercícios conjugados focada na agilidade, velocidade de recuperação e manutenção da taxa metabólica elevada.",
+    "icon": "Activity",
+    "pdfPath": "/treinos/masculino/treino-4-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino reto",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Supino inclinado",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Cross over",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Voador",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Polia alta corda",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Polia alta barra",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Tríceps banco",
+            "sets": 4,
+            "reps": 12
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Remada articulada",
+            "sets": "2X15",
+            "reps": 12
+          },
+          {
+            "exercise": "Puxada frontal pegada aberta",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Remada curvada cross",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Remada baixa no cross",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca direta barra",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Rosca barra “W” banco scott",
+            "sets": 4,
+            "reps": 12
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Mesa Flexora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Agachamento Hack",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Encolhimento com halter",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Desenvolvimento com halter",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação frontal barra",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação lateral com halter",
+            "sets": 4,
+            "reps": 15
+          }
+        ]
+      }
+    },
+    "id": 66
+  },
+  {
+    "num": 5,
+    "name": "TREINO 5 MASCULINO - CONDICIONAMENTO",
+    "gender": "Masculino",
+    "category": "Condicionamento",
+    "description": "Treino de condicionamento com trabalho muscular de membros superiores e inferiores alternados com estímulos de resistência.",
+    "icon": "Activity",
+    "pdfPath": "/treinos/masculino/treino-5-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Reto",
+            "sets": 5,
+            "reps": 10
+          },
+          {
+            "exercise": "Supino inclinado com Halter",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Cross de cima para baixo",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Cross de baixo para cima",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Polia alta barra inversa",
+            "sets": 4,
+            "reps": 8
+          },
+          {
+            "exercise": "Coice com halter",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Tríceps banco",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "Agachamento Smith",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexora sentada ou deitada",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação frontal com barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento Smith",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação lateral",
+            "sets": 4,
+            "reps": 12
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Puxada frontal aberta",
+            "sets": 5,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada curvada com barra",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Remada serrote no cross",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Crucifixo inverso com halter",
+            "sets": 3,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca polia baixa corda",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca direta barra “W”",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca simultânea com halter",
+            "sets": 5,
+            "reps": 12
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "ELEVAÇÃO DE PERNAS SOLO",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "LATERAL CROSS",
+            "sets": 4,
+            "reps": 20
+          }
+        ]
+      }
+    },
+    "id": 67
+  },
+  {
+    "num": 6,
+    "name": "TREINO 6 MASCULINO - CONDICIONAMENTO",
+    "gender": "Masculino",
+    "category": "Condicionamento",
+    "description": "Volume acentuado e pausas curtas para otimizar o transporte de oxigênio e a resistência muscular localizada.",
+    "icon": "Activity",
+    "pdfPath": "/treinos/masculino/treino-6-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B e C)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Reto com halter",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Supino inclinado",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Supino declinado",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Crucifixo inclinado com halter",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Polia alta barra corda",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Polia alta unilateral",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps testa",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps banco",
+            "sets": 3,
+            "reps": 15
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Extensora",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Agachamento Hack articulado",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Passada com halteres (andando)",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação frontal sentado",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Desenvolvimento com barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada alta barra",
+            "sets": 3,
+            "reps": 20
+          },
+          {
+            "exercise": "Encolhimento com halter",
+            "sets": 4,
+            "reps": 25
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Puxada frontal triangulo",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada articulada",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada cavalinho fechado",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada curvada com halter",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca martelo alternado",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca concentrada scott",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca direta",
+            "sets": 3,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca corda polia",
+            "sets": 3,
+            "reps": 15
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "ELEVAÇÃO PERNAS",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "ELEVAÇÃO LATERAL SOLO",
+            "sets": 4,
+            "reps": 15
+          }
+        ]
+      }
+    },
+    "id": 68
+  },
+  {
+    "num": 7,
+    "name": "TREINO 7 MASCULINO - CONDICIONAMENTO",
+    "gender": "Masculino",
+    "category": "Condicionamento",
+    "description": "Divisão ABCD dinâmica para aumento da resistência muscular profunda e capacidade aeróbica prolongada.",
+    "icon": "Activity",
+    "pdfPath": "/treinos/masculino/treino-7-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C e D)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino reto",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Supino inclinado",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Supino declinado",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Voador peito",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Triceps corda",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Triceps pulley",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Triceps coice",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Puxada frente",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada baixa",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada cavalinho",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada convergente",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca direto com barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca martelo",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca concentrado",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Agachamenrto hack",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Leg 45",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexora sentada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Panturrilha",
+            "sets": 4,
+            "reps": 20
+          }
+        ],
+        "TREINO D": [
+          {
+            "exercise": "Elevação lateral",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação frontal com barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Voador dorsal",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento ombro",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Encolhimento com halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Encolhimento com a barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Antebraço com barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Antebraço com BARRA (enrolador)",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "ELEVAÇÃO DE PERNAS",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "LATERAL CROSS",
+            "sets": 4,
+            "reps": 20
+          }
+        ]
+      }
+    },
+    "id": 69
+  },
+  {
+    "num": 8,
+    "name": "TREINO 8 MASCULINO - CONDICIONAMENTO",
+    "gender": "Masculino",
+    "category": "Condicionamento",
+    "description": "Treino multifuncional para ganho de agilidade, flexibilidade articular e potência física.",
+    "icon": "Activity",
+    "pdfPath": "/treinos/masculino/treino-8-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C e D)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Elevação lateral",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação frontal com a corda",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação frontal com halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Posterior de ombro no cross over",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Puxada testa",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento ombro",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Supino reto com halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Supino inclinado com halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Supino declinado",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Voador  peito",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps corda",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Triceps banco",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps coice",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Puxada frente",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada baixa",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada serrote",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada cross com barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca direta com a barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca martelo",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca alternado",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO D": [
+          {
+            "exercise": "Agachamento hack",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Leg sentado",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Extensora unilateral",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexora sentada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexora deitada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Panturrilha Livre",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "SUPRA EBANCO DECLINADO",
+            "sets": 4,
+            "reps": 25
+          },
+          {
+            "exercise": "PRANCHA LATERAL",
+            "sets": 4,
+            "reps": "1’"
+          }
+        ]
+      }
+    },
+    "id": 70
+  },
+  {
+    "num": 9,
+    "name": "TREINO 9 MASCULINO - CONDICIONAMENTO",
+    "gender": "Masculino",
+    "category": "Condicionamento",
+    "description": "Sessão integrada com estímulos em pirâmide e circuitos para elevar a performance física geral.",
+    "icon": "Activity",
+    "pdfPath": "/treinos/masculino/treino-9-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C e D)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Reto",
+            "sets": 12,
+            "reps": 8
+          },
+          {
+            "exercise": "Supino Declinado",
+            "sets": 4,
+            "reps": 8
+          },
+          {
+            "exercise": "Supino Inclinado com Halter",
+            "sets": 12,
+            "reps": 8
+          },
+          {
+            "exercise": "Supino Reto - Halter",
+            "sets": 12,
+            "reps": 8
+          },
+          {
+            "exercise": "Cross Over Baixo para Cima",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Cross Over Cima para Baixo",
+            "sets": 3,
+            "reps": 12
+          },
+          {
+            "exercise": "Voador Articulado",
+            "sets": 3,
+            "reps": 10
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Remada Sentada “supinada”",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Remada Curvada BARRA",
+            "sets": 12,
+            "reps": 8
+          },
+          {
+            "exercise": "Remada Serrote com Halter",
+            "sets": 12,
+            "reps": 8
+          },
+          {
+            "exercise": "Remada no aparelho",
+            "sets": 12,
+            "reps": 8
+          },
+          {
+            "exercise": "Puxada Frontal Aberta",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Puxada Frontal Fechada “supinada”",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Encolhimento com Halter",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Extensora + rápido com pouco peso",
+            "sets": "2X",
+            "reps": 25
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Cadeira Flexora",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Afundo com Halter (parado)",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação Frontal com Halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada Alta “barra ou cross”",
+            "sets": 4,
+            "reps": 12
+          },
+          {
+            "exercise": "Elevação Lateral cross",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação Lateral com Halter",
+            "sets": 4,
+            "reps": 12
+          }
+        ],
+        "TREINO D": [
+          {
+            "exercise": "Rosca polia baixa corda",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca alternada sentado",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca Direta inversa",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca concentrada sem parar",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps paralela",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps polia alta unilateral",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps Corda",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Polia alta barra + barra inversa",
+            "sets": 4,
+            "reps": 10
+          }
+        ]
+      }
+    },
+    "id": 71
+  },
+  {
+    "num": 10,
+    "name": "TREINO 10 MASCULINO - CONDICIONAMENTO",
+    "gender": "Masculino",
+    "category": "Condicionamento",
+    "description": "Condicionamento avançado combinando aparelhos articulados e pesos livres para resposta cardiovascular máxima.",
+    "icon": "Activity",
+    "pdfPath": "/treinos/masculino/treino-10-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C e D)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino  no Smith",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Supino inclinado com prog carga no Smith",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Supino horizontal no cross over",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Cross over de cima para baixo",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Voador peito drop",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps coice",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps corda",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps barra com drop",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Puxada frente pegada americana",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada cavalinho livre",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada convergente prog carga",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada baixa com drop",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca direta no cross com banco scott",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca direta com barra w",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca martelo com a corda cross drop",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Elevação lateral no cross",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação frontal com halter unilateral",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação frontal cross",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada na barra guiada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Voador dorsal",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação lateral com halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Encolhimento com halter",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Encolhimento com a barra",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "TREINO D": [
+          {
+            "exercise": "Agachamento hack",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Leg 45",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexora sentada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Panturrilha unilateral",
+            "sets": 4,
+            "reps": 10
+          }
+        ],
+        "ABDOMINAIS": [
+          {
+            "exercise": "SUPRA",
+            "sets": 4,
+            "reps": 20
+          },
+          {
+            "exercise": "OBLIQUO",
+            "sets": 4,
+            "reps": 20
+          }
+        ]
+      }
+    },
+    "id": 72
+  },
+  {
+    "num": 11,
+    "name": "TREINO 11 MASCULINO - CONDICIONAMENTO",
+    "gender": "Masculino",
+    "category": "Condicionamento",
+    "description": "Divisão ABCDE de endurance e capacidade atlética completa com finalização em flexões com intervalos reduzidos.",
+    "icon": "Activity",
+    "pdfPath": "/treinos/masculino/treino-11-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C, D e E)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino Reto",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Supino inclinado",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Supino declinado",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Voador peito",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps corda",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Tríceps coice",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Elevação lateral de ombro",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação frontal com a corda",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Elevação frontal com halter",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Puxada testa",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Antebraço com barra",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Antebraço com a corda",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Encolhimento com halter",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Puxada frente",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada baixa",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada convergente",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada cavalinho",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca martelo",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca direta",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Rosca concentrada",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO D": [
+          {
+            "exercise": "Agachamento hack",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Leg 45",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Extensora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Flexora deitada",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Panturrilha na máquina",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO E": [
+          {
+            "exercise": "Flexão 4 série de 15 c/ interv de 15segs",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Puxada no gráviton",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Remada curvada no cross over",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Puxada frente",
+            "sets": 4,
+            "reps": 15
+          },
+          {
+            "exercise": "Barra 3 de 8 repetições",
+            "sets": "",
+            "reps": ""
+          },
+          {
+            "exercise": "Abdominal supra e infra",
+            "sets": 4,
+            "reps": 15
+          }
+        ]
+      }
+    },
+    "id": 73
+  },
+  {
+    "num": 12,
+    "name": "TREINO 12 MASCULINO - CONDICIONAMENTO",
+    "gender": "Masculino",
+    "category": "Condicionamento",
+    "description": "Protocolo de choque de alta densidade com progressão de carga para condicionamento muscular extremo e capacidade anaeróbica.",
+    "icon": "Activity",
+    "pdfPath": "/treinos/masculino/treino-12-condicionamento.pdf",
+    "details": {
+      "duration": "6 Semanas (Treino A, B, C e D)",
+      "aerobic": "Não especificado",
+      "routine": {
+        "TREINO A": [
+          {
+            "exercise": "Supino no Smith c/  prog carga15/ 12 / 10/ 8",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Supino inclinado no Smith carga15/ 12/ 10 / 8",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Cross over de cima para baixo",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Voador peito drop na última série",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps coice",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Tríceps corda com drop na última série",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO B": [
+          {
+            "exercise": "Puxada frente com prog carga15/ 12 / 10/ 8",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada convergente",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada curvada",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Remada baixa com drop na última série",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca 21",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca martelo",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Rosca direta no cross c/ a barra drop",
+            "sets": 4,
+            "reps": 15
+          }
+        ],
+        "TREINO C": [
+          {
+            "exercise": "Elevação lateral no cross",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Elevação frontal com a barra",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Puxada testa",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Posterior de ombro no cross",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Desenvolvimento de ombro",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Encolhimento com Halter",
+            "sets": 4,
+            "reps": 30
+          }
+        ],
+        "TREINO D": [
+          {
+            "exercise": "D",
+            "sets": "Agachamento hack com prog carga  15/ 12 / 10/ 8",
+            "reps": 12
+          },
+          {
+            "exercise": "Leg Press 45°",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Abdutora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Adutora",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Extensora com drop na última serie",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Flexora sentada com drop na última serie",
+            "sets": 4,
+            "reps": 10
+          },
+          {
+            "exercise": "Panturrilha na máquina",
+            "sets": 4,
+            "reps": 25
+          }
+        ]
+      }
+    },
+    "id": 74
   }
 ]

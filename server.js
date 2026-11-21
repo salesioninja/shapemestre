@@ -31,7 +31,7 @@ const cors = require('cors');
 const multer = require('multer');
 
 // Serviços internos
-const { askAI } = require('./services/aiService');
+const { askAI, analyzeMealPhoto } = require('./services/aiService');
 const { transcribeAudio } = require('./services/whisperService');
 const { sendWhatsAppText, sendWhatsAppMedia, parseEvolutionWebhook } = require('./services/evolutionService');
 const { saveChatMessage, getChatHistory } = require('./services/dbService');
@@ -59,11 +59,49 @@ const webpLocalDir = path.join(__dirname, 'public', 'assets', 'webp');
 const gifsFallbackDir = path.join(__dirname, '..', 'TODOS OS GIFS MUSCULAÇÃO');
 const gifSearchCache = new Map();
 const webpSearchCache = new Map();
+let webpDirIndex = null;
 
 function cleanKey(str) {
     return (str || '').toLowerCase()
         .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
         .replace(/[^a-z0-9]/g, '');
+}
+
+function repairEncoding(str) {
+    if (!str) return '';
+    try {
+        const fixed = Buffer.from(str, 'binary').toString('utf-8');
+        if (fixed && !fixed.includes('\ufffd')) return fixed;
+    } catch (e) {}
+    return str;
+}
+
+function buildWebpIndex() {
+    if (webpDirIndex) return webpDirIndex;
+    webpDirIndex = new Map();
+    if (!fs.existsSync(webpLocalDir)) return webpDirIndex;
+
+    try {
+        const entries = fs.readdirSync(webpLocalDir, { withFileTypes: true });
+        for (const entry of entries) {
+            if (!entry.isFile() || !entry.name.toLowerCase().endsWith('.webp')) continue;
+            const fullPath = path.join(webpLocalDir, entry.name);
+            const base = entry.name.replace(/\.webp$/i, '');
+            
+            const k1 = cleanKey(base);
+            const k2 = cleanKey(repairEncoding(base));
+            webpDirIndex.set(k1, fullPath);
+            webpDirIndex.set(k2, fullPath);
+
+            const k1NoNum = k1.replace(/\d+$/, '');
+            const k2NoNum = k2.replace(/\d+$/, '');
+            if (!webpDirIndex.has(k1NoNum)) webpDirIndex.set(k1NoNum, fullPath);
+            if (!webpDirIndex.has(k2NoNum)) webpDirIndex.set(k2NoNum, fullPath);
+        }
+    } catch (e) {
+        console.warn('Aviso ao indexar webpLocalDir:', e.message);
+    }
+    return webpDirIndex;
 }
 
 function findFileRecursively(dir, targetName, ext, cacheMap) {
@@ -84,8 +122,9 @@ function findFileRecursively(dir, targetName, ext, cacheMap) {
                 if (entry.isDirectory()) {
                     stack.push(fullPath);
                 } else if (entry.name.toLowerCase().endsWith('.' + ext)) {
-                    const cleanName = cleanKey(entry.name).replace(new RegExp(`${ext}$`), '');
-                    if (cleanName === cleanTarget) {
+                    const cleanName1 = cleanKey(entry.name).replace(new RegExp(`${ext}$`), '');
+                    const cleanName2 = cleanKey(repairEncoding(entry.name)).replace(new RegExp(`${ext}$`), '');
+                    if (cleanName1 === cleanTarget || cleanName2 === cleanTarget) {
                         cacheMap.set(cleanTarget, fullPath);
                         return fullPath;
                     }
@@ -96,7 +135,7 @@ function findFileRecursively(dir, targetName, ext, cacheMap) {
     return null;
 }
 
-// 1. Rota de WebP de alta velocidade com Cache Permanente no Navegador
+// 1. Rota de WebP de alta velocidade com Cache Permanente no Navegador e Resolução O(1)
 app.get('/assets/webp/*', (req, res, next) => {
     const rawParam = req.params[0] || '';
     const filename = path.basename(rawParam);
@@ -104,19 +143,34 @@ app.get('/assets/webp/*', (req, res, next) => {
 
     res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
 
-    // Busca exata no diretório webp
+    // 1. Busca exata no diretório webp
     const exactLocal = path.join(webpLocalDir, rawParam);
     if (fs.existsSync(exactLocal) && fs.statSync(exactLocal).isFile()) {
         return res.sendFile(exactLocal);
     }
 
-    // Busca inteligente com tolerância a acentos e espaços
+    // 2. Busca indexada ultra-rápida O(1) tolerante a acentos e encoding Linux/Windows
+    const index = buildWebpIndex();
+    const targetBase = filename.replace(/\.webp$/i, '');
+    const kTarget = cleanKey(targetBase);
+    const kRepaired = cleanKey(repairEncoding(targetBase));
+
+    const matchedPath = index.get(kTarget) 
+                     || index.get(kRepaired) 
+                     || index.get(kTarget.replace(/\d+$/, '')) 
+                     || index.get(kRepaired.replace(/\d+$/, ''));
+
+    if (matchedPath && fs.existsSync(matchedPath)) {
+        return res.sendFile(matchedPath);
+    }
+
+    // 3. Fallback recursivo caso esteja em subdiretório
     const foundWebp = findFileRecursively(webpLocalDir, filename, 'webp', webpSearchCache);
     if (foundWebp) {
         return res.sendFile(foundWebp);
     }
 
-    // Fallback transparente: se não houver webp, tenta achar o GIF correspondente
+    // 4. Fallback transparente: se não houver webp, tenta achar o GIF correspondente
     const gifName = filename.replace(/\.webp$/i, '.gif');
     const fallbackGif = findFileRecursively(gifsLocalDir, gifName, 'gif', gifSearchCache) 
                      || (fs.existsSync(gifsFallbackDir) ? findFileRecursively(gifsFallbackDir, gifName, 'gif', gifSearchCache) : null);
@@ -189,12 +243,142 @@ app.get('/api/exercises', (req, res) => {
     }
 });
 
+app.get('/api/cinesiologia', (req, res) => {
+    try {
+        const filePath = path.join(__dirname, 'data', 'cinesiologia.json');
+        if (fs.existsSync(filePath)) {
+            const data = fs.readFileSync(filePath, 'utf8');
+            res.json(JSON.parse(data));
+        } else {
+            res.json([]);
+        }
+    } catch (err) {
+        res.status(500).json({ error: 'Falha ao carregar fichas de cinesiologia', details: err.message });
+    }
+});
+
 app.get('/api/recipes', (req, res) => {
     try {
         const data = fs.readFileSync(path.join(__dirname, 'data', 'recipes.json'), 'utf8');
         res.json(JSON.parse(data));
     } catch (err) {
         res.status(500).json({ error: 'Falha ao carregar receitas', details: err.message });
+    }
+});
+
+// ----------------------------------------------------
+// ROTAS DE NUTRIÇÃO (TABELA TACO & VISÃO IA POR FOTO)
+// ----------------------------------------------------
+
+let tacoData = [];
+try {
+    const tacoPath = path.join(__dirname, 'data', 'taco.json');
+    if (fs.existsSync(tacoPath)) {
+        tacoData = JSON.parse(fs.readFileSync(tacoPath, 'utf8'));
+        console.log(`✅ Tabela TACO carregada: ${tacoData.length} alimentos brasileiros.`);
+    }
+} catch (e) {
+    console.warn('⚠️ Não foi possível carregar taco.json no boot:', e.message);
+}
+
+/**
+ * GET /api/nutrition/taco
+ * Busca instantânea no catálogo brasileiro de alimentos (Tabela TACO)
+ */
+app.get('/api/nutrition/taco', (req, res) => {
+    try {
+        const query = (req.query.q || '').trim();
+        const category = (req.query.category || '').trim();
+        const limit = Math.min(parseInt(req.query.limit, 10) || 50, 100);
+
+        if (!tacoData || tacoData.length === 0) {
+            const tacoPath = path.join(__dirname, 'data', 'taco.json');
+            if (fs.existsSync(tacoPath)) {
+                tacoData = JSON.parse(fs.readFileSync(tacoPath, 'utf8'));
+            }
+        }
+
+        if (!query && !category) {
+            return res.json(tacoData.slice(0, limit));
+        }
+
+        const normQuery = cleanKey(query);
+        const normCat = cleanKey(category);
+
+        const filtered = tacoData.filter(item => {
+            let matchesQuery = true;
+            let matchesCat = true;
+
+            if (normQuery) {
+                const normName = cleanKey(item.nome);
+                matchesQuery = normName.includes(normQuery);
+            }
+
+            if (normCat) {
+                const itemCat = cleanKey(item.categoria);
+                matchesCat = itemCat.includes(normCat);
+            }
+
+            return matchesQuery && matchesCat;
+        });
+
+        res.json(filtered.slice(0, limit));
+    } catch (err) {
+        res.status(500).json({ error: 'Erro ao pesquisar na Tabela TACO', details: err.message });
+    }
+});
+
+/**
+ * GET /api/nutrition/taco/:id
+ * Retorna detalhes completos de um alimento por ID
+ */
+app.get('/api/nutrition/taco/:id', (req, res) => {
+    try {
+        const id = parseInt(req.params.id, 10);
+        const food = tacoData.find(f => f.id === id);
+        if (!food) {
+            return res.status(404).json({ error: 'Alimento não encontrado na Tabela TACO.' });
+        }
+        res.json(food);
+    } catch (err) {
+        res.status(500).json({ error: 'Erro ao buscar alimento', details: err.message });
+    }
+});
+
+/**
+ * POST /api/nutrition/analyze-meal
+ * Analisa foto de refeição via IA de visão com Structured Output JSON
+ */
+app.post('/api/nutrition/analyze-meal', upload.single('image'), async (req, res) => {
+    try {
+        if (!req.file) {
+            return res.status(400).json({ error: 'Arquivo de imagem não enviado.' });
+        }
+
+        const mealType = req.body.mealType || 'Almoço';
+        const notes = req.body.notes || '';
+        const base64 = req.file.buffer.toString('base64');
+        const mimeType = req.file.mimetype || 'image/jpeg';
+
+        console.log(`📸 Analisando foto de refeição [${mealType}] (${req.file.size} bytes)...`);
+
+        const analysis = await analyzeMealPhoto({
+            imageBase64: base64,
+            mimeType,
+            mealType,
+            userNotes: notes
+        });
+
+        res.json({
+            success: true,
+            meal: analysis
+        });
+    } catch (err) {
+        console.error('❌ Erro na análise de refeição:', err.message);
+        res.status(500).json({
+            error: 'Falha na análise nutricional da foto',
+            details: err.message
+        });
     }
 });
 
